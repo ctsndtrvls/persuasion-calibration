@@ -186,7 +186,7 @@ def assign_quantile_bins(series: pd.Series, n_bins: int = 3) -> pd.Series:
     return pd.qcut(series, q=n_bins, labels=False, duplicates="drop") + 1
 
 
-def stratified_sample(df: pd.DataFrame, n_per_level: int = 200, seed: int = 42) -> pd.DataFrame:
+def stratified_sample(df: pd.DataFrame, n_per_level: int = 160, seed: int = 42) -> pd.DataFrame:
     out = df.copy()
     out["wood_total_mean"] = pd.to_numeric(out["wood_total_mean"], errors="coerce")
     out = out.dropna(subset=["wood_total_mean"]).copy()
@@ -317,15 +317,15 @@ def main() -> None:
     )
     df_enriched = pivot_and_aggregate(base_df, df_long)
 
-    pop_sub = stratified_sample(df_enriched[df_enriched["dataset"] == "conflictqa_popqa"], n_per_level=200)
+    pop_sub = stratified_sample(df_enriched[df_enriched["dataset"] == "conflictqa_popqa"], n_per_level=160)
     strat_sub = stratified_sample(
         df_enriched[df_enriched["dataset"] == "conflictqa_strategyqa"],
-        n_per_level=200,
+        n_per_level=160,
     )
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    pop_out = OUT_DIR / f"conflictqa_popqa600_200x3_wood_{args.run_name}.csv"
-    strat_out = OUT_DIR / f"conflictqa_strategyqa600_200x3_wood_{args.run_name}.csv"
+    pop_out = OUT_DIR / f"conflictqa_popqa480_160x3_wood_{args.run_name}.csv"
+    strat_out = OUT_DIR / f"conflictqa_strategyqa480_160x3_wood_{args.run_name}.csv"
     pop_sub.to_csv(pop_out, index=False)
     strat_sub.to_csv(strat_out, index=False)
 
