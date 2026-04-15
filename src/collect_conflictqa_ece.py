@@ -17,6 +17,16 @@ Without Gemini (key not required; run later without this flag to append missing 
 Without Anthropic (no credits / Claude not needed):
   python3 collect_conflictqa_ece.py --skip-anthropic --skip-gemini
 
+OpenAI-only on ConflictQA subsets (CSV, same 480×2 as Wood resplit), temp 0.6 + 1–10 scale,
+separate combined + per-split CSV and a suffixed plot:
+  python3 collect_conflictqa_ece.py --datasets both --skip-anthropic --skip-gemini --skip-deepseek \\
+    --popqa-input output_wood/conflictqa_popqa480_160x3_wood_v2_resplit.csv \\
+    --strategyqa-input output_wood/conflictqa_strategyqa480_160x3_wood_v2_resplit.csv \\
+    --out output_wood/conflictqa_ece_openai_conflictqa_temp06_scale10.csv \\
+    --also-split-dataset-csv output_wood/conflictqa_ece_openai_temp06_scale10 \\
+    --openai-temperature 0.6 --openai-confidence-scale 1-10 \\
+    --plot --plot-file-suffix temp06_scale10_conflictqa
+
 Confidence is the model's stated P(correct) in JSON (verbal calibration), not token logprobs.
 
 Anthropic/Gemini: old IDs (claude-3-5-sonnet-20241022, gemini-1.5-flash-8b) return 404.
@@ -31,6 +41,7 @@ only the in-flight API call can be lost; already written rows remain in the file
 from __future__ import annotations
 
 import argparse
+import ast
 import csv
 import json
 import os
@@ -47,7 +58,11 @@ DATA_DIR = PROJECT_ROOT / "data" / "conflictqa"
 OUT_DIR = PROJECT_ROOT / "output_wood"
 POPQA = DATA_DIR / "conflictQA-popQA-llama2-7b.json"
 STRATEGY = DATA_DIR / "conflictQA-strategyQA-llama2-7b.json"
-FEVER_DEFAULT = OUT_DIR / "fever480_160x3_complexity_wood_v1_lr_40_resplit.csv"
+FEVER_DEFAULT = OUT_DIR / "dataset_subsampling" / "fever" / "csv" / "fever480_160x3_complexity_wood_v1_lr_40_resplit.csv"
+POPQA_SUBSET_DEFAULT = OUT_DIR / "dataset_subsampling" / "conflictqa" / "csv" / "conflictqa_popqa480_160x3_wood_v2_resplit.csv"
+STRATEGY_SUBSET_DEFAULT = (
+    OUT_DIR / "dataset_subsampling" / "conflictqa" / "csv" / "conflictqa_strategyqa480_160x3_wood_v2_resplit.csv"
+)
 
 # Canonical ids written to CSV (must match plot_ece_calibration.MODEL_IDS).
 # Anthropic: snapshot claude-3-5-sonnet-20241022 was removed from the API (404).
@@ -77,6 +92,15 @@ Question: {question}
 
 Output JSON: {{"answer": "<short phrase>", "confidence": <number from 0 to 1>}}"""
 
+USER_TEMPLATE_OPENAI_SCALE10 = """Reference answers (any equivalent labeling of the same entity is acceptable): {refs}
+
+Question: {question}
+
+It is okay to be unsure. If evidence is mixed or incomplete, use lower confidence.
+Avoid overconfidence when the claim is ambiguous.
+
+Output JSON: {{"answer": "<short phrase>", "confidence": <integer from 1 to 10>}}"""
+
 # Anthropic: forced tool call avoids empty/non-JSON text (common with Sonnet 4 + thinking).
 ANTHROPIC_CALIBRATION_TOOL: dict[str, Any] = {
     "name": "submit_calibration",
@@ -103,6 +127,11 @@ ANTHROPIC_CALIBRATION_TOOL: dict[str, Any] = {
 SYSTEM_ANTHROPIC_TOOL = (
     "You must call submit_calibration exactly once with fields answer (string) and "
     "confidence (number in [0,1]). No other text is required."
+)
+SYSTEM_ANTHROPIC_TOOL_SCALE10 = (
+    "You must call submit_calibration exactly once with fields answer (string) and "
+    "confidence (integer from 1 to 10). It is okay to be unsure; avoid overconfidence when evidence is mixed. "
+    "No other text is required."
 )
 
 
@@ -222,11 +251,22 @@ def parse_json_obj(text: str) -> dict[str, Any]:
     raise ValueError(f"no JSON object in model text (preview {raw[:280]!r}…)")
 
 
-def call_openai(question: str, refs: str, model_name: str) -> tuple[str, float]:
+def call_openai(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    use_scale10: bool,
+) -> tuple[str, float]:
     from openai import OpenAI
 
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    user = USER_TEMPLATE.format(question=question, refs=refs)
+    user = (
+        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+        if use_scale10
+        else USER_TEMPLATE.format(question=question, refs=refs)
+    )
     r = client.chat.completions.create(
         model=model_name,
         messages=[
@@ -234,14 +274,24 @@ def call_openai(question: str, refs: str, model_name: str) -> tuple[str, float]:
             {"role": "user", "content": user},
         ],
         response_format={"type": "json_object"},
-        temperature=0.0,
+        temperature=temperature,
     )
     raw = r.choices[0].message.content or "{}"
     data = parse_json_obj(raw)
-    return str(data.get("answer", "")), float(data.get("confidence", 0.0))
+    conf = float(data.get("confidence", 0.0))
+    if use_scale10:
+        conf = conf / 10.0
+    return str(data.get("answer", "")), conf
 
 
-def call_anthropic(question: str, refs: str, model_name: str) -> tuple[str, float]:
+def call_anthropic(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    use_scale10: bool,
+) -> tuple[str, float]:
     import anthropic
 
     client = anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
@@ -249,17 +299,20 @@ def call_anthropic(question: str, refs: str, model_name: str) -> tuple[str, floa
     msg = client.messages.create(
         model=model_name,
         max_tokens=1024,
-        system=SYSTEM_ANTHROPIC_TOOL,
+        system=SYSTEM_ANTHROPIC_TOOL_SCALE10 if use_scale10 else SYSTEM_ANTHROPIC_TOOL,
         messages=[{"role": "user", "content": user}],
         tools=[ANTHROPIC_CALIBRATION_TOOL],
         tool_choice={"type": "tool", "name": "submit_calibration"},
-        temperature=0.0,
+        temperature=temperature,
     )
     for b in msg.content:
         if getattr(b, "type", None) == "tool_use" and getattr(b, "name", None) == "submit_calibration":
             inp = getattr(b, "input", None)
             if isinstance(inp, dict):
-                return str(inp.get("answer", "")), _clip_confidence(inp.get("confidence", 0.0))
+                conf = float(inp.get("confidence", 0.0))
+                if use_scale10:
+                    conf = conf / 10.0
+                return str(inp.get("answer", "")), _clip_confidence(conf)
     text = ""
     for b in msg.content:
         if getattr(b, "type", None) == "text":
@@ -271,24 +324,38 @@ def call_anthropic(question: str, refs: str, model_name: str) -> tuple[str, floa
             f"(stop_reason={getattr(msg, 'stop_reason', None)!r})"
         )
     data = parse_json_obj(text)
-    return str(data.get("answer", "")), _clip_confidence(data.get("confidence", 0.0))
+    conf = float(data.get("confidence", 0.0))
+    if use_scale10:
+        conf = conf / 10.0
+    return str(data.get("answer", "")), _clip_confidence(conf)
 
 
-def call_deepseek(question: str, refs: str, model_name: str) -> tuple[str, float]:
+def call_deepseek(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    use_scale10: bool,
+) -> tuple[str, float]:
     from openai import OpenAI
 
     client = OpenAI(
         api_key=os.environ["DEEPSEEK_API_KEY"],
         base_url="https://api.deepseek.com",
     )
-    user = USER_TEMPLATE.format(question=question, refs=refs)
+    user = (
+        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+        if use_scale10
+        else USER_TEMPLATE.format(question=question, refs=refs)
+    )
     kwargs: dict[str, Any] = dict(
         model=model_name,
         messages=[
             {"role": "system", "content": SYSTEM},
             {"role": "user", "content": user},
         ],
-        temperature=0.0,
+        temperature=temperature,
     )
     try:
         r = client.chat.completions.create(
@@ -299,10 +366,20 @@ def call_deepseek(question: str, refs: str, model_name: str) -> tuple[str, float
         r = client.chat.completions.create(**kwargs)
     raw = r.choices[0].message.content or "{}"
     data = parse_json_obj(raw)
-    return str(data.get("answer", "")), float(data.get("confidence", 0.0))
+    conf = float(data.get("confidence", 0.0))
+    if use_scale10:
+        conf = conf / 10.0
+    return str(data.get("answer", "")), conf
 
 
-def call_gemini(question: str, refs: str, model_name: str) -> tuple[str, float]:
+def call_gemini(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    use_scale10: bool,
+) -> tuple[str, float]:
     import google.generativeai as genai
 
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
@@ -310,23 +387,30 @@ def call_gemini(question: str, refs: str, model_name: str) -> tuple[str, float]:
         model_name,
         system_instruction=SYSTEM,
     )
-    user = USER_TEMPLATE.format(question=question, refs=refs)
+    user = (
+        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+        if use_scale10
+        else USER_TEMPLATE.format(question=question, refs=refs)
+    )
     try:
         r = model.generate_content(
             user,
             generation_config=genai.GenerationConfig(
-                temperature=0.0,
+                temperature=temperature,
                 response_mime_type="application/json",
             ),
         )
     except Exception:
         r = model.generate_content(
             user,
-            generation_config=genai.GenerationConfig(temperature=0.0),
+            generation_config=genai.GenerationConfig(temperature=temperature),
         )
     raw = r.text or "{}"
     data = parse_json_obj(raw)
-    return str(data.get("answer", "")), float(data.get("confidence", 0.0))
+    conf = float(data.get("confidence", 0.0))
+    if use_scale10:
+        conf = conf / 10.0
+    return str(data.get("answer", "")), conf
 
 
 def make_callers(
@@ -334,13 +418,101 @@ def make_callers(
     anthropic_model: str,
     deepseek_model: str,
     gemini_model: str,
+    openai_temperature: float,
+    openai_fever_temperature: float | None,
+    openai_confidence_scale: str,
+    anthropic_temperature: float,
+    anthropic_confidence_scale: str,
+    deepseek_temperature: float,
+    deepseek_confidence_scale: str,
+    gemini_temperature: float,
+    gemini_confidence_scale: str,
 ) -> dict[str, Callable[[str, str], tuple[str, float]]]:
+    def _openai_caller(q: str, r: str, dataset_tag: str) -> tuple[str, float]:
+        t = openai_fever_temperature if dataset_tag == "fever" and openai_fever_temperature is not None else openai_temperature
+        return call_openai(
+            q,
+            r,
+            openai_model,
+            temperature=t,
+            use_scale10=(openai_confidence_scale == "1-10"),
+        )
+
     return {
-        "openai": lambda q, r: call_openai(q, r, openai_model),
-        "anthropic": lambda q, r: call_anthropic(q, r, anthropic_model),
-        "deepseek": lambda q, r: call_deepseek(q, r, deepseek_model),
-        "google": lambda q, r: call_gemini(q, r, gemini_model),
+        "openai": _openai_caller,
+        "anthropic": lambda q, r, _d: call_anthropic(
+            q,
+            r,
+            anthropic_model,
+            temperature=anthropic_temperature,
+            use_scale10=(anthropic_confidence_scale == "1-10"),
+        ),
+        "deepseek": lambda q, r, _d: call_deepseek(
+            q,
+            r,
+            deepseek_model,
+            temperature=deepseek_temperature,
+            use_scale10=(deepseek_confidence_scale == "1-10"),
+        ),
+        "google": lambda q, r, _d: call_gemini(
+            q,
+            r,
+            gemini_model,
+            temperature=gemini_temperature,
+            use_scale10=(gemini_confidence_scale == "1-10"),
+        ),
     }
+
+
+def _parse_ground_truth_cell(val: Any) -> list[Any]:
+    if isinstance(val, list):
+        return val
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return []
+    s = str(val).strip()
+    if not s:
+        return []
+    try:
+        v = ast.literal_eval(s)
+        if isinstance(v, (list, tuple)):
+            return list(v)
+        return [v]
+    except (ValueError, SyntaxError):
+        return [s]
+
+
+def read_conflictqa_csv(path: Path) -> pd.DataFrame:
+    """Subset CSV with question + ground_truth list (string or list) + original_index."""
+    df = pd.read_csv(path)
+    if "question" not in df.columns:
+        raise ValueError(f"ConflictQA CSV must contain 'question': {path}")
+    if "ground_truth" not in df.columns:
+        raise ValueError(f"ConflictQA CSV must contain 'ground_truth': {path}")
+    if "original_index" not in df.columns:
+        df = df.copy()
+        df["original_index"] = range(len(df))
+    out = pd.DataFrame(
+        {
+            "question": df["question"].fillna("").astype(str),
+            "ground_truth": df["ground_truth"].map(_parse_ground_truth_cell),
+            "original_index": pd.to_numeric(df["original_index"], errors="coerce").fillna(0).astype(int),
+        }
+    )
+    return out
+
+
+SPLIT_CSV_TAGS: dict[str, str] = {
+    "conflictqa_popqa": "popqa",
+    "conflictqa_strategyqa": "strategyqa",
+}
+
+
+def conflictqa_split_csv_path(stem: Path, dataset_tag: str) -> Path | None:
+    suffix = SPLIT_CSV_TAGS.get(dataset_tag)
+    if suffix is None:
+        return None
+    base = stem.with_suffix("") if stem.suffix.lower() == ".csv" else stem
+    return base.parent / f"{base.name}_{suffix}.csv"
 
 
 def read_jsonl(path: Path) -> pd.DataFrame:
@@ -394,9 +566,44 @@ def main() -> None:
         help="Path to FEVER CSV (default: output_wood/fever480_160x3_complexity_wood_v1_lr_40_resplit.csv)",
     )
     parser.add_argument(
+        "--popqa-input",
+        type=Path,
+        default=None,
+        help="Optional CSV for ConflictQA popQA (question, ground_truth, original_index). Default: full JSONL.",
+    )
+    parser.add_argument(
+        "--strategyqa-input",
+        type=Path,
+        default=None,
+        help="Optional CSV for ConflictQA strategyQA (same columns). Default: full JSONL.",
+    )
+    parser.add_argument(
+        "--use-conflictqa-subset-csv",
+        action="store_true",
+        help=(
+            "Load popQA/strategyQA from the Wood 480×3 resplit CSVs in output_wood "
+            f"({POPQA_SUBSET_DEFAULT.name} / {STRATEGY_SUBSET_DEFAULT.name}) instead of full JSONL."
+        ),
+    )
+    parser.add_argument(
+        "--also-split-dataset-csv",
+        type=Path,
+        metavar="STEM",
+        default=None,
+        help=(
+            "Mirror each appended ConflictQA row to STEM_popqa.csv and STEM_strategyqa.csv "
+            "(no extension; parent directory must exist). Combined rows still go to --out."
+        ),
+    )
+    parser.add_argument(
         "--plot",
         action="store_true",
         help="After CSV, run plot_ece_calibration.py on this file",
+    )
+    parser.add_argument(
+        "--plot-file-suffix",
+        default="",
+        help="Passed to plot_ece_calibration.py --file-suffix when --plot is set.",
     )
     parser.add_argument(
         "--openai-model",
@@ -404,9 +611,39 @@ def main() -> None:
         help="OpenAI API model id",
     )
     parser.add_argument(
+        "--openai-temperature",
+        type=float,
+        default=0.0,
+        help="OpenAI temperature for all datasets (default: 0.0)",
+    )
+    parser.add_argument(
+        "--openai-fever-temperature",
+        type=float,
+        default=None,
+        help="Optional OpenAI temperature override only for FEVER rows (e.g., 0.5)",
+    )
+    parser.add_argument(
+        "--openai-confidence-scale",
+        choices=("0-1", "1-10"),
+        default="0-1",
+        help="OpenAI confidence prompt scale. 1-10 is normalized back to [0,1] in CSV.",
+    )
+    parser.add_argument(
         "--anthropic-model",
         default=ANTHROPIC_API_MODEL,
         help="Anthropic Messages API model id (default: claude-sonnet-4-6)",
+    )
+    parser.add_argument(
+        "--anthropic-temperature",
+        type=float,
+        default=0.0,
+        help="Anthropic temperature (default: 0.0)",
+    )
+    parser.add_argument(
+        "--anthropic-confidence-scale",
+        choices=("0-1", "1-10"),
+        default="0-1",
+        help="Anthropic confidence scale. 1-10 is normalized back to [0,1] in CSV.",
     )
     parser.add_argument(
         "--anthropic-model-id",
@@ -419,14 +656,43 @@ def main() -> None:
         help="DeepSeek API model id",
     )
     parser.add_argument(
+        "--deepseek-temperature",
+        type=float,
+        default=0.0,
+        help="DeepSeek temperature (default: 0.0)",
+    )
+    parser.add_argument(
+        "--deepseek-confidence-scale",
+        choices=("0-1", "1-10"),
+        default="0-1",
+        help="DeepSeek confidence prompt scale. 1-10 is normalized back to [0,1] in CSV.",
+    )
+    parser.add_argument(
         "--gemini-model",
         default=GEMINI_API_MODEL,
         help="Gemini API model id (default: gemini-2.5-flash)",
     )
     parser.add_argument(
+        "--gemini-temperature",
+        type=float,
+        default=0.0,
+        help="Gemini temperature (default: 0.0)",
+    )
+    parser.add_argument(
+        "--gemini-confidence-scale",
+        choices=("0-1", "1-10"),
+        default="0-1",
+        help="Gemini confidence scale. 1-10 is normalized back to [0,1] in CSV.",
+    )
+    parser.add_argument(
         "--gemini-model-id",
         default=MODELS[3][0],
         help="CSV model id for Gemini rows (default: google/gemini-2.5-flash)",
+    )
+    parser.add_argument(
+        "--skip-openai",
+        action="store_true",
+        help="Do not call OpenAI; OPENAI_API_KEY not required. Use for DeepSeek-only runs.",
     )
     parser.add_argument(
         "--skip-gemini",
@@ -437,6 +703,11 @@ def main() -> None:
         "--skip-anthropic",
         action="store_true",
         help="Do not call Anthropic; CLAUDE_API_KEY not required. Use when credits are depleted; rerun later to append Claude rows.",
+    )
+    parser.add_argument(
+        "--skip-deepseek",
+        action="store_true",
+        help="Do not call DeepSeek; DEEPSEEK_API_KEY not required. Use for OpenAI-only runs.",
     )
     parser.add_argument(
         "--redo-model",
@@ -457,7 +728,11 @@ def main() -> None:
 
     load_dotenv(PROJECT_ROOT / ".env")
 
-    required_keys = ["OPENAI_API_KEY", "DEEPSEEK_API_KEY"]
+    required_keys: list[str] = []
+    if not args.skip_openai:
+        required_keys.append("OPENAI_API_KEY")
+    if not args.skip_deepseek:
+        required_keys.append("DEEPSEEK_API_KEY")
     if not args.skip_anthropic:
         required_keys.append("CLAUDE_API_KEY")
     if not args.skip_gemini:
@@ -477,26 +752,62 @@ def main() -> None:
         models_to_run = [m for m in models_to_run if m[1] != "google"]
     if args.skip_anthropic:
         models_to_run = [m for m in models_to_run if m[1] != "anthropic"]
+    if args.skip_openai:
+        models_to_run = [m for m in models_to_run if m[1] != "openai"]
+    if args.skip_deepseek:
+        models_to_run = [m for m in models_to_run if m[1] != "deepseek"]
     if not models_to_run:
-        print("No models left to run (adjust --skip-gemini / --skip-anthropic).", file=sys.stderr)
+        print(
+            "No models left to run (adjust --skip-openai / --skip-gemini / --skip-anthropic / --skip-deepseek).",
+            file=sys.stderr,
+        )
         sys.exit(1)
+    if args.skip_openai:
+        print("Skipping OpenAI (--skip-openai).", file=sys.stderr)
     if args.skip_gemini:
         print("Skipping Gemini (--skip-gemini).", file=sys.stderr)
     if args.skip_anthropic:
         print("Skipping Anthropic Claude (--skip-anthropic).", file=sys.stderr)
+    if args.skip_deepseek:
+        print("Skipping DeepSeek (--skip-deepseek).", file=sys.stderr)
 
     callers = make_callers(
         args.openai_model,
         args.anthropic_model,
         args.deepseek_model,
         args.gemini_model,
+        args.openai_temperature,
+        args.openai_fever_temperature,
+        args.openai_confidence_scale,
+        args.anthropic_temperature,
+        args.anthropic_confidence_scale,
+        args.deepseek_temperature,
+        args.deepseek_confidence_scale,
+        args.gemini_temperature,
+        args.gemini_confidence_scale,
     )
+
+    popqa_path = args.popqa_input
+    strategy_path = args.strategyqa_input
+    if args.use_conflictqa_subset_csv:
+        popqa_path = args.popqa_input or POPQA_SUBSET_DEFAULT
+        strategy_path = args.strategyqa_input or STRATEGY_SUBSET_DEFAULT
 
     frames = []
     if args.datasets in ("both", "all", "popqa"):
-        frames.append((read_jsonl(POPQA), "conflictqa_popqa"))
+        if popqa_path is not None:
+            if not popqa_path.exists():
+                raise FileNotFoundError(popqa_path)
+            frames.append((read_conflictqa_csv(popqa_path), "conflictqa_popqa"))
+        else:
+            frames.append((read_jsonl(POPQA), "conflictqa_popqa"))
     if args.datasets in ("both", "all", "strategyqa"):
-        frames.append((read_jsonl(STRATEGY), "conflictqa_strategyqa"))
+        if strategy_path is not None:
+            if not strategy_path.exists():
+                raise FileNotFoundError(strategy_path)
+            frames.append((read_conflictqa_csv(strategy_path), "conflictqa_strategyqa"))
+        else:
+            frames.append((read_jsonl(STRATEGY), "conflictqa_strategyqa"))
     if args.datasets in ("all", "fever"):
         if not args.fever_input.exists():
             raise FileNotFoundError(args.fever_input)
@@ -537,6 +848,8 @@ def main() -> None:
     completed = 0
     t0 = time.monotonic()
     csv_writer: IncrementalCsvWriter | None = None
+    split_stem = args.also_split_dataset_csv
+    split_writers: dict[str, IncrementalCsvWriter] = {}
 
     try:
         for base_df, dataset_tag in frames:
@@ -557,7 +870,7 @@ def main() -> None:
                         continue
                     fn = callers[provider]
                     try:
-                        answer, conf = fn(q, refs)
+                        answer, conf = fn(q, refs, dataset_tag)
                         conf = float(max(0.0, min(1.0, conf)))
                         cor = is_correct(answer, gt)
                     except Exception as e:
@@ -582,6 +895,14 @@ def main() -> None:
                     if csv_writer is None:
                         csv_writer = IncrementalCsvWriter(args.out)
                     csv_writer.append_row(rec)
+                    if split_stem is not None:
+                        ds_tag = str(rec.get("dataset", ""))
+                        split_path = conflictqa_split_csv_path(Path(split_stem), ds_tag)
+                        if split_path is not None:
+                            if ds_tag not in split_writers:
+                                split_path.parent.mkdir(parents=True, exist_ok=True)
+                                split_writers[ds_tag] = IncrementalCsvWriter(split_path)
+                            split_writers[ds_tag].append_row(rec)
                     done.add(key)
                     completed += 1
                     pe = args.progress_every
@@ -599,6 +920,8 @@ def main() -> None:
     finally:
         if csv_writer is not None:
             csv_writer.close()
+        for sw in split_writers.values():
+            sw.close()
 
     if completed > 0:
         print(
@@ -625,6 +948,9 @@ def main() -> None:
             "--dataset-c",
             "conflictqa_strategyqa",
         ]
+        ps = (args.plot_file_suffix or "").strip()
+        if ps:
+            cmd.extend(["--file-suffix", ps])
         print("Running:", " ".join(cmd))
         sys.exit(subprocess.call(cmd))
 
