@@ -1,481 +1,481 @@
-model,dataset,original_index,question,answer,confidence,correct,error
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,440,Would Quiet from Metal Gear be a poor hypothetical choice for lecturer at Haub?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,155,Is Noah's Ark an upgrade for Golden Age of Piracy pirates?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,526,Can a Liebherr LTM 11200-9.1 hypothetically lift Mount Emei?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,227,Does Southwest Airlines use bulk carriers?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,250,Does James Watson believe that Africans are inferior to Europeans?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,627,Would a viewer of Monday Night Football be able to catch WWE Raw during commercial breaks?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,507,Do Flat Earthers doubt the existence of Earth's magnetic field?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,680,Does Lupita Nyongo have citizenship in paternal Family of Barack Obama's origin country?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,471,Has spinach been a source of power in a comic movie?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,496,Is a slime mold safe from cerebral palsy?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,434,Was Saint Vincent and the Grenadines named by an Italian explorer?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,445,Would costumes with robes and pointy hats be helpful for Macbeth?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,686,Is a platypus immune from cholera?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,316,Were Greeks essential to crafting Egyptian Lighthouse of Alexandria?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,94,Do mail carriers need multiple uniforms?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,671,Was Christina Aguilera born in the forgotten borough?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,141,Is Central Park Zoo located on an island?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,610,Would the Who concert in international space station be audible?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,450,Can an asteroid be linked with virginity?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,596,Was Florence a Theocracy during Italian Renaissance?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,414,Is Anakin Skywalker from Star Wars associated with the color black?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,378,Could $1 for each 2009 eclipse buy a copy of TIME magazine in 2020?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,529,Is number of stars in Milky Way at least ten times earth's population?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,395,Can actress Danica McKellar skip astronaut education requirements?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,533,Could you watch all of JAG in six months?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,522,Does the Prime Minister of the United Kingdom have poor job security?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,60,Could Amazon afford The Mona Lisa?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,687,Are there bones in an anchovy pizza?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,508,Was story of Jesus inspired by Egyptian myth?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,567,Would an Alfa Romeo vehicle fit inside a barn?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,137,Did Martin Luther believe in Satan?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,115,Does Mercury help detect coronavirus?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,136,Could Barron Trump have lived through the Mexican Revolution?,False,0.095,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,10,"If your skin was turning the color of a zombie, could it be because of nickel?",True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,246,Are any of J.K. Rowling's books in the genre of And Then There Were None?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,339,Is chaff produced by hydropower?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,220,Do people put creatures from the Black Sea on their pizza?,True,0.04,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,265,Is H's most common two letter pair partner a freebie in Wheel of Fortune bonus round?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,491,Has Elon Musk's hairline changed?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,62,Is Thanksgiving sometimes considered a day of mourning?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,348,Is capsaicin associated with cooking?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,83,Will Chick-fil-A hypothetically refuse to sponsor a Pride parade?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,485,Is Issac Newton often associated with a red fruit?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,256,Is it possible that June got its name from mythology?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,651,Would Snowdon mountain be a piece of cake for Tenzing Norgay?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,346,Can Immersion Baptism lead to a death like Jeff Buckley's?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,432,Are there any chives hypothetically good for battling vampires?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,561,Is the letter D influenced by the shape of ancient doors?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,458,Did Demi Lovato's ancestors help turn maize into popcorn?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,431,Could a Diwali celebration feature a crustacean?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,273,Could Quartz be useful to humans if plants died off and there was no oxygen?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,657,Could Bart Simpson have owned comics with The Joker?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,296,"Can you fit every resident of Auburn, New York, in Tropicana Field?",True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,311,Does Marco Rubio have a close relationship with Allah?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,543,Does 2015 have more unlucky Friday's than usual?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,353,Can the Dalai Lama fit in a car?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,267,Can a cell fit inside of a shoebox?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,648,Has Drew Carey outshined Doug Davidson's tenure?,Uncertain,0.05,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,206,Has Aretha Franklin ever collaborated with a suicidal person?,Unclear,0.04,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,396,Can a copy of The Daily Mirror sustain a campfire?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,35,Does a person need to be a parent to become a grandparent?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,254,Is Canon Inc. a Kabushiki gaisha?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,64,Does a mongoose have natural camouflage for desert?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,692,"After viewing the Mona Lisa, could you get lunch nearby on foot?",True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,677,Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,150,Is Nicole Kidman ideal choice to play Psylocke based on height and weight?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,449,Would a Yeti be likely to have prehensile limbs?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,120,Is Fiat Chrysler gaining a new overall corporate identity?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,601,Will Conan the Barbarian hypothetically last a short time inside of Call of Duty?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,546,Does Kenny G hold the qualifications to be a tax collector?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,342,Do many fans of J.K Rowling know who Alan Rickman is?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,216,Has the Holy Grail been featured in at least five films?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,162,Does the Red Sea have biblical significance?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,58,Does coding rely on Boolean algebra characters?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,571,Can E6000 cure before a hoverboard finishes the Daytona 500?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,472,Can the majority of vowels be typed on the first line of a QWERTY keyboard?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,264,Could SNL be why Jenny McCarthy does not get along with her cousin?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,691,Could largest asteroid crush a whole city?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,359,Are kayaks used at the summit of Mount Everest?,False,0.095,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,585,Would a dog easily notice ammonia?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,230,Is euphoria associated with drug addiction?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,393,Would a body builder prefer an elk burger over a beef burger?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,179,Is it normal for people to sing when the YMCA is mentioned?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,509,Can you see live harbor seals in Washington DC?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,364,Has Burger King  contributed to a decrease in need for snowshoes?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,182,Did Rumi spend his time in a state of euphoria?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,274,Is the Asian black bear multicolored?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,510,Are all the elements plants need for photosynthesis present in atmosphere of Mars?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,184,Are pancakes a bad snack for cats?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,283,Would most grand masters know what the French Defense is?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,653,Did the lead singer of Led Zepplin ever perform with Ernest Chataway?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,148,Does the Boy Who Cried Wolf hypothetically have reason to pray to Pan?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,219,Is Nine Inch Nails's lead singer associated with David Lynch?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,661,Are swastikas used in the most common religion in India?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,Can a human heart last from NYC to Raleigh NC by Toyota Hiux?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,306,Is electricity necessary to balance an account in Microsoft Excel?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,518,Was Subway involved in a pedophilia scandal?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,447,Is Christianity better for global warming than Satanism?,True,0.04,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,261,Are the names of The Powerpuff Girls alliterative?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,659,Do sun bears stay active during winter?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,345,Is it safe to share silverware with an HIV positive person?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,91,Is unanimously elected president's birthday a break for mail carriers?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,441,Could morphine cure HIV?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,299,Is B's place in alphabet same as Prince Harry's birth order?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,409,Is March named after Jupiter's son in Roman mythology?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,271,Was Dioskourides a lapidary?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,248,Is Drew Carey important to the history of wrestling?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,693,Is a fever cured by listening to a cowbell?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,599,Could a fan of the Botany Swarm vote for John Key?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,502,Would a vegetarian be able to eat something at Chick-fil-A?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?",True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,131,Does the United States Department of Education oversee services benefiting undocumented migrants?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,566,Gandalf hypothetically defeats Rincewind in a wizard battle?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,667,Would you be more likely to die of hypothermia in New York than Florida?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,28,Are there winged statuettes in the home of the creator of Law & Order?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,587,Did Clark Gable marry more women once than Richard Burton?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,46,Has cannabis been a big influence in rap music genre?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,276,Are pirate lieutenants like navy lieutenants?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,532,Do silicone suits make judo difficult?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,203,Are any minor league baseball teams named after felines?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,96,Would you be likely to see storks at a baby shower?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,192,Would Arnold Schwarzenegger have a hard time picking up a red fox in 1967?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,15,Was the Louisiana Purchase made with bitcoin?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,343,Is there a popular Broadway character who is a missionary?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,660,Does walking across Amazonas put a person's life at risk?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,144,Did brother of Goofy creator's employer commit an excommunicable offense?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,72,Does chlorine inhibit photosynthesis?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,352,Is watermelon safe for people with a tricarboxylic acid allergy?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,608,Can the Supreme Court of Canada fight a Lucha trios match?,False,0.095,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,376,Did Brad Peyton need to know about seismology?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,617,Did Kurt Cobain's music genre survive after his death?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,390,Are gorillas closely related to humans?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,14,Would a week be enough time to watch every episode of Ugly Betty?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,187,Did the death of Helen Palmer have a significant effect on Dr. Seuss?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,240,Is pickled cucumber ever red?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,108,Is Brooklyn known for its bread products?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,542,Is Tony Bennett's middle name shared by a former UFC champion?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,650,Would 1996 leap year baby technically be 1 year old in 2000?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,20,Do manta rays live in water above the safe temperature for cold food storage?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,512,Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?,False,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,628,Would Bobby Jindal's high school mascot eat kibble?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,42,Can you find Bob Marley's face in most smoke shops?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,406,Does Ronda Rousey avoid BBQ restaraunts?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,537,Is Poseidon similar to the god Vulcan?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,457,Is Pearl Harbor the mythical home of a shark goddess?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,181,Is cactus fruit an important menu item for a restaurant based on Cuauhtémoc?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,505,Is honey associated with queens?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,498,Is an Eastern chipmunk likely to die before seeing two leap years?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,403,Have any murderers outlasted Kane's Royal Rumble record?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,218,Was King Kong climbing at a higher altitude than Eiffel Tower visitors?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,49,Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,84,Does Evander Holyfield eat pork products?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,185,Is there a popular Disney character made from living ice?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,92,Could a Bengal cat hypothetically best Javier Sotomayor's record?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,349,Would a German Shepherd be welcome in an airport?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,672,Would ramen be bad for someone with heart failure?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,633,Is it common to see frost during some college commencements?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,243,Could every citizen of Samoa send a letter to a unique JPMorgan Chase employee?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,314,Will twenty pea pods contents cover entire chess board?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,663,Does Final Fantasy VI require electricity to play?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,658,Can a goat be used for one of the ingredients in French toast?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,133,Did Christopher Columbus condone multiple deadly sins?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,562,Did Julio Gonzalez like acetylene?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,165,Would someone buying crickets be likely to own pets?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,456,Can paresthesia be caused by a white pigment?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,189,Can someone sell their time through the Toronto Star?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,583,Are there five different single-digit Fibonacci numbers?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,678,Can French Toast hypothetically kill a Lannister?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,540,Can Aerosmith legally drive in the carpool lane?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,497,Would the owners of the company Peter Griffin works for need barley?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,535,Was the Japanese street aesthetic once illuminated by noble gasses?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,665,Is Jennifer Lawrence's middle name similar to the name of a Scorsese collaborator?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,572,Would a recruit for the United States Marine Corps be turned away for self harm?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,607,Is Batman (1989 film) likely to be shown on flight from NY to Kansas City?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,554,Would you find a tibia beside parsley on a holiday plate?,False,0.095,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,499,Did Holy Land belong to Adamu's tribe?,Unsure,0.04,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,669,Does  Lionel Richie believe in holistic medicine?,Unclear,0.04,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,51,Do onions have a form that resembles the inside of a tree?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,664,Would a person with Anorexia nervosa be more likely to break a bone than a regular person?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,467,Are Citizens of Bern Switzerland are descendants of Genghis Khan?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,143,Could you go to New York Public Library and the Six Flags Great Escape in the same day?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,459,Are Scottish people Albidosi?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,44,Does Hades appear in a Disney Channel musical movie?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,552,Do any video games about the end of civilization have slot machines?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,128,Do hyenas appear in a Broadway musical?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,5,Would the top of Mount Fuji stick out of the Sea of Japan?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,33,Has Oscar Wilde's most famous character ever been in an Eva Green project?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,675,Were paparazzi involved in the death of a member of the royal family?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,176,Would the author of Little Women have remembered the ratification of the 13th Amendment?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,258,Can nitric acid break the Louvre?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,536,Does it seem like the Gorillaz is composed of more members than they have?,True,0.08499999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,281,Is it possible for biologist Rachel Carson to have flown to the moon?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,638,Are banana trees used by judges for maintaining order?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,175,Is material from an aloe plant sometimes enclosed in petroleum-derived products?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,388,Was Krishna skilled at using the bow?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,418,Can a grey seal swim in the same water as the subject of Moby Dick?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,205,Would characters in Harry Potter and the Philosopher's Stone be persecuted as pagans?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,474,Are sables related to wolverines?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,597,Is Samsung accountable to shareholders?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,618,Were there eight humans on Noah's Ark?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,511,Is pi in excess of square root of 5?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,231,Does Billy Graham support agnosticism?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,559,Are people more likely than normal to get sunburn at Burning Man?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,209,Was Surfing popular when pogs came out?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,652,Can you watch Rick and Morty in Mariana Trench?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,22,Could ten gallons of seawater crush a six year old?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,576,Would a fungal life-form be threatened by a pigment from copper?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,225,Could Edward Snowden join MENSA?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,286,Did Holy Saturday 2019 have special significance to pot smokers?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,170,Did Christopher Columbus break the fifth commandment in Christianity?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,112,Is Cholera alive?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,558,Could B be mistaken for an Arabic numeral?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,229,Would Robert Wadlow tower over a German Shepherd?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,36,Did Van Gogh suffer from a mental disorder?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,604,Was John Gall from same city as Stanford University?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,448,Were mollusks an ingredient in the color purple?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,237,Would vegans consider chickpeas for a tuna substitute?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,105,Did James Watson's partner in studying the double helix outlive him?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,481,Has type of political association Pompey had with Caesar influenced reality TV?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,333,Would a honey badger fit inside an oven?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,446,Was Lord Voldemort taught by Professor Dumbledore?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,367,Are saltwater crocodiles related to alligators?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,95,Would Methuselah hypothetically hold a record in the Common Era?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,212,Can first letter row of QWERTY keyboard spell a palindrome?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,168,Does ABBA have similar gender configuration to The Mamas & The Papas?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,492,Does Nintendo's link ever see an astronomer?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,621,Could Cosmic Girls play League of Legends alone?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,591,Is Black Lives Matter connected with capsaicin?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,113,Would James Cotton's instrument be too strident for a smooth jazz band?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,45,Could someone theoretically use an armadillo as a shield?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,411,Do flying fish have good eyesight?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,525,Does the word swastika have meaning in sanskrit?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,101,Is the rise of agriculture attributed to rivers?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,484,Would eliminating competition in the Japanese bulk carrier market be profitable for a steel company?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,495,Is Disney associated with Los Angeles County?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,646,Would Şerafeddin Sabuncuoğlu have eaten Börek?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,241,Does welding with acetylene simulate the temperature of a star?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,548,Karachi was a part of Alexander the Great's success?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,75,Did compact discs make computer gaming more popular?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,575,Has Freemasonry been represented on the Moon?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,180,Could amoebas have played a part in the Black Death?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,174,Could the children of Greek hero Jason hypothetically fill a polo team?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,319,Is a pottery kiln inappropriate for use with glass blowing?,False,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,593,Could Maroon 5 have hypothetically held a concert at Roman Colosseum?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,322,Can an art dealer buy Boeing 737-800 with a Da Vinci painting?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,623,Can an adult human skull hypothetically pass through the birth canal?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,358,Is it normal to find parsley in multiple sections of the grocery store?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,429,Are fossil fuels reducing jobs in the Gulf of Mexico?,Uncertain,0.05,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,473,Are some Brazilian Navy ships built in Britian?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,338,Is Mark Cuban able to visit Northern Mariana Islands without a passport?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,130,Are there people who are men who experience menstruation?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,581,Are Donkeys part of Christmas celebrations?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,275,Does Homer Simpson need two hands worth of fingers to count to 5?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,93,Did Easy Rider make a profit at the theater when it was released?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,527,Would 7 zucchini's satisfy potassium USDA daily recommendation?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,629,Would a honey badger's dentures be different from a wolverine's?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,615,Would a nickel fit inside a koala pouch?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,372,Can a minor replicate the double-slit experiment?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,524,Is hanging a viable execution method on a ship at sea?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,625,Is Eid al-Fitr holiday inappropriate to watch entire US Office?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,235,Could the Eiffel Tower be completely submerged at the Arctic Ocean's deepest point?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,539,Could a wandering albatross fly from Bucharest to New York City without a rest?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,470,Does Ludacris have Greek heritage?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,469,Is Metallica protective over their music?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,127,Can an emu chase a bogan?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,289,Are right wing Amreicans opposed to marxism?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,410,Did Ice make people rich?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,234,Would Kurt Cobain have benefited from Project Semicolon?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,684,Is the tibia required for floor exercises?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,167,Is Mozambique Drill an easy shot for United States Army Ranger?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,295,Would Library of Alexandria need less shelf space than Library of Congress?,True,0.08499999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,545,Is a felony jury enough people for a Bunco game?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,6,Is there a warthog on Broadway?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,85,Can a quarter fit inside of a human kidney?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,207,Would nickel boil in the outer core of the earth?,True,0.08499999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,579,Do people watching Coen brothers films in Guinea Bissau need subtitles?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,634,Could Eddie Murphy's children hypothetically fill a basketball court by themselves?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,438,Did any cultures associate celery with death?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,616,"When the shuttle Columbia 11 landed, was it the season for Christmas carols?",True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,288,Can a sea turtle play tennis using a tennis racket?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,8,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,580,Is Great Pyramid of Giza the last wonder of its kind?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,4,Is Dustin Hoffman one of the B'nei Yisrael?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,577,Do the telescopes at Goldstone Deep Space Communications Complex work the night shift?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,164,Is Bugs Bunny known for carrying a root vegetable around with him?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,461,NATO doesn't recognize double triangle flag countries?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,16,Is double duty an incorrect phrase for host of Dancing With The Stars?,False,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,478,Could the leader of Heaven's Gate save images in JPEG format?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,341,Is Final Fantasy VI closer to beginning than end of its franchise?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,298,Was Darth Vader monogamous?,Unclear,0.05,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,13,Did any country in Portuguese Colonial War share Switzerlands role in WWII?,False,0.06999999999999999,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,513,Would Doctor Strange like the Pittsburgh Steelers logo?,True,0.03,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,263,Was Mozart accused of stealing from Richard Wagner?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,291,Did Barack Obama participate in the Reformation?,False,0.1,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,368,Did Rosalind Franklin contribute to work that led to Whole Genome Sequencing?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,103,Were the Great Pyramids built by a theocratic government?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,135,4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,287,Is shoe soup innocuous?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,3,Is average number of peas in a pod enough commas for a billion?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,66,Do human sacrums have more fused vertebrae than an Alaskan Malamute?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,111,Is menthol associated with Christmas?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,565,Are coopers required in the beverage industry?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,643,Would a kaffir lime be a good ingredient for making a candle?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,178,Can Hulk's alter ego explain atomic events?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,41,Could you read The Atlantic magazine during the Games of the XXII Olympiad?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,560,Do you often hear Marco Polo's name shouted near water?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,391,Do Koalas prefer Eucalyptus over meat?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,453,Are red legs a sign of failing health in those with Anorexia Nervosa?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,534,"In isopropyl alcohol, is the solubility of salt low?",True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,644,Does the art from Family Guy look a lot like the art in American Dad?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,89,Does the book Revolutionary Road give a glimpse at life in a suburb?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,34,Do frogs feel disgust?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,488,Does a Disney princess on Broadway have red hair?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,541,Do you need both hot and cold water to peel a tomato?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,685,Is Europa linked to Viennese waltzes?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,487,Would 1943-S penny be good for making silverware?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,239,Was Achilles a direct descendent of Gaia?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,226,Were French people involved in the American Civil War?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,523,"If you're pregnant, might you be recommended ginger?",True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,156,Has Nikola Tesla's name inspired multiple brands?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,351,Can printing books in kanji instead of the Roman alphabet save trees?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,573,If it socially acceptable to wear an icon depicting crucifixion?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,564,Does an individual oceanographer study many sciences?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,196,Was Ariana Grande inspired by Imogen Heap?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,419,Does the name C-SPAN refer to a form of telecommunications that utilizes outer space?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,516,Did Subway have a sex offender as a spokesperson?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,383,Would Dave Chappelle pray over a Quran?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,107,Can children be hurt by jalapeno peppers?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,428,Does having lip piercings lead to more expensive dental bills?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,61,Did Sartre write a play about Hell?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,191,Did children read Harry Potter and the Philosopher's Stone during the Albanian Civil War?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,88,Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia University?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,344,Are eagles and young bears both used as labels for skills-training youth groups?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,90,Does Buddy The Elf know anyone who works in publishing?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,304,Has the creator of Futurama lived in multiple centuries?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,215,Did any Golden Globe winners attend John Kerry's alma mater?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,305,Did Pink Floyd have a song about the French Riviera?,False,0.08,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,317,Would drinking a glass of lemonade provide Vitamin C?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,477,Would Kylee Jenner ask for no cream in her coffee?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,681,Is the tongue part of a creature's head?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,620,Is anyone at the Last Supper celebrated in Islam?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,670,Were the first missionaries required to attend mass on Sundays?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,682,Does Coast to Coast AM have more longevity than the Rush Limbaugh show?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,194,Did any of Maya Angelou's children follow in her footsteps?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,159,Would a tool used for Martin Luther's Reformation opening salvo aid in a crucifixion?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,104,Does the central processing unit usually have a dedicated fan?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,331,Is it safe to eat kidney?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,169,Has Justin Timberlake ever written a song about Britney Spears?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,463,Does table tennis use prime numbers?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,280,Did Confederate States Army influence West Point fashion?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,True,0.02,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,337,Is basil safe from Hypervitaminosis D?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,290,Can Stone Cold Steve Austin apply his finisher to a mule deer?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,557,Can COVID-19 spread to maritime pilots?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,426,Does the Taco Bell kitchen contain cinnamon?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,360,Is Christopher Nolan indebted to Bob Kane?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,277,Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004?,False,0.06,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,318,Are human footprints absent from Mount Sharp?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,223,Does Hanuman have some of the same duties as Athena?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,213,Have any members of the 2020 British royal family allegedly committed a felony?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,336,Is Elijah part of a Jewish holiday?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,551,Can lettuce result in spontaneous abortion?,False,0.09,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,425,Did Malcolm X avoid eating ham?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,356,Would an aerodynamic cactus benefit from more frequently closed stomata?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,606,Did Gladiator's weapon of choice require less hands than Soul Calibur's Faust?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,151,Is there historic graffiti on Alcatraz?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,355,Does Hammurabi's Code violate Christians Golden Rule?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,149,Is a paraplegic suitable for conducting an orchestra?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,422,Can Poland Spring make money in the Sahara?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,382,Is a jellyfish safe from atherosclerosis?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,71,Does Amtrak operate four wheel vehicles?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,269,Can Aerosmith fit in a 2020 Mitsubishi Outlander?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,556,Would Michael Phelps be good at pearl hunting?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,500,Was John George Bice's birthplace near Cornwall?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,160,Will Ahura Mazda have to look down to see Abaddon's dwelling??,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,423,Could the Powepuff Girls make the background to the Azerbaijani flag?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,420,Are flag of Gabon colors found in rainbow?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,584,Would half muggle wizards fear Lord Voldemort?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,504,Could chives be mistaken for grass?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,132,Would Richard Dawkins hypothetically refuse an offering of the Last rites?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,493,Does the swastika have positive uses?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,78,Are there enough Jonny Cash records in the world to give one to each French citizen?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,310,Is there radiation where Nikola Tesla once worked?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,23,Could a giant squid fit aboard the deck of the titanic?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,614,Does Masaharu Morimoto rely on glutamic acid?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,210,Can Centurylink max internet plan upload 1000GB in a fortnight?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,253,Can you hide a pet macaque under your desk?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,39,"At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,Unclear,0.03,0,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,193,Could an NBA game be completed within the span of the Six-Day War?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,43,Is Britney Spears' breakdown attributed to bipolar disorder?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,1,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,228,Is accountant a difficult profession for a person suffering from Dyscalculia?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,374,Would the crew of Apollo 15 have difficulty riding a unicycle?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,574,Was the man who played the male lead in Mrs. Doubtfire known for his humour?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,476,Does Nicole Kidman know any Scientologists?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,570,Does Nigella Lawson care about solubility?,True,0.03,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,257,Does autopilot rely on fossil fuels?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,475,Was Noah concerned with buoyancy?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,233,Could Goofy have counted nine planets in his first year?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,19,Can you write a whole Haiku in a single tweet?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,464,Can you conduct surveillance from a teddy bear?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,598,Is Alan Alda old enough to have fought in the Vietnam War?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,221,Are paratroopers good at mountain rescue?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,696,Are amoebas safe from breast cancer?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,163,"Would moon cakes be easy to find in Chinatown, Manhattan?",True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,386,Does Düsseldorf have only a small number of smoggy days each year?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,272,Was England directly involved in the Arab-Israeli conflict?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,589,Can jackfruit be used as a weapon?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,586,Would the yearly precipitation on Snowdon submerge an upright bowling pin?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,483,Are some chiropractic manipulations dangerous?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,460,Was Los Angeles Memorial Sports Arena hypothetically inadequate for hosting Coachella?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,106,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,683,Is the E.T. the Extra-Terrestrial Atari Landfill story an urban legend?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,635,Did Sony definitively win the video game war against Sega?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,538,Do depressed people travel to the Golden Gate Bridge often?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,482,Paleography hypothetically helps to understand Cthulhu?,True,0.05,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,676,Were karaoke and the turtle power tiller patented in the same country?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,553,Would a black widow woman have use for peaches?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,152,Did Polar Bears roam around in Ancient Greece?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,48,Does a Generation Y member satisfy NYPD police officer age requirement?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,76,Do storks need golden toads to survive?,False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,517,Is there a Yeti associated with Disney theme parks?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,381,Is the Riksdag a political entity in Scandinavia?,True,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,452,"In teenagers and young adults with depression, are SSRI medications less safe than they are for adults?",True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,590,Do the James Bond and Doctor Who series have a similarity in format?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,177,Does US brand Nice depend on Western honey bee?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,242,Would Jean Harris's victim have avoided lentils?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,408,Can furniture be made of hair?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,416,Is Sea World hazardous to leopard seal's health?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,443,Does Lorem ipsum backwards fail to demonstrate alliteration?,False,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,442,Is an ammonia fighting cleaner good for pet owners?,True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,555,"At Christmastime, do some films remind us that groundhog day is approaching?",True,0.06,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,380,Should a Celiac sufferer avoid spaghetti?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,433,"If you were at an Apple store, would most of the computers be running Ubuntu?",False,0.095,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,300,Could Ryan Crouser throw a bengal fox with ease?,True,0.06999999999999999,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,622,Does Super Mario require electricity to play?,True,0.09,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,600,Were Jackson Pollock's parents not required to say The Pledge of Allegiance as children?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,528,Can second row of QWERTY keyboard spell Abdastartus's kingdom?,True,0.08,1,
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,303,Are quadrupeds represented on Chinese calendar?,True,0.09,1,
+model,dataset,original_index,question,answer,confidence,correct,error,ling_conf_level,ling_conf_score,ling_markers_strong,ling_markers_medium,ling_markers_weak
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,440,Would Quiet from Metal Gear be a poor hypothetical choice for lecturer at Haub?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,155,Is Noah's Ark an upgrade for Golden Age of Piracy pirates?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,526,Can a Liebherr LTM 11200-9.1 hypothetically lift Mount Emei?,False,0.095,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,227,Does Southwest Airlines use bulk carriers?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,250,Does James Watson believe that Africans are inferior to Europeans?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,627,Would a viewer of Monday Night Football be able to catch WWE Raw during commercial breaks?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,507,Do Flat Earthers doubt the existence of Earth's magnetic field?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,680,Does Lupita Nyongo have citizenship in paternal Family of Barack Obama's origin country?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,471,Has spinach been a source of power in a comic movie?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,496,Is a slime mold safe from cerebral palsy?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,434,Was Saint Vincent and the Grenadines named by an Italian explorer?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,445,Would costumes with robes and pointy hats be helpful for Macbeth?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,686,Is a platypus immune from cholera?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,316,Were Greeks essential to crafting Egyptian Lighthouse of Alexandria?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,94,Do mail carriers need multiple uniforms?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,671,Was Christina Aguilera born in the forgotten borough?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,141,Is Central Park Zoo located on an island?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,610,Would the Who concert in international space station be audible?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,450,Can an asteroid be linked with virginity?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,596,Was Florence a Theocracy during Italian Renaissance?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,414,Is Anakin Skywalker from Star Wars associated with the color black?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,378,Could $1 for each 2009 eclipse buy a copy of TIME magazine in 2020?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,529,Is number of stars in Milky Way at least ten times earth's population?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,395,Can actress Danica McKellar skip astronaut education requirements?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,533,Could you watch all of JAG in six months?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,522,Does the Prime Minister of the United Kingdom have poor job security?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,60,Could Amazon afford The Mona Lisa?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,687,Are there bones in an anchovy pizza?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,508,Was story of Jesus inspired by Egyptian myth?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,567,Would an Alfa Romeo vehicle fit inside a barn?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,137,Did Martin Luther believe in Satan?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,115,Does Mercury help detect coronavirus?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,136,Could Barron Trump have lived through the Mexican Revolution?,False,0.095,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,10,"If your skin was turning the color of a zombie, could it be because of nickel?",True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,246,Are any of J.K. Rowling's books in the genre of And Then There Were None?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,339,Is chaff produced by hydropower?,False,0.095,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,220,Do people put creatures from the Black Sea on their pizza?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,265,Is H's most common two letter pair partner a freebie in Wheel of Fortune bonus round?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,491,Has Elon Musk's hairline changed?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,62,Is Thanksgiving sometimes considered a day of mourning?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,348,Is capsaicin associated with cooking?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,83,Will Chick-fil-A hypothetically refuse to sponsor a Pride parade?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,485,Is Issac Newton often associated with a red fruit?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,256,Is it possible that June got its name from mythology?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,651,Would Snowdon mountain be a piece of cake for Tenzing Norgay?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,346,Can Immersion Baptism lead to a death like Jeff Buckley's?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,432,Are there any chives hypothetically good for battling vampires?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,561,Is the letter D influenced by the shape of ancient doors?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,458,Did Demi Lovato's ancestors help turn maize into popcorn?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,431,Could a Diwali celebration feature a crustacean?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,273,Could Quartz be useful to humans if plants died off and there was no oxygen?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,657,Could Bart Simpson have owned comics with The Joker?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,296,"Can you fit every resident of Auburn, New York, in Tropicana Field?",True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,311,Does Marco Rubio have a close relationship with Allah?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,543,Does 2015 have more unlucky Friday's than usual?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,353,Can the Dalai Lama fit in a car?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,267,Can a cell fit inside of a shoebox?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,648,Has Drew Carey outshined Doug Davidson's tenure?,Unclear,0.04,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,206,Has Aretha Franklin ever collaborated with a suicidal person?,Unknown,0.03,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,396,Can a copy of The Daily Mirror sustain a campfire?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,35,Does a person need to be a parent to become a grandparent?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,254,Is Canon Inc. a Kabushiki gaisha?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,64,Does a mongoose have natural camouflage for desert?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,692,"After viewing the Mona Lisa, could you get lunch nearby on foot?",True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,677,Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,150,Is Nicole Kidman ideal choice to play Psylocke based on height and weight?,False,0.06,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,449,Would a Yeti be likely to have prehensile limbs?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,120,Is Fiat Chrysler gaining a new overall corporate identity?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,601,Will Conan the Barbarian hypothetically last a short time inside of Call of Duty?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,546,Does Kenny G hold the qualifications to be a tax collector?,False,0.03,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,342,Do many fans of J.K Rowling know who Alan Rickman is?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,216,Has the Holy Grail been featured in at least five films?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,162,Does the Red Sea have biblical significance?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,58,Does coding rely on Boolean algebra characters?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,571,Can E6000 cure before a hoverboard finishes the Daytona 500?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,472,Can the majority of vowels be typed on the first line of a QWERTY keyboard?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,264,Could SNL be why Jenny McCarthy does not get along with her cousin?,False,0.04,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,691,Could largest asteroid crush a whole city?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,359,Are kayaks used at the summit of Mount Everest?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,585,Would a dog easily notice ammonia?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,230,Is euphoria associated with drug addiction?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,393,Would a body builder prefer an elk burger over a beef burger?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,179,Is it normal for people to sing when the YMCA is mentioned?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,509,Can you see live harbor seals in Washington DC?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,364,Has Burger King  contributed to a decrease in need for snowshoes?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,182,Did Rumi spend his time in a state of euphoria?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,274,Is the Asian black bear multicolored?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,510,Are all the elements plants need for photosynthesis present in atmosphere of Mars?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,184,Are pancakes a bad snack for cats?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,283,Would most grand masters know what the French Defense is?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,653,Did the lead singer of Led Zepplin ever perform with Ernest Chataway?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,148,Does the Boy Who Cried Wolf hypothetically have reason to pray to Pan?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,219,Is Nine Inch Nails's lead singer associated with David Lynch?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,661,Are swastikas used in the most common religion in India?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,Can a human heart last from NYC to Raleigh NC by Toyota Hiux?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,306,Is electricity necessary to balance an account in Microsoft Excel?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,518,Was Subway involved in a pedophilia scandal?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,447,Is Christianity better for global warming than Satanism?,True,0.03,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,261,Are the names of The Powerpuff Girls alliterative?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,659,Do sun bears stay active during winter?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,345,Is it safe to share silverware with an HIV positive person?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,91,Is unanimously elected president's birthday a break for mail carriers?,False,0.06,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,441,Could morphine cure HIV?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,299,Is B's place in alphabet same as Prince Harry's birth order?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,409,Is March named after Jupiter's son in Roman mythology?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,271,Was Dioskourides a lapidary?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,248,Is Drew Carey important to the history of wrestling?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,693,Is a fever cured by listening to a cowbell?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,599,Could a fan of the Botany Swarm vote for John Key?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,502,Would a vegetarian be able to eat something at Chick-fil-A?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?",True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,131,Does the United States Department of Education oversee services benefiting undocumented migrants?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,566,Gandalf hypothetically defeats Rincewind in a wizard battle?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,667,Would you be more likely to die of hypothermia in New York than Florida?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,28,Are there winged statuettes in the home of the creator of Law & Order?,True,0.04,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,587,Did Clark Gable marry more women once than Richard Burton?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,46,Has cannabis been a big influence in rap music genre?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,276,Are pirate lieutenants like navy lieutenants?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,532,Do silicone suits make judo difficult?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,203,Are any minor league baseball teams named after felines?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,96,Would you be likely to see storks at a baby shower?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,192,Would Arnold Schwarzenegger have a hard time picking up a red fox in 1967?,False,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,15,Was the Louisiana Purchase made with bitcoin?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,343,Is there a popular Broadway character who is a missionary?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,660,Does walking across Amazonas put a person's life at risk?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,144,Did brother of Goofy creator's employer commit an excommunicable offense?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,72,Does chlorine inhibit photosynthesis?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,352,Is watermelon safe for people with a tricarboxylic acid allergy?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,608,Can the Supreme Court of Canada fight a Lucha trios match?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,376,Did Brad Peyton need to know about seismology?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,617,Did Kurt Cobain's music genre survive after his death?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,390,Are gorillas closely related to humans?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,14,Would a week be enough time to watch every episode of Ugly Betty?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,187,Did the death of Helen Palmer have a significant effect on Dr. Seuss?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,240,Is pickled cucumber ever red?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,108,Is Brooklyn known for its bread products?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,542,Is Tony Bennett's middle name shared by a former UFC champion?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,650,Would 1996 leap year baby technically be 1 year old in 2000?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,20,Do manta rays live in water above the safe temperature for cold food storage?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,512,Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?,False,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,628,Would Bobby Jindal's high school mascot eat kibble?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,42,Can you find Bob Marley's face in most smoke shops?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,406,Does Ronda Rousey avoid BBQ restaraunts?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,537,Is Poseidon similar to the god Vulcan?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,457,Is Pearl Harbor the mythical home of a shark goddess?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,181,Is cactus fruit an important menu item for a restaurant based on Cuauhtémoc?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,505,Is honey associated with queens?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,498,Is an Eastern chipmunk likely to die before seeing two leap years?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,403,Have any murderers outlasted Kane's Royal Rumble record?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,218,Was King Kong climbing at a higher altitude than Eiffel Tower visitors?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,49,Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,84,Does Evander Holyfield eat pork products?,True,0.04,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,185,Is there a popular Disney character made from living ice?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,92,Could a Bengal cat hypothetically best Javier Sotomayor's record?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,349,Would a German Shepherd be welcome in an airport?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,672,Would ramen be bad for someone with heart failure?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,633,Is it common to see frost during some college commencements?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,243,Could every citizen of Samoa send a letter to a unique JPMorgan Chase employee?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,314,Will twenty pea pods contents cover entire chess board?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,663,Does Final Fantasy VI require electricity to play?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,658,Can a goat be used for one of the ingredients in French toast?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,133,Did Christopher Columbus condone multiple deadly sins?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,562,Did Julio Gonzalez like acetylene?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,165,Would someone buying crickets be likely to own pets?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,456,Can paresthesia be caused by a white pigment?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,189,Can someone sell their time through the Toronto Star?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,583,Are there five different single-digit Fibonacci numbers?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,678,Can French Toast hypothetically kill a Lannister?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,False,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,540,Can Aerosmith legally drive in the carpool lane?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,497,Would the owners of the company Peter Griffin works for need barley?,False,0.06,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,535,Was the Japanese street aesthetic once illuminated by noble gasses?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,665,Is Jennifer Lawrence's middle name similar to the name of a Scorsese collaborator?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,572,Would a recruit for the United States Marine Corps be turned away for self harm?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,607,Is Batman (1989 film) likely to be shown on flight from NY to Kansas City?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,554,Would you find a tibia beside parsley on a holiday plate?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,499,Did Holy Land belong to Adamu's tribe?,Unknown,0.04,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,669,Does  Lionel Richie believe in holistic medicine?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,51,Do onions have a form that resembles the inside of a tree?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,664,Would a person with Anorexia nervosa be more likely to break a bone than a regular person?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,467,Are Citizens of Bern Switzerland are descendants of Genghis Khan?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,143,Could you go to New York Public Library and the Six Flags Great Escape in the same day?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,459,Are Scottish people Albidosi?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,44,Does Hades appear in a Disney Channel musical movie?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,552,Do any video games about the end of civilization have slot machines?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,128,Do hyenas appear in a Broadway musical?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,5,Would the top of Mount Fuji stick out of the Sea of Japan?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,33,Has Oscar Wilde's most famous character ever been in an Eva Green project?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,675,Were paparazzi involved in the death of a member of the royal family?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,176,Would the author of Little Women have remembered the ratification of the 13th Amendment?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,258,Can nitric acid break the Louvre?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,536,Does it seem like the Gorillaz is composed of more members than they have?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,281,Is it possible for biologist Rachel Carson to have flown to the moon?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,638,Are banana trees used by judges for maintaining order?,False,0.099,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,175,Is material from an aloe plant sometimes enclosed in petroleum-derived products?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,388,Was Krishna skilled at using the bow?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,418,Can a grey seal swim in the same water as the subject of Moby Dick?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,205,Would characters in Harry Potter and the Philosopher's Stone be persecuted as pagans?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,474,Are sables related to wolverines?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,597,Is Samsung accountable to shareholders?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,618,Were there eight humans on Noah's Ark?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,511,Is pi in excess of square root of 5?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,231,Does Billy Graham support agnosticism?,False,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,559,Are people more likely than normal to get sunburn at Burning Man?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,209,Was Surfing popular when pogs came out?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,652,Can you watch Rick and Morty in Mariana Trench?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,22,Could ten gallons of seawater crush a six year old?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,576,Would a fungal life-form be threatened by a pigment from copper?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,225,Could Edward Snowden join MENSA?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,286,Did Holy Saturday 2019 have special significance to pot smokers?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,170,Did Christopher Columbus break the fifth commandment in Christianity?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,112,Is Cholera alive?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,558,Could B be mistaken for an Arabic numeral?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,229,Would Robert Wadlow tower over a German Shepherd?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,36,Did Van Gogh suffer from a mental disorder?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,604,Was John Gall from same city as Stanford University?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,448,Were mollusks an ingredient in the color purple?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,237,Would vegans consider chickpeas for a tuna substitute?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,105,Did James Watson's partner in studying the double helix outlive him?,True,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,481,Has type of political association Pompey had with Caesar influenced reality TV?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,333,Would a honey badger fit inside an oven?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,446,Was Lord Voldemort taught by Professor Dumbledore?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,367,Are saltwater crocodiles related to alligators?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,95,Would Methuselah hypothetically hold a record in the Common Era?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,212,Can first letter row of QWERTY keyboard spell a palindrome?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,168,Does ABBA have similar gender configuration to The Mamas & The Papas?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,492,Does Nintendo's link ever see an astronomer?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,621,Could Cosmic Girls play League of Legends alone?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,591,Is Black Lives Matter connected with capsaicin?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,113,Would James Cotton's instrument be too strident for a smooth jazz band?,True,0.08499999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,45,Could someone theoretically use an armadillo as a shield?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,411,Do flying fish have good eyesight?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,525,Does the word swastika have meaning in sanskrit?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,101,Is the rise of agriculture attributed to rivers?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,484,Would eliminating competition in the Japanese bulk carrier market be profitable for a steel company?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,495,Is Disney associated with Los Angeles County?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,646,Would Şerafeddin Sabuncuoğlu have eaten Börek?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,241,Does welding with acetylene simulate the temperature of a star?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,548,Karachi was a part of Alexander the Great's success?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,75,Did compact discs make computer gaming more popular?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,575,Has Freemasonry been represented on the Moon?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,180,Could amoebas have played a part in the Black Death?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,174,Could the children of Greek hero Jason hypothetically fill a polo team?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,319,Is a pottery kiln inappropriate for use with glass blowing?,False,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,593,Could Maroon 5 have hypothetically held a concert at Roman Colosseum?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,322,Can an art dealer buy Boeing 737-800 with a Da Vinci painting?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,623,Can an adult human skull hypothetically pass through the birth canal?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,358,Is it normal to find parsley in multiple sections of the grocery store?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,429,Are fossil fuels reducing jobs in the Gulf of Mexico?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,473,Are some Brazilian Navy ships built in Britian?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,338,Is Mark Cuban able to visit Northern Mariana Islands without a passport?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,130,Are there people who are men who experience menstruation?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,581,Are Donkeys part of Christmas celebrations?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,275,Does Homer Simpson need two hands worth of fingers to count to 5?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,93,Did Easy Rider make a profit at the theater when it was released?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,527,Would 7 zucchini's satisfy potassium USDA daily recommendation?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,629,Would a honey badger's dentures be different from a wolverine's?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,615,Would a nickel fit inside a koala pouch?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,372,Can a minor replicate the double-slit experiment?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,524,Is hanging a viable execution method on a ship at sea?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,625,Is Eid al-Fitr holiday inappropriate to watch entire US Office?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,235,Could the Eiffel Tower be completely submerged at the Arctic Ocean's deepest point?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,539,Could a wandering albatross fly from Bucharest to New York City without a rest?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,470,Does Ludacris have Greek heritage?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,469,Is Metallica protective over their music?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,127,Can an emu chase a bogan?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,289,Are right wing Amreicans opposed to marxism?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,410,Did Ice make people rich?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,234,Would Kurt Cobain have benefited from Project Semicolon?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,684,Is the tibia required for floor exercises?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,167,Is Mozambique Drill an easy shot for United States Army Ranger?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,295,Would Library of Alexandria need less shelf space than Library of Congress?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,545,Is a felony jury enough people for a Bunco game?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,6,Is there a warthog on Broadway?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,85,Can a quarter fit inside of a human kidney?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,207,Would nickel boil in the outer core of the earth?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,579,Do people watching Coen brothers films in Guinea Bissau need subtitles?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,634,Could Eddie Murphy's children hypothetically fill a basketball court by themselves?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,438,Did any cultures associate celery with death?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,616,"When the shuttle Columbia 11 landed, was it the season for Christmas carols?",True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,288,Can a sea turtle play tennis using a tennis racket?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,8,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,580,Is Great Pyramid of Giza the last wonder of its kind?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,4,Is Dustin Hoffman one of the B'nei Yisrael?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,577,Do the telescopes at Goldstone Deep Space Communications Complex work the night shift?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,164,Is Bugs Bunny known for carrying a root vegetable around with him?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,461,NATO doesn't recognize double triangle flag countries?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,16,Is double duty an incorrect phrase for host of Dancing With The Stars?,False,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,478,Could the leader of Heaven's Gate save images in JPEG format?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,341,Is Final Fantasy VI closer to beginning than end of its franchise?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,298,Was Darth Vader monogamous?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,13,Did any country in Portuguese Colonial War share Switzerlands role in WWII?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,513,Would Doctor Strange like the Pittsburgh Steelers logo?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,263,Was Mozart accused of stealing from Richard Wagner?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,291,Did Barack Obama participate in the Reformation?,False,0.099,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,368,Did Rosalind Franklin contribute to work that led to Whole Genome Sequencing?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,103,Were the Great Pyramids built by a theocratic government?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,135,4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,287,Is shoe soup innocuous?,True,0.03,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,3,Is average number of peas in a pod enough commas for a billion?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,66,Do human sacrums have more fused vertebrae than an Alaskan Malamute?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,111,Is menthol associated with Christmas?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,565,Are coopers required in the beverage industry?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,643,Would a kaffir lime be a good ingredient for making a candle?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,178,Can Hulk's alter ego explain atomic events?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,41,Could you read The Atlantic magazine during the Games of the XXII Olympiad?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,560,Do you often hear Marco Polo's name shouted near water?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,391,Do Koalas prefer Eucalyptus over meat?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,453,Are red legs a sign of failing health in those with Anorexia Nervosa?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,534,"In isopropyl alcohol, is the solubility of salt low?",True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,644,Does the art from Family Guy look a lot like the art in American Dad?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,89,Does the book Revolutionary Road give a glimpse at life in a suburb?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,34,Do frogs feel disgust?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,488,Does a Disney princess on Broadway have red hair?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,541,Do you need both hot and cold water to peel a tomato?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,685,Is Europa linked to Viennese waltzes?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,487,Would 1943-S penny be good for making silverware?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,239,Was Achilles a direct descendent of Gaia?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,226,Were French people involved in the American Civil War?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,523,"If you're pregnant, might you be recommended ginger?",True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,156,Has Nikola Tesla's name inspired multiple brands?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,351,Can printing books in kanji instead of the Roman alphabet save trees?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,573,If it socially acceptable to wear an icon depicting crucifixion?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,564,Does an individual oceanographer study many sciences?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,196,Was Ariana Grande inspired by Imogen Heap?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,419,Does the name C-SPAN refer to a form of telecommunications that utilizes outer space?,False,0.095,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,516,Did Subway have a sex offender as a spokesperson?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,383,Would Dave Chappelle pray over a Quran?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,107,Can children be hurt by jalapeno peppers?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,428,Does having lip piercings lead to more expensive dental bills?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,61,Did Sartre write a play about Hell?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,191,Did children read Harry Potter and the Philosopher's Stone during the Albanian Civil War?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,88,Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia University?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,344,Are eagles and young bears both used as labels for skills-training youth groups?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,90,Does Buddy The Elf know anyone who works in publishing?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,304,Has the creator of Futurama lived in multiple centuries?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,215,Did any Golden Globe winners attend John Kerry's alma mater?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,305,Did Pink Floyd have a song about the French Riviera?,False,0.06999999999999999,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,317,Would drinking a glass of lemonade provide Vitamin C?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,477,Would Kylee Jenner ask for no cream in her coffee?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,681,Is the tongue part of a creature's head?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,620,Is anyone at the Last Supper celebrated in Islam?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,670,Were the first missionaries required to attend mass on Sundays?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,682,Does Coast to Coast AM have more longevity than the Rush Limbaugh show?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,194,Did any of Maya Angelou's children follow in her footsteps?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,159,Would a tool used for Martin Luther's Reformation opening salvo aid in a crucifixion?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,104,Does the central processing unit usually have a dedicated fan?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,331,Is it safe to eat kidney?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,169,Has Justin Timberlake ever written a song about Britney Spears?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,463,Does table tennis use prime numbers?,False,0.09,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,280,Did Confederate States Army influence West Point fashion?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,337,Is basil safe from Hypervitaminosis D?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,290,Can Stone Cold Steve Austin apply his finisher to a mule deer?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,557,Can COVID-19 spread to maritime pilots?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,426,Does the Taco Bell kitchen contain cinnamon?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,360,Is Christopher Nolan indebted to Bob Kane?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,277,Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,318,Are human footprints absent from Mount Sharp?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,223,Does Hanuman have some of the same duties as Athena?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,213,Have any members of the 2020 British royal family allegedly committed a felony?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,336,Is Elijah part of a Jewish holiday?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,551,Can lettuce result in spontaneous abortion?,False,0.08,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,425,Did Malcolm X avoid eating ham?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,356,Would an aerodynamic cactus benefit from more frequently closed stomata?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,606,Did Gladiator's weapon of choice require less hands than Soul Calibur's Faust?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,151,Is there historic graffiti on Alcatraz?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,355,Does Hammurabi's Code violate Christians Golden Rule?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,149,Is a paraplegic suitable for conducting an orchestra?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,422,Can Poland Spring make money in the Sahara?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,382,Is a jellyfish safe from atherosclerosis?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,71,Does Amtrak operate four wheel vehicles?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,269,Can Aerosmith fit in a 2020 Mitsubishi Outlander?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,556,Would Michael Phelps be good at pearl hunting?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,500,Was John George Bice's birthplace near Cornwall?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,160,Will Ahura Mazda have to look down to see Abaddon's dwelling??,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,423,Could the Powepuff Girls make the background to the Azerbaijani flag?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,420,Are flag of Gabon colors found in rainbow?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,584,Would half muggle wizards fear Lord Voldemort?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,504,Could chives be mistaken for grass?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,132,Would Richard Dawkins hypothetically refuse an offering of the Last rites?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,493,Does the swastika have positive uses?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,78,Are there enough Jonny Cash records in the world to give one to each French citizen?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,310,Is there radiation where Nikola Tesla once worked?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,23,Could a giant squid fit aboard the deck of the titanic?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,614,Does Masaharu Morimoto rely on glutamic acid?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,210,Can Centurylink max internet plan upload 1000GB in a fortnight?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,253,Can you hide a pet macaque under your desk?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,39,"At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,False,0.06,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,193,Could an NBA game be completed within the span of the Six-Day War?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,43,Is Britney Spears' breakdown attributed to bipolar disorder?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,1,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,228,Is accountant a difficult profession for a person suffering from Dyscalculia?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,374,Would the crew of Apollo 15 have difficulty riding a unicycle?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,574,Was the man who played the male lead in Mrs. Doubtfire known for his humour?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,476,Does Nicole Kidman know any Scientologists?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,570,Does Nigella Lawson care about solubility?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,257,Does autopilot rely on fossil fuels?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,475,Was Noah concerned with buoyancy?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,233,Could Goofy have counted nine planets in his first year?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,19,Can you write a whole Haiku in a single tweet?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,464,Can you conduct surveillance from a teddy bear?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,598,Is Alan Alda old enough to have fought in the Vietnam War?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,221,Are paratroopers good at mountain rescue?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,696,Are amoebas safe from breast cancer?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,163,"Would moon cakes be easy to find in Chinatown, Manhattan?",True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,386,Does Düsseldorf have only a small number of smoggy days each year?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,272,Was England directly involved in the Arab-Israeli conflict?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,589,Can jackfruit be used as a weapon?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,586,Would the yearly precipitation on Snowdon submerge an upright bowling pin?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,483,Are some chiropractic manipulations dangerous?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,460,Was Los Angeles Memorial Sports Arena hypothetically inadequate for hosting Coachella?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,106,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,683,Is the E.T. the Extra-Terrestrial Atari Landfill story an urban legend?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,635,Did Sony definitively win the video game war against Sega?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,538,Do depressed people travel to the Golden Gate Bridge often?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,482,Paleography hypothetically helps to understand Cthulhu?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,676,Were karaoke and the turtle power tiller patented in the same country?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,553,Would a black widow woman have use for peaches?,True,0.05,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,152,Did Polar Bears roam around in Ancient Greece?,False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,48,Does a Generation Y member satisfy NYPD police officer age requirement?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,76,Do storks need golden toads to survive?,False,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,517,Is there a Yeti associated with Disney theme parks?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,381,Is the Riksdag a political entity in Scandinavia?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,452,"In teenagers and young adults with depression, are SSRI medications less safe than they are for adults?",True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,590,Do the James Bond and Doctor Who series have a similarity in format?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,177,Does US brand Nice depend on Western honey bee?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,242,Would Jean Harris's victim have avoided lentils?,True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,408,Can furniture be made of hair?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,416,Is Sea World hazardous to leopard seal's health?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,443,Does Lorem ipsum backwards fail to demonstrate alliteration?,False,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,442,Is an ammonia fighting cleaner good for pet owners?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,555,"At Christmastime, do some films remind us that groundhog day is approaching?",True,0.06,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,380,Should a Celiac sufferer avoid spaghetti?,True,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,433,"If you were at an Apple store, would most of the computers be running Ubuntu?",False,0.095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,300,Could Ryan Crouser throw a bengal fox with ease?,True,0.06999999999999999,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,622,Does Super Mario require electricity to play?,True,0.09,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,600,Were Jackson Pollock's parents not required to say The Pledge of Allegiance as children?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,528,Can second row of QWERTY keyboard spell Abdastartus's kingdom?,True,0.08,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,303,Are quadrupeds represented on Chinese calendar?,True,0.09,1,,high,0.9,0,0,0

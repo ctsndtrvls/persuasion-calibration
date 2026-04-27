@@ -1,13 +1,13 @@
 index,model,dataset,n,mean_confidence,median_confidence,std_confidence,model_label
-6,google/gemini-2.5-flash,conflictqa_popqa,480,0.9079166666666667,1.0,0.25680677880910846,Gemini 2.5 Flash
+6,google/gemini-2.5-flash,conflictqa_popqa,960,0.9065624999999999,1.0,0.2595589751377455,Gemini 2.5 Flash
 3,deepseek/deepseek-chat-v2.5,conflictqa_popqa,480,0.745375,0.8,0.24149902639447232,DeepSeek Chat v2.5
-9,openai/gpt-4o-2024-11-20,conflictqa_popqa,480,0.08427083333333332,0.09,0.012813483867549023,GPT-4o (Nov 2024)
+9,openai/gpt-4o-2024-11-20,conflictqa_popqa,480,0.08458333333333332,0.09,0.01269660966587754,GPT-4o (Nov 2024)
 0,anthropic/claude-sonnet-4-6,conflictqa_popqa,480,0.0813770833333333,0.0849999999999999,0.015841381547890943,Claude Sonnet 4.6
-7,google/gemini-2.5-flash,conflictqa_strategyqa,480,0.8898083333333333,1.0,0.23243378012533855,Gemini 2.5 Flash
+7,google/gemini-2.5-flash,conflictqa_strategyqa,950,0.8835452631578948,1.0,0.2397562723482558,Gemini 2.5 Flash
 4,deepseek/deepseek-chat-v2.5,conflictqa_strategyqa,480,0.6295416666666667,0.7,0.22690391023858272,DeepSeek Chat v2.5
 1,anthropic/claude-sonnet-4-6,conflictqa_strategyqa,480,0.08219166666666662,0.0849999999999999,0.017622483187936844,Claude Sonnet 4.6
-10,openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,0.07828124999999998,0.08,0.013353006374130049,GPT-4o (Nov 2024)
+10,openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,0.07886041666666666,0.08,0.012779129638380876,GPT-4o (Nov 2024)
 5,deepseek/deepseek-chat-v2.5,fever,480,0.9346875,0.9,0.05025930931954459,DeepSeek Chat v2.5
-8,google/gemini-2.5-flash,fever,480,0.8896145833333333,1.0,0.2668600913332327,Gemini 2.5 Flash
-11,openai/gpt-4o-2024-11-20,fever,480,0.08728124999999999,0.09,0.0059533733266608786,GPT-4o (Nov 2024)
-2,anthropic/claude-sonnet-4-6,fever,480,0.08231458333333329,0.0849999999999999,0.016176834510306225,Claude Sonnet 4.6
+8,google/gemini-2.5-flash,fever,955,0.8967120418848168,1.0,0.2567161305999038,Gemini 2.5 Flash
+11,openai/gpt-4o-2024-11-20,fever,480,0.08703124999999999,0.09,0.005885925190186137,GPT-4o (Nov 2024)
+2,anthropic/claude-sonnet-4-6,fever,960,0.08227187499999997,0.0849999999999999,0.016198135831188447,Claude Sonnet 4.6

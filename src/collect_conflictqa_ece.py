@@ -27,7 +27,9 @@ separate combined + per-split CSV and a suffixed plot:
     --openai-temperature 0.6 --openai-confidence-scale 1-10 \\
     --plot --plot-file-suffix temp06_scale10_conflictqa
 
-Confidence is the model's stated P(correct) in JSON (verbal calibration), not token logprobs.
+Default confidence is the model's stated P(correct) in JSON (verbal calibration).
+For OpenAI you can switch to token-probability confidence (softmax/logprob based) with:
+  --openai-confidence-source token-prob
 
 Anthropic/Gemini: old IDs (claude-3-5-sonnet-20241022, gemini-1.5-flash-8b) return 404.
 Defaults are claude-sonnet-4-6 and gemini-2.5-flash; see --anthropic-model / --gemini-model.
@@ -44,6 +46,7 @@ import argparse
 import ast
 import csv
 import json
+import math
 import os
 import re
 import sys
@@ -52,6 +55,12 @@ from pathlib import Path
 from typing import Any, Callable
 
 import pandas as pd
+
+from linguistic_confidence import (
+    detect_linguistic_markers,
+    linguistic_confidence_level,
+    linguistic_confidence_score,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data" / "conflictqa"
@@ -85,6 +94,10 @@ SYSTEM = (
     'Schema: {"answer": string, "confidence": number} where confidence is in [0,1] '
     "and means your subjective probability that your short answer matches one of the reference forms."
 )
+SYSTEM_TOKENPROB = (
+    "You only output a single JSON object, no markdown fences, no extra text. "
+    'Schema: {"answer": string}.'
+)
 
 USER_TEMPLATE = """Reference answers (any equivalent labeling of the same entity is acceptable): {refs}
 
@@ -100,6 +113,12 @@ It is okay to be unsure. If evidence is mixed or incomplete, use lower confidenc
 Avoid overconfidence when the claim is ambiguous.
 
 Output JSON: {{"answer": "<short phrase>", "confidence": <integer from 1 to 10>}}"""
+
+USER_TEMPLATE_OPENAI_TOKENPROB = """Reference answers (any equivalent labeling of the same entity is acceptable): {refs}
+
+Question: {question}
+
+Output JSON: {{"answer": "<short phrase>"}}"""
 
 # Anthropic: forced tool call avoids empty/non-JSON text (common with Sonnet 4 + thinking).
 ANTHROPIC_CALIBRATION_TOOL: dict[str, Any] = {
@@ -151,6 +170,12 @@ ROLLUP_CSV_COLUMNS = [
     "confidence",
     "correct",
     "error",
+    # Linguistic uncertainty features derived from epistemic markers.
+    "ling_conf_level",
+    "ling_conf_score",
+    "ling_markers_strong",
+    "ling_markers_medium",
+    "ling_markers_weak",
 ]
 
 
@@ -258,30 +283,115 @@ def call_openai(
     *,
     temperature: float,
     use_scale10: bool,
+    confidence_source: str,
 ) -> tuple[str, float]:
     from openai import OpenAI
 
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    user = (
-        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
-        if use_scale10
-        else USER_TEMPLATE.format(question=question, refs=refs)
-    )
-    r = client.chat.completions.create(
+    if confidence_source == "token-prob":
+        user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
+    else:
+        user = (
+            USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+            if use_scale10
+            else USER_TEMPLATE.format(question=question, refs=refs)
+        )
+
+    request_kwargs: dict[str, Any] = dict(
         model=model_name,
         messages=[
-            {"role": "system", "content": SYSTEM},
+            {"role": "system", "content": SYSTEM_TOKENPROB if confidence_source == "token-prob" else SYSTEM},
             {"role": "user", "content": user},
         ],
         response_format={"type": "json_object"},
         temperature=temperature,
     )
+    if confidence_source == "token-prob":
+        request_kwargs["logprobs"] = True
+    r = client.chat.completions.create(**request_kwargs)
     raw = r.choices[0].message.content or "{}"
     data = parse_json_obj(raw)
+    answer = str(data.get("answer", ""))
+    if confidence_source == "token-prob":
+        lp = getattr(r.choices[0], "logprobs", None)
+        content = getattr(lp, "content", None) if lp is not None else None
+        if not content:
+            raise ValueError("OpenAI response does not contain logprobs content for token-prob confidence")
+        token_logps: list[float] = []
+        for tok in content:
+            val = getattr(tok, "logprob", None)
+            if val is None:
+                continue
+            try:
+                token_logps.append(float(val))
+            except (TypeError, ValueError):
+                continue
+        if not token_logps:
+            raise ValueError("No usable token logprobs in OpenAI response")
+        conf = math.exp(sum(token_logps) / len(token_logps))
+        return answer, _clip_confidence(conf)
     conf = float(data.get("confidence", 0.0))
     if use_scale10:
         conf = conf / 10.0
-    return str(data.get("answer", "")), conf
+    return answer, conf
+
+
+def _tokenprob_confidence_from_chat_choice(choice: Any, provider_name: str) -> float:
+    lp = getattr(choice, "logprobs", None)
+    content = getattr(lp, "content", None) if lp is not None else None
+    if not content:
+        raise ValueError(f"{provider_name} response does not contain logprobs content for token-prob confidence")
+    token_logps: list[float] = []
+    for tok in content:
+        val = getattr(tok, "logprob", None)
+        if val is None:
+            continue
+        try:
+            token_logps.append(float(val))
+        except (TypeError, ValueError):
+            continue
+    if not token_logps:
+        raise ValueError(f"No usable token logprobs in {provider_name} response")
+    conf = math.exp(sum(token_logps) / len(token_logps))
+    return _clip_confidence(conf)
+
+
+def call_openrouter_tokenprob_chat(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    provider_name: str,
+) -> tuple[str, float]:
+    from openai import OpenAI
+
+    client = OpenAI(
+        api_key=os.environ["OPENROUTER_API_KEY"],
+        base_url="https://openrouter.ai/api/v1",
+    )
+    user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
+    kwargs: dict[str, Any] = dict(
+        model=model_name,
+        messages=[
+            {"role": "system", "content": SYSTEM_TOKENPROB},
+            {"role": "user", "content": user},
+        ],
+        temperature=temperature,
+        logprobs=True,
+    )
+    try:
+        r = client.chat.completions.create(
+            **kwargs,
+            response_format={"type": "json_object"},
+        )
+    except Exception:
+        r = client.chat.completions.create(**kwargs)
+    raw = r.choices[0].message.content or "{}"
+    data = parse_json_obj(raw)
+    answer = str(data.get("answer", ""))
+    conf = _tokenprob_confidence_from_chat_choice(r.choices[0], provider_name)
+    return answer, conf
 
 
 def call_anthropic(
@@ -337,6 +447,7 @@ def call_deepseek(
     *,
     temperature: float,
     use_scale10: bool,
+    confidence_source: str,
 ) -> tuple[str, float]:
     from openai import OpenAI
 
@@ -344,15 +455,21 @@ def call_deepseek(
         api_key=os.environ["DEEPSEEK_API_KEY"],
         base_url="https://api.deepseek.com",
     )
-    user = (
-        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
-        if use_scale10
-        else USER_TEMPLATE.format(question=question, refs=refs)
-    )
+    if confidence_source == "token-prob":
+        user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
+    else:
+        user = (
+            USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+            if use_scale10
+            else USER_TEMPLATE.format(question=question, refs=refs)
+        )
     kwargs: dict[str, Any] = dict(
         model=model_name,
         messages=[
-            {"role": "system", "content": SYSTEM},
+            {
+                "role": "system",
+                "content": SYSTEM_TOKENPROB if confidence_source == "token-prob" else SYSTEM,
+            },
             {"role": "user", "content": user},
         ],
         temperature=temperature,
@@ -366,10 +483,14 @@ def call_deepseek(
         r = client.chat.completions.create(**kwargs)
     raw = r.choices[0].message.content or "{}"
     data = parse_json_obj(raw)
+    answer = str(data.get("answer", ""))
+    if confidence_source == "token-prob":
+        conf = _tokenprob_confidence_from_chat_choice(r.choices[0], "DeepSeek")
+        return answer, conf
     conf = float(data.get("confidence", 0.0))
     if use_scale10:
         conf = conf / 10.0
-    return str(data.get("answer", "")), conf
+    return answer, conf
 
 
 def call_gemini(
@@ -421,12 +542,17 @@ def make_callers(
     openai_temperature: float,
     openai_fever_temperature: float | None,
     openai_confidence_scale: str,
+    openai_confidence_source: str,
     anthropic_temperature: float,
     anthropic_confidence_scale: str,
+    anthropic_confidence_source: str,
     deepseek_temperature: float,
     deepseek_confidence_scale: str,
+    deepseek_confidence_source: str,
     gemini_temperature: float,
     gemini_confidence_scale: str,
+    gemini_confidence_source: str,
+    use_openrouter_for_nonopenai: bool,
 ) -> dict[str, Callable[[str, str], tuple[str, float]]]:
     def _openai_caller(q: str, r: str, dataset_tag: str) -> tuple[str, float]:
         t = openai_fever_temperature if dataset_tag == "fever" and openai_fever_temperature is not None else openai_temperature
@@ -436,25 +562,51 @@ def make_callers(
             openai_model,
             temperature=t,
             use_scale10=(openai_confidence_scale == "1-10"),
+            confidence_source=openai_confidence_source,
         )
 
     return {
         "openai": _openai_caller,
-        "anthropic": lambda q, r, _d: call_anthropic(
+        "anthropic": lambda q, r, _d: call_openrouter_tokenprob_chat(
+            q,
+            r,
+            anthropic_model,
+            temperature=anthropic_temperature,
+            provider_name="OpenRouter/Anthropic",
+        )
+        if use_openrouter_for_nonopenai and anthropic_confidence_source == "token-prob"
+        else call_anthropic(
             q,
             r,
             anthropic_model,
             temperature=anthropic_temperature,
             use_scale10=(anthropic_confidence_scale == "1-10"),
         ),
-        "deepseek": lambda q, r, _d: call_deepseek(
+        "deepseek": lambda q, r, _d: call_openrouter_tokenprob_chat(
+            q,
+            r,
+            deepseek_model,
+            temperature=deepseek_temperature,
+            provider_name="OpenRouter/DeepSeek",
+        )
+        if use_openrouter_for_nonopenai and deepseek_confidence_source == "token-prob"
+        else call_deepseek(
             q,
             r,
             deepseek_model,
             temperature=deepseek_temperature,
             use_scale10=(deepseek_confidence_scale == "1-10"),
+            confidence_source=deepseek_confidence_source,
         ),
-        "google": lambda q, r, _d: call_gemini(
+        "google": lambda q, r, _d: call_openrouter_tokenprob_chat(
+            q,
+            r,
+            gemini_model,
+            temperature=gemini_temperature,
+            provider_name="OpenRouter/Gemini",
+        )
+        if use_openrouter_for_nonopenai and gemini_confidence_source == "token-prob"
+        else call_gemini(
             q,
             r,
             gemini_model,
@@ -629,6 +781,15 @@ def main() -> None:
         help="OpenAI confidence prompt scale. 1-10 is normalized back to [0,1] in CSV.",
     )
     parser.add_argument(
+        "--openai-confidence-source",
+        choices=("self-reported", "token-prob"),
+        default="self-reported",
+        help=(
+            "OpenAI confidence source: self-reported reads JSON confidence from the model; "
+            "token-prob computes confidence from completion token logprobs."
+        ),
+    )
+    parser.add_argument(
         "--anthropic-model",
         default=ANTHROPIC_API_MODEL,
         help="Anthropic Messages API model id (default: claude-sonnet-4-6)",
@@ -646,6 +807,15 @@ def main() -> None:
         help="Anthropic confidence scale. 1-10 is normalized back to [0,1] in CSV.",
     )
     parser.add_argument(
+        "--anthropic-confidence-source",
+        choices=("self-reported", "token-prob"),
+        default="self-reported",
+        help=(
+            "Anthropic confidence source: self-reported uses direct Anthropic API tool call; "
+            "token-prob requires --use-openrouter-for-nonopenai and computes confidence from OpenRouter logprobs."
+        ),
+    )
+    parser.add_argument(
         "--anthropic-model-id",
         default=MODELS[1][0],
         help="CSV model id for Anthropic rows (default: anthropic/claude-sonnet-4-6)",
@@ -654,6 +824,11 @@ def main() -> None:
         "--deepseek-model",
         default=DEEPSEEK_API_MODEL,
         help="DeepSeek API model id",
+    )
+    parser.add_argument(
+        "--deepseek-model-id",
+        default=MODELS[2][0],
+        help="CSV model id for DeepSeek rows (default: deepseek/deepseek-chat-v2.5)",
     )
     parser.add_argument(
         "--deepseek-temperature",
@@ -666,6 +841,15 @@ def main() -> None:
         choices=("0-1", "1-10"),
         default="0-1",
         help="DeepSeek confidence prompt scale. 1-10 is normalized back to [0,1] in CSV.",
+    )
+    parser.add_argument(
+        "--deepseek-confidence-source",
+        choices=("self-reported", "token-prob"),
+        default="self-reported",
+        help=(
+            "DeepSeek confidence source: self-reported uses DeepSeek API JSON confidence; "
+            "token-prob requires --use-openrouter-for-nonopenai and computes confidence from OpenRouter logprobs."
+        ),
     )
     parser.add_argument(
         "--gemini-model",
@@ -683,6 +867,15 @@ def main() -> None:
         choices=("0-1", "1-10"),
         default="0-1",
         help="Gemini confidence scale. 1-10 is normalized back to [0,1] in CSV.",
+    )
+    parser.add_argument(
+        "--gemini-confidence-source",
+        choices=("self-reported", "token-prob"),
+        default="self-reported",
+        help=(
+            "Gemini confidence source: self-reported uses Gemini API JSON confidence; "
+            "token-prob requires --use-openrouter-for-nonopenai and computes confidence from OpenRouter logprobs."
+        ),
     )
     parser.add_argument(
         "--gemini-model-id",
@@ -708,6 +901,14 @@ def main() -> None:
         "--skip-deepseek",
         action="store_true",
         help="Do not call DeepSeek; DEEPSEEK_API_KEY not required. Use for OpenAI-only runs.",
+    )
+    parser.add_argument(
+        "--use-openrouter-for-nonopenai",
+        action="store_true",
+        help=(
+            "Route Anthropic/DeepSeek/Gemini calls via OpenRouter chat/completions. "
+            "Required for token-prob on non-OpenAI models."
+        ),
     )
     parser.add_argument(
         "--redo-model",
@@ -737,6 +938,12 @@ def main() -> None:
         required_keys.append("CLAUDE_API_KEY")
     if not args.skip_gemini:
         required_keys.append("GEMINI_API_KEY")
+    if args.use_openrouter_for_nonopenai and (
+        (not args.skip_anthropic and args.anthropic_confidence_source == "token-prob")
+        or (not args.skip_deepseek and args.deepseek_confidence_source == "token-prob")
+        or (not args.skip_gemini and args.gemini_confidence_source == "token-prob")
+    ):
+        required_keys.append("OPENROUTER_API_KEY")
     for key in required_keys:
         if not os.getenv(key):
             print(f"Missing {key} in environment or .env", file=sys.stderr)
@@ -745,7 +952,7 @@ def main() -> None:
     models_to_run = [
         (MODELS[0][0], "openai"),
         (args.anthropic_model_id, "anthropic"),
-        (MODELS[2][0], "deepseek"),
+        (args.deepseek_model_id, "deepseek"),
         (args.gemini_model_id, "google"),
     ]
     if args.skip_gemini:
@@ -779,13 +986,35 @@ def main() -> None:
         args.openai_temperature,
         args.openai_fever_temperature,
         args.openai_confidence_scale,
+        args.openai_confidence_source,
         args.anthropic_temperature,
         args.anthropic_confidence_scale,
+        args.anthropic_confidence_source,
         args.deepseek_temperature,
         args.deepseek_confidence_scale,
+        args.deepseek_confidence_source,
         args.gemini_temperature,
         args.gemini_confidence_scale,
+        args.gemini_confidence_source,
+        args.use_openrouter_for_nonopenai,
     )
+    if args.openai_confidence_source == "token-prob" and args.openai_confidence_scale != "0-1":
+        raise ValueError("--openai-confidence-source token-prob requires --openai-confidence-scale 0-1")
+    if args.anthropic_confidence_source == "token-prob" and args.anthropic_confidence_scale != "0-1":
+        raise ValueError("--anthropic-confidence-source token-prob requires --anthropic-confidence-scale 0-1")
+    if args.deepseek_confidence_source == "token-prob" and args.deepseek_confidence_scale != "0-1":
+        raise ValueError("--deepseek-confidence-source token-prob requires --deepseek-confidence-scale 0-1")
+    if args.gemini_confidence_source == "token-prob" and args.gemini_confidence_scale != "0-1":
+        raise ValueError("--gemini-confidence-source token-prob requires --gemini-confidence-scale 0-1")
+    if (
+        (not args.skip_anthropic and args.anthropic_confidence_source == "token-prob")
+        or (not args.skip_deepseek and args.deepseek_confidence_source == "token-prob")
+        or (not args.skip_gemini and args.gemini_confidence_source == "token-prob")
+    ) and not args.use_openrouter_for_nonopenai:
+        raise ValueError(
+            "token-prob for non-OpenAI models requires --use-openrouter-for-nonopenai "
+            "(OpenRouter key must be available as OPENROUTER_API_KEY)."
+        )
 
     popqa_path = args.popqa_input
     strategy_path = args.strategyqa_input
@@ -882,6 +1111,11 @@ def main() -> None:
                     else:
                         err = ""
 
+                    # Derive linguistic confidence features from epistemic markers in the answer text.
+                    ling_counts = detect_linguistic_markers(answer)
+                    ling_level = linguistic_confidence_level(answer)
+                    ling_score = linguistic_confidence_score(answer)
+
                     rec = {
                         "model": model_id,
                         "dataset": dataset_tag,
@@ -891,6 +1125,11 @@ def main() -> None:
                         "confidence": conf,
                         "correct": cor,
                         "error": err,
+                        "ling_conf_level": ling_level,
+                        "ling_conf_score": ling_score,
+                        "ling_markers_strong": ling_counts["strong"],
+                        "ling_markers_medium": ling_counts["medium"],
+                        "ling_markers_weak": ling_counts["weak"],
                     }
                     if csv_writer is None:
                         csv_writer = IncrementalCsvWriter(args.out)

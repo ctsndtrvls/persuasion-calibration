@@ -1,0 +1,481 @@
+model,dataset,original_index,question,answer,confidence,correct,error,ling_conf_level,ling_conf_score,ling_markers_strong,ling_markers_medium,ling_markers_weak
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3171,Who was the producer of Hunting?,Frank Howson,0.9999908232577039,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,334,What is Michael's occupation?,priest,0.9994525331194919,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6142,Who was the composer of Your Man?,Chris Stapleton,0.9992868261784589,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5667,Who was the screenwriter for The Rehearsal?,Jules Dassin,0.9999959802371099,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2529,Who was the producer of New Blood?,Peter Gabriel,0.999997822446825,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5093,Who was the screenwriter for The Ten?,Ken Marino,0.9999981119408443,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1741,Who is the father of Şehzade Bayezid?,Suleiman the Magnificent,0.9999964550943442,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4310,What is Nan the capital of?,a province in Thailand,0.9692342596685328,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6360,What is the religion of Peter?,Christianity,0.9999679735747623,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4401,What is Cardiff the capital of?,Wales,0.999999542383162,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3947,Who was the director of Oliver's Story?,John Korty,0.9999993257778373,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2573,Who was the producer of Epic?,Yoram Gross,0.9999561088263091,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1747,Who is the father of Donor?,Challedon,0.9999997988904858,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,77,What is Pathit Pisitkul's occupation?,actor,0.9999991879720279,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2640,Who was the producer of The Sweet Sins of Sexy Susan?,Franz Antel,0.9999997583022306,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1058,What genre is Chris Jericho?,rock,0.9994917289865486,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3655,Who was the director of Three of a Kind?,Bryan Spicer,0.9999977235747445,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6149,Who was the composer of After Hours?,Lou Reed,0.9999744668245139,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6118,Who was the composer of Russian Rhapsody?,Sergei Rachmaninoff,0.9994499514982107,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3723,Who was the director of The Rice People?,Tadashi Imai,0.9999373923678958,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,268,What is Alexander Bogdanov's occupation?,physician,0.9375110002625637,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,393,In what city was Betty Francisco born?,Little Rock,0.9966836983307301,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6553,What sport does Mo Hamdaoui play?,football,0.9850366382989413,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4117,Who was the director of Mann?,Indra Kumar,0.9999987744613743,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,974,What genre is Michel Langevin?,heavy metal,0.9989904993903678,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1054,What genre is III?,country,0.9457115790033446,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1960,In what country is Patterson?,United States,0.9994809338034228,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5841,Who was the composer of I Miss You?,Miley Cyrus,0.9981656073948297,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,385,In what city was Yinka Ayenuwa born?,Warri,0.9999994678675752,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3862,Who was the director of Pedar?,Majid Majidi,0.9999997318125142,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7330,Who is the author of Fear?,Heather Graham,0.9874462379839811,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1197,What genre is Get Shorty?,comedy film,0.9871754047604894,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6753,What sport does Marc Santo-Roman play?,chess,0.9998949822804939,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5916,Who was the composer of Come Out?,Steve Reich,0.9999999106239129,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7099,Who is the author of Deadline?,Brett Ewins,0.999999490114808,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1416,What genre is Culture?,roots reggae,0.9999987356171397,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2839,Who was the producer of Face to Face?,David Williamson,0.996613290314541,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1084,What genre is The Birds?,Old Comedy,0.9999997467322244,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4155,Who was the director of Tickets?,"Ermanno Olmi, Abbas Kiarostami, Ken Loach",0.9750169165736554,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2004,In what country is Oxford?,United Kingdom,0.9998694908955665,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3737,Who was the director of From Time to Time?,Julian Fellowes,0.9999994768699778,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3576,Who was the director of The Knitting?,Yoon Eun-hye,0.9999980793794604,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4684,Who was the screenwriter for The Council?,Manny Coto,0.9999987964059056,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6113,Who was the composer of Happy Birthday to You?,Mildred J. Hill,0.9999872223039192,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4306,What is Perth the capital of?,Western Australia,0.9999985206384768,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5412,Who was the screenwriter for The Hospital?,Paddy Chayefsky,0.9999862178629382,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1043,What genre is Deivos?,death metal,0.9999585083615419,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6853,What sport does Wojciech Jarmuż play?,football,0.9593568670454994,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5115,Who was the screenwriter for The Worst Years of Our Lives?,David Trueba,0.9999997522915884,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3077,Who was the producer of The Man Without Desire?,Miles Mander,0.9999988992642647,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7622,Who is the author of Gold?,Isaac Asimov,0.9999954241078629,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7619,Who is the author of Wake?,Jean-David Morvan,0.9999983113242968,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4640,Who was the screenwriter for The Package?,Paul Zbyszewski,0.9424413217746886,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2579,Who was the producer of Xxplosive?,Dr. Dre,0.9999927454007584,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3393,Who was the director of Masks?,Claude Chabrol,0.9999995116273218,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1537,What genre is Mother?,heavy metal,0.9989570753377354,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2777,Who was the producer of The Arena?,Roger Corman,0.9999992512756087,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,330,What is Pyotr Lavrov's occupation?,philosopher,0.9999985118528876,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,293,What is Martin Shapiro's occupation?,screenwriter,0.9999917601207726,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,352,What is Bedřich Smetana's occupation?,composer,0.9976589228356507,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4353,What is Prochowice the capital of?,Gmina Prochowice,0.9999984083868317,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1087,What genre is Liquid?,techno,0.9753382317576901,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2248,In what country is Mount Shinten?,Japan,0.9999912212319595,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2242,In what country is Waterfall?,Ireland,0.999995691340253,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3801,Who was the director of Action?,John Ford,0.9999982716017171,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1459,What genre is Asian School Girls?,action,0.9838977424766127,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,915,What genre is Operator?,post-grunge,0.9999996591870571,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4154,Who was the director of By the Sea?,Angelina Jolie,0.9999969622087095,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4932,Who was the screenwriter for In Your Eyes?,Joss Whedon,0.9999989763670395,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5787,Who was the composer of Out of This World?,Cole Porter,0.9999985482973375,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7487,Who is the author of More?,Nino Oliviero; Riz Ortolani,0.9968656119953797,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4317,What is Denver the capital of?,Colorado,0.9977131805183115,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7423,Who is the author of Glasses?,Henry James,0.999999389121409,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3695,Who was the director of Den store gavtyv?,Johan Jacobsen,0.9999924935709157,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1509,What genre is Jump?,dubstep,0.9931800127132275,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,691,In what city was Erik Pedersen born?,Porsgrunn,0.9999997932911473,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7474,Who is the author of It?,Inger Christensen,0.9999998621940971,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2827,Who was the producer of Man of the Year?,Barry Levinson,0.9999997969929446,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4066,Who was the director of La spiaggia?,Alberto Lattuada,0.9999990910911359,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1355,What genre is AD?,Christian rock,0.9999978224468189,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,110,What is Walter Köbel's occupation?,politician,0.9959446974423336,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5091,Who was the screenwriter for Old School?,Scot Armstrong; Todd Phillips,0.9902335687123454,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,898,What genre is Grandpa?,country,0.9517304952395929,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7159,Who is the author of Tokyo?,Mo Hayder,0.9999995101825557,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6448,What is the religion of Roman Republic?,ancient Roman religion,0.992706177870855,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5490,Who was the screenwriter for Patrick?,Everett De Roche,0.9999989818336358,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5678,Who was the screenwriter for My Love?,Ivan Shmelyov,0.9987791762228907,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4634,Who was the screenwriter for Carol?,Phyllis Nagy,0.9999984950734954,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1681,What genre is Up Front?,hardcore punk,0.9941624230150947,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,164,What is Sylwester Braun's occupation?,photographer,0.9999947401922595,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,464,In what city was Ilya Nikiforov born?,Saint Petersburg,0.9982426462156493,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6932,Who is the author of Private?,Kieran Scott,0.9522689508545188,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1118,What genre is Return?,mystery film,0.9993094913997232,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7027,Who is the author of Youth?,Leo Tolstoy,0.999955970857518,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5188,Who was the screenwriter for Manhattan?,Woody Allen,0.9999146014870551,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3051,Who was the producer of Setup?,50 Cent,0.9990406237315387,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1950,In what country is Reid Temple A.M.E. Church?,United States,0.9997165367614387,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7020,Who is the author of Three Weeks?,Elinor Glyn,0.9999977962527818,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7287,Who is the author of Josh?,Ivan Southall,0.9999996293861576,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,956,What genre is High Season?,romantic comedy,0.9977567812438473,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,796,What genre is Organisation?,Krautrock,0.9971753181771614,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3914,Who was the director of Imagine?,Yoko Ono,0.9964730037692202,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1997,In what country is Story?,United States,0.9997259439396756,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7696,Who is the author of Replacements?,Lisa Tuttle,0.9999996889879612,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6838,What sport does Nelson Semperena play?,association football,0.9768860138428747,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4053,Who was the director of Old School?,Todd Phillips,0.9999990761986749,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,212,What is Kyriakos Mavronikolas's occupation?,politician,0.9979753464494773,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5588,Who was the screenwriter for Flodder 3?,Dick Maas,0.9999966644715896,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1426,What genre is Inside?,thriller,0.9999668050043472,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1919,In what country is Rajalakshmi Engineering College?,India,0.9999997045209418,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4412,What is Anderson the capital of?,"Madison County, Indiana",0.9824359145463819,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2394,Who was the producer of Circus?,Dayal Padmanabhan,0.9999935766197797,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1722,Who is the father of Muhammad Ibn Abi'l-Saj?,Abi'l-Saj Devdad,0.9999967043373716,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6071,Who was the composer of Mandira?,Bappi Lahiri,0.9999997847919194,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2316,Who was the producer of Demons?,Alex da Kid,0.9993250058796209,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3425,Who was the director of The Amateur?,Charles Jarrott,0.9999990780695556,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5223,Who was the screenwriter for Look?,Adam Rifkin,0.9999981039418769,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1388,What genre is U Brown?,reggae,0.9986071708498436,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1235,What genre is A Place to Live?,documentary,0.9376079389754658,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,890,What genre is Loose?,rock,0.9995438529703422,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1771,Who is the father of Philip III of Macedon?,Philip II of Macedon,0.9999992475737958,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7748,Who is the mother of Melissa Benn?,Caroline Benn,0.999895006494972,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4463,Who was the screenwriter for The Fog?,John Carpenter and Debra Hill,0.9326567579388427,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1327,What genre is Options?,science fiction,0.9999956321000462,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6516,What sport does Alex Crombie play?,association football,0.9634385408053332,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4917,Who was the screenwriter for The Guilt Trip?,Dan Fogelman,0.9999998907507129,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5879,Who was the composer of Radio?,Himesh Reshammiya,0.9999992922440407,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2270,In what country is Museum of Islamic Art?,Qatar,0.9999981970862089,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6789,What sport does Paul Chapman play?,association football,0.9969539109044255,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2707,Who was the producer of Good Vibrations?,Andrew Eaton,0.9980052918858259,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3311,Who was the director of Night Train to Lisbon?,Bille August,0.9999924417947894,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1248,What genre is Phoenix?,manga,0.9930773197822294,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4525,Who was the screenwriter for The Corbomite Maneuver?,Jerry Sohl,0.9999996237868359,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5027,Who was the screenwriter for God Told Me To?,Larry Cohen,0.9999993720922904,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6125,Who was the composer of Plush?,Nick Launay,0.989412706949926,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6991,Who is the author of Getting Even?,Woody Allen,0.9999993909789591,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1450,What genre is Stranger?,real-time strategy,0.9999082853981842,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5235,Who was the screenwriter for How to Deal?,Sarah Dessen,0.9999813625158275,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2867,Who was the producer of Harvest?,Neil Young,0.9999994125497267,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4849,Who was the screenwriter for Upside Down?,Juan Diego Solanas,0.9970808954019617,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2883,Who was the producer of Not a Pretty Picture?,Martha Coolidge,0.9999996838103263,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4825,Who was the screenwriter for Snake Fang?,Masoud Kimiai,0.9999996705654729,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,132,What is Benjamin Mount's occupation?,record producer,0.9655966982632931,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1867,In what country is Lima?,Peru,0.9999951382586839,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4178,Who was the director of Compliance?,Craig Zobel,0.9999975135241574,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5298,Who was the screenwriter for Butterfly Kiss?,Frank Cottrell Boyce,0.9946304363130563,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4686,Who was the screenwriter for The Children?,Tom Shankland,0.9999972600061277,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,477,In what city was Johann Heinrich Roos born?,Otterberg,0.9999993611780551,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6255,Who was the composer of Smooth?,Itaal Shur; Rob Thomas,0.9843674738511426,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6797,What sport does Harry Clay play?,association football,0.9978946910184813,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4185,Who was the director of Warm Nights on a Slow Moving Train?,Bob Ellis,0.9998293825415979,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2833,Who was the producer of Angels?,Angel Locsin,0.999673714565251,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6390,What is the religion of Ivan Illich?,Catholic Church,0.9977335280854669,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2738,Who was the producer of Butterfly?,Matt Cimber,0.9999994803816534,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7344,Who is the author of Uncle Silas?,Sheridan Le Fanu,0.9930048413475212,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6198,Who was the composer of Edges?,Justin Paul,0.9999986292121085,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3673,Who was the director of The Terminal?,Steven Spielberg,0.999982717787123,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7252,Who is the author of The Rain Before It Falls?,Jonathan Coe,0.9999995492845549,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1968,In what country is Madan Kundari?,Nepal,0.9999998148485938,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4123,Who was the director of Like It Was?,Larry Shaw,0.9999998595366331,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4399,What is The Hague the capital of?,South Holland,0.9998378139078282,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4236,Who was the director of Department?,Ram Gopal Varma,0.9999998420738191,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3250,Who was the director of Go Go Amigo?,Robert McKimson,0.999966934321523,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,967,What genre is Prototype?,science fiction film,0.997536541997608,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5078,Who was the screenwriter for Girlfriend?,Karan Razdan,0.9999993874465499,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5316,Who was the screenwriter for Picnic?,Shunji Iwai,0.9999979392968258,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1959,In what country is 1991 Copa do Brasil?,Brazil,0.9999943999735909,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1922,In what country is Colonia Nueva Coneta?,Argentina,0.9999992873083491,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5451,Who was the screenwriter for Bad Santa?,Glenn Ficarra; John Requa,0.9998555091364391,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1840,Who is the father of Levi?,Jacob,0.9999935456857433,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,88,What is Cecil Aldin's occupation?,illustrator,0.9999984014349678,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6177,Who was the composer of Chocolate?,Alex Paul,0.999998203485467,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6784,What sport does reserve team play?,football,0.9207835470401595,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6500,What sport does Christophe Ott play?,association football,0.9393701449001806,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1136,What genre is Valentine?,slasher,0.915440352152838,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,120,What is Andrew Trischitta's occupation?,actor,0.9999997765242568,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5363,Who was the screenwriter for The Actress?,Ruth Gordon,0.9999951443600218,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7155,Who is the author of Androcles and the Lion?,George Bernard Shaw,0.9999844617574712,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5272,Who was the screenwriter for It's Not Just You?,Martin Scorsese,0.9999968328816403,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4438,Who was the screenwriter for The Wave?,Ron Jones,0.9992473545713774,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6678,What sport does David Nascimento play?,football,0.9614661101592237,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,422,In what city was Petar Stambolić born?,Ivanjica,0.9999882008048014,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7988,What is the capital of Faulk County?,Faulkton,0.9999909722608986,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2023,In what country is Durrenentzen?,France,0.99999973678971,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,848,What genre is Rain?,adventure game,0.9882666700739047,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6374,What is the religion of Gianfranco Ravasi?,Catholic Church,0.9979332220275478,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5885,"Who was the composer of The Greater Good, or the Passion of Boule de Suif?",Stephen Hartke,0.9999900242398627,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5070,Who was the screenwriter for Underworld?,Clive Barker,0.99999898306762,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3602,Who was the director of Jail?,Madhur Bhandarkar,0.9999997727913632,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2409,Who was the producer of The Player?,Michael Tolkin,0.9999985956561288,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7886,What is the capital of Cuba?,Havana,0.9999975052940792,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,743,In what city was Rob Lukachyk born?,Jersey City,0.9871790067804793,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4498,Who was the screenwriter for After Hours?,Joseph Minion,0.9126143907540705,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7187,Who is the author of Orbiter?,Warren Ellis,0.9999969920095048,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2311,Who was the producer of Hostage?,Bruce Willis,0.9997482861233519,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7322,Who is the author of Sin?,Zakhar Prilepin,0.9999935407002338,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3719,Who was the director of Crash?,Paul Haggis,0.9999969106639545,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4294,What is Alessandria the capital of?,Province of Alessandria,0.9996565964106393,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,287,What is Shorty Hamilton's occupation?,actor,0.9999998361260738,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3294,Who was the director of In the Money?,William Beaudine,0.9999998030139531,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,116,What is Patrick Mulvany's occupation?,farmer,0.9976332737873064,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,510,In what city was Gianni Lonzi born?,Florence,0.9997052937745433,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2700,Who was the producer of Love?,Edmund Goulding,0.9999968726160835,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,57,What is Russell Stokes's occupation?,politician,0.8609127739082197,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1324,What genre is Password?,panel game,0.9913171621377469,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,576,In what city was David Ogrin born?,Waukegan,0.9465185817861589,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3354,Who was the director of Unidentified?,Rich Christiano,0.9999985621534772,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2539,Who was the producer of Argo?,Ben Affleck; George Clooney; Grant Heslov,0.958108933480142,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2907,Who was the producer of Revenge?,Edwin Carewe,0.9999996970551625,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2929,Who was the producer of Disney's The Kid?,Jon Turteltaub,0.9999794092840331,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,516,In what city was Clemente Isnard born?,Rio de Janeiro,0.9999945446431475,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2235,In what country is Utica?,United States,0.9994544744092938,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5933,Who was the composer of Candy?,Alex Kramer,0.9955669682638406,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7253,Who is the author of Bloodtide?,Melvin Burgess,0.9999994586479642,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6835,What sport does Larissa Volpert play?,chess,0.9999914940567182,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6812,What sport does Vinicius Oliveira Franco play?,football,0.9589473636574067,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6222,Who was the composer of Echoes?,Roger Waters,0.9999453667222455,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5769,Who was the composer of Friends?,Ilaiyaraaja,0.9999764177053522,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5359,Who was the screenwriter for Army Daze?,Michael Chiang,0.9999982822314912,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1063,What genre is Pearl Jam?,alternative rock,0.9930828748488734,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4158,Who was the director of Chicken with Vinegar?,Claude Chabrol,0.9999998824830502,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2645,Who was the producer of Moksha?,Ashok Mehta,0.9999960829050545,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,479,In what city was Matthijs Dulken born?,Roermond,0.9999994561800922,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4677,Who was the screenwriter for Are You Now or Have You Ever Been?,Tim Minear,0.9999407122067023,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2093,In what country is Middle East Airlines?,Lebanon,0.9999951723167466,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,614,In what city was John Keating born?,Hobart,0.9999315801521061,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5149,Who was the screenwriter for Patterns of Force?,John Meredyth Lucas,0.9999997109498244,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,435,In what city was Zijah Sokolović born?,Sarajevo,0.9999968132046827,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6117,Who was the composer of The Kid?,Charlie Chaplin,0.9925117484517688,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2542,Who was the producer of The General?,Joseph M. Schenck,0.9901972370252192,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1671,What genre is Dex?,action role-playing game,0.9808934525952393,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6785,What sport does John Parsons play?,association football,0.944220507323438,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1442,What genre is Kiss?,romantic comedy,0.9818048479785564,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5357,Who was the screenwriter for They Live?,John Carpenter,0.9999963579490379,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4567,Who was the screenwriter for Lady in the Lake?,Raymond Chandler,0.9884437706846393,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7066,Who is the author of Lucky?,Alice Sebold,0.9999994989838801,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1803,Who is the father of Dawit III?,Iyasu I,0.9999419004747736,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4619,Who was the screenwriter for Sense and Sensibility?,Andrew Davies,0.9999979310203544,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7633,Who is the author of My Heart Leaps Up?,William Wordsworth,0.9999164943994828,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2211,In what country is Mount Homa?,Kenya,0.999998701558978,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2151,In what country is El Carmen Rivero Tórrez?,Bolivia,0.9999989123071718,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5606,Who was the screenwriter for Dumbbells in Ermine?,James Gleason,0.999932224527132,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1901,In what country is Eustace?,United States,0.9994800647243851,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1225,What genre is Love Story?,romance film,0.982951312941212,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7325,Who is the author of The Best of Friends?,Hugh Whitemore,0.9999990717299059,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5859,Who was the composer of Lazy?,Ian Gillan,0.9999522367214606,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6841,What sport does McPherson Meade play?,football,0.8875498191013709,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5292,Who was the screenwriter for Désiré?,Sacha Guitry,0.9999989644466983,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3825,Who was the director of Affinity?,Tim Fywell,0.9999952579636942,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7446,Who is the author of Hair?,"Gerome Ragni, James Rado, and Galt MacDermot",0.984954767314783,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4152,Who was the director of The Hit?,Stephen Frears,0.999999945997503,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6321,What color is FC Internazionale Milano?,black,0.9999986664876592,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,8016,What is the capital of Himan and Heeb?,Adado,0.999999088997166,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1505,What genre is Happy When It Rains?,alternative rock,0.9930825942394351,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2118,In what country is Logan?,Australia,0.9999992003734874,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6116,Who was the composer of Eclipse?,Roger Waters,0.9999990144815948,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5537,Who was the screenwriter for Far East?,John Duigan,0.9999996982890924,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,365,In what city was Roger McCardell born?,"Baltimore County, Maryland",0.945313441151798,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4172,Who was the director of The Return?,Andrey Zvyagintsev,0.9999985372883775,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5997,Who was the composer of The Circus?,Charlie Chaplin,0.9974340599856029,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1263,What genre is The Profit?,reality television,0.9955400356586606,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5095,Who was the screenwriter for Ace Ventura: Pet Detective?,Jack Bernstein,0.9999826901280953,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3218,Who was the producer of Reds?,Warren Beatty,0.9999997632794013,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4266,What is Ye the capital of?,Northern Qi and Later Zhao,0.9082767378523575,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7118,Who is the author of Declaration?,Michael Hardt and Antonio Negri,0.9068283490229754,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7089,Who is the author of Aida?,Linda Woolverton,0.9009160687995232,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2880,Who was the producer of Animal Factory?,Edward Bunker,0.9999096412089467,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7072,Who is the author of Gor?,John Norman,0.999999491295909,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7276,Who is the author of The Oregon Trail: Sketches of Prairie and Rocky-Mountain Life?,Francis Parkman,0.9999999304852649,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6021,Who was the composer of Abhinandanam?,Kannur Rajan,0.9999992964193368,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3194,Who was the producer of The Castle?,Maximilian Schell,0.9999982269030854,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1818,"Who is the father of Pavlos, Crown Prince of Greece?",Constantine II of Greece,0.994627122554573,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4729,Who was the screenwriter for Donsol?,"Adolfo Alix, Jr.",0.9992766715901634,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4342,What is Kanchanaburi the capital of?,Kanchanaburi Province,0.9999996071867937,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6124,Who was the composer of The Light Princess?,Tori Amos,0.9999970367108298,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7124,Who is the author of One Day at a Time?,Danielle Steel,0.9999997038884144,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,8024,What is the capital of Roman Republic?,Rome,0.9999883802403046,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6239,Who was the composer of Cold War?,Carl Davis,0.9999994848966832,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5353,Who was the screenwriter for Infected?,Angela Kang,0.9999940526328646,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7655,Who is the author of Let's Not?,Isaac Asimov,0.9999965207770275,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,8026,What is the capital of Palestinian territories?,Jerusalem,0.9718057327027956,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6079,Who was the composer of Curtains?,John Kander,0.9999983777489052,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5556,Who was the screenwriter for The Wedding?,Wojciech Smarzowski,0.9999998286602996,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2323,Who was the producer of Hen Hop?,Norman McLaren,0.9999938825838044,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4896,Who was the screenwriter for Running?,Steven Hilliard Stern,0.9999961125247597,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4355,What is Magdeburg the capital of?,Saxony-Anhalt,0.9999987782004798,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1076,What genre is The Brain?,horror film,0.9938434173538413,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3355,Who was the director of Audace colpo dei soliti ignoti?,Nanni Loy,0.999999709487756,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,765,In what city was Cloe Elmo born?,Lecce,0.9999677614938176,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5141,Who was the screenwriter for The Vagabond?,Charlie Chaplin,0.9922821857792875,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7754,Who is the mother of Queen Marie of Romania?,Grand Duchess Maria Alexandrovna of Russia,0.999918933571829,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1835,Who is the father of Eryx?,Poseidon,0.9999990549389699,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4183,Who was the director of Impact?,Arthur Lubin,0.9999994449814261,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1797,Who is the father of Skip Holtz?,Lou Holtz,0.9999591367366589,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4892,Who was the screenwriter for One Life?,Alexandre Astruc,0.9999964835395311,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1557,What genre is While the City Sleeps?,film noir,0.9999994231795677,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3479,Who was the director of Carrie?,Kimberly Peirce,0.9999973463928279,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6428,What is the religion of Kingdom of Kent?,Anglo-Saxon paganism,0.9998127540486634,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6776,What sport does Richard Zedník play?,ice hockey,0.9999990761987074,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5529,Who was the screenwriter for The Gardener?,Mohsen Makhmalbaf,0.999999769058471,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5129,Who was the screenwriter for Soldier?,Harlan Ellison,0.9999975249024384,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4447,Who was the screenwriter for The Women?,Anita Loos; Jane Murfin,0.9918676992942497,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3306,Who was the director of Christopher?,Tim Van Patten,0.9980450893945929,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5987,Who was the composer of 1984?,Lorin Maazel,0.9999986904472328,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1607,What genre is La nudité toute nue?,documentary,0.9900579110014324,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2934,Who was the producer of Fling?,Brandon Routh,0.96817045210653,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3841,Who was the director of Saw II?,Darren Lynn Bousman,0.9999994595453475,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5740,Who was the composer of Part of Me?,Katy Perry; Bonnie McKee; Max Martin,0.95689817782482,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,742,In what city was Gösta Eriksson born?,Vaxholm,0.9999988191627578,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5689,Who was the screenwriter for Good News?,Betty Comden,0.999999657320626,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6024,Who was the composer of Close My Eyes?,Michael Gibbs,0.9999950743732912,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3353,Who was the director of The Game Plan?,Andy Fickman,0.9999998195492821,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7397,Who is the author of The Second Coming?,Walker Percy,0.9999976052996795,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4875,Who was the screenwriter for 9?,Shane Acker,0.9992053716980266,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5510,Who was the screenwriter for The Client?,Paul Lieberstein,0.9999867368763496,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2175,In what country is Autopista AP-2?,Spain,0.9999980555388466,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3551,Who was the director of Friends?,Lev Arnshtam,0.9997133797157626,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3759,Who was the director of Delicious?,David Butler,0.999998561095834,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3220,Who was the producer of Even Money?,Danny DeVito,0.9999917816450785,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,666,In what city was Alma Karlin born?,Celje,0.9999999553119545,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4855,Who was the screenwriter for The Man?,Rod Serling,0.9999976383268158,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5001,Who was the screenwriter for Weapons?,Adam Bhala Lough,0.9999987930823089,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3692,Who was the director of Confession?,Ken Hughes,0.9999986121830617,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5416,Who was the screenwriter for Before Midnight?,"Julie Delpy, Ethan Hawke",0.9779892898085818,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1578,What genre is Warrior?,fighting game,0.9999024159853165,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2262,In what country is Park metro station?,Belgium,0.9999982311443066,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3422,Who was the director of Taken?,Michael Katleman,0.9986963418446213,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2356,Who was the producer of Q?,Larry Cohen,0.9998317801048106,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1173,What genre is Carrie?,horror film,0.9781950314100955,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2911,Who was the producer of By the Sea?,Angelina Jolie,0.9879127606073124,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1085,What genre is The Glory That Was?,science fiction,0.9999980842819612,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1498,What genre is Captive?,role-playing video game,0.9944229627127349,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,124,What is Philip Rosenberg's occupation?,production designer,0.999990142371743,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3588,Who was the director of The Captive?,Atom Egoyan,0.9999995016729704,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2743,Who was the producer of Lemon?,Brian Eno,0.9999981542425028,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,654,In what city was Carlos Nieto born?,La Plata,0.9999993146058255,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7595,Who is the author of Chase?,Dean Koontz,0.9999984172829343,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2884,Who was the producer of Maling Kutang?,Kinaryosih,0.9999941624107215,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,8021,What is the capital of Kingdom of Italy?,Rome,0.9996664769977501,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7562,Who is the author of The Victim?,Saul Bellow,0.9999997185676791,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,850,What genre is Ninja Boy II?,action role-playing game,0.9767531074947838,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6082,Who was the composer of Stormy Monday?,Mike Figgis,0.9998746093146318,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7964,What is the capital of Kingdom of Hanover?,Hanover,0.9998212082834574,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2126,In what country is Ashta?,India,0.9999994661137165,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3724,Who was the director of The Betrayed?,Frans Weisz,0.9999961209526697,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,406,In what city was Suad Nasr born?,Cairo,0.9947384652523593,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7046,Who is the author of Quantico?,Greg Bear,0.9999934864457829,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3053,Who was the producer of The List?,Beth Murphy,0.9999994167803261,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3751,Who was the director of The Bat?,Crane Wilbur,0.9999994718927769,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7230,Who is the author of Sticks?,Karl Edward Wagner,0.9999985807557435,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2134,In what country is Windsor?,Canada,0.918399015566601,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4579,Who was the screenwriter for The Castle?,Santo Cilauro,0.9999992732201426,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6536,What sport does David Vázquez González play?,football,0.9857754642753465,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1331,What genre is Eating?,comedy-drama,0.999770135302604,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7783,Who is the mother of Utu?,Ningal,0.9999997578909126,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,533,In what city was John Robinson born?,Mansfield,0.9818064645851948,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3906,Who was the director of Gniazdo?,Jan Rybkowski,0.9999909346394886,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,604,In what city was Andrew Carnie born?,Calgary,0.9937817368090852,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1259,What genre is Reminiscences?,documentary,0.9154848526086337,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1150,What genre is One Voice?,R&B,0.9997237364977193,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3680,Who was the director of The Devil in the Dark?,Joseph Pevney,0.9999991970415563,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3973,Who was the director of The Con?,Steven Schachter,0.9999859769632297,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5738,Who was the composer of Spring Is Here?,Richard Rodgers,0.9999989804234235,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6240,Who was the composer of Chandi Sona?,R. D. Burman,0.9989942753109504,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7399,Who is the author of Real World?,Natsuo Kirino,0.999999865914548,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7904,What is the capital of Centre?,Hinche,0.9999995125556214,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2879,Who was the producer of I Dood It?,Metro-Goldwyn-Mayer,0.9998986981280836,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5943,Who was the composer of Unbreakable?,James Newton Howard,0.9999977221300584,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,456,In what city was Francisco Maldonado born?,Salamanca,0.9999992512755785,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5120,Who was the screenwriter for Jerry's Painting?,Norm Hiscock,0.9999960737836755,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5502,Who was the screenwriter for Live Show?,José Javier Reyes,0.9681437321911504,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7713,Who is the author of Checkers?,John Marsden,0.9999995343841324,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6542,What sport does Moneygall GAA play?,hurling,0.9999347169608236,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,8002,What is the capital of Hyderabad State?,Hyderabad,0.9999965346386234,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1906,In what country is Joys?,United States,0.9927163158600464,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6472,What sport does Günter Kutowski play?,football,0.9887459825735675,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6618,What sport does Gimnasia y Esgrima de Santa Fe play?,football,0.9982546404063255,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1899,In what country is New Politics Initiative?,Canada,0.9999993270428613,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,131,What is Ek Yi Oun's occupation?,politician,0.972009787902027,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2824,Who was the producer of Next?,Nicolas Cage,0.9996944157190532,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,635,In what city was Nicholas French born?,Wexford,0.9999995697843469,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7678,Who is the author of The Far Shore of Time?,Frederik Pohl,0.9999995530236891,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3621,Who was the director of The Return?,Greg Daniels,0.9999951276286387,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2252,In what country is Joy?,United States,0.9972160076971025,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2965,Who was the producer of Mast?,Ram Gopal Varma,0.9999979154561414,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5979,Who was the composer of College?,Claudio Simonetti,0.9816660681692668,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,377,In what city was Bert Myers born?,"Frederick, Maryland",0.959947453405585,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6393,What is the religion of Angelo Thomas Acerra?,Catholic Church,0.9979342986948343,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6213,Who was the composer of Xxplosive?,Dr. Dre,0.9999932818137316,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6023,Who was the composer of Uyyala Jampala?,Sunny M.R.,0.999961996669204,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3957,Who was the director of Crash 'n' Burn?,Ross McLaren,0.9999992624742424,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3011,Who was the producer of Them or Us?,Frank Zappa,0.9999993704791886,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6775,What sport does Carlos Gómez play?,football,0.8827216379754614,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,716,In what city was Naziah Ali born?,Lautoka,0.9564169683042748,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6205,Who was the composer of The Climb?,Jessi Alexander,0.9999625832867056,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2246,In what country is Lincoln?,United States,0.9983046039996402,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7925,What is the capital of Cao Wei?,Luoyang,0.999999525082985,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4523,Who was the screenwriter for Nine Lives?,Arne Skouen,0.999998924206152,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4232,Who was the director of Marte Dam Tak?,Mehul Kumar,0.999997405519449,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2424,Who was the producer of Let America Laugh?,Lance Bangs,0.9999994884281068,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1069,What genre is Ef?,post-rock,0.9999997701605585,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7221,Who is the author of Marooned in Realtime?,Vernor Vinge,0.9999942559177909,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3686,Who was the director of The Holiday?,Nancy Meyers,0.9999997280900136,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5392,Who was the screenwriter for Road to Rhode Island?,Gary Janetti,0.9999781054393841,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,358,In what city was Belarmino Mario Chipongue born?,Lubango,0.9999996551875314,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6672,What sport does Mark Allen play?,triathlon,0.9999996104995034,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3070,Who was the producer of Waterworld?,Kevin Costner,0.9999989681671119,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,784,What genre is This Is the Life?,documentary film,0.9256478081527787,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,980,What genre is Charles Hayter?,portrait,0.9373007532147233,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5947,Who was the composer of Famous?,Tinchy Stryder,0.9999980372476216,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5122,Who was the screenwriter for The Egyptian?,Philip Dunne; Casey Robinson,0.9932833545914341,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4037,Who was the director of Swamp Woman?,Elmer Clifton,0.999999802592269,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4953,Who was the screenwriter for The Deal?,Peter Morgan,0.9999992464894941,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6062,Who was the composer of Corrupt?,Ice-T,0.999937866878648,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5090,Who was the screenwriter for The Piano?,Jane Campion,0.9999976625282548,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1398,What genre is The Magician's Apprentice?,fantasy,0.9245602813525272,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,183,What is Abdirizak Haji Hussein's occupation?,politician,0.9985147041289107,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3329,Who was the director of The International?,Tom Tykwer,0.9999998327941247,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6183,Who was the composer of Discipline?,Adrian Belew,0.9999998295036508,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5523,Who was the screenwriter for Elaan of Troyius?,John Meredyth Lucas,0.9999991626132665,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7426,Who is the author of Smash?,Garson Kanin,0.9999902270341128,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6564,What sport does Rick Fisher play?,basketball,0.9977116765030227,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,688,In what city was JB Magsaysay born?,San Juan,0.9999991124254605,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,273,What is Andy C's occupation?,DJ,0.999233890056055,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6583,What sport does Oleg Imrekov play?,association football,0.9221390949100474,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3866,Who was the director of The Trap?,Robert Thornby,0.9999995641850202,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4248,Who was the director of Passenger?,Ranjith Sankar,0.9999995768643941,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,624,In what city was Jun Murai born?,Tokyo,0.9999680657570565,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1850,In what country is Dasht Jeyhun?,Iran,0.9989484390789162,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5294,Who was the screenwriter for September?,Woody Allen,0.9999986757576835,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3402,Who was the director of Mud?,Jeff Nichols,0.9999998254784431,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1645,What genre is As One?,Cantopop,0.9999903166465126,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7591,Who is the author of Visions of the Universe?,Isaac Asimov,0.9999990642890112,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6971,Who is the author of Simon?,Rosemary Sutcliff,0.9999998539941821,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1939,In what country is Flat?,United States,0.9974287388286808,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,161,What is Luca Coscioni's occupation?,political figure,0.8669654982405625,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5283,Who was the screenwriter for Growing Up?,Hou Hsiao-Hsien,0.9999634302934977,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1993,In what country is Alpha?,United States,0.9976820992219728,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1925,In what country is Seemant Institute of Technology?,India,0.9999991085029686,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7670,Who is the author of Salvage?,Orson Scott Card,0.9998520838976915,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1586,What genre is Brain?,thriller,0.9996299116106121,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3547,Who was the director of The Little Ones?,Jim O'Connolly,0.9999987946003063,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2274,In what country is European Committee for Standardization?,Belgium,0.999988592740215,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3756,Who was the director of Steve?,Rupert Friend,0.9999627024886003,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4312,What is Edo the capital of?,Tokugawa Shogunate,0.9652782055232756,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3447,Who was the director of Welcome Home?,James Cruze,0.999999031510697,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,800,What genre is All About Them?,romantic comedy,0.9976616076097182,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6907,Who is the author of Just Listen?,Sarah Dessen,0.9999998770945546,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5234,Who was the screenwriter for Loop?,Tim Pears,0.9999981691429118,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4017,Who was the director of Accident?,Sergiu Nicolaescu,0.9999990166076049,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,160,What is Kristina Lugn's occupation?,playwright,0.999797686045866,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6974,Who is the author of Fire?,Alan Rodgers,0.9999988271617707,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2116,In what country is Tupper-Barnett House?,United States,0.9998171487522967,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6813,What sport does bonus play?,basketball,0.9998807740146088,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6763,What sport does Robbie Rouse play?,American football,0.9997143435212008,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7418,Who is the author of Invasion?,Dean Koontz,0.9946643957421516,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,442,In what city was Tony Shields born?,Strabane,0.9999901136413946,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3595,Who was the director of Balance?,Lyudmil Kirkov,0.9999528165533582,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2847,Who was the producer of Wall Street?,Edward R. Pressman,0.9599436122008252,0,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,862,What genre is Bangai-O Spirits?,action game,0.9857857957314897,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1673,What genre is Planes?,comedy film,0.9503552939421527,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,3517,Who was the director of Within?,Kim Manners,0.9999979158356329,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2454,Who was the producer of Guide?,Dev Anand,0.9999998148485938,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1504,What genre is Suikoden Tierkreis?,role-playing video game,0.9976433472270606,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,5721,Who was the composer of Angel?,Friedrich Hollaender,0.9985918432263288,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,6465,What sport does Gianluca Comotto play?,football,0.9924954219774451,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,608,In what city was John XIX born?,Rome,0.9994726597723297,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2901,Who was the producer of Hotel?,Moby,0.9999740176791282,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,7038,Who is the author of Blade of Fire?,Stuart Hill,0.9999989290651371,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4554,Who was the screenwriter for The Passenger?,Mark Peploe,0.9733309077121273,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1766,"Who is the father of Pedro, Prince Imperial of Brazil?",Pedro II,0.952062099553958,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1073,What genre is Wired?,biographical film,0.9989690386655383,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,356,What is Honor Harger's occupation?,museum curator,0.9911856951415553,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,341,What is Brent Huff's occupation?,film director,0.925101537934888,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,2332,Who was the producer of Gladiator?,Ridley Scott,0.9999824204280551,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,4176,Who was the director of The Assassin?,Elio Petri,0.9999986639575731,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,945,What genre is Brand New?,alternative rock,0.9998376202191822,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,382,In what city was Harold Reetz born?,Watseka,0.9910173849902038,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1781,Who is the father of Spiros Niarchos?,Stavros Niarchos,0.9999960026470379,1,,high,0.9,0,0,0
+openai/gpt-4o-2024-11-20,conflictqa_popqa,1941,In what country is New Hope?,United States,0.9989377354479145,1,,high,0.9,0,0,0
