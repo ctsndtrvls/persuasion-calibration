@@ -120,6 +120,26 @@ Question: {question}
 
 Output JSON: {{"answer": "<short phrase>"}}"""
 
+USER_TEMPLATE_EPISTEMIC_MARKER = """Reference answers (any equivalent labeling of the same entity is acceptable): {refs}
+
+Question: {question}
+
+When responding, include exactly ONE epistemic marker phrase in your answer text
+to express your uncertainty (e.g., "probably", "likely", "might be", "not sure").
+Do not include more than one marker.
+
+Output JSON: {{"answer": "<short phrase with exactly one epistemic marker>", "confidence": <number from 0 to 1>}}"""
+
+USER_TEMPLATE_EPISTEMIC_MARKER_SCALE10 = """Reference answers (any equivalent labeling of the same entity is acceptable): {refs}
+
+Question: {question}
+
+When responding, include exactly ONE epistemic marker phrase in your answer text
+to express your uncertainty (e.g., "probably", "likely", "might be", "not sure").
+Do not include more than one marker.
+
+Output JSON: {{"answer": "<short phrase with exactly one epistemic marker>", "confidence": <integer from 1 to 10>}}"""
+
 # Anthropic: forced tool call avoids empty/non-JSON text (common with Sonnet 4 + thinking).
 ANTHROPIC_CALIBRATION_TOOL: dict[str, Any] = {
     "name": "submit_calibration",
@@ -173,9 +193,9 @@ ROLLUP_CSV_COLUMNS = [
     # Linguistic uncertainty features derived from epistemic markers.
     "ling_conf_level",
     "ling_conf_score",
-    "ling_markers_strong",
-    "ling_markers_medium",
-    "ling_markers_weak",
+    "ling_marker_count",
+    "ling_unique_marker_count",
+    "ling_has_marker",
 ]
 
 
@@ -276,6 +296,26 @@ def parse_json_obj(text: str) -> dict[str, Any]:
     raise ValueError(f"no JSON object in model text (preview {raw[:280]!r}…)")
 
 
+def _build_user_prompt(
+    question: str,
+    refs: str,
+    *,
+    use_scale10: bool,
+    confidence_source: str,
+    elicitation_mode: str,
+) -> str:
+    if confidence_source == "token-prob":
+        return USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
+    if elicitation_mode == "epistemic-marker":
+        tmpl = USER_TEMPLATE_EPISTEMIC_MARKER_SCALE10 if use_scale10 else USER_TEMPLATE_EPISTEMIC_MARKER
+        return tmpl.format(question=question, refs=refs)
+    return (
+        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
+        if use_scale10
+        else USER_TEMPLATE.format(question=question, refs=refs)
+    )
+
+
 def call_openai(
     question: str,
     refs: str,
@@ -284,18 +324,18 @@ def call_openai(
     temperature: float,
     use_scale10: bool,
     confidence_source: str,
+    elicitation_mode: str,
 ) -> tuple[str, float]:
     from openai import OpenAI
 
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    if confidence_source == "token-prob":
-        user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
-    else:
-        user = (
-            USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
-            if use_scale10
-            else USER_TEMPLATE.format(question=question, refs=refs)
-        )
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=use_scale10,
+        confidence_source=confidence_source,
+        elicitation_mode=elicitation_mode,
+    )
 
     request_kwargs: dict[str, Any] = dict(
         model=model_name,
@@ -363,6 +403,7 @@ def call_openrouter_tokenprob_chat(
     *,
     temperature: float,
     provider_name: str,
+    elicitation_mode: str,
 ) -> tuple[str, float]:
     from openai import OpenAI
 
@@ -370,7 +411,13 @@ def call_openrouter_tokenprob_chat(
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url="https://openrouter.ai/api/v1",
     )
-    user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=False,
+        confidence_source="token-prob",
+        elicitation_mode=elicitation_mode,
+    )
     kwargs: dict[str, Any] = dict(
         model=model_name,
         messages=[
@@ -401,11 +448,18 @@ def call_anthropic(
     *,
     temperature: float,
     use_scale10: bool,
+    elicitation_mode: str,
 ) -> tuple[str, float]:
     import anthropic
 
     client = anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
-    user = USER_TEMPLATE.format(question=question, refs=refs)
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=use_scale10,
+        confidence_source="self-reported",
+        elicitation_mode=elicitation_mode,
+    )
     msg = client.messages.create(
         model=model_name,
         max_tokens=1024,
@@ -448,6 +502,7 @@ def call_deepseek(
     temperature: float,
     use_scale10: bool,
     confidence_source: str,
+    elicitation_mode: str,
 ) -> tuple[str, float]:
     from openai import OpenAI
 
@@ -455,14 +510,13 @@ def call_deepseek(
         api_key=os.environ["DEEPSEEK_API_KEY"],
         base_url="https://api.deepseek.com",
     )
-    if confidence_source == "token-prob":
-        user = USER_TEMPLATE_OPENAI_TOKENPROB.format(question=question, refs=refs)
-    else:
-        user = (
-            USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
-            if use_scale10
-            else USER_TEMPLATE.format(question=question, refs=refs)
-        )
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=use_scale10,
+        confidence_source=confidence_source,
+        elicitation_mode=elicitation_mode,
+    )
     kwargs: dict[str, Any] = dict(
         model=model_name,
         messages=[
@@ -500,6 +554,7 @@ def call_gemini(
     *,
     temperature: float,
     use_scale10: bool,
+    elicitation_mode: str,
 ) -> tuple[str, float]:
     import google.generativeai as genai
 
@@ -508,10 +563,12 @@ def call_gemini(
         model_name,
         system_instruction=SYSTEM,
     )
-    user = (
-        USER_TEMPLATE_OPENAI_SCALE10.format(question=question, refs=refs)
-        if use_scale10
-        else USER_TEMPLATE.format(question=question, refs=refs)
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=use_scale10,
+        confidence_source="self-reported",
+        elicitation_mode=elicitation_mode,
     )
     try:
         r = model.generate_content(
@@ -553,6 +610,7 @@ def make_callers(
     gemini_confidence_scale: str,
     gemini_confidence_source: str,
     use_openrouter_for_nonopenai: bool,
+    elicitation_mode: str,
 ) -> dict[str, Callable[[str, str], tuple[str, float]]]:
     def _openai_caller(q: str, r: str, dataset_tag: str) -> tuple[str, float]:
         t = openai_fever_temperature if dataset_tag == "fever" and openai_fever_temperature is not None else openai_temperature
@@ -563,6 +621,7 @@ def make_callers(
             temperature=t,
             use_scale10=(openai_confidence_scale == "1-10"),
             confidence_source=openai_confidence_source,
+            elicitation_mode=elicitation_mode,
         )
 
     return {
@@ -573,6 +632,7 @@ def make_callers(
             anthropic_model,
             temperature=anthropic_temperature,
             provider_name="OpenRouter/Anthropic",
+            elicitation_mode=elicitation_mode,
         )
         if use_openrouter_for_nonopenai and anthropic_confidence_source == "token-prob"
         else call_anthropic(
@@ -581,6 +641,7 @@ def make_callers(
             anthropic_model,
             temperature=anthropic_temperature,
             use_scale10=(anthropic_confidence_scale == "1-10"),
+            elicitation_mode=elicitation_mode,
         ),
         "deepseek": lambda q, r, _d: call_openrouter_tokenprob_chat(
             q,
@@ -588,6 +649,7 @@ def make_callers(
             deepseek_model,
             temperature=deepseek_temperature,
             provider_name="OpenRouter/DeepSeek",
+            elicitation_mode=elicitation_mode,
         )
         if use_openrouter_for_nonopenai and deepseek_confidence_source == "token-prob"
         else call_deepseek(
@@ -597,6 +659,7 @@ def make_callers(
             temperature=deepseek_temperature,
             use_scale10=(deepseek_confidence_scale == "1-10"),
             confidence_source=deepseek_confidence_source,
+            elicitation_mode=elicitation_mode,
         ),
         "google": lambda q, r, _d: call_openrouter_tokenprob_chat(
             q,
@@ -604,6 +667,7 @@ def make_callers(
             gemini_model,
             temperature=gemini_temperature,
             provider_name="OpenRouter/Gemini",
+            elicitation_mode=elicitation_mode,
         )
         if use_openrouter_for_nonopenai and gemini_confidence_source == "token-prob"
         else call_gemini(
@@ -612,6 +676,7 @@ def make_callers(
             gemini_model,
             temperature=gemini_temperature,
             use_scale10=(gemini_confidence_scale == "1-10"),
+            elicitation_mode=elicitation_mode,
         ),
     }
 
@@ -925,6 +990,16 @@ def main() -> None:
         metavar="N",
         help="Print progress every N completed API calls (default: 25). Use 1 for every call, 0 for quiet.",
     )
+    parser.add_argument(
+        "--elicitation-mode",
+        choices=("default", "epistemic-marker"),
+        default="default",
+        help=(
+            "Prompt mode for confidence elicitation. "
+            "epistemic-marker asks model to include exactly one epistemic marker in answer text "
+            "(aligned with ACL'25 marker setup)."
+        ),
+    )
     args = parser.parse_args()
 
     load_dotenv(PROJECT_ROOT / ".env")
@@ -997,6 +1072,7 @@ def main() -> None:
         args.gemini_confidence_scale,
         args.gemini_confidence_source,
         args.use_openrouter_for_nonopenai,
+        args.elicitation_mode,
     )
     if args.openai_confidence_source == "token-prob" and args.openai_confidence_scale != "0-1":
         raise ValueError("--openai-confidence-source token-prob requires --openai-confidence-scale 0-1")
@@ -1127,9 +1203,9 @@ def main() -> None:
                         "error": err,
                         "ling_conf_level": ling_level,
                         "ling_conf_score": ling_score,
-                        "ling_markers_strong": ling_counts["strong"],
-                        "ling_markers_medium": ling_counts["medium"],
-                        "ling_markers_weak": ling_counts["weak"],
+                        "ling_marker_count": ling_counts["marker_count"],
+                        "ling_unique_marker_count": ling_counts["unique_marker_count"],
+                        "ling_has_marker": ling_counts["has_marker"],
                     }
                     if csv_writer is None:
                         csv_writer = IncrementalCsvWriter(args.out)

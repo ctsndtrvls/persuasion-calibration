@@ -1,0 +1,4 @@
+model,dataset,rows,marker_coverage,accuracy,mean_self_confidence,mean_marker_confidence,in_domain_marker_calibration_error
+google/gemini-2.5-flash,conflictqa_popqa,480,1.0,0.9604166666666667,0.8699375000000001,0.9604166666666667,0.07340762967217901
+google/gemini-2.5-flash,conflictqa_strategyqa,480,0.9875,0.29375,0.8810083333333335,0.29375,0.39977550201760237
+google/gemini-2.5-flash,fever,480,0.98125,0.5145833333333333,0.8983854166666667,0.5145833333333334,0.36860329485329485

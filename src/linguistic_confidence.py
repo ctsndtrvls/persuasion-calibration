@@ -5,12 +5,14 @@ from collections import defaultdict
 from typing import Dict, Iterable, Mapping, TypedDict
 
 # This module follows two papers:
-# - Xiong et al. (ICLR 2024): confidence is elicited from verbalized uncertainty.
-# - Liu et al. (ACL 2025): marker confidence = empirical accuracy when a marker is used.
+# - Xiong et al., "Can LLMs Express Their Uncertainty? An Empirical Evaluation
+#   of Confidence Elicitation in LLMs" (ICLR 2024):
+#   confidence is elicited from verbalized uncertainty.
+# - Liu et al., "Revisiting Epistemic Markers in Confidence Estimation:
+#   Can Markers Accurately Reflect Large Language Models' Uncertainty?"
+#   (ACL 2025): marker confidence = empirical accuracy when a marker is used.
 #
 # In practice we keep a deterministic marker extractor + profile-based confidence estimation.
-# Heuristic "strong/medium/weak" buckets are retained only for backward compatibility.
-
 
 NO_MARKER = "__no_marker__"
 
@@ -43,8 +45,8 @@ EPISTEMIC_MARKERS: list[str] = [
     "definitely",
 ]
 
-# Tier mapping is only a compatibility layer for existing CSV columns.
-STRONG_UNCERTAINTY = {
+# These sets are only polarity groups, not strong/medium/weak tiers.
+UNCERTAINTY_MARKERS = {
     "not sure",
     "unsure",
     "uncertain",
@@ -54,8 +56,6 @@ STRONG_UNCERTAINTY = {
     "possibly",
     "possible",
     "perhaps",
-}
-MEDIUM_UNCERTAINTY = {
     "seems",
     "appears",
     "likely",
@@ -64,7 +64,7 @@ MEDIUM_UNCERTAINTY = {
     "i think",
     "i believe",
 }
-WEAK_UNCERTAINTY = {
+CERTAINTY_MARKERS = {
     "fairly certain",
     "pretty sure",
     "quite sure",
@@ -104,7 +104,8 @@ def primary_epistemic_marker(text: str) -> str:
     """
     Return one marker for confidence mapping.
 
-    ACL'25 uses a single marker token W when computing marker confidence.
+    "Revisiting Epistemic Markers in Confidence Estimation..." (ACL 2025)
+    uses a single marker token W when computing marker confidence.
     If none found, return a dedicated NO_MARKER bucket.
     """
     markers = extract_epistemic_markers(text)
@@ -120,7 +121,8 @@ def build_marker_confidence_profile(
 
     Marker confidence is defined as:
       Conf(W) = #correct answers containing W / #answers containing W
-    as in Liu et al. (ACL 2025). Markers below min_occurrences are filtered out.
+    as in "Revisiting Epistemic Markers in Confidence Estimation..." (ACL 2025).
+    Markers below min_occurrences are filtered out.
     """
     agg: dict[str, dict[str, int]] = defaultdict(lambda: {"occurrences": 0, "correct": 0})
     for answer_text, is_correct in samples:
@@ -156,31 +158,20 @@ def marker_confidence_from_profile(
 
 
 def detect_linguistic_markers(text: str) -> Dict[str, int]:
-    """
-    Backward-compatible marker buckets used by the existing data pipeline.
-
-    strong  -> high uncertainty markers
-    medium  -> moderate uncertainty markers
-    weak    -> low uncertainty / high-confidence verbal markers
-    """
-    counts: Dict[str, int] = {"strong": 0, "medium": 0, "weak": 0}
-    for marker in extract_epistemic_markers(text):
-        if marker in STRONG_UNCERTAINTY:
-            counts["strong"] += 1
-        elif marker in MEDIUM_UNCERTAINTY:
-            counts["medium"] += 1
-        elif marker in WEAK_UNCERTAINTY:
-            counts["weak"] += 1
-    return counts
+    """Return category-free marker features for a response."""
+    markers = extract_epistemic_markers(text)
+    return {
+        "marker_count": len(markers),
+        "unique_marker_count": len(set(markers)),
+        "has_marker": int(bool(markers)),
+    }
 
 
 def linguistic_confidence_level(text: str) -> str:
-    counts = detect_linguistic_markers(text)
-    if counts["strong"] > 0:
+    markers = set(extract_epistemic_markers(text))
+    if markers & UNCERTAINTY_MARKERS:
         return "low"
-    if counts["medium"] > 0:
-        return "medium"
-    if counts["weak"] > 0:
+    if markers & CERTAINTY_MARKERS:
         return "high"
     return "medium"
 
@@ -191,10 +182,10 @@ def linguistic_confidence_score(text: str) -> float:
 
     Prefer marker_confidence_from_profile(...) for paper-faithful experiments.
     """
-    counts = detect_linguistic_markers(text)
+    markers = set(extract_epistemic_markers(text))
     score = 0.5
-    score -= 0.25 * counts["strong"]
-    score -= 0.10 * counts["medium"]
-    score += 0.10 * counts["weak"]
+    if markers & UNCERTAINTY_MARKERS:
+        score -= 0.2
+    if markers & CERTAINTY_MARKERS:
+        score += 0.2
     return max(0.0, min(1.0, score))
-

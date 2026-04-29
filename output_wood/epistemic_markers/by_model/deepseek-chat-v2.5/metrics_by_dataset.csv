@@ -1,0 +1,4 @@
+model,dataset,rows,marker_coverage,accuracy,mean_self_confidence,mean_marker_confidence,in_domain_marker_calibration_error
+deepseek/deepseek-chat-v2.5,conflictqa_popqa,480,0.9854166666666667,0.9958333333333333,0.8497916666666668,0.9958333333333333,0.008270202020202016
+deepseek/deepseek-chat-v2.5,conflictqa_strategyqa,480,0.99375,0.08125,0.8416666666666668,0.08125,0.14533913308913307
+deepseek/deepseek-chat-v2.5,fever,480,0.9604166666666667,0.91875,0.8639583333333334,0.91875,0.1327200203144508

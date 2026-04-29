@@ -1,0 +1,13 @@
+model,dataset,rows,rows_with_marker,marker_coverage
+anthropic/claude-sonnet-4-6,conflictqa_popqa,480,480,1.0000
+anthropic/claude-sonnet-4-6,conflictqa_strategyqa,480,480,1.0000
+anthropic/claude-sonnet-4-6,fever,480,478,0.9958
+deepseek/deepseek-chat-v2.5,conflictqa_popqa,480,473,0.9854
+deepseek/deepseek-chat-v2.5,conflictqa_strategyqa,480,477,0.9938
+deepseek/deepseek-chat-v2.5,fever,480,461,0.9604
+google/gemini-2.5-flash,conflictqa_popqa,480,480,1.0000
+google/gemini-2.5-flash,conflictqa_strategyqa,480,474,0.9875
+google/gemini-2.5-flash,fever,480,471,0.9812
+openai/gpt-4o-2024-11-20,conflictqa_popqa,480,480,1.0000
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,437,0.9104
+openai/gpt-4o-2024-11-20,fever,480,477,0.9938

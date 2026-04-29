@@ -1,0 +1,5 @@
+model,dataset,rows,marker_coverage,accuracy,mean_self_confidence,mean_marker_confidence,in_domain_marker_calibration_error
+anthropic/claude-sonnet-4-6,conflictqa_strategyqa,480,1.0,0.24166666666666667,0.6371479166666667,0.24166666666666667,0.3628535882643388
+deepseek/deepseek-chat-v2.5,conflictqa_strategyqa,480,0.99375,0.08125,0.8416666666666668,0.08125,0.14533913308913307
+google/gemini-2.5-flash,conflictqa_strategyqa,480,0.9875,0.29375,0.8810083333333335,0.29375,0.39977550201760237
+openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,0.9104166666666667,0.5520833333333334,0.42753125000000003,0.5520833333333333,0.3528393945208687
