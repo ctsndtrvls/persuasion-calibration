@@ -78,9 +78,43 @@ def preview_conflictqa(n: int = 5) -> None:
         print(f"Context : {str(context)[:500]}")
 
 
+def preview_debateqa(n: int = 5) -> None:
+    """
+    Print a few examples from DebateQA files under data/debateqa/dataset/.
+    """
+    dataset_dir = DATA_DIR / "debateqa" / "dataset"
+    candidate_files = list(dataset_dir.glob("*.json*"))
+    if not candidate_files:
+        print("No DebateQA files found in data/debateqa/dataset/.")
+        print("Run download_datasets.py to fetch DebateQA from GitHub.")
+        return
+
+    path = candidate_files[0]
+    print(f"Reading DebateQA from {path}")
+    df = pd.read_json(path, lines=path.suffix == ".jsonl")
+    print(f"Total examples: {len(df)}")
+
+    print(f"Showing {min(n, len(df))} example(s) from DebateQA:")
+    for i in range(min(n, len(df))):
+        row = df.iloc[i]
+        question = row.get("question") or row.get("query")
+        partial_answers = row.get("partial_answers") or row.get("answers") or []
+        if isinstance(partial_answers, list):
+            pa_preview = partial_answers[:2]
+        else:
+            pa_preview = partial_answers
+        print("-" * 80)
+        print(f"Example {i + 1}")
+        print(f"Question      : {question}")
+        print(f"Perspectives  : {len(partial_answers) if isinstance(partial_answers, list) else 'n/a'}")
+        print(f"Partial answer: {str(pa_preview)[:500]}")
+
+
 if __name__ == "__main__":
     print("=== FEVER 2.0 Adversarial preview ===")
     preview_fever2_adversarial()
     print("\n=== ConflictQA preview ===")
     preview_conflictqa()
+    print("\n=== DebateQA preview ===")
+    preview_debateqa()
 

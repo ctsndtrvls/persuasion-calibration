@@ -1,0 +1,1247 @@
+model,dataset,original_index,question,answer,confidence,correct,error,ling_conf_level,ling_conf_score,ling_marker_count,ling_unique_marker_count,ling_has_marker
+qwen/qwen3-14b,conflictqa_strategyqa,440,Would Quiet from Metal Gear be a poor hypothetical choice for lecturer at Haub?,True,0.9707213793552516,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,440,Would Quiet from Metal Gear be a poor hypothetical choice for lecturer at Haub?,True,0.9348047297932953,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,526,Can a Liebherr LTM 11200-9.1 hypothetically lift Mount Emei?,True,0.9995571093613385,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,250,Does James Watson believe that Africans are inferior to Europeans?,True,0.9999984843477203,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,507,Do Flat Earthers doubt the existence of Earth's magnetic field?,True,0.9997333914739822,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,445,Would costumes with robes and pointy hats be helpful for Macbeth?,True,0.9999905487586669,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,250,Does James Watson believe that Africans are inferior to Europeans?,True,0.9999987568227414,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,610,Would the Who concert in international space station be audible?,"Yes, sound can travel through the air inside the ISS.",0.8927840913200152,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,450,Can an asteroid be linked with virginity?,"Astrologically, asteroid Vesta is linked to virginity and purity.",0.9181053231250553,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,627,Would a viewer of Monday Night Football be able to catch WWE Raw during commercial breaks?,Yes,0.9582705224061853,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,507,Do Flat Earthers doubt the existence of Earth's magnetic field?,True,0.9997350570507374,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,596,Was Florence a Theocracy during Italian Renaissance?,No,0.8645849732048552,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,507,Do Flat Earthers doubt the existence of Earth's magnetic field?,No,0.985091722142593,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,414,Is Anakin Skywalker from Star Wars associated with the color black?,True,0.9573149726982783,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,680,Does Lupita Nyongo have citizenship in paternal Family of Barack Obama's origin country?,Yes,0.880746176267192,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,378,Could $1 for each 2009 eclipse buy a copy of TIME magazine in 2020?,"No, $2 would not be enough to buy a TIME magazine in 2020.",0.9694690467458281,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,471,Has spinach been a source of power in a comic movie?,"Yes, in Superman movies.",0.9718536701037583,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,496,Is a slime mold safe from cerebral palsy?,True,0.9999830533762699,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,686,Is a platypus immune from cholera?,True,0.999986212119001,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,False,0.9997507772923085,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,316,Were Greeks essential to crafting Egyptian Lighthouse of Alexandria?,True,0.9999768073912564,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,94,Do mail carriers need multiple uniforms?,True,0.9999970595327781,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,94,Do mail carriers need multiple uniforms?,"Yes, they require multiple uniforms for different roles, seasons, or shifts.",0.9798391537313053,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,671,Was Christina Aguilera born in the forgotten borough?,True,0.8838154719413793,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,141,Is Central Park Zoo located on an island?,False,0.9762572508539407,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,141,Is Central Park Zoo located on an island?,Yes,0.9153252754955002,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,610,Would the Who concert in international space station be audible?,True,0.9845416859967787,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,610,Would the Who concert in international space station be audible?,"Yes, sound can travel through the air inside the ISS.",0.9203670070130713,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,450,Can an asteroid be linked with virginity?,Symbolically in astrology,0.9558292490445588,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,596,Was Florence a Theocracy during Italian Renaissance?,No,0.9540244046350024,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,414,Is Anakin Skywalker from Star Wars associated with the color black?,"Yes, as Darth Vader, Anakin Skywalker is associated with the color black through his iconic black armor and cape.",0.9236099327684665,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,378,Could $1 for each 2009 eclipse buy a copy of TIME magazine in 2020?,True,0.9999387754227554,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,378,Could $1 for each 2009 eclipse buy a copy of TIME magazine in 2020?,"No, $2 would not be enough to buy a TIME magazine in 2020.",0.9662925971145687,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,529,Is number of stars in Milky Way at least ten times earth's population?,Yes,0.8802666847932619,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,395,Can actress Danica McKellar skip astronaut education requirements?,True,0.9778146016879012,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,533,Could you watch all of JAG in six months?,True,0.9493065954049639,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,No,0.9579160979094348,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,522,Does the Prime Minister of the United Kingdom have poor job security?,True,0.9536810963950154,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,True,0.9999986546446459,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,False,0.9999330052182664,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,True,0.9107960316306902,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,80,Would Taylor Swift refer to Snoopy as oppa?,No,0.9673101191772676,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,True,0.9999972752446433,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,60,Could Amazon afford The Mona Lisa?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,307,Was San Antonio the site of a major battle in the 19th century?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,687,Are there bones in an anchovy pizza?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,60,Could Amazon afford The Mona Lisa?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,508,Was story of Jesus inspired by Egyptian myth?,True,0.999898829894093,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,687,Are there bones in an anchovy pizza?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,508,Was story of Jesus inspired by Egyptian myth?,True,0.999953857127374,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,137,Did Martin Luther believe in Satan?,"Yes, Martin Luther believed in Satan as a real spiritual adversary.",0.9159866606112773,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,True,0.9999986035543088,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,115,Does Mercury help detect coronavirus?,False,0.9015196691197799,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,True,0.9999991825666197,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,Not universally; varies by country and context.,0.9117970612912739,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,462,Is the Muslim world hostile to Israel?,True,0.952833740663633,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,136,Could Barron Trump have lived through the Mexican Revolution?,No,0.8242662115159565,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,10,"If your skin was turning the color of a zombie, could it be because of nickel?",True,0.9999954701166868,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,136,Could Barron Trump have lived through the Mexican Revolution?,No,0.8604426487992188,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,246,Are any of J.K. Rowling's books in the genre of And Then There Were None?,True,0.9862419904433818,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,246,Are any of J.K. Rowling's books in the genre of And Then There Were None?,"Yes, the Cormoran Strike series",0.8404143519347822,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,339,Is chaff produced by hydropower?,No,0.9866706706527215,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,True,0.9999962194144308,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,No,0.9583630945060717,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,220,Do people put creatures from the Black Sea on their pizza?,No,0.9845665708245274,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,True,0.9999969346523722,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,265,Is H's most common two letter pair partner a freebie in Wheel of Fortune bonus round?,No,0.9839334537743666,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,249,Was  Godfrey of Bouillon an Islamaphobe?,No,0.9663958919145753,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,491,Has Elon Musk's hairline changed?,Yes,0.9001458951582377,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,62,Is Thanksgiving sometimes considered a day of mourning?,True,0.9999992506863766,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,491,Has Elon Musk's hairline changed?,True,0.999996628122961,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,62,Is Thanksgiving sometimes considered a day of mourning?,Yes,0.93765821950602,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,491,Has Elon Musk's hairline changed?,Yes,0.9624452026396628,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,62,Is Thanksgiving sometimes considered a day of mourning?,True,0.9999990974182612,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,348,Is capsaicin associated with cooking?,"Yes, capsaicin is found in chili peppers used in cooking.",0.9800895878697822,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,True,0.9999209720124672,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,348,Is capsaicin associated with cooking?,Yes,0.9732177183420888,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,True,0.9998700100789851,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,No,0.9925596673630647,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,83,Will Chick-fil-A hypothetically refuse to sponsor a Pride parade?,True,0.9999991456690961,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,549,Was King Kong (2005 film) the lead actress's biggest box office role?,False,0.995690877696689,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,485,Is Issac Newton often associated with a red fruit?,Yes,0.9502832876932696,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,83,Will Chick-fil-A hypothetically refuse to sponsor a Pride parade?,Yes,0.9474415277023025,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,485,Is Issac Newton often associated with a red fruit?,True,0.9999920983729574,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,458,Did Demi Lovato's ancestors help turn maize into popcorn?,True,0.9999836693497579,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,561,Is the letter D influenced by the shape of ancient doors?,True,0.9999684328467688,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,431,Could a Diwali celebration feature a crustacean?,True,0.9999983509469555,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,458,Did Demi Lovato's ancestors help turn maize into popcorn?,True,0.9999735723190454,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,273,Could Quartz be useful to humans if plants died off and there was no oxygen?,True,0.9999975817760587,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,657,Could Bart Simpson have owned comics with The Joker?,Yes,0.9648259451665723,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,273,Could Quartz be useful to humans if plants died off and there was no oxygen?,No,0.9768487986397081,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,657,Could Bart Simpson have owned comics with The Joker?,True,0.9999770457834367,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,296,"Can you fit every resident of Auburn, New York, in Tropicana Field?",Yes,0.91475940214716,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,True,0.9993902155431008,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,Yes,0.9692701285899042,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,657,Could Bart Simpson have owned comics with The Joker?,Yes,0.9533835561134675,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,296,"Can you fit every resident of Auburn, New York, in Tropicana Field?",True,0.9999806895704447,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,296,"Can you fit every resident of Auburn, New York, in Tropicana Field?",Yes,0.9833325474726917,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,True,0.9997511841964566,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,520,Does crucifixion violate US eighth amendment?,Yes,0.8319304590363815,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,311,Does Marco Rubio have a close relationship with Allah?,False,0.8905580293962354,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,False,0.998157546995207,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,True,0.9728139944365626,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,543,Does 2015 have more unlucky Friday's than usual?,True,0.9860288964777802,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,False,0.9549129143689566,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,328,Could the Port of Baltimore handle the entire world's cargo production of ginger each year?,Yes,0.9350715812404796,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,353,Can the Dalai Lama fit in a car?,True,0.9999984502872626,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,353,Can the Dalai Lama fit in a car?,True,0.9421630608647192,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,267,Can a cell fit inside of a shoebox?,True,0.9999956233885633,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,True,0.9999893737875049,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,353,Can the Dalai Lama fit in a car?,True,0.9171991107924153,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,267,Can a cell fit inside of a shoebox?,True,0.9999960491241078,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,"Yes, oyster shells can be used decoratively in guitar manufacturing.",0.9123943438829394,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,267,Can a cell fit inside of a shoebox?,Yes,0.9166842785884844,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,True,0.9999853210742831,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,648,Has Drew Carey outshined Doug Davidson's tenure?,True,0.9487136136743456,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,False,0.9999786633281498,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,400,Can oysters be used in guitar manufacturing?,No,0.9565702864170491,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,206,Has Aretha Franklin ever collaborated with a suicidal person?,True,0.9999948400419337,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,False,0.9999655531648187,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,35,Does a person need to be a parent to become a grandparent?,True,0.9999715122086629,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.999986921719059,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,396,Can a copy of The Daily Mirror sustain a campfire?,No,0.9811955424114888,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,35,Does a person need to be a parent to become a grandparent?,True,0.9999784930701947,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,35,Does a person need to be a parent to become a grandparent?,True,0.8610802345329508,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.9999840610255383,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.9916004062619811,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,64,Does a mongoose have natural camouflage for desert?,True,0.9999907417051328,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,394,Can you transport a coin along a sea of mercury?,True,0.9517566894923335,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,254,Is Canon Inc. a Kabushiki gaisha?,Yes,0.9185076095159239,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,64,Does a mongoose have natural camouflage for desert?,True,0.9734833165560105,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.9999694861221421,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,692,"After viewing the Mona Lisa, could you get lunch nearby on foot?","Yes, there are nearby restaurants.",0.9221134187747703,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.9999746450311086,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.9613319928495272,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,330,"On August 20, 2020,  does The Tonight Show Starring Jimmy Fallon air after moonset EST?",True,0.9644554381408363,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,677,Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?,True,0.9999966110933759,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,150,Is Nicole Kidman ideal choice to play Psylocke based on height and weight?,True,0.9999980926633784,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,677,Would Shaggy and Redenbacher popcorn founder both raise hand during first name roll call?,True,0.9930429218405668,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,150,Is Nicole Kidman ideal choice to play Psylocke based on height and weight?,True,0.9675694087868258,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,449,Would a Yeti be likely to have prehensile limbs?,False,0.9907301390434656,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,150,Is Nicole Kidman ideal choice to play Psylocke based on height and weight?,True,0.9676315063293478,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,449,Would a Yeti be likely to have prehensile limbs?,True,0.9930091300072338,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,120,Is Fiat Chrysler gaining a new overall corporate identity?,True,0.9999968409870216,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,120,Is Fiat Chrysler gaining a new overall corporate identity?,"Yes, now known as Stellantis.",0.9473134127235431,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,449,Would a Yeti be likely to have prehensile limbs?,Unlikely,0.9938847923480236,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,601,Will Conan the Barbarian hypothetically last a short time inside of Call of Duty?,Yes,0.9790894525860491,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,546,Does Kenny G hold the qualifications to be a tax collector?,True,0.9999621141993713,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,546,Does Kenny G hold the qualifications to be a tax collector?,No,0.8795422134978949,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,342,Do many fans of J.K Rowling know who Alan Rickman is?,True,0.9999961002117869,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,342,Do many fans of J.K Rowling know who Alan Rickman is?,"Yes, many fans know Alan Rickman as Professor Snape in Harry Potter.",0.8940256926197292,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,216,Has the Holy Grail been featured in at least five films?,True,0.999990395495246,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,601,Will Conan the Barbarian hypothetically last a short time inside of Call of Duty?,No,0.9698412654302184,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,546,Does Kenny G hold the qualifications to be a tax collector?,No,0.889141282004736,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,162,Does the Red Sea have biblical significance?,"Yes, it is the site of the parting of the Red Sea during the Exodus.",0.9760801547840612,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,58,Does coding rely on Boolean algebra characters?,True,0.9061981761802012,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,342,Do many fans of J.K Rowling know who Alan Rickman is?,Yes,0.9183746263024841,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,216,Has the Holy Grail been featured in at least five films?,True,0.9024148238585288,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,162,Does the Red Sea have biblical significance?,"Yes, as the site of the Exodus",0.9078966266143655,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,571,Can E6000 cure before a hoverboard finishes the Daytona 500?,Yes,0.9212971124095561,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,58,Does coding rely on Boolean algebra characters?,"Yes, through logical operations.",0.9738607784478066,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,False,0.9997647827535123,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,No,0.9473614119264685,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,472,Can the majority of vowels be typed on the first line of a QWERTY keyboard?,False,0.9244512406389034,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,571,Can E6000 cure before a hoverboard finishes the Daytona 500?,Yes,0.9110186681082681,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,264,Could SNL be why Jenny McCarthy does not get along with her cousin?,True,0.9999968012498452,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,False,0.9991008606821747,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,222,Is the Berlin University of the Arts a Baroque period relic?,No,0.970826802136871,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,472,Can the majority of vowels be typed on the first line of a QWERTY keyboard?,True,0.9209617888779225,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,264,Could SNL be why Jenny McCarthy does not get along with her cousin?,True,0.9886139107715427,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,359,Are kayaks used at the summit of Mount Everest?,False,0.9999904465864863,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,472,Can the majority of vowels be typed on the first line of a QWERTY keyboard?,True,0.9750086106662365,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,359,Are kayaks used at the summit of Mount Everest?,No,0.9552407101226263,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,585,Would a dog easily notice ammonia?,True,0.9999963244255063,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,264,Could SNL be why Jenny McCarthy does not get along with her cousin?,True,0.8738052158431662,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,585,Would a dog easily notice ammonia?,True,0.9612836213261873,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,691,Could largest asteroid crush a whole city?,True,0.8275413514789784,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,230,Is euphoria associated with drug addiction?,Yes,0.9498373279880159,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,359,Are kayaks used at the summit of Mount Everest?,False,0.9444234219730678,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,509,Can you see live harbor seals in Washington DC?,"Yes, at the National Zoo.",0.9132336049630826,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.9999533569754948,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,585,Would a dog easily notice ammonia?,"Yes, dogs have a highly sensitive sense of smell and can easily detect ammonia.",0.9886657715433705,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.9738314002348647,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.9999939005827652,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,230,Is euphoria associated with drug addiction?,True,0.9373290085396786,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.942522203722106,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,True,0.9999909801088002,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,393,Would a body builder prefer an elk burger over a beef burger?,True,0.9570554400393987,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,"Yes, during World War I for military communications.",0.9770182597862167,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,True,0.9999954899827028,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,179,Is it normal for people to sing when the YMCA is mentioned?,Yes,0.9754067686199459,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.9999658704429025,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,Yes,0.9392939813649566,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,40,Were plants crucial for The King of Rock'n Roll's snack with bananas?,True,0.9684069156148926,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.9999818133564967,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,364,Has Burger King  contributed to a decrease in need for snowshoes?,"Yes, due to localized snow melting from Burger King's heat output.",0.9747298478108822,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,182,Did Rumi spend his time in a state of euphoria?,True,0.9999779876911349,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,323,Has numerology helped shape hotel layouts?,True,0.9635213476708416,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,True,0.9999897483592669,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,182,Did Rumi spend his time in a state of euphoria?,Yes,0.8384351278590086,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,274,Is the Asian black bear multicolored?,True,0.9999364953872395,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,56,Did Eiffel Tower contribute to a war victory?,"Yes, during World War I for military communications",0.9410213999387022,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,True,0.9999986546446459,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,274,Is the Asian black bear multicolored?,True,0.9544530864025803,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,510,Are all the elements plants need for photosynthesis present in atmosphere of Mars?,False,0.9922948052654076,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,398,Can you buy furniture and meatballs in the same store?,"Yes, in big-box stores like Walmart or Target.",0.9285905976286941,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,364,Has Burger King  contributed to a decrease in need for snowshoes?,True,0.9246257241253621,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,182,Did Rumi spend his time in a state of euphoria?,True,0.9999700990531621,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,283,Would most grand masters know what the French Defense is?,Yes,0.9436754615684387,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,274,Is the Asian black bear multicolored?,True,0.9465644740027886,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,219,Is Nine Inch Nails's lead singer associated with David Lynch?,"Yes, Trent Reznor (Nine Inch Nails) has collaborated with David Lynch on film soundtracks like 'Lost Highway' and 'Mulholland Drive.'",0.9492748510345029,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,True,0.9999817112162507,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,True,0.8910632724683399,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,661,Are swastikas used in the most common religion in India?,True,0.8924026046036718,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,510,Are all the elements plants need for photosynthesis present in atmosphere of Mars?,True,0.961635961698364,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,480,Can a human heart last from NYC to Raleigh NC by Toyota Hiux?,True,0.8977513276076593,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,306,Is electricity necessary to balance an account in Microsoft Excel?,True,0.9999949081580644,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,306,Is electricity necessary to balance an account in Microsoft Excel?,Yes,0.8891304986891714,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,184,Are pancakes a bad snack for cats?,Yes,0.888388408176631,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,518,Was Subway involved in a pedophilia scandal?,"No, Subway has not been involved in a pedophilia scandal. Individual cases have occurred, but the company itself is not linked to such activities.",0.9863184432664998,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,447,Is Christianity better for global warming than Satanism?,True,0.8948577151603289,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,148,Does the Boy Who Cried Wolf hypothetically have reason to pray to Pan?,True,0.9680187489374232,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,261,Are the names of The Powerpuff Girls alliterative?,Yes,0.8344063559638948,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,659,Do sun bears stay active during winter?,True,0.9999894106261589,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,True,0.9999899357319552,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,345,Is it safe to share silverware with an HIV positive person?,True,0.9999975959651078,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,345,Is it safe to share silverware with an HIV positive person?,"Yes, it is safe.",0.9427445489035716,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,673,Were gladiators associated with the Coloseum?,Yes,0.9826000499299639,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,91,Is unanimously elected president's birthday a break for mail carriers?,"No, it is not a break for mail carriers.",0.9859169181957202,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,441,Could morphine cure HIV?,False,0.9999744577506317,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,441,Could morphine cure HIV?,"No, morphine cannot cure HIV.",0.9554205999855161,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,661,Are swastikas used in the most common religion in India?,True,0.8928979977586464,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,480,Can a human heart last from NYC to Raleigh NC by Toyota Hiux?,True,0.9999958107084024,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,299,Is B's place in alphabet same as Prince Harry's birth order?,Yes,0.9813519909019975,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,271,Was Dioskourides a lapidary?,False,0.9434097733450074,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,480,Can a human heart last from NYC to Raleigh NC by Toyota Hiux?,"Yes, as long as the person is alive and the vehicle is operational.",0.9909532560414486,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,306,Is electricity necessary to balance an account in Microsoft Excel?,True,0.9999943291634339,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,271,Was Dioskourides a lapidary?,No,0.9790798855099581,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,518,Was Subway involved in a pedophilia scandal?,"No, Subway has not been involved in a pedophilia scandal. While there have been isolated incidents involving individuals associated with the company, no official corporate involvement in such a scandal has been confirmed.",0.8963995213570434,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,248,Is Drew Carey important to the history of wrestling?,Yes,0.8940543660906066,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,447,Is Christianity better for global warming than Satanism?,True,0.9467305173177846,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,261,Are the names of The Powerpuff Girls alliterative?,True,0.9999874040955448,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,261,Are the names of The Powerpuff Girls alliterative?,True,0.9264955192209712,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,693,Is a fever cured by listening to a cowbell?,False,0.9688280925747457,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,659,Do sun bears stay active during winter?,Yes,0.8645717068254838,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,345,Is it safe to share silverware with an HIV positive person?,True,0.9999967416480824,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,91,Is unanimously elected president's birthday a break for mail carriers?,True,0.999912586614705,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,566,Gandalf hypothetically defeats Rincewind in a wizard battle?,True,0.9999975988064257,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,667,Would you be more likely to die of hypothermia in New York than Florida?,True,0.999997615833274,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,28,Are there winged statuettes in the home of the creator of Law & Order?,True,0.9999361200390705,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,46,Has cannabis been a big influence in rap music genre?,True,0.9999977861317618,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,276,Are pirate lieutenants like navy lieutenants?,True,0.9999893112897933,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,532,Do silicone suits make judo difficult?,True,0.9999942979319635,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,203,Are any minor league baseball teams named after felines?,True,0.9999599690563017,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,192,Would Arnold Schwarzenegger have a hard time picking up a red fox in 1967?,"No, he could easily pick it up.",0.9794546534095748,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,15,Was the Louisiana Purchase made with bitcoin?,False,0.902883446938387,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,660,Does walking across Amazonas put a person's life at risk?,"Yes, due to dangers like wildlife, diseases, and harsh terrain.",0.9505742536580607,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,144,Did brother of Goofy creator's employer commit an excommunicable offense?,True,0.9998832462233835,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,587,Did Clark Gable marry more women once than Richard Burton?,No,0.9933216793623171,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,46,Has cannabis been a big influence in rap music genre?,True,0.9999970538612648,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,46,Has cannabis been a big influence in rap music genre?,"Yes, cannabis has significantly influenced rap music through lyrical themes, cultural references, and artist lifestyles.",0.8888558497977108,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,276,Are pirate lieutenants like navy lieutenants?,True,0.9999933585102957,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,144,Did brother of Goofy creator's employer commit an excommunicable offense?,True,0.989972135689095,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,72,Does chlorine inhibit photosynthesis?,True,0.99999231974796,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,276,Are pirate lieutenants like navy lieutenants?,"Yes, similar in rank and duties.",0.9371210247816941,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,532,Do silicone suits make judo difficult?,True,0.999992881696707,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,532,Do silicone suits make judo difficult?,True,0.9149971209247536,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,203,Are any minor league baseball teams named after felines?,True,0.9999814217279933,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,608,Can the Supreme Court of Canada fight a Lucha trios match?,No,0.8641838971588294,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,617,Did Kurt Cobain's music genre survive after his death?,True,0.9999880795628939,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,240,Is pickled cucumber ever red?,True,0.9999833513978852,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,203,Are any minor league baseball teams named after felines?,"Yes, such as the Lakeland Tigers.",0.949883103853475,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,240,Is pickled cucumber ever red?,Yes,0.8991791837659503,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,108,Is Brooklyn known for its bread products?,Yes,0.9193689221214739,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,542,Is Tony Bennett's middle name shared by a former UFC champion?,True,0.9999274992969691,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,650,Would 1996 leap year baby technically be 1 year old in 2000?,True,0.9999695201725802,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,192,Would Arnold Schwarzenegger have a hard time picking up a red fox in 1967?,"No, he was strong enough",0.9657247102297263,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,15,Was the Louisiana Purchase made with bitcoin?,False,0.9999767052619207,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,343,Is there a popular Broadway character who is a missionary?,True,0.9999635102249581,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,343,Is there a popular Broadway character who is a missionary?,Elder Price and Elder Cunningham from The Book of Mormon,0.9654987212440231,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,660,Does walking across Amazonas put a person's life at risk?,True,0.9999954190390007,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,144,Did brother of Goofy creator's employer commit an excommunicable offense?,True,0.999927967138355,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,352,Is watermelon safe for people with a tricarboxylic acid allergy?,True,0.9434772382935821,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,608,Can the Supreme Court of Canada fight a Lucha trios match?,True,0.9999976328648554,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,650,Would 1996 leap year baby technically be 1 year old in 2000?,True,0.9846490430447873,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,20,Do manta rays live in water above the safe temperature for cold food storage?,True,0.9999871090164585,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,608,Can the Supreme Court of Canada fight a Lucha trios match?,No,0.9214453893093983,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,376,Did Brad Peyton need to know about seismology?,True,0.9999405267963272,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,20,Do manta rays live in water above the safe temperature for cold food storage?,Yes,0.9103988932392827,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,376,Did Brad Peyton need to know about seismology?,True,0.9591907049218334,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,617,Did Kurt Cobain's music genre survive after his death?,True,0.9999933074261227,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,512,Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?,False,0.9769613353208844,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,617,Did Kurt Cobain's music genre survive after his death?,"Yes, grunge and alternative rock continued with other bands and influenced later genres.",0.8405565304641756,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,390,Are gorillas closely related to humans?,Yes,0.9354066717189967,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,14,Would a week be enough time to watch every episode of Ugly Betty?,True,0.9940466506740882,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,14,Would a week be enough time to watch every episode of Ugly Betty?,True,0.9924644966903444,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,628,Would Bobby Jindal's high school mascot eat kibble?,No,0.9950604323452196,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,True,0.9999779822695734,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,187,Did the death of Helen Palmer have a significant effect on Dr. Seuss?,True,0.9757278635678016,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,42,Can you find Bob Marley's face in most smoke shops?,True,0.9999958958585122,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,240,Is pickled cucumber ever red?,True,0.9999894589298678,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,108,Is Brooklyn known for its bread products?,True,0.9999744747697085,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,42,Can you find Bob Marley's face in most smoke shops?,No,0.9877973560763011,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,True,0.9999970992684856,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,542,Is Tony Bennett's middle name shared by a former UFC champion?,True,0.922894662276415,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,True,0.9185659031333302,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,406,Does Ronda Rousey avoid BBQ restaraunts?,True,0.8954903991021387,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,537,Is Poseidon similar to the god Vulcan?,False,0.9999591349076677,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,537,Is Poseidon similar to the god Vulcan?,"No, they are not similar.",0.9185031868749817,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,457,Is Pearl Harbor the mythical home of a shark goddess?,False,0.9581450931270554,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,650,Would 1996 leap year baby technically be 1 year old in 2000?,True,0.9797373081552274,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,181,Is cactus fruit an important menu item for a restaurant based on Cuauhtémoc?,True,0.9450165605506591,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,20,Do manta rays live in water above the safe temperature for cold food storage?,Yes,0.8812600484229172,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,512,Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?,False,0.9998190009178639,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,505,Is honey associated with queens?,Yes,0.9675955077858145,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,512,Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?,"No, they'd excel due to their speed and communication skills.",0.8554594978976375,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,498,Is an Eastern chipmunk likely to die before seeing two leap years?,Yes,0.8018294545485066,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,403,Have any murderers outlasted Kane's Royal Rumble record?,True,0.9879523934265989,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,218,Was King Kong climbing at a higher altitude than Eiffel Tower visitors?,True,0.9999382305790537,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,628,Would Bobby Jindal's high school mascot eat kibble?,No,0.987976837537466,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,True,0.9999847932135157,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,218,Was King Kong climbing at a higher altitude than Eiffel Tower visitors?,True,0.9704470604137726,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,42,Can you find Bob Marley's face in most smoke shops?,True,0.9999851167351917,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,True,0.999995810712223,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,79,Can monkeys use QWERTY keyboards?,"Yes, monkeys can press keys on a QWERTY keyboard.",0.9686745291869776,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,49,Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?,Yes,0.9619152565928146,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,537,Is Poseidon similar to the god Vulcan?,"No, they are not similar.",0.9116618798368589,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,92,Could a Bengal cat hypothetically best Javier Sotomayor's record?,No,0.8880041312967301,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,457,Is Pearl Harbor the mythical home of a shark goddess?,False,0.9840557573213741,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,181,Is cactus fruit an important menu item for a restaurant based on Cuauhtémoc?,True,0.9999771649629879,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.9999989441503611,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,181,Is cactus fruit an important menu item for a restaurant based on Cuauhtémoc?,True,0.9290392648808944,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.9362998354539983,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,349,Would a German Shepherd be welcome in an airport?,Service animals are welcome if properly trained; regular pets may not be allowed unless in a carrier.,0.9728253471618823,0,,low,0.3,1,1,1
+qwen/qwen3-14b,conflictqa_strategyqa,498,Is an Eastern chipmunk likely to die before seeing two leap years?,Yes,0.9377750382227178,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,218,Was King Kong climbing at a higher altitude than Eiffel Tower visitors?,True,0.9854373070814308,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,672,Would ramen be bad for someone with heart failure?,High sodium content,0.9731401111678104,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,633,Is it common to see frost during some college commencements?,Yes,0.9456995533589022,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,243,Could every citizen of Samoa send a letter to a unique JPMorgan Chase employee?,Yes,0.8560892019516048,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,185,Is there a popular Disney character made from living ice?,Elsa,0.9372235941212037,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,92,Could a Bengal cat hypothetically best Javier Sotomayor's record?,No,0.9714604550183238,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.9999980415760685,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,37,Can a computer be programmed entirely in Boolean algebra?,True,0.9407361700914337,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.995538458693613,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,658,Can a goat be used for one of the ingredients in French toast?,True,0.9999788165794059,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,672,Would ramen be bad for someone with heart failure?,"Yes, high sodium content can worsen heart failure.",0.952273057259267,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,658,Can a goat be used for one of the ingredients in French toast?,"Yes, using goat's milk or cheese.",0.9325546680465482,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,133,Did Christopher Columbus condone multiple deadly sins?,True,0.97751570293477,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,633,Is it common to see frost during some college commencements?,True,0.9505247111763114,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,165,Would someone buying crickets be likely to own pets?,"Yes, likely for feeding pets like reptiles.",0.9832456101316285,0,,low,0.3,1,1,1
+qwen/qwen3-14b,conflictqa_strategyqa,314,Will twenty pea pods contents cover entire chess board?,True,0.9891825891647567,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,456,Can paresthesia be caused by a white pigment?,True,0.9715974006786406,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,663,Does Final Fantasy VI require electricity to play?,True,0.9383610705470037,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,189,Can someone sell their time through the Toronto Star?,"Yes, through classified ads.",0.9479406645368934,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,True,0.9999461459677997,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,No,0.8751398813894181,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,True,0.9999693669082734,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,No,0.9443276802345464,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.9955223994203428,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,583,Are there five different single-digit Fibonacci numbers?,True,0.979087010039497,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,562,Did Julio Gonzalez like acetylene?,True,0.9883735809117182,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,165,Would someone buying crickets be likely to own pets?,"Yes, likely for pet food",0.9869272079509406,0,,low,0.3,1,1,1
+qwen/qwen3-14b,conflictqa_strategyqa,678,Can French Toast hypothetically kill a Lannister?,Yes,0.8887972886218205,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,False,0.999968631488664,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,456,Can paresthesia be caused by a white pigment?,True,0.9045169952781478,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,189,Can someone sell their time through the Toronto Star?,True,0.9999654340569999,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,189,Can someone sell their time through the Toronto Star?,"Yes, through classified ads.",0.9435383087546176,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,True,0.9999442734800962,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,False,0.9836173289006093,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,52,Are moose used for work near the kingdom of Arendelle?,No,0.9015208065062441,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,True,0.9999761944290372,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.9999772330893074,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.9801886674064592,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,413,Do you need to schedule separate preventive healthcare and sickness visits?,No,0.9764527658217125,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,True,0.9999405268349595,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,No,0.9146718746613772,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,583,Are there five different single-digit Fibonacci numbers?,True,0.9824809027404664,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,540,Can Aerosmith legally drive in the carpool lane?,"Yes, if they meet occupancy requirements",0.9121049599692123,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,497,Would the owners of the company Peter Griffin works for need barley?,Yes,0.9176644813012731,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,678,Can French Toast hypothetically kill a Lannister?,"Yes, if poisoned",0.985364932056798,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,535,Was the Japanese street aesthetic once illuminated by noble gasses?,Neon signs,0.9759186596162016,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,665,Is Jennifer Lawrence's middle name similar to the name of a Scorsese collaborator?,True,0.9997308790685147,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,False,0.9999674396570049,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,515,Could the Dominican Order hypothetically defeat Blessed Gerard's order?,No,0.9096011220432099,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.9999420266132677,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,665,Is Jennifer Lawrence's middle name similar to the name of a Scorsese collaborator?,"No, Jennifer Lawrence does not have a middle name, and thus there is no similarity to a Scorsese collaborator's name.",0.9979404456837617,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,572,Would a recruit for the United States Marine Corps be turned away for self harm?,True,0.999998654644519,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,572,Would a recruit for the United States Marine Corps be turned away for self harm?,Yes,0.9495355534504042,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,211,Would Roman Gallic Wars army struggle to build the pyramids faster?,False,0.9935446212709819,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,True,0.9999388983893124,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,607,Is Batman (1989 film) likely to be shown on flight from NY to Kansas City?,Yes,0.982477931490155,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,87,Could a hundred thousand lolcats fit on a first generation iPhone?,No,0.9013376833817928,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,554,Would you find a tibia beside parsley on a holiday plate?,No,0.9369858235295336,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,51,Do onions have a form that resembles the inside of a tree?,True,0.999937498787424,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,459,Are Scottish people Albidosi?,True,0.9966414260225239,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,44,Does Hades appear in a Disney Channel musical movie?,True,0.9999717898925805,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,128,Do hyenas appear in a Broadway musical?,True,0.9999963897106763,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,535,Was the Japanese street aesthetic once illuminated by noble gasses?,True,0.9999828009732176,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,176,Would the author of Little Women have remembered the ratification of the 13th Amendment?,True,0.9999823582534825,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,535,Was the Japanese street aesthetic once illuminated by noble gasses?,Neon signs,0.9541636950954032,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,176,Would the author of Little Women have remembered the ratification of the 13th Amendment?,True,0.9859048796466252,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,665,Is Jennifer Lawrence's middle name similar to the name of a Scorsese collaborator?,True,0.9880324311211226,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,536,Does it seem like the Gorillaz is composed of more members than they have?,True,0.905077005387902,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,572,Would a recruit for the United States Marine Corps be turned away for self harm?,Yes,0.9384124437623521,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,281,Is it possible for biologist Rachel Carson to have flown to the moon?,False,0.9971760684114716,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,607,Is Batman (1989 film) likely to be shown on flight from NY to Kansas City?,Yes,0.991398623455718,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,281,Is it possible for biologist Rachel Carson to have flown to the moon?,"No, Rachel Carson died in 1964, before the first moon landing in 1969.",0.9451498823140476,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,554,Would you find a tibia beside parsley on a holiday plate?,No,0.9486593025992891,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,664,Would a person with Anorexia nervosa be more likely to break a bone than a regular person?,True,0.999999225141222,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,467,Are Citizens of Bern Switzerland are descendants of Genghis Khan?,True,0.999669681354972,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,44,Does Hades appear in a Disney Channel musical movie?,True,0.999988028544669,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,388,Was Krishna skilled at using the bow?,True,0.9999325286293965,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,418,Can a grey seal swim in the same water as the subject of Moby Dick?,True,0.9999851848475175,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,5,Would the top of Mount Fuji stick out of the Sea of Japan?,False,0.9993256571041264,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,597,Is Samsung accountable to shareholders?,True,0.9999993443501148,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,618,Were there eight humans on Noah's Ark?,True,0.9992212000014284,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,511,Is pi in excess of square root of 5?,True,0.9163768691459826,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,281,Is it possible for biologist Rachel Carson to have flown to the moon?,False,0.9985429022860962,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,418,Can a grey seal swim in the same water as the subject of Moby Dick?,True,0.9999857467812641,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,286,Did Holy Saturday 2019 have special significance to pot smokers?,True,0.9999389284297676,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,170,Did Christopher Columbus break the fifth commandment in Christianity?,True,0.9999968324774197,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,558,Could B be mistaken for an Arabic numeral?,True,0.9999664265622176,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,229,Would Robert Wadlow tower over a German Shepherd?,True,0.9999982459321295,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,618,Were there eight humans on Noah's Ark?,False,0.9434265987943353,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,36,Did Van Gogh suffer from a mental disorder?,True,0.9999959469474674,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,511,Is pi in excess of square root of 5?,Yes,0.9054874274528731,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,604,Was John Gall from same city as Stanford University?,True,0.9051736588277269,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,448,Were mollusks an ingredient in the color purple?,True,0.8950982735049395,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,231,Does Billy Graham support agnosticism?,No,0.9469781525110014,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,237,Would vegans consider chickpeas for a tuna substitute?,True,0.9999989611797971,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,559,Are people more likely than normal to get sunburn at Burning Man?,Yes,0.9634982707919851,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,209,Was Surfing popular when pogs came out?,True,0.9999893510161406,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,652,Can you watch Rick and Morty in Mariana Trench?,True,0.9999301999068507,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,481,Has type of political association Pompey had with Caesar influenced reality TV?,No,0.9086254711317331,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,333,Would a honey badger fit inside an oven?,True,0.9999932393090687,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,652,Can you watch Rick and Morty in Mariana Trench?,No,0.9581579512689083,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,22,Could ten gallons of seawater crush a six year old?,True,0.9999852359426502,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,367,Are saltwater crocodiles related to alligators?,True,0.9500246112162074,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,525,Does the word swastika have meaning in sanskrit?,True,0.9999810641732286,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,495,Is Disney associated with Los Angeles County?,True,0.999997397286638,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,241,Does welding with acetylene simulate the temperature of a star?,True,0.9998633415509459,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,575,Has Freemasonry been represented on the Moon?,True,0.9999768925366177,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,174,Could the children of Greek hero Jason hypothetically fill a polo team?,True,0.9999280692854283,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,558,Could B be mistaken for an Arabic numeral?,True,0.999959752483506,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,36,Did Van Gogh suffer from a mental disorder?,True,0.9999965770357625,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,623,Can an adult human skull hypothetically pass through the birth canal?,True,0.9999524615072759,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,358,Is it normal to find parsley in multiple sections of the grocery store?,True,0.9999976839541613,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,333,Would a honey badger fit inside an oven?,True,0.9999948059843685,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,446,Was Lord Voldemort taught by Professor Dumbledore?,False,0.9997455598406919,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,367,Are saltwater crocodiles related to alligators?,True,0.9999858346585108,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,93,Did Easy Rider make a profit at the theater when it was released?,True,0.9999835501929856,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,527,Would 7 zucchini's satisfy potassium USDA daily recommendation?,True,0.9999192191454527,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,492,Does Nintendo's link ever see an astronomer?,True,0.9999042604234218,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,615,Would a nickel fit inside a koala pouch?,True,0.9473000005350442,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,492,Does Nintendo's link ever see an astronomer?,True,0.8530674881748808,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,621,Could Cosmic Girls play League of Legends alone?,True,0.9786171397633259,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,625,Is Eid al-Fitr holiday inappropriate to watch entire US Office?,True,0.9880953317665198,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,113,Would James Cotton's instrument be too strident for a smooth jazz band?,True,0.9999884201944722,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,539,Could a wandering albatross fly from Bucharest to New York City without a rest?,True,0.9999549856869158,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,411,Do flying fish have good eyesight?,True,0.9999900378989047,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,469,Is Metallica protective over their music?,True,0.9999983140508268,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,484,Would eliminating competition in the Japanese bulk carrier market be profitable for a steel company?,True,0.9999979223679443,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,646,Would Şerafeddin Sabuncuoğlu have eaten Börek?,True,0.9999968495067508,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,469,Is Metallica protective over their music?,"Yes, through legal actions and licensing to protect their intellectual property.",0.8989114966784832,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,241,Does welding with acetylene simulate the temperature of a star?,No,0.9695239381756822,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,548,Karachi was a part of Alexander the Great's success?,True,0.9999950954844129,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,75,Did compact discs make computer gaming more popular?,True,0.9999959980359148,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,289,Are right wing Amreicans opposed to marxism?,True,0.9542726482627579,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,234,Would Kurt Cobain have benefited from Project Semicolon?,True,0.9999968211197721,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,174,Could the children of Greek hero Jason hypothetically fill a polo team?,True,0.9999022183471584,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,684,Is the tibia required for floor exercises?,True,0.9330162270772558,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,167,Is Mozambique Drill an easy shot for United States Army Ranger?,True,0.9997482527297928,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,174,Could the children of Greek hero Jason hypothetically fill a polo team?,Yes,0.9829950196202537,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,319,Is a pottery kiln inappropriate for use with glass blowing?,False,0.9999821395741212,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,295,Would Library of Alexandria need less shelf space than Library of Congress?,No,0.801144293073983,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,358,Is it normal to find parsley in multiple sections of the grocery store?,True,0.999996821118872,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,429,Are fossil fuels reducing jobs in the Gulf of Mexico?,False,0.9999061662527208,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,207,Would nickel boil in the outer core of the earth?,True,0.9581374802040249,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,581,Are Donkeys part of Christmas celebrations?,Yes,0.9639361231314709,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,634,Could Eddie Murphy's children hypothetically fill a basketball court by themselves?,False,0.9737772488955954,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,275,Does Homer Simpson need two hands worth of fingers to count to 5?,True,0.9999489377060738,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,527,Would 7 zucchini's satisfy potassium USDA daily recommendation?,True,0.999940341376188,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,629,Would a honey badger's dentures be different from a wolverine's?,True,0.9999736064212696,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,288,Can a sea turtle play tennis using a tennis racket?,No,0.9245228182609019,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,629,Would a honey badger's dentures be different from a wolverine's?,"Yes, due to differences in diet and dental structure.",0.897571828071527,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,372,Can a minor replicate the double-slit experiment?,True,0.9999974455390406,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,164,Is Bugs Bunny known for carrying a root vegetable around with him?,True,0.9999724652839221,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,625,Is Eid al-Fitr holiday inappropriate to watch entire US Office?,True,0.9921339742119448,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,235,Could the Eiffel Tower be completely submerged at the Arctic Ocean's deepest point?,True,0.9999801106421752,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,461,NATO doesn't recognize double triangle flag countries?,State of Palestine,0.993328693795554,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,235,Could the Eiffel Tower be completely submerged at the Arctic Ocean's deepest point?,True,0.9838628879228165,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,469,Is Metallica protective over their music?,"Yes, Metallica actively protects their music through legal actions and strict copyright enforcement.",0.9267319123411419,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,341,Is Final Fantasy VI closer to beginning than end of its franchise?,True,0.9413341602957619,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,289,Are right wing Amreicans opposed to marxism?,True,0.952903537493479,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,368,Did Rosalind Franklin contribute to work that led to Whole Genome Sequencing?,True,0.99999402264511,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,103,Were the Great Pyramids built by a theocratic government?,True,0.9999953338925004,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,167,Is Mozambique Drill an easy shot for United States Army Ranger?,True,0.9561600775277125,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,103,Were the Great Pyramids built by a theocratic government?,Yes,0.8887182494685608,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,135,4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?,Yes,0.9568731037221052,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,3,Is average number of peas in a pod enough commas for a billion?,True,0.9996481300986633,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,6,Is there a warthog on Broadway?,Yes,0.9203580667568794,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,111,Is menthol associated with Christmas?,True,0.9945695342988145,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,85,Can a quarter fit inside of a human kidney?,True,0.9999800936229922,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,178,Can Hulk's alter ego explain atomic events?,True,0.9999861895004866,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,391,Do Koalas prefer Eucalyptus over meat?,True,0.9999992166268006,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,85,Can a quarter fit inside of a human kidney?,Yes,0.9721145790234029,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,391,Do Koalas prefer Eucalyptus over meat?,True,0.9159925467477247,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,534,"In isopropyl alcohol, is the solubility of salt low?",True,0.9999611430062206,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,634,Could Eddie Murphy's children hypothetically fill a basketball court by themselves?,No,0.9919771141423339,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,89,Does the book Revolutionary Road give a glimpse at life in a suburb?,True,0.949423942510447,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,438,Did any cultures associate celery with death?,Ancient Romans used celery in funeral garlands.,0.9785774467086862,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,34,Do frogs feel disgust?,True,0.9999884372272736,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,8,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,True,0.9999855424399927,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,34,Do frogs feel disgust?,Frogs do not experience disgust as humans do; their behaviors are driven by instinct rather than complex emotions.,0.9383181418581079,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,580,Is Great Pyramid of Giza the last wonder of its kind?,Yes,0.9642804929074433,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,488,Does a Disney princess on Broadway have red hair?,True,0.9317730480625548,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,4,Is Dustin Hoffman one of the B'nei Yisrael?,True,0.9321065851148266,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,577,Do the telescopes at Goldstone Deep Space Communications Complex work the night shift?,True,0.9999971049489983,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,461,NATO doesn't recognize double triangle flag countries?,True,0.9999654533023224,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,16,Is double duty an incorrect phrase for host of Dancing With The Stars?,False,0.9999797190081335,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,541,Do you need both hot and cold water to peel a tomato?,True,0.9773589404281883,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,685,Is Europa linked to Viennese waltzes?,True,0.9999585900732502,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,487,Would 1943-S penny be good for making silverware?,True,0.994790517522686,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,16,Is double duty an incorrect phrase for host of Dancing With The Stars?,False,0.9599296263521753,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,239,Was Achilles a direct descendent of Gaia?,False,0.984319596404583,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,478,Could the leader of Heaven's Gate save images in JPEG format?,True,0.9922186152996619,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,298,Was Darth Vader monogamous?,True,0.9146573416318461,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,True,0.9997084729752181,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,"Yes, in a digital wallet",0.9612238959038719,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,13,Did any country in Portuguese Colonial War share Switzerlands role in WWII?,No,0.9581993697027867,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,156,Has Nikola Tesla's name inspired multiple brands?,True,0.9999954190374619,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,156,Has Nikola Tesla's name inspired multiple brands?,Yes,0.9364866986765813,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,263,Was Mozart accused of stealing from Richard Wagner?,False,0.9999730956501647,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,263,Was Mozart accused of stealing from Richard Wagner?,"No, Richard Wagner was born after Mozart's death.",0.9030886396512103,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,291,Did Barack Obama participate in the Reformation?,False,0.9999882328916585,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,291,Did Barack Obama participate in the Reformation?,No,0.8931303248212777,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,368,Did Rosalind Franklin contribute to work that led to Whole Genome Sequencing?,Yes,0.9718370232153637,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,351,Can printing books in kanji instead of the Roman alphabet save trees?,True,0.9891357669608262,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,135,4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?,True,0.9999973774164073,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,573,If it socially acceptable to wear an icon depicting crucifixion?,"Generally acceptable as a religious symbol, but context-dependent.",0.943697392154751,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,135,4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?,True,0.9712432967110549,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,287,Is shoe soup innocuous?,Yes,0.9303043889355221,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,564,Does an individual oceanographer study many sciences?,Yes,0.9628024109989191,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,419,Does the name C-SPAN refer to a form of telecommunications that utilizes outer space?,False,0.9275889620651152,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,3,Is average number of peas in a pod enough commas for a billion?,True,0.9771134303468856,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,66,Do human sacrums have more fused vertebrae than an Alaskan Malamute?,True,0.9999609244959644,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,516,Did Subway have a sex offender as a spokesperson?,Yes,0.9843608515093685,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,66,Do human sacrums have more fused vertebrae than an Alaskan Malamute?,True,0.960222458553137,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,111,Is menthol associated with Christmas?,Yes,0.9346115016318057,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,565,Are coopers required in the beverage industry?,True,0.9999868876524637,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,383,Would Dave Chappelle pray over a Quran?,True,0.9606273556522464,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,107,Can children be hurt by jalapeno peppers?,True,0.9999966621767045,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,565,Are coopers required in the beverage industry?,Yes,0.877070889260212,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,643,Would a kaffir lime be a good ingredient for making a candle?,True,0.9999975817760638,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,107,Can children be hurt by jalapeno peppers?,"Yes, jalapeno peppers can irritate a child's mouth and throat.",0.9632834175565701,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,428,Does having lip piercings lead to more expensive dental bills?,True,0.916380131333369,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,61,Did Sartre write a play about Hell?,No Exit,0.8478123535893713,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,191,Did children read Harry Potter and the Philosopher's Stone during the Albanian Civil War?,True,0.9999769946970255,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,178,Can Hulk's alter ego explain atomic events?,"Yes, Bruce Banner is a physicist who understands atomic events.",0.9837775494322806,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,191,Did children read Harry Potter and the Philosopher's Stone during the Albanian Civil War?,True,0.9760065500921218,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,41,Could you read The Atlantic magazine during the Games of the XXII Olympiad?,Yes,0.9703110638218522,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,88,Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia University?,True,0.9999943632275908,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,88,Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia University?,True,0.9600338156721149,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,"Yes, through indirect influences on later musicians.",0.8053291499097681,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,560,Do you often hear Marco Polo's name shouted near water?,"Yes, in the game of Marco Polo.",0.9905035331250741,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,True,0.9999498811425114,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,391,Do Koalas prefer Eucalyptus over meat?,True,0.9999996083127745,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,False,0.9853434048217735,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,344,Are eagles and young bears both used as labels for skills-training youth groups?,True,0.9710061694348966,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,453,Are red legs a sign of failing health in those with Anorexia Nervosa?,True,0.9810534762333811,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,90,Does Buddy The Elf know anyone who works in publishing?,"Yes, his father Walter Hobbs is a publisher.",0.9484307306400168,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,534,"In isopropyl alcohol, is the solubility of salt low?",True,0.9998473741748368,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,215,Did any Golden Globe winners attend John Kerry's alma mater?,True,0.9446536612255424,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,534,"In isopropyl alcohol, is the solubility of salt low?",Yes,0.9788637208125156,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,644,Does the art from Family Guy look a lot like the art in American Dad?,True,0.9999925751686966,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,644,Does the art from Family Guy look a lot like the art in American Dad?,Yes,0.9741546633376309,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,305,Did Pink Floyd have a song about the French Riviera?,False,0.951496199042557,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,477,Would Kylee Jenner ask for no cream in her coffee?,True,0.9999940226440716,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,477,Would Kylee Jenner ask for no cream in her coffee?,True,0.977288764869785,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,681,Is the tongue part of a creature's head?,True,0.9999898874316948,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,681,Is the tongue part of a creature's head?,Yes,0.834653753493269,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,34,Do frogs feel disgust?,No,0.9805902509301151,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,541,Do you need both hot and cold water to peel a tomato?,True,0.9574171386930519,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,620,Is anyone at the Last Supper celebrated in Islam?,No,0.9823427769480113,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,685,Is Europa linked to Viennese waltzes?,True,0.9637182905057398,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,682,Does Coast to Coast AM have more longevity than the Rush Limbaugh show?,Yes,0.8206993628068945,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,194,Did any of Maya Angelou's children follow in her footsteps?,"Maya Angelou's son Guy Johnson became a writer and activist, following her footsteps.",0.9222337312784414,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,True,0.9999954530970862,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,239,Was Achilles a direct descendent of Gaia?,No,0.95679915980524,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,Yes,0.9508968637702657,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,226,Were French people involved in the American Civil War?,"Yes, some French individuals fought on both sides.",0.9724497622118231,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,523,"If you're pregnant, might you be recommended ginger?",True,0.9999939005827616,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,523,"If you're pregnant, might you be recommended ginger?","Yes, for nausea relief",0.9364133003976818,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,True,0.9998671520260568,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,613,Can you put bitcoin in your pocket?,"Yes, via a digital wallet.",0.9616962000450169,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,159,Would a tool used for Martin Luther's Reformation opening salvo aid in a crucifixion?,True,0.9880624339830625,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,156,Has Nikola Tesla's name inspired multiple brands?,Yes,0.9446241692054176,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,104,Does the central processing unit usually have a dedicated fan?,Yes,0.9273168760439431,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,331,Is it safe to eat kidney?,True,0.9999983651388956,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,351,Can printing books in kanji instead of the Roman alphabet save trees?,True,0.940368190145729,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,331,Is it safe to eat kidney?,"Yes, it is safe to eat kidney when properly cooked and sourced.",0.9762526394852548,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,169,Has Justin Timberlake ever written a song about Britney Spears?,"Yes, 'Cry Me a River' is believed to be about Britney Spears.",0.9715249212976553,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,573,If it socially acceptable to wear an icon depicting crucifixion?,True,0.9817414405085377,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,564,Does an individual oceanographer study many sciences?,Yes,0.9642958581665417,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,196,Was Ariana Grande inspired by Imogen Heap?,True,0.9999925496102672,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,463,Does table tennis use prime numbers?,True,0.98682794000961,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,280,Did Confederate States Army influence West Point fashion?,True,0.9999880625968103,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,280,Did Confederate States Army influence West Point fashion?,No,0.9823112019682437,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,True,0.9999959299171356,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,419,Does the name C-SPAN refer to a form of telecommunications that utilizes outer space?,False,0.9920349642162435,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,No,0.940255733813251,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,516,Did Subway have a sex offender as a spokesperson?,True,0.9630985078451646,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,337,Is basil safe from Hypervitaminosis D?,True,0.9728588446292205,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,383,Would Dave Chappelle pray over a Quran?,No,0.9872151339237853,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,107,Can children be hurt by jalapeno peppers?,"Yes, jalapeno peppers can irritate children.",0.980588568351927,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,557,Can COVID-19 spread to maritime pilots?,True,0.9115281155580459,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,426,Does the Taco Bell kitchen contain cinnamon?,True,0.8707413013510669,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,61,Did Sartre write a play about Hell?,"Yes, 'No Exit' (Huis Clos).",0.985694416326494,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,191,Did children read Harry Potter and the Philosopher's Stone during the Albanian Civil War?,No,0.8789910134709967,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,360,Is Christopher Nolan indebted to Bob Kane?,No,0.9760919752406362,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,88,Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia University?,True,0.963056300441578,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,277,Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004?,True,0.9913545732996477,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,True,0.9999984900228761,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,421,Did Johann Sebastian Bach influence heavy metal?,"Yes, through indirect influence on later musicians and subgenres.",0.810875633659251,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,318,Are human footprints absent from Mount Sharp?,True,0.855942625229557,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,True,0.9999172727088279,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,377,Are ropes required to operate a frigate?,True,0.9860460080693745,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,344,Are eagles and young bears both used as labels for skills-training youth groups?,True,0.999979906320718,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,223,Does Hanuman have some of the same duties as Athena?,True,0.9575940007760279,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,344,Are eagles and young bears both used as labels for skills-training youth groups?,True,0.9550752317526133,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,213,Have any members of the 2020 British royal family allegedly committed a felony?,"Yes, Prince Andrew faced allegations of sexual assault in 2020.",0.9513451441374567,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.9996873474861752,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,90,Does Buddy The Elf know anyone who works in publishing?,"Yes, his father Walter Hobbs is a publisher.",0.9539292611328317,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,304,Has the creator of Futurama lived in multiple centuries?,True,0.9192915123839704,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.9800037844844025,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,336,Is Elijah part of a Jewish holiday?,True,0.9999901741211811,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,336,Is Elijah part of a Jewish holiday?,"Yes, Elijah is part of the Passover holiday through the tradition of the Elijah cup.",0.9776650731600832,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,215,Did any Golden Globe winners attend John Kerry's alma mater?,True,0.9380089429633207,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,305,Did Pink Floyd have a song about the French Riviera?,True,0.9992250207788883,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,551,Can lettuce result in spontaneous abortion?,No,0.8691048339992087,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,305,Did Pink Floyd have a song about the French Riviera?,False,0.9491626872517632,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,425,Did Malcolm X avoid eating ham?,Yes,0.9436143138204265,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,356,Would an aerodynamic cactus benefit from more frequently closed stomata?,True,0.9975411289162531,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,356,Would an aerodynamic cactus benefit from more frequently closed stomata?,True,0.9874413670624755,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,317,Would drinking a glass of lemonade provide Vitamin C?,Yes,0.9681425317322255,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,477,Would Kylee Jenner ask for no cream in her coffee?,True,0.9576579672465392,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,151,Is there historic graffiti on Alcatraz?,True,0.9060344383392557,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,681,Is the tongue part of a creature's head?,True,0.9054740062209151,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,620,Is anyone at the Last Supper celebrated in Islam?,True,0.9999477460119263,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,355,Does Hammurabi's Code violate Christians Golden Rule?,No,0.8782166091572694,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,149,Is a paraplegic suitable for conducting an orchestra?,True,0.999997632865367,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,149,Is a paraplegic suitable for conducting an orchestra?,True,0.893144488744659,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.9999979138518906,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,620,Is anyone at the Last Supper celebrated in Islam?,Yes,0.9696885921838457,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,670,Were the first missionaries required to attend mass on Sundays?,True,0.9999836353172183,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.9300510875633847,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,670,Were the first missionaries required to attend mass on Sundays?,True,0.9473612845084147,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,682,Does Coast to Coast AM have more longevity than the Rush Limbaugh show?,True,0.8998156060643994,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,194,Did any of Maya Angelou's children follow in her footsteps?,True,0.993802852230232,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,422,Can Poland Spring make money in the Sahara?,Unlikely due to extreme conditions and limited market viability.,0.8270508742869145,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,194,Did any of Maya Angelou's children follow in her footsteps?,"Yes, her son Guy Johnson was a poet and writer.",0.9489255720066727,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,True,0.9999939999213937,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,382,Is a jellyfish safe from atherosclerosis?,Yes,0.927907004412522,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,466,Is a krabby patty similar to a cheeseburger?,"Yes, they are similar",0.8989806069997803,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,159,Would a tool used for Martin Luther's Reformation opening salvo aid in a crucifixion?,True,0.9998367045404924,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,159,Would a tool used for Martin Luther's Reformation opening salvo aid in a crucifixion?,No,0.9846634193646545,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,71,Does Amtrak operate four wheel vehicles?,True,0.9950480841838459,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,104,Does the central processing unit usually have a dedicated fan?,True,0.9567506484293582,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,331,Is it safe to eat kidney?,"Yes, it is safe to eat kidney.",0.9802411007008067,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,269,Can Aerosmith fit in a 2020 Mitsubishi Outlander?,True,0.9854321732025749,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,169,Has Justin Timberlake ever written a song about Britney Spears?,Yes,0.9069149481368184,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,463,Does table tennis use prime numbers?,True,0.9999952657753064,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,556,Would Michael Phelps be good at pearl hunting?,Yes,0.9700322658633636,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,463,Does table tennis use prime numbers?,False,0.9974779548872492,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,500,Was John George Bice's birthplace near Cornwall?,True,0.9773502143097592,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,280,Did Confederate States Army influence West Point fashion?,No,0.975466759263052,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,True,0.999992387860817,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,160,Will Ahura Mazda have to look down to see Abaddon's dwelling??,Yes,0.8577701855764627,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,423,Could the Powepuff Girls make the background to the Azerbaijani flag?,True,0.9383444401204777,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,420,Are flag of Gabon colors found in rainbow?,True,0.9993634788417695,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,420,Are flag of Gabon colors found in rainbow?,True,0.9141880474487304,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,173,Could modern Brazilian Navy have hypothetically turned the tide in Battle of Actium?,No,0.9781990003732777,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,337,Is basil safe from Hypervitaminosis D?,True,0.9060807325099759,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,290,Can Stone Cold Steve Austin apply his finisher to a mule deer?,True,0.9999948939563941,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,584,Would half muggle wizards fear Lord Voldemort?,Yes,0.946923614783749,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,290,Can Stone Cold Steve Austin apply his finisher to a mule deer?,True,0.9734168473522233,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,504,Could chives be mistaken for grass?,"Yes, but they are different plants.",0.9765511642072211,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,557,Can COVID-19 spread to maritime pilots?,"Yes, through close contact or contaminated surfaces.",0.9541920343432632,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,132,Would Richard Dawkins hypothetically refuse an offering of the Last rites?,Yes,0.9346929904790104,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,493,Does the swastika have positive uses?,True,0.999999046328811,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,426,Does the Taco Bell kitchen contain cinnamon?,True,0.8728627839740328,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,493,Does the swastika have positive uses?,"Yes, historically in Hinduism, Buddhism, and Jainism as a symbol of good fortune, though now widely associated with Nazi Germany.",0.9772995050281821,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,78,Are there enough Jonny Cash records in the world to give one to each French citizen?,False,0.999497622097382,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,360,Is Christopher Nolan indebted to Bob Kane?,No,0.9684251389607738,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,277,Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004?,True,0.9999850826779972,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,78,Are there enough Jonny Cash records in the world to give one to each French citizen?,No,0.9672634836679583,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,True,0.9999847591573514,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,277,Is Rand Paul guilty of catch-phrase used to attack John Kerry in 2004?,True,0.9784891943974924,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,Yes,0.9484264907098798,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,318,Are human footprints absent from Mount Sharp?,True,0.8903407141435352,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,223,Does Hanuman have some of the same duties as Athena?,True,0.9577250348656341,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,310,Is there radiation where Nikola Tesla once worked?,True,0.9886519022870008,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,23,Could a giant squid fit aboard the deck of the titanic?,True,0.9999629703762145,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,213,Have any members of the 2020 British royal family allegedly committed a felony?,Yes,0.9352086966900635,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.9991263099643568,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,23,Could a giant squid fit aboard the deck of the titanic?,True,0.84101752797392,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,313,Is LG Electronics located in a city with an official bird that has a purplish/blue tail?,True,0.964743002216023,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,614,Does Masaharu Morimoto rely on glutamic acid?,True,0.9422971232670136,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,210,Can Centurylink max internet plan upload 1000GB in a fortnight?,True,0.9999982913427176,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,336,Is Elijah part of a Jewish holiday?,"Yes, Elijah is associated with the Passover holiday through the Seder tradition where a cup of wine is set aside for him.",0.9146949610090617,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,210,Can Centurylink max internet plan upload 1000GB in a fortnight?,Yes,0.9750134618465333,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,253,Can you hide a pet macaque under your desk?,"No, a macaque is too large and heavy to fit under a standard desk safely.",0.8915484520231548,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,551,Can lettuce result in spontaneous abortion?,No,0.974623908527134,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,425,Did Malcolm X avoid eating ham?,True,0.9999977861315131,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,425,Did Malcolm X avoid eating ham?,Yes,0.9413840373742238,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,39,"At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",Yes,0.9456112688735991,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,True,0.9999978712791358,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,Yes,0.9751921838512755,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,356,Would an aerodynamic cactus benefit from more frequently closed stomata?,True,0.9467314031443556,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,193,Could an NBA game be completed within the span of the Six-Day War?,True,0.9714607388246569,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,606,Did Gladiator's weapon of choice require less hands than Soul Calibur's Faust?,No,0.9427363402851007,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,151,Is there historic graffiti on Alcatraz?,Yes,0.9094703161873898,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,43,Is Britney Spears' breakdown attributed to bipolar disorder?,True,0.9639895929629528,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,1,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,Yes,0.8823334729800517,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,355,Does Hammurabi's Code violate Christians Golden Rule?,True,0.9836223626550642,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,228,Is accountant a difficult profession for a person suffering from Dyscalculia?,True,0.9766392812496316,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,True,0.999997377419169,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,149,Is a paraplegic suitable for conducting an orchestra?,Yes,0.8880697189007226,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,No,0.9819106953202172,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.9999987681755296,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,117,Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?,True,0.9399672479918796,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,374,Would the crew of Apollo 15 have difficulty riding a unicycle?,"Yes, due to lack of training",0.9258909243119002,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,574,Was the man who played the male lead in Mrs. Doubtfire known for his humour?,"Yes, Robin Williams was renowned for his comedic talent.",0.9649907656914359,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,False,0.9541921202606248,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,422,Can Poland Spring make money in the Sahara?,Yes,0.9587883402264237,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,382,Is a jellyfish safe from atherosclerosis?,True,0.9999856616340526,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,382,Is a jellyfish safe from atherosclerosis?,True,0.9312411474375268,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,True,0.9634600929734428,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,476,Does Nicole Kidman know any Scientologists?,"Yes, she has met Scientologists in the entertainment industry.",0.9092002413932045,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,71,Does Amtrak operate four wheel vehicles?,True,0.9783865212752186,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,269,Can Aerosmith fit in a 2020 Mitsubishi Outlander?,"Yes, the band can fit in the vehicle.",0.8984108652160281,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,570,Does Nigella Lawson care about solubility?,True,0.9935881569090765,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,556,Would Michael Phelps be good at pearl hunting?,True,0.9999980756351509,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,257,Does autopilot rely on fossil fuels?,True,0.9999059348492781,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,257,Does autopilot rely on fossil fuels?,True,0.9430854190228243,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,475,Was Noah concerned with buoyancy?,True,0.982182221661195,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,556,Would Michael Phelps be good at pearl hunting?,No,0.9869390977618472,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,233,Could Goofy have counted nine planets in his first year?,Yes,0.8931989839344596,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,500,Was John George Bice's birthplace near Cornwall?,Unknown,0.9925635186818758,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,19,Can you write a whole Haiku in a single tweet?,True,0.8947658699039982,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,160,Will Ahura Mazda have to look down to see Abaddon's dwelling??,Yes,0.9095202541761934,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,423,Could the Powepuff Girls make the background to the Azerbaijani flag?,True,0.9889992033840775,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,464,Can you conduct surveillance from a teddy bear?,Yes,0.9264550872857877,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,420,Are flag of Gabon colors found in rainbow?,Yes,0.9273879472393682,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,584,Would half muggle wizards fear Lord Voldemort?,Yes,0.9152203043215887,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,598,Is Alan Alda old enough to have fought in the Vietnam War?,True,0.9830286636778924,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,504,Could chives be mistaken for grass?,Yes,0.9144936705582845,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,True,0.9999741512494779,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,132,Would Richard Dawkins hypothetically refuse an offering of the Last rites?,True,0.9999967473302813,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,132,Would Richard Dawkins hypothetically refuse an offering of the Last rites?,"Likely yes, due to his atheism",0.8947688112199099,0,,low,0.3,1,1,1
+qwen/qwen3-14b,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,True,0.8804239047486495,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,True,0.9999781865740526,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,493,Does the swastika have positive uses?,True,0.9999981267243585,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,Yes,0.9122502898421194,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,493,Does the swastika have positive uses?,"Yes, historically in Hinduism, Buddhism, and Jainism as a symbol of good fortune, though now widely associated with Nazi Germany.",0.9776399107391325,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,221,Are paratroopers good at mountain rescue?,True,0.9686153537260878,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,696,Are amoebas safe from breast cancer?,Yes,0.9591966155665269,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,163,"Would moon cakes be easy to find in Chinatown, Manhattan?",True,0.9999972071262807,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,78,Are there enough Jonny Cash records in the world to give one to each French citizen?,No,0.9781991771103407,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,True,0.999986087330811,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,172,Did a Polish poet write sonnets about Islamic religion?,True,0.966829597757533,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,163,"Would moon cakes be easy to find in Chinatown, Manhattan?",Yes,0.9844154453355212,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,386,Does Düsseldorf have only a small number of smoggy days each year?,True,0.9999925098729452,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,310,Is there radiation where Nikola Tesla once worked?,"Yes, electromagnetic radiation",0.9671203047084485,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,386,Does Düsseldorf have only a small number of smoggy days each year?,True,0.9074682785594558,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,True,0.9999781267606874,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,23,Could a giant squid fit aboard the deck of the titanic?,Yes,0.953952695115765,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,614,Does Masaharu Morimoto rely on glutamic acid?,True,0.9650941468426871,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,"No, they can't fit side by side on the bridge's width.",0.9549862167930847,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,272,Was England directly involved in the Arab-Israeli conflict?,True,0.9999963726805866,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,272,Was England directly involved in the Arab-Israeli conflict?,Yes,0.9264910651972862,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,210,Can Centurylink max internet plan upload 1000GB in a fortnight?,True,0.9931614463562106,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,253,Can you hide a pet macaque under your desk?,True,0.9999819607864201,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,589,Can jackfruit be used as a weapon?,Yes,0.9114618065050146,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,586,Would the yearly precipitation on Snowdon submerge an upright bowling pin?,True,0.9999891013287192,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,253,Can you hide a pet macaque under your desk?,True,0.9907619141192159,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,39,"At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",True,0.9742971886936675,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,True,0.999998279990968,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,301,Would Jimmy Vee be eligible to compete in the Paralympic Games?,Yes,0.9043046119643992,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,586,Would the yearly precipitation on Snowdon submerge an upright bowling pin?,Yes,0.9876500058625137,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,483,Are some chiropractic manipulations dangerous?,"Yes, rare complications can occur, but risks are generally low when performed by a qualified practitioner.",0.8905366916380156,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,193,Could an NBA game be completed within the span of the Six-Day War?,True,0.9707384251814721,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,460,Was Los Angeles Memorial Sports Arena hypothetically inadequate for hosting Coachella?,True,0.9737677149971452,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,True,0.9999557981251015,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,43,Is Britney Spears' breakdown attributed to bipolar disorder?,No,0.9541287894430598,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,Yes,0.8544527298010945,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,1,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,Yes,0.893376176934029,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,106,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,"Yes, due to venue and infrastructure differences.",0.9350493677149639,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,228,Is accountant a difficult profession for a person suffering from Dyscalculia?,True,0.9999934947413285,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,683,Is the E.T. the Extra-Terrestrial Atari Landfill story an urban legend?,True,0.9346451545998369,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,228,Is accountant a difficult profession for a person suffering from Dyscalculia?,Yes,0.9584218091217583,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,635,Did Sony definitively win the video game war against Sega?,False,0.9998573023938133,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,True,0.999998961178847,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,635,Did Sony definitively win the video game war against Sega?,True,0.9618785977760943,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,538,Do depressed people travel to the Golden Gate Bridge often?,True,0.9763062864087537,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,252,Can Josh Blue participate in Paralympics Games?,No,0.9950202794588614,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,374,Would the crew of Apollo 15 have difficulty riding a unicycle?,True,0.9457695630211201,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,574,Was the man who played the male lead in Mrs. Doubtfire known for his humour?,True,0.9999955297195452,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,574,Was the man who played the male lead in Mrs. Doubtfire known for his humour?,"Yes, Robin Williams was renowned for his comedic talent.",0.9541954401591567,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,False,0.968750754169099,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,412,Is xenophobia hypothetically unimportant between Saladin and Ali Askari?,No,0.9018231620600268,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,676,Were karaoke and the turtle power tiller patented in the same country?,Yes,0.983067879095141,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,553,Would a black widow woman have use for peaches?,True,0.9999572962793342,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,476,Does Nicole Kidman know any Scientologists?,True,0.9999389626695039,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,476,Does Nicole Kidman know any Scientologists?,"Yes, she has met Scientologists in the entertainment industry.",0.9116808912379553,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,570,Does Nigella Lawson care about solubility?,True,0.9999680157244377,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,553,Would a black widow woman have use for peaches?,True,0.9751167009493438,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,152,Did Polar Bears roam around in Ancient Greece?,False,0.9999975988064257,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,152,Did Polar Bears roam around in Ancient Greece?,False,0.9358291822774785,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,570,Does Nigella Lawson care about solubility?,No,0.9922013334021345,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,48,Does a Generation Y member satisfy NYPD police officer age requirement?,True,0.99999656000387,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,257,Does autopilot rely on fossil fuels?,No,0.8025796766334523,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,48,Does a Generation Y member satisfy NYPD police officer age requirement?,True,0.9863571879333668,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,475,Was Noah concerned with buoyancy?,Yes,0.987675992862846,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,76,Do storks need golden toads to survive?,No,0.927452165217363,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,233,Could Goofy have counted nine planets in his first year?,True,0.9999923509387129,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,233,Could Goofy have counted nine planets in his first year?,Yes,0.8920786237219718,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,19,Can you write a whole Haiku in a single tweet?,True,0.91851140393155,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,517,Is there a Yeti associated with Disney theme parks?,Expedition Everest at Disney's Animal Kingdom,0.9690189369337358,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,464,Can you conduct surveillance from a teddy bear?,True,0.9999966621828884,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,464,Can you conduct surveillance from a teddy bear?,Yes,0.9524643705631425,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,381,Is the Riksdag a political entity in Scandinavia?,True,0.9360519480481315,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,452,"In teenagers and young adults with depression, are SSRI medications less safe than they are for adults?",True,0.9674918243300972,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,598,Is Alan Alda old enough to have fought in the Vietnam War?,True,0.9728013085850239,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,True,0.9999841461549801,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,590,Do the James Bond and Doctor Who series have a similarity in format?,Both feature a main character portrayed by different actors over time.,0.9471596107596102,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,236,Do the directors of The Matrix advocate for transgender rights?,"The directors of The Matrix, Lana and Lilly Wachowski, are known for supporting transgender rights, with Lana Wachowski being a prominent transgender advocate.",0.9247438405682721,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,True,0.9999838226284778,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,177,Does US brand Nice depend on Western honey bee?,True,0.9540608444899409,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,312,Could Al Capone have read works from the Harlem Renaissance?,Yes,0.8729139744319784,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,221,Are paratroopers good at mountain rescue?,True,0.971013570134657,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,242,Would Jean Harris's victim have avoided lentils?,Yes,0.9939296598843262,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,408,Can furniture be made of hair?,True,0.9999986887042647,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,696,Are amoebas safe from breast cancer?,Yes,0.984014452658445,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,163,"Would moon cakes be easy to find in Chinatown, Manhattan?",Yes,0.9593232659417472,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,408,Can furniture be made of hair?,Yes,0.9284467402248087,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,416,Is Sea World hazardous to leopard seal's health?,True,0.9999927965530172,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,386,Does Düsseldorf have only a small number of smoggy days each year?,True,0.8987373847283322,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,True,0.9999715292318441,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,416,Is Sea World hazardous to leopard seal's health?,No,0.9959129584301392,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,30,Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?,No,0.9856754983141279,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,272,Was England directly involved in the Arab-Israeli conflict?,Yes,0.8958023702974869,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,443,Does Lorem ipsum backwards fail to demonstrate alliteration?,False,0.9905321472359583,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,589,Can jackfruit be used as a weapon?,True,0.9541485223803341,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,442,Is an ammonia fighting cleaner good for pet owners?,Yes,0.9455647909416314,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,555,"At Christmastime, do some films remind us that groundhog day is approaching?",Yes,0.9890520239191016,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,586,Would the yearly precipitation on Snowdon submerge an upright bowling pin?,True,0.9350442487620436,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,380,Should a Celiac sufferer avoid spaghetti?,Yes,0.9148473398082914,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,433,"If you were at an Apple store, would most of the computers be running Ubuntu?",False,0.9999711206174563,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,483,Are some chiropractic manipulations dangerous?,Yes,0.8943168368566754,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,433,"If you were at an Apple store, would most of the computers be running Ubuntu?",False,0.922675912443659,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,300,Could Ryan Crouser throw a bengal fox with ease?,True,0.9999974625696559,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,460,Was Los Angeles Memorial Sports Arena hypothetically inadequate for hosting Coachella?,True,0.9999420095511345,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,460,Was Los Angeles Memorial Sports Arena hypothetically inadequate for hosting Coachella?,True,0.9738600337087835,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,True,0.9999560534916103,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,300,Could Ryan Crouser throw a bengal fox with ease?,True,0.9775288248373447,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,622,Does Super Mario require electricity to play?,Yes,0.8715737764611162,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,600,Were Jackson Pollock's parents not required to say The Pledge of Allegiance as children?,True,0.9696457648530861,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,308,Would you have to wear a coat when on Phobos?,True,0.9677476532204523,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,106,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,True,0.9999769606359643,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,106,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,Yes,0.9523416317500137,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,683,Is the E.T. the Extra-Terrestrial Atari Landfill story an urban legend?,True,0.9999638166605441,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,528,Can second row of QWERTY keyboard spell Abdastartus's kingdom?,True,0.9941184903123198,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,303,Are quadrupeds represented on Chinese calendar?,True,0.9999837545131176,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,303,Are quadrupeds represented on Chinese calendar?,True,0.8784881013802941,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,553,Would a black widow woman have use for peaches?,True,0.9999828520557993,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,48,Does a Generation Y member satisfy NYPD police officer age requirement?,True,0.9999943376639743,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,381,Is the Riksdag a political entity in Scandinavia?,True,0.9999951465697178,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,452,"In teenagers and young adults with depression, are SSRI medications less safe than they are for adults?",True,0.9999762284942288,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,590,Do the James Bond and Doctor Who series have a similarity in format?,True,0.9999960860112,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,416,Is Sea World hazardous to leopard seal's health?,True,0.9999928306089771,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,442,Is an ammonia fighting cleaner good for pet owners?,False,0.999970371438276,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,622,Does Super Mario require electricity to play?,True,0.9999982629612278,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,303,Are quadrupeds represented on Chinese calendar?,True,0.9999924900331979,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,155,Is Noah's Ark an upgrade for Golden Age of Piracy pirates?,No,0.9766248441636461,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,526,Can a Liebherr LTM 11200-9.1 hypothetically lift Mount Emei?,No,0.9221583492486755,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,227,Does Southwest Airlines use bulk carriers?,False,0.9941738824141316,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,627,Would a viewer of Monday Night Football be able to catch WWE Raw during commercial breaks?,True,0.9999126329038859,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,680,Does Lupita Nyongo have citizenship in paternal Family of Barack Obama's origin country?,True,0.9998923832187697,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,496,Is a slime mold safe from cerebral palsy?,Yes,0.9866865884272242,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,434,Was Saint Vincent and the Grenadines named by an Italian explorer?,No,0.9735898861165067,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,529,Is number of stars in Milky Way at least ten times earth's population?,True,0.9999823071792128,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,533,Could you watch all of JAG in six months?,True,0.9999798892953154,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,567,Would an Alfa Romeo vehicle fit inside a barn?,Yes,0.9062073875511929,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,115,Does Mercury help detect coronavirus?,True,0.9998977946371616,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,10,"If your skin was turning the color of a zombie, could it be because of nickel?",True,0.9921885782917972,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,246,Are any of J.K. Rowling's books in the genre of And Then There Were None?,True,0.9999628972176365,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,339,Is chaff produced by hydropower?,False,0.99999499329123,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,220,Do people put creatures from the Black Sea on their pizza?,True,0.9999560535247902,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,348,Is capsaicin associated with cooking?,True,0.9999989441502991,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,256,Is it possible that June got its name from mythology?,True,0.9999907020128236,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,256,Is it possible that June got its name from mythology?,"Yes, June is named after Juno, the Roman goddess.",0.9521532444762898,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,651,Would Snowdon mountain be a piece of cake for Tenzing Norgay?,True,0.9999980415765842,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,651,Would Snowdon mountain be a piece of cake for Tenzing Norgay?,True,0.959338690402571,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,346,Can Immersion Baptism lead to a death like Jeff Buckley's?,"No, immersion baptism is a religious practice, and Jeff Buckley's death was an accident unrelated to it.",0.9916285812463029,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,432,Are there any chives hypothetically good for battling vampires?,True,0.9999685667294412,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,432,Are there any chives hypothetically good for battling vampires?,"Chives, like garlic, are hypothetically effective against vampires in folklore.",0.8672624424389644,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,561,Is the letter D influenced by the shape of ancient doors?,"Yes, the letter D evolved from the Phoenician letter 'Dalet,' which symbolized a door.",0.8994823609797322,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,431,Could a Diwali celebration feature a crustacean?,Yes,0.9353034970584424,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,311,Does Marco Rubio have a close relationship with Allah?,False,0.9999973178134376,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,648,Has Drew Carey outshined Doug Davidson's tenure?,True,0.9999956886564452,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,206,Has Aretha Franklin ever collaborated with a suicidal person?,No,0.9757180246882877,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,No,0.9210307502386709,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,692,"After viewing the Mona Lisa, could you get lunch nearby on foot?",True,0.9999638444023932,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,162,Does the Red Sea have biblical significance?,True,0.9999980131909558,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,393,Would a body builder prefer an elk burger over a beef burger?,True,0.9999930179302379,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,653,Did the lead singer of Led Zepplin ever perform with Ernest Chataway?,No,0.9446698299703224,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,219,Is Nine Inch Nails's lead singer associated with David Lynch?,True,0.9999776587482018,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,409,Is March named after Jupiter's son in Roman mythology?,True,0.999954419247393,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,409,Is March named after Jupiter's son in Roman mythology?,True,0.946612722699496,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,599,Could a fan of the Botany Swarm vote for John Key?,True,0.999923814287996,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,599,Could a fan of the Botany Swarm vote for John Key?,Yes,0.8999798836765147,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,502,Would a vegetarian be able to eat something at Chick-fil-A?,"Yes, vegetarian options are available.",0.9641135575246182,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?",True,0.999994973425829,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?",Yes,0.9282536309668069,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,131,Does the United States Department of Education oversee services benefiting undocumented migrants?,True,0.9999861525151893,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,131,Does the United States Department of Education oversee services benefiting undocumented migrants?,No,0.9532640477350846,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,566,Gandalf hypothetically defeats Rincewind in a wizard battle?,True,0.9747340848061501,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,440,Would Quiet from Metal Gear be a poor hypothetical choice for lecturer at Haub?,False,0.9911507967159467,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,155,Is Noah's Ark an upgrade for Golden Age of Piracy pirates?,False,0.9999940396733518,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,667,Would you be more likely to die of hypothermia in New York than Florida?,Yes,0.8947380424006526,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,28,Are there winged statuettes in the home of the creator of Law & Order?,True,0.9824423024184811,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,227,Does Southwest Airlines use bulk carriers?,No,0.9767017207128837,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,587,Did Clark Gable marry more women once than Richard Burton?,True,0.9998060186015584,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,96,Would you be likely to see storks at a baby shower?,True,0.999966069091581,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,250,Does James Watson believe that Africans are inferior to Europeans?,True,0.9582772664443862,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,96,Would you be likely to see storks at a baby shower?,Yes,0.9899077603707939,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,72,Does chlorine inhibit photosynthesis?,True,0.9308468658205125,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,445,Would costumes with robes and pointy hats be helpful for Macbeth?,No,0.8840369497537961,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,352,Is watermelon safe for people with a tricarboxylic acid allergy?,True,0.9719399604542407,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.999986087337024,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.960761073921838,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,628,Would Bobby Jindal's high school mascot eat kibble?,True,0.9993270412805453,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,686,Is a platypus immune from cholera?,True,0.9683368874770738,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,Yes,0.9349688961514864,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,406,Does Ronda Rousey avoid BBQ restaraunts?,True,0.9999671706282209,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,457,Is Pearl Harbor the mythical home of a shark goddess?,False,0.9994354092738302,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,505,Is honey associated with queens?,True,0.9999786631181437,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,403,Have any murderers outlasted Kane's Royal Rumble record?,True,0.9999339582848812,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,316,Were Greeks essential to crafting Egyptian Lighthouse of Alexandria?,True,0.9610497617491435,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,671,Was Christina Aguilera born in the forgotten borough?,False,0.980872314592451,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,395,Can actress Danica McKellar skip astronaut education requirements?,True,0.9999521380336958,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,522,Does the Prime Minister of the United Kingdom have poor job security?,True,0.9999890161874312,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,60,Could Amazon afford The Mona Lisa?,True,0.9999954530970862,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,687,Are there bones in an anchovy pizza?,True,0.9999824574332382,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,84,Does Evander Holyfield eat pork products?,Unknown,0.984436194084584,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,349,Would a German Shepherd be welcome in an airport?,True,0.9999966962407605,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,508,Was story of Jesus inspired by Egyptian myth?,True,0.9416889412050811,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,137,Did Martin Luther believe in Satan?,True,0.9999981607838294,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,314,Will twenty pea pods contents cover entire chess board?,True,0.9207592851276482,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,265,Is H's most common two letter pair partner a freebie in Wheel of Fortune bonus round?,True,0.9995685908484967,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,663,Does Final Fantasy VI require electricity to play?,True,0.9999987057336274,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.999996083181959,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,458,Did Demi Lovato's ancestors help turn maize into popcorn?,True,0.9784311167214612,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,206,Has Aretha Franklin ever collaborated with a suicidal person?,False,0.9948660886260701,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,568,Does Adobe Suite have video game engine coding?,No,0.9212572443582754,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,691,Could largest asteroid crush a whole city?,True,0.9999988079122387,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,230,Is euphoria associated with drug addiction?,True,0.9999988930609837,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,184,Are pancakes a bad snack for cats?,True,0.9999949251868278,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,653,Did the lead singer of Led Zepplin ever perform with Ernest Chataway?,No,0.9579872902404202,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,447,Is Christianity better for global warming than Satanism?,True,0.9963122603751895,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,409,Is March named after Jupiter's son in Roman mythology?,True,0.9023089033490457,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,599,Could a fan of the Botany Swarm vote for John Key?,"Yes, if eligible and aligned with Key's party.",0.8293078219413778,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,502,Would a vegetarian be able to eat something at Chick-fil-A?,"Yes, vegetarian options are available.",0.960446051432497,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?",True,0.9999940566990279,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,116,"During the pandemic, is door to door advertising considered inconsiderate?","Yes, during the pandemic, door to door advertising was often seen as inconsiderate due to potential virus transmission risks and social distancing guidelines.",0.882821261735387,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,131,Does the United States Department of Education oversee services benefiting undocumented migrants?,No,0.9633533019861781,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,566,Gandalf hypothetically defeats Rincewind in a wizard battle?,True,0.9726819562179261,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,667,Would you be more likely to die of hypothermia in New York than Florida?,Yes,0.8680820624628727,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,28,Are there winged statuettes in the home of the creator of Law & Order?,True,0.9803280131933215,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,587,Did Clark Gable marry more women once than Richard Burton?,True,0.9998054482960252,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,96,Would you be likely to see storks at a baby shower?,No,0.9924504319496651,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,192,Would Arnold Schwarzenegger have a hard time picking up a red fox in 1967?,False,0.9999221576321304,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,72,Does chlorine inhibit photosynthesis?,True,0.8717018075804338,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.9999509294308964,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,326,Could James Brown's ex-wives hold a doubles game of tennis?,True,0.984428605836956,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,439,Would the chef at La Grenouille find salsa to be a strange request?,Yes,0.9237615581796392,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,406,Does Ronda Rousey avoid BBQ restaraunts?,True,0.9999870068477323,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,49,Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?,True,0.9999364945232384,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,84,Does Evander Holyfield eat pork products?,True,0.9999694062109896,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,84,Does Evander Holyfield eat pork products?,Unknown,0.9902024893127495,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,185,Is there a popular Disney character made from living ice?,True,0.9999847591521717,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,633,Is it common to see frost during some college commencements?,True,0.9999943376669538,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,663,Does Final Fantasy VI require electricity to play?,True,0.9999983140503224,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,126,Can Larry King's ex-wives form a water polo team?,True,0.9999975647474906,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,583,Are there five different single-digit Fibonacci numbers?,True,0.99988123869453,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,540,Can Aerosmith legally drive in the carpool lane?,True,0.9999894589257172,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,497,Would the owners of the company Peter Griffin works for need barley?,True,0.9999592710001917,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,143,Could you go to New York Public Library and the Six Flags Great Escape in the same day?,True,0.9999880966582598,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,638,Are banana trees used by judges for maintaining order?,False,0.9838350811596548,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,175,Is material from an aloe plant sometimes enclosed in petroleum-derived products?,True,0.9999865299709737,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,388,Was Krishna skilled at using the bow?,Yes,0.9609400701500163,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,418,Can a grey seal swim in the same water as the subject of Moby Dick?,Yes,0.8679719329474944,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,205,Would characters in Harry Potter and the Philosopher's Stone be persecuted as pagans?,"No, the story does not involve religious persecution; characters face challenges related to magic, not paganism.",0.9339557779545619,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,618,Were there eight humans on Noah's Ark?,True,0.8871242979010473,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,231,Does Billy Graham support agnosticism?,False,0.999972584850246,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,209,Was Surfing popular when pogs came out?,Yes,0.8787984532292537,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,225,Could Edward Snowden join MENSA?,True,0.9999987057336253,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,112,Is Cholera alive?,True,0.9999584368686341,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,95,Would Methuselah hypothetically hold a record in the Common Era?,True,0.9999925581471141,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,168,Does ABBA have similar gender configuration to The Mamas & The Papas?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,621,Could Cosmic Girls play League of Legends alone?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,591,Is Black Lives Matter connected with capsaicin?,No,0.9838530902626659,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,101,Is the rise of agriculture attributed to rivers?,True,0.9999865811536695,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,322,Can an art dealer buy Boeing 737-800 with a Da Vinci painting?,True,0.9999966110941453,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,473,Are some Brazilian Navy ships built in Britian?,True,0.999987781561465,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,93,Did Easy Rider make a profit at the theater when it was released?,,0.0,0,'NoneType' object is not subscriptable,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,470,Does Ludacris have Greek heritage?,True,0.9991530303496037,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,295,Would Library of Alexandria need less shelf space than Library of Congress?,True,0.9999724145788503,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,579,Do people watching Coen brothers films in Guinea Bissau need subtitles?,True,0.9999828690698555,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,634,Could Eddie Murphy's children hypothetically fill a basketball court by themselves?,False,0.8942578407889687,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,580,Is Great Pyramid of Giza the last wonder of its kind?,True,0.9999969204581187,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,577,Do the telescopes at Goldstone Deep Space Communications Complex work the night shift?,True,0.9748988084777962,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,478,Could the leader of Heaven's Gate save images in JPEG format?,True,0.9999706097855418,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,341,Is Final Fantasy VI closer to beginning than end of its franchise?,True,0.9998875104382381,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,513,Would Doctor Strange like the Pittsburgh Steelers logo?,True,0.9999995401933139,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,287,Is shoe soup innocuous?,True,0.9999732399802108,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,453,Are red legs a sign of failing health in those with Anorexia Nervosa?,True,0.9999907190404921,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,89,Does the book Revolutionary Road give a glimpse at life in a suburb?,True,0.9999930009045999,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,488,Does a Disney princess on Broadway have red hair?,True,0.9999403878577269,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,351,Can printing books in kanji instead of the Roman alphabet save trees?,True,0.9999915364200362,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,573,If it socially acceptable to wear an icon depicting crucifixion?,True,0.9999929327819119,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,564,Does an individual oceanographer study many sciences?,True,0.9999959270712407,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,61,Did Sartre write a play about Hell?,True,0.9999944313400866,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,304,Has the creator of Futurama lived in multiple centuries?,True,0.9999697755405785,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,318,Are human footprints absent from Mount Sharp?,True,0.9798027526642304,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,223,Does Hanuman have some of the same duties as Athena?,True,0.999974100173581,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,551,Can lettuce result in spontaneous abortion?,True,0.9797772276776157,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,606,Did Gladiator's weapon of choice require less hands than Soul Calibur's Faust?,True,0.9998997680471428,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,151,Is there historic graffiti on Alcatraz?,True,0.9999965231024024,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,269,Can Aerosmith fit in a 2020 Mitsubishi Outlander?,True,0.9999612026036628,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,584,Would half muggle wizards fear Lord Voldemort?,True,0.9999944994592803,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,1,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,True,0.9999771931015574,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,374,Would the crew of Apollo 15 have difficulty riding a unicycle?,True,0.969427599756632,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,19,Can you write a whole Haiku in a single tweet?,True,0.9999855763851407,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,482,Paleography hypothetically helps to understand Cthulhu?,True,0.999998007516351,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,76,Do storks need golden toads to survive?,False,0.9999837545286742,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,543,Does 2015 have more unlucky Friday's than usual?,True,0.9999693068754116,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,396,Can a copy of The Daily Mirror sustain a campfire?,True,0.9999934436540414,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,58,Does coding rely on Boolean algebra characters?,True,0.999997258214287,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,509,Can you see live harbor seals in Washington DC?,False,0.9999951125095751,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,283,Would most grand masters know what the French Defense is?,True,0.9999975988059121,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,653,Did the lead singer of Led Zepplin ever perform with Ernest Chataway?,True,0.9999482567738477,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,661,Are swastikas used in the most common religion in India?,True,0.9999960150662609,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,390,Are gorillas closely related to humans?,True,0.999998847647545,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,498,Is an Eastern chipmunk likely to die before seeing two leap years?,False,0.9970074748120286,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,456,Can paresthesia be caused by a white pigment?,True,0.9999784644403766,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,678,Can French Toast hypothetically kill a Lannister?,True,0.999998109694622,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,499,Did Holy Land belong to Adamu's tribe?,True,0.9992646825734002,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,499,Did Holy Land belong to Adamu's tribe?,"No, the Holy Land is associated with the Israelites, not Adamu's tribe.",0.9836068461726717,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,669,Does  Lionel Richie believe in holistic medicine?,True,0.9999359158221394,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,669,Does  Lionel Richie believe in holistic medicine?,No information available,0.970687076321338,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,51,Do onions have a form that resembles the inside of a tree?,"Yes, both have concentric layers.",0.9778948975282986,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,664,Would a person with Anorexia nervosa be more likely to break a bone than a regular person?,Yes,0.9103048647877241,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,467,Are Citizens of Bern Switzerland are descendants of Genghis Khan?,False,0.9568594552221452,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,143,Could you go to New York Public Library and the Six Flags Great Escape in the same day?,Yes,0.9577634395624477,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,459,Are Scottish people Albidosi?,True,0.9449953299596334,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,44,Does Hades appear in a Disney Channel musical movie?,True,0.988313498985418,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,552,Do any video games about the end of civilization have slot machines?,True,0.9998771893525836,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,552,Do any video games about the end of civilization have slot machines?,True,0.984960046914917,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,128,Do hyenas appear in a Broadway musical?,"Yes, in 'The Lion King'",0.8809014974573012,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,5,Would the top of Mount Fuji stick out of the Sea of Japan?,No,0.9607965337524983,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,33,Has Oscar Wilde's most famous character ever been in an Eva Green project?,"Yes, in 'Dorian Gray' (2009).",0.9705441073536674,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,675,Were paparazzi involved in the death of a member of the royal family?,True,0.9999935628397532,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,675,Were paparazzi involved in the death of a member of the royal family?,Princess Diana,0.9479096272424341,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,258,Can nitric acid break the Louvre?,Yes,0.9338287044065423,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,175,Is material from an aloe plant sometimes enclosed in petroleum-derived products?,True,0.9099417148089053,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,474,Are sables related to wolverines?,True,0.9999861127793247,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,474,Are sables related to wolverines?,True,0.8908645080996886,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,597,Is Samsung accountable to shareholders?,"Yes, Samsung is accountable to shareholders as a publicly traded company.",0.9952673315391177,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,22,Could ten gallons of seawater crush a six year old?,No,0.9777639460872435,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,576,Would a fungal life-form be threatened by a pigment from copper?,True,0.9608609244588816,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,225,Could Edward Snowden join MENSA?,Unverified; no official IQ score confirms eligibility.,0.849570812049949,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,286,Did Holy Saturday 2019 have special significance to pot smokers?,True,0.9825531702019685,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,170,Did Christopher Columbus break the fifth commandment in Christianity?,No,0.9949370601937025,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,112,Is Cholera alive?,True,0.9173209062748203,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,558,Could B be mistaken for an Arabic numeral?,Yes,0.9726884813171057,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,229,Would Robert Wadlow tower over a German Shepherd?,,0.0,0,"no JSON object in model text (preview 't.\n{\n\n"":{""\n\n    :"""", \n\n    ""answer"": ""True"" \n\n}'…)",medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,36,Did Van Gogh suffer from a mental disorder?,True,0.8439064198733138,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,604,Was John Gall from same city as Stanford University?,True,0.9786187709252525,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,448,Were mollusks an ingredient in the color purple?,True,0.9999559390616889,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,237,Would vegans consider chickpeas for a tuna substitute?,"Yes, vegans use chickpeas as a tuna substitute in recipes like salads or sandwiches.",0.8981308168738299,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,105,Did James Watson's partner in studying the double helix outlive him?,False,0.998237241504612,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,105,Did James Watson's partner in studying the double helix outlive him?,False,0.9088971653662714,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,333,Would a honey badger fit inside an oven?,Yes,0.9677723029576872,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,446,Was Lord Voldemort taught by Professor Dumbledore?,No,0.9476473766263738,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,95,Would Methuselah hypothetically hold a record in the Common Era?,True,0.9935246680634522,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,212,Can first letter row of QWERTY keyboard spell a palindrome?,True,0.9772839494929174,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,168,Does ABBA have similar gender configuration to The Mamas & The Papas?,True,0.9998661309046951,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,113,Would James Cotton's instrument be too strident for a smooth jazz band?,True,0.9620725992328159,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,45,Could someone theoretically use an armadillo as a shield?,Yes,0.9490947790540303,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,411,Do flying fish have good eyesight?,True,0.9133715094765287,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,525,Does the word swastika have meaning in sanskrit?,"Yes, it signifies well-being and auspiciousness in Sanskrit.",0.8808436495897477,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,101,Is the rise of agriculture attributed to rivers?,Yes,0.9835981421650245,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,484,Would eliminating competition in the Japanese bulk carrier market be profitable for a steel company?,True,0.9604644040342867,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,495,Is Disney associated with Los Angeles County?,Yes,0.91837664530062,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,646,Would Şerafeddin Sabuncuoğlu have eaten Börek?,Yes,0.8287517990443097,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,548,Karachi was a part of Alexander the Great's success?,False,0.9623977536390556,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,75,Did compact discs make computer gaming more popular?,True,0.9545118546804066,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,575,Has Freemasonry been represented on the Moon?,No,0.9795802001086837,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,180,Could amoebas have played a part in the Black Death?,No,0.98047594400491,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,319,Is a pottery kiln inappropriate for use with glass blowing?,No,0.965192585137347,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,593,Could Maroon 5 have hypothetically held a concert at Roman Colosseum?,True,0.9999972184756163,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,593,Could Maroon 5 have hypothetically held a concert at Roman Colosseum?,Yes,0.9705694955785015,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,322,Can an art dealer buy Boeing 737-800 with a Da Vinci painting?,True,0.9429409897127997,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,623,Can an adult human skull hypothetically pass through the birth canal?,No,0.8423605764795996,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,358,Is it normal to find parsley in multiple sections of the grocery store?,"Yes, parsley is commonly found in produce, spice, and deli sections.",0.9665792411091617,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,429,Are fossil fuels reducing jobs in the Gulf of Mexico?,True,0.9839499548642369,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,473,Are some Brazilian Navy ships built in Britian?,True,0.9159491768535591,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,338,Is Mark Cuban able to visit Northern Mariana Islands without a passport?,No,0.9187647923928186,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,130,Are there people who are men who experience menstruation?,Yes,0.972562090231736,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,581,Are Donkeys part of Christmas celebrations?,True,0.9999992506863147,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,275,Does Homer Simpson need two hands worth of fingers to count to 5?,"No, one hand suffices.",0.9897892380442648,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,527,Would 7 zucchini's satisfy potassium USDA daily recommendation?,True,0.9310603603603915,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,615,Would a nickel fit inside a koala pouch?,True,0.9999951976591513,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,372,Can a minor replicate the double-slit experiment?,True,0.9904860302883497,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,524,Is hanging a viable execution method on a ship at sea?,Yes,0.9426728197367631,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,539,Could a wandering albatross fly from Bucharest to New York City without a rest?,Yes,0.849852114809002,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,470,Does Ludacris have Greek heritage?,No,0.8792561264408242,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,127,Can an emu chase a bogan?,True,0.9999984900231781,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,127,Can an emu chase a bogan?,Yes,0.9510565198299832,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,410,Did Ice make people rich?,True,0.9841518663958555,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,234,Would Kurt Cobain have benefited from Project Semicolon?,"Possibly, as Project Semicolon provides mental health resources that could have offered support.",0.9497436710124733,0,,low,0.3,1,1,1
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,684,Is the tibia required for floor exercises?,True,0.9999208866417484,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,545,Is a felony jury enough people for a Bunco game?,True,0.9999332583353664,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,545,Is a felony jury enough people for a Bunco game?,Yes,0.9093831889827271,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,6,Is there a warthog on Broadway?,True,0.9999622949891211,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,207,Would nickel boil in the outer core of the earth?,"No, nickel would not boil in the outer core due to extreme pressure preventing vaporization despite high temperatures.",0.9506502325829128,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,579,Do people watching Coen brothers films in Guinea Bissau need subtitles?,"Yes, likely need subtitles as Coen brothers' films are in English, and Guinea Bissau's primary languages are Portuguese and Creole.",0.9410603050272591,0,,low,0.3,1,1,1
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,438,Did any cultures associate celery with death?,True,0.999997973456256,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,616,"When the shuttle Columbia 11 landed, was it the season for Christmas carols?",True,0.9999911617909485,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,616,"When the shuttle Columbia 11 landed, was it the season for Christmas carols?",No,0.996188931372828,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,164,Is Bugs Bunny known for carrying a root vegetable around with him?,True,0.9753244129515198,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,513,Would Doctor Strange like the Pittsburgh Steelers logo?,No,0.9865385108928246,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,643,Would a kaffir lime be a good ingredient for making a candle?,No,0.9690446688773126,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,41,Could you read The Atlantic magazine during the Games of the XXII Olympiad?,True,0.9999423840085317,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,560,Do you often hear Marco Polo's name shouted near water?,True,0.9999729083263903,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,541,Do you need both hot and cold water to peel a tomato?,True,0.9992717026302973,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,487,Would 1943-S penny be good for making silverware?,"No, 1943-S pennies are steel cents, not silver, and are not suitable for making silverware.",0.9348746748432015,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,226,Were French people involved in the American Civil War?,True,0.9999925098729393,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,196,Was Ariana Grande inspired by Imogen Heap?,No,0.9527385554537519,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,516,Did Subway have a sex offender as a spokesperson?,True,0.999993880716468,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,383,Would Dave Chappelle pray over a Quran?,True,0.9999977691019052,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,422,Can Poland Spring make money in the Sahara?,True,0.9999911589138534,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,71,Does Amtrak operate four wheel vehicles?,True,0.9999949422181839,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,500,Was John George Bice's birthplace near Cornwall?,True,0.9999867173702819,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,160,Will Ahura Mazda have to look down to see Abaddon's dwelling??,True,0.9999950273661988,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,310,Is there radiation where Nikola Tesla once worked?,True,0.9999781466139352,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,614,Does Masaharu Morimoto rely on glutamic acid?,True,0.9999954701269044,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,43,Is Britney Spears' breakdown attributed to bipolar disorder?,True,0.9999756495748575,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,589,Can jackfruit be used as a weapon?,True,0.9999963641617863,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,482,Paleography hypothetically helps to understand Cthulhu?,True,0.9244453996519851,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,242,Would Jean Harris's victim have avoided lentils?,True,0.9999905827645722,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,600,Were Jackson Pollock's parents not required to say The Pledge of Allegiance as children?,True,0.99994185735533,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,471,Has spinach been a source of power in a comic movie?,True,0.9999964578297496,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,434,Was Saint Vincent and the Grenadines named by an Italian explorer?,True,0.9999486101259883,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,596,Was Florence a Theocracy during Italian Renaissance?,False,0.99992229955849,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,414,Is Anakin Skywalker from Star Wars associated with the color black?,True,0.9999983481096677,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,299,Is B's place in alphabet same as Prince Harry's birth order?,True,0.9991484131960734,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,243,Could every citizen of Samoa send a letter to a unique JPMorgan Chase employee?,True,0.9996754737475744,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,165,Would someone buying crickets be likely to own pets?,True,0.9999884967577912,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,559,Are people more likely than normal to get sunburn at Burning Man?,True,0.9999976839541613,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,212,Can first letter row of QWERTY keyboard spell a palindrome?,True,0.9999918939885677,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,591,Is Black Lives Matter connected with capsaicin?,False,0.9999851337751691,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,338,Is Mark Cuban able to visit Northern Mariana Islands without a passport?,False,0.9990580981600043,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,130,Are there people who are men who experience menstruation?,True,0.9999985098913596,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,conflictqa_strategyqa,8,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,Yes,0.9195640337855675,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,4,Is Dustin Hoffman one of the B'nei Yisrael?,True,0.9999928476197901,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,428,Does having lip piercings lead to more expensive dental bills?,True,0.9999990974179465,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,90,Does Buddy The Elf know anyone who works in publishing?,True,0.9999405965978106,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,104,Does the central processing unit usually have a dedicated fan?,True,0.9992000125207946,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,169,Has Justin Timberlake ever written a song about Britney Spears?,True,0.9999700616848008,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,193,Could an NBA game be completed within the span of the Six-Day War?,True,0.9999687369794658,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,598,Is Alan Alda old enough to have fought in the Vietnam War?,True,0.999988874226555,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,676,Were karaoke and the turtle power tiller patented in the same country?,True,0.9998089669718168,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,177,Does US brand Nice depend on Western honey bee?,True,0.9999663874556182,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,555,"At Christmastime, do some films remind us that groundhog day is approaching?",True,0.9999973433619905,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,136,Could Barron Trump have lived through the Mexican Revolution?,False,0.9996740961154766,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,364,Has Burger King  contributed to a decrease in need for snowshoes?,True,0.999828558228503,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,518,Was Subway involved in a pedophilia scandal?,True,0.9999934606864026,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,248,Is Drew Carey important to the history of wrestling?,True,0.9998625183096019,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,693,Is a fever cured by listening to a cowbell?,False,0.9999923112068261,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,187,Did the death of Helen Palmer have a significant effect on Dr. Seuss?,True,0.9999727235248241,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,672,Would ramen be bad for someone with heart failure?,True,0.9999935458296303,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,607,Is Batman (1989 film) likely to be shown on flight from NY to Kansas City?,True,0.9999887948147679,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,33,Has Oscar Wilde's most famous character ever been in an Eva Green project?,True,0.9999129732726316,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,638,Are banana trees used by judges for maintaining order?,False,0.9999958958608316,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,180,Could amoebas have played a part in the Black Death?,True,0.9999976498947066,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,524,Is hanging a viable execution method on a ship at sea?,True,0.9999994039546516,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,317,Would drinking a glass of lemonade provide Vitamin C?,True,0.9999957255669785,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,337,Is basil safe from Hypervitaminosis D?,True,0.9999944143144042,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,423,Could the Powepuff Girls make the background to the Azerbaijani flag?,True,0.9999776102615983,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,696,Are amoebas safe from breast cancer?,True,0.9995431968818864,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,483,Are some chiropractic manipulations dangerous?,True,0.999999182566911,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,538,Do depressed people travel to the Golden Gate Bridge often?,True,0.9999931030739577,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,450,Can an asteroid be linked with virginity?,True,0.9999945164880539,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,567,Would an Alfa Romeo vehicle fit inside a barn?,True,0.9999986035550305,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,254,Is Canon Inc. a Kabushiki gaisha?,True,0.9999989100907336,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,571,Can E6000 cure before a hoverboard finishes the Daytona 500?,True,0.9999890132855839,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,502,Would a vegetarian be able to eat something at Chick-fil-A?,True,0.9999850996058823,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,258,Can nitric acid break the Louvre?,True,0.9999700479795318,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,410,Did Ice make people rich?,True,0.9999938012599981,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,215,Did any Golden Globe winners attend John Kerry's alma mater?,True,0.999930962601272,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,360,Is Christopher Nolan indebted to Bob Kane?,True,0.9999221634047327,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,213,Have any members of the 2020 British royal family allegedly committed a felony?,True,0.9999989100903022,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,355,Does Hammurabi's Code violate Christians Golden Rule?,True,0.9999989782094914,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,504,Could chives be mistaken for grass?,True,0.9999965032354611,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,475,Was Noah concerned with buoyancy?,True,0.9999919110487366,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,443,Does Lorem ipsum backwards fail to demonstrate alliteration?,False,0.9687624590334744,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,380,Should a Celiac sufferer avoid spaghetti?,True,0.9999938353230886,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,179,Is it normal for people to sing when the YMCA is mentioned?,True,0.9999921664801384,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,92,Could a Bengal cat hypothetically best Javier Sotomayor's record?,True,0.9999489477567555,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,536,Does it seem like the Gorillaz is composed of more members than they have?,True,0.999936137845399,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,481,Has type of political association Pompey had with Caesar influenced reality TV?,True,0.9999331589477736,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,288,Can a sea turtle play tennis using a tennis racket?,False,0.9997558297593847,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,682,Does Coast to Coast AM have more longevity than the Rush Limbaugh show?,False,0.9994940608478747,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,557,Can COVID-19 spread to maritime pilots?,True,0.9999992336566849,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,221,Are paratroopers good at mountain rescue?,True,0.9999988873835544,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,517,Is there a Yeti associated with Disney theme parks?,True,0.9999965032345658,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,528,Can second row of QWERTY keyboard spell Abdastartus's kingdom?,True,0.9999090125562479,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,346,Can Immersion Baptism lead to a death like Jeff Buckley's?,True,0.9969445253597843,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,133,Did Christopher Columbus condone multiple deadly sins?,True,0.9999990860646604,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,554,Would you find a tibia beside parsley on a holiday plate?,True,0.9999860333172587,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,576,Would a fungal life-form be threatened by a pigment from copper?,True,0.9999733790442927,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,45,Could someone theoretically use an armadillo as a shield?,True,0.999998609230214,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,298,Was Darth Vader monogamous?,True,0.9999525425822317,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,426,Does the Taco Bell kitchen contain cinnamon?,True,0.999996801251026,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,601,Will Conan the Barbarian hypothetically last a short time inside of Call of Duty?,True,0.9999933244452168,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,13,Did any country in Portuguese Colonial War share Switzerlands role in WWII?,True,0.999958232560093,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,289,Are right wing Amreicans opposed to marxism?,True,0.9999982714748411,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,39,"At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?",True,0.9999616715345266,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,562,Did Julio Gonzalez like acetylene?,True,0.9999916726523393,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,205,Would characters in Harry Potter and the Philosopher's Stone be persecuted as pagans?,True,0.9999934266283962,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,239,Was Achilles a direct descendent of Gaia?,True,0.9999541297898642,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,conflictqa_strategyqa,148,Does the Boy Who Cried Wolf hypothetically have reason to pray to Pan?,True,0.999967851666877,1,,medium,0.5,0,0,0

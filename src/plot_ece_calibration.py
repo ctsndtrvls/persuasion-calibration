@@ -30,6 +30,8 @@ MODEL_IDS = [
     "anthropic/claude-sonnet-4-6",
     "deepseek/deepseek-chat-v2.5",
     "google/gemini-2.5-flash",
+    "qwen/qwen3-14b",
+    "google/gemma-4-26b-a4b-it",
     # Legacy IDs retained for older CSV files.
     "anthropic/claude-3.5-sonnet",
     "google/gemini-flash-1.5-8b",
@@ -41,6 +43,8 @@ MODEL_LABELS: dict[str, str] = {
     "anthropic/claude-sonnet-4-6": "Claude Sonnet 4.6",
     "deepseek/deepseek-chat-v2.5": "DeepSeek Chat v2.5",
     "google/gemini-2.5-flash": "Gemini 2.5 Flash",
+    "qwen/qwen3-14b": "Qwen3-14B",
+    "google/gemma-4-26b-a4b-it": "Gemma 4 26B (A4B IT)",
     # legacy rows from older collect_conflictqa_ece runs
     "anthropic/claude-3.5-sonnet": "Claude 3.5 Sonnet (deprecated API id)",
     "google/gemini-flash-1.5-8b": "Gemini Flash 1.5-8B (deprecated API id)",
@@ -234,7 +238,7 @@ def main() -> None:
     df = df.copy()
     df["_model_lab"] = df["model"].map(lambda x: _label(x))
 
-    ds_order = ["fever", "conflictqa_popqa", "conflictqa_strategyqa"]
+    ds_order = ["fever", "debateqa", "conflictqa_popqa", "conflictqa_strategyqa"]
     ds_present = [d for d in ds_order if d in set(df["dataset"].unique())]
     if not ds_present:
         ds_present = sorted(df["dataset"].unique())
@@ -242,11 +246,11 @@ def main() -> None:
     suffix = args.file_suffix.strip()
     if suffix and not suffix.startswith("_"):
         suffix = "_" + suffix
-    if not suffix and args.only_datasets and len(args.only_datasets) == 1:
-        suffix = "_" + args.only_datasets[0]
+    if not suffix and len(ds_present) == 1:
+        suffix = "_" + ds_present[0]
 
     # --- 1) Panels ---
-    if args.only_datasets and len(ds_present) == 1:
+    if len(ds_present) == 1:
         only_ds = ds_present[0]
         fig, ax = plt.subplots(1, 1, figsize=(6.2, 4.8), constrained_layout=True)
         plot_grouped_calibration(
@@ -258,6 +262,27 @@ def main() -> None:
             title=f"Dataset: {only_ds} — by model",
         )
         out3 = args.out_dir / f"ece_panels_1in1_models{suffix}.png"
+        fig.savefig(out3, dpi=200)
+        plt.close(fig)
+        print("Saved:", out3)
+    elif len(ds_present) == 3 and set(ds_present) == {"fever", "debateqa", "conflictqa_popqa"}:
+        # One panel per dataset (Qwen/Gemma temp 0.6 rollouts: no StrategyQA in these CSVs).
+        fig, axes = plt.subplots(1, 3, figsize=(16, 4.8), constrained_layout=True)
+        triple = [
+            ("(a) FEVER — by model", "fever"),
+            ("(b) DebateQA — by model", "debateqa"),
+            ("(c) ConflictQA PopQA — by model", "conflictqa_popqa"),
+        ]
+        for ax, (title, ds) in zip(axes, triple):
+            plot_grouped_calibration(
+                ax,
+                df[df["dataset"] == ds],
+                edges,
+                "_model_lab",
+                model_labels_order,
+                title=title,
+            )
+        out3 = args.out_dir / f"ece_panels_fever_debateqa_popqa_by_model{suffix}.png"
         fig.savefig(out3, dpi=200)
         plt.close(fig)
         print("Saved:", out3)
@@ -301,8 +326,9 @@ def main() -> None:
     # --- 2) One figure per model: bars = datasets ---
     ds_labels = {
         "fever": "FEVER",
-        "conflictqa_popqa": "ConflictQA popQA",
-        "conflictqa_strategyqa": "ConflictQA strategyQA",
+        "debateqa": "DebateQA",
+        "conflictqa_popqa": "ConflictQA PopQA",
+        "conflictqa_strategyqa": "ConflictQA StrategyQA",
     }
     ds_legend_order = [ds_labels.get(d, d) for d in ds_present]
     df["_ds_lab"] = df["dataset"].map(lambda d: ds_labels.get(d, d))

@@ -1,7 +1,10 @@
 from pathlib import Path
 from typing import Iterable
+import argparse
 
 from huggingface_hub import hf_hub_download
+from zipfile import ZipFile
+import requests
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -41,6 +44,58 @@ def download_conflictqa() -> None:
     print("Done. ConflictQA JSON files are stored in 'data/conflictqa/'.")
 
 
+def download_debateqa() -> None:
+    """
+    Download DebateQA from GitHub as a zip archive and extract
+    the dataset folder into data/debateqa/.
+    """
+    out_dir = DATA_DIR / "debateqa"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    zip_path = out_dir / "debateqa_main.zip"
+
+    archive_url = "https://github.com/pillowsofwind/DebateQA/archive/refs/heads/main.zip"
+    print(f"Downloading DebateQA archive from {archive_url} ...")
+    with requests.get(archive_url, timeout=120, stream=True) as resp:
+        resp.raise_for_status()
+        with zip_path.open("wb") as f:
+            for chunk in resp.iter_content(chunk_size=1024 * 1024):
+                if chunk:
+                    f.write(chunk)
+    print(f"Saved archive to {zip_path}")
+
+    with ZipFile(zip_path, "r") as zf:
+        for member in zf.namelist():
+            if not member.startswith("DebateQA-main/dataset/"):
+                continue
+            relative = member.replace("DebateQA-main/dataset/", "", 1)
+            if not relative:
+                continue
+            target_path = out_dir / "dataset" / relative
+            if member.endswith("/"):
+                target_path.mkdir(parents=True, exist_ok=True)
+                continue
+            target_path.parent.mkdir(parents=True, exist_ok=True)
+            with zf.open(member) as src, target_path.open("wb") as dst:
+                dst.write(src.read())
+
+    if zip_path.exists():
+        zip_path.unlink()
+
+    print("Done. DebateQA files are stored in 'data/debateqa/dataset/'.")
+
+
 if __name__ == "__main__":
-    download_conflictqa()
+    parser = argparse.ArgumentParser(description="Download local datasets.")
+    parser.add_argument(
+        "--dataset",
+        choices=("all", "conflictqa", "debateqa"),
+        default="all",
+        help="Which dataset to download (default: all).",
+    )
+    args = parser.parse_args()
+
+    if args.dataset in ("all", "conflictqa"):
+        download_conflictqa()
+    if args.dataset in ("all", "debateqa"):
+        download_debateqa()
 

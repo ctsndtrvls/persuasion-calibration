@@ -1,5 +1,5 @@
 """
-Run chat models on ConflictQA (popQA + strategyQA) and optional FEVER, collect JSON answers
+Run chat models on ConflictQA (popQA + strategyQA), optional FEVER / DebateQA subsets, collect JSON answers
 with self-reported confidence, score correctness vs ground_truth, and write CSV for ECE plots.
 
 Uses API keys from project .env:
@@ -22,14 +22,32 @@ separate combined + per-split CSV and a suffixed plot:
   python3 collect_conflictqa_ece.py --datasets both --skip-anthropic --skip-gemini --skip-deepseek \\
     --popqa-input output_wood/conflictqa_popqa480_160x3_wood_v2_resplit.csv \\
     --strategyqa-input output_wood/conflictqa_strategyqa480_160x3_wood_v2_resplit.csv \\
-    --out output_wood/conflictqa_ece_openai_conflictqa_temp06_scale10.csv \\
-    --also-split-dataset-csv output_wood/conflictqa_ece_openai_temp06_scale10 \\
+    --out output_wood/self_reported_confidence/csv/conflictqa_ece_openai_conflictqa_temp06_scale10.csv \\
+    --also-split-dataset-csv output_wood/self_reported_confidence/csv/conflictqa_ece_openai_temp06_scale10 \\
     --openai-temperature 0.6 --openai-confidence-scale 1-10 \\
     --plot --plot-file-suffix temp06_scale10_conflictqa
 
 Default confidence is the model's stated P(correct) in JSON (verbal calibration).
 For OpenAI you can switch to token-probability confidence (softmax/logprob based) with:
   --openai-confidence-source token-prob
+
+Temperature 0.6 + verbal 1–10 scale + default prompt (rollout CSVs under output_wood/self_reported_confidence/csv/…):
+  OpenAI + DeepSeek on DebateQA only — see scripts/run_temp06_scale10_debateqa_openai_deepseek.sh
+  Qwen + Gemma on FEVER + PopQA + DebateQA (OpenRouter) — see scripts/run_temp06_scale10_qwen_gemma_fever_popqa_debateqa.sh
+
+OpenAI + DeepSeek token-prob on DebateQA only (no Claude/Gemini):
+  python3 collect_conflictqa_ece.py --datasets debateqa --skip-anthropic --skip-gemini \\
+    --openai-confidence-source token-prob --openai-confidence-scale 0-1 --openai-temperature 0.6 \\
+    --deepseek-confidence-source token-prob --deepseek-confidence-scale 0-1 --deepseek-temperature 0.6 \\
+    --out output_wood/self_reported_confidence/csv/debateqa_ece_openai_deepseek_temp06_tokenprob.csv
+
+Qwen + Gemma (OpenRouter token-prob) on FEVER + ConflictQA popqa + DebateQA:
+  python3 collect_conflictqa_ece.py --datasets fever_popqa_debateqa --use-conflictqa-subset-csv \\
+    --skip-openai --skip-anthropic --skip-deepseek --skip-gemini \\
+    --extra-openrouter-tokenprob-model qwen/qwen3-14b \\
+    --extra-openrouter-tokenprob-model google/gemma-4-26b-a4b-it \\
+    --extra-openrouter-temperature 0.6 \\
+    --out output_wood/self_reported_confidence/csv/qwen_gemma_fpd_temp06_tokenprob.csv
 
 Anthropic/Gemini: old IDs (claude-3-5-sonnet-20241022, gemini-1.5-flash-8b) return 404.
 Defaults are claude-sonnet-4-6 and gemini-2.5-flash; see --anthropic-model / --gemini-model.
@@ -65,6 +83,8 @@ from linguistic_confidence import (
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data" / "conflictqa"
 OUT_DIR = PROJECT_ROOT / "output_wood"
+# All rollout CSVs from this script (self-reported or token-prob) should live here by convention.
+SELF_REPORTED_CONFIDENCE_DIR = OUT_DIR / "self_reported_confidence"
 POPQA = DATA_DIR / "conflictQA-popQA-llama2-7b.json"
 STRATEGY = DATA_DIR / "conflictQA-strategyQA-llama2-7b.json"
 FEVER_DEFAULT = OUT_DIR / "dataset_subsampling" / "fever" / "csv" / "fever480_160x3_complexity_wood_v1_lr_40_resplit.csv"
@@ -72,6 +92,7 @@ POPQA_SUBSET_DEFAULT = OUT_DIR / "dataset_subsampling" / "conflictqa" / "csv" / 
 STRATEGY_SUBSET_DEFAULT = (
     OUT_DIR / "dataset_subsampling" / "conflictqa" / "csv" / "conflictqa_strategyqa480_160x3_wood_v2_resplit.csv"
 )
+DEBATEQA_DEFAULT = OUT_DIR / "dataset_subsampling" / "debateqa" / "csv" / "debateqa_480_160x3.csv"
 
 # Canonical ids written to CSV (must match plot_ece_calibration.MODEL_IDS).
 # Anthropic: snapshot claude-3-5-sonnet-20241022 was removed from the API (404).
@@ -172,6 +193,10 @@ SYSTEM_ANTHROPIC_TOOL_SCALE10 = (
     "confidence (integer from 1 to 10). It is okay to be unsure; avoid overconfidence when evidence is mixed. "
     "No other text is required."
 )
+
+
+class MissingLogprobsError(RuntimeError):
+    pass
 
 
 def _clip_confidence(x: Any) -> float:
@@ -410,6 +435,8 @@ def call_openrouter_tokenprob_chat(
     client = OpenAI(
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url="https://openrouter.ai/api/v1",
+        timeout=90.0,
+        max_retries=1,
     )
     user = _build_user_prompt(
         question,
@@ -418,27 +445,108 @@ def call_openrouter_tokenprob_chat(
         confidence_source="token-prob",
         elicitation_mode=elicitation_mode,
     )
-    kwargs: dict[str, Any] = dict(
-        model=model_name,
-        messages=[
+    kwargs: dict[str, Any] = {
+        "model": model_name,
+        "messages": [
             {"role": "system", "content": SYSTEM_TOKENPROB},
             {"role": "user", "content": user},
         ],
-        temperature=temperature,
-        logprobs=True,
+        "temperature": temperature,
+        "logprobs": True,
+    }
+    last_err: Exception | None = None
+    for attempt in range(3):
+        try:
+            try:
+                r = client.chat.completions.create(
+                    **kwargs,
+                    response_format={"type": "json_object"},
+                    timeout=90.0,
+                )
+            except Exception:
+                r = client.chat.completions.create(**kwargs, timeout=90.0)
+            raw = r.choices[0].message.content or "{}"
+            data = parse_json_obj(raw)
+            answer = str(data.get("answer", ""))
+            conf = _tokenprob_confidence_from_chat_choice(r.choices[0], provider_name)
+            return answer, conf
+        except Exception as e:
+            last_err = e
+            if "does not contain logprobs content" in str(e) and attempt < 2:
+                # OpenRouter may route to providers where logprobs are intermittently absent.
+                time.sleep(0.6 * (attempt + 1))
+                continue
+            break
+    if last_err is not None and "does not contain logprobs content" in str(last_err):
+        raise MissingLogprobsError(str(last_err))
+    raise RuntimeError(str(last_err) if last_err is not None else "unknown OpenRouter error")
+
+
+def call_openrouter_selfreported_chat(
+    question: str,
+    refs: str,
+    model_name: str,
+    *,
+    temperature: float,
+    use_scale10: bool,
+    elicitation_mode: str,
+) -> tuple[str, float]:
+    from openai import OpenAI
+
+    client = OpenAI(
+        api_key=os.environ["OPENROUTER_API_KEY"],
+        base_url="https://openrouter.ai/api/v1",
+        timeout=90.0,
+        max_retries=1,
     )
+    user = _build_user_prompt(
+        question,
+        refs,
+        use_scale10=use_scale10,
+        confidence_source="self-reported",
+        elicitation_mode=elicitation_mode,
+    )
+    kwargs: dict[str, Any] = {
+        "model": model_name,
+        "messages": [
+            {"role": "system", "content": SYSTEM},
+            {"role": "user", "content": user},
+        ],
+        "temperature": temperature,
+    }
     try:
         r = client.chat.completions.create(
             **kwargs,
             response_format={"type": "json_object"},
+            timeout=90.0,
         )
     except Exception:
-        r = client.chat.completions.create(**kwargs)
+        r = client.chat.completions.create(**kwargs, timeout=90.0)
     raw = r.choices[0].message.content or "{}"
     data = parse_json_obj(raw)
     answer = str(data.get("answer", ""))
-    conf = _tokenprob_confidence_from_chat_choice(r.choices[0], provider_name)
-    return answer, conf
+    conf = float(data.get("confidence", 0.0))
+    if use_scale10:
+        conf = conf / 10.0
+    return answer, _clip_confidence(conf)
+
+
+def normalize_openrouter_model_id(model_name: str) -> str:
+    """
+    Normalize common user-entered model IDs to canonical OpenRouter slugs.
+    """
+    m = model_name.strip()
+    low = m.lower()
+    alias_map = {
+        "qwen/qwen3-14b": "qwen/qwen3-14b",
+        "qwen/qwen3-14B": "qwen/qwen3-14b",
+        "Qwen/Qwen3-14B": "qwen/qwen3-14b",
+        "google/gemma-4-26b-a4b-it": "google/gemma-4-26b-a4b-it",
+        "google/gemma-4-26B-A4B-it": "google/gemma-4-26b-a4b-it",
+    }
+    if m in alias_map:
+        return alias_map[m]
+    return low
 
 
 def call_anthropic(
@@ -528,6 +636,9 @@ def call_deepseek(
         ],
         temperature=temperature,
     )
+    if confidence_source == "token-prob":
+        kwargs["logprobs"] = True
+        kwargs["top_logprobs"] = 5
     try:
         r = client.chat.completions.create(
             **kwargs,
@@ -611,6 +722,10 @@ def make_callers(
     gemini_confidence_source: str,
     use_openrouter_for_nonopenai: bool,
     elicitation_mode: str,
+    extra_openrouter_tokenprob_models: list[str],
+    extra_openrouter_selfreported_models: list[str],
+    extra_openrouter_temperature: float,
+    extra_openrouter_confidence_scale: str,
 ) -> dict[str, Callable[[str, str], tuple[str, float]]]:
     def _openai_caller(q: str, r: str, dataset_tag: str) -> tuple[str, float]:
         t = openai_fever_temperature if dataset_tag == "fever" and openai_fever_temperature is not None else openai_temperature
@@ -624,7 +739,7 @@ def make_callers(
             elicitation_mode=elicitation_mode,
         )
 
-    return {
+    callers: dict[str, Callable[[str, str], tuple[str, float]]] = {
         "openai": _openai_caller,
         "anthropic": lambda q, r, _d: call_openrouter_tokenprob_chat(
             q,
@@ -680,6 +795,30 @@ def make_callers(
         ),
     }
 
+    for raw_model_name in extra_openrouter_tokenprob_models:
+        model_name = normalize_openrouter_model_id(raw_model_name)
+        provider_key = f"openrouter_extra::{model_name}"
+        callers[provider_key] = lambda q, r, _d, m=model_name: call_openrouter_tokenprob_chat(
+            q,
+            r,
+            m,
+            temperature=extra_openrouter_temperature,
+            provider_name=f"OpenRouter/{m}",
+            elicitation_mode=elicitation_mode,
+        )
+    for raw_model_name in extra_openrouter_selfreported_models:
+        model_name = normalize_openrouter_model_id(raw_model_name)
+        provider_key = f"openrouter_selfreported::{model_name}"
+        callers[provider_key] = lambda q, r, _d, m=model_name: call_openrouter_selfreported_chat(
+            q,
+            r,
+            m,
+            temperature=extra_openrouter_temperature,
+            use_scale10=(extra_openrouter_confidence_scale == "1-10"),
+            elicitation_mode=elicitation_mode,
+        )
+    return callers
+
 
 def _parse_ground_truth_cell(val: Any) -> list[Any]:
     if isinstance(val, list):
@@ -695,7 +834,16 @@ def _parse_ground_truth_cell(val: Any) -> list[Any]:
             return list(v)
         return [v]
     except (ValueError, SyntaxError):
-        return [s]
+        pass
+    try:
+        v = json.loads(s)
+        if isinstance(v, list):
+            return list(v)
+        if isinstance(v, str):
+            return [v]
+    except (json.JSONDecodeError, TypeError):
+        pass
+    return [s]
 
 
 def read_conflictqa_csv(path: Path) -> pd.DataFrame:
@@ -721,6 +869,8 @@ def read_conflictqa_csv(path: Path) -> pd.DataFrame:
 SPLIT_CSV_TAGS: dict[str, str] = {
     "conflictqa_popqa": "popqa",
     "conflictqa_strategyqa": "strategyqa",
+    "fever": "fever",
+    "debateqa": "debateqa",
 }
 
 
@@ -767,14 +917,27 @@ def read_fever_csv(path: Path) -> pd.DataFrame:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--out", type=Path, default=OUT_DIR / "conflictqa_ece_rollout.csv")
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=SELF_REPORTED_CONFIDENCE_DIR / "conflictqa_ece_rollout.csv",
+        help=f"Output CSV (must be under {SELF_REPORTED_CONFIDENCE_DIR.relative_to(PROJECT_ROOT)} unless --allow-any-out-path).",
+    )
+    parser.add_argument(
+        "--allow-any-out-path",
+        action="store_true",
+        help="Disable check that --out lies under output_wood/self_reported_confidence/ (for rare legacy paths).",
+    )
     parser.add_argument("--sleep-s", type=float, default=0.25, help="Pause between API calls")
     parser.add_argument("--max-items", type=int, default=None, help="Cap rows per dataset (for tests)")
     parser.add_argument(
         "--datasets",
-        choices=("both", "popqa", "strategyqa", "fever", "all"),
+        choices=("both", "popqa", "strategyqa", "fever", "all", "debateqa", "fever_popqa_debateqa"),
         default="both",
-        help="Dataset selection: both=ConflictQA only (popqa+strategyqa), all=ConflictQA+FEVER.",
+        help=(
+            "Dataset selection: both=ConflictQA popqa+strategyqa; all=both+FEVER; "
+            "debateqa=DebateQA CSV only; fever_popqa_debateqa=FEVER + ConflictQA popqa + DebateQA (no strategyqa)."
+        ),
     )
     parser.add_argument(
         "--fever-input",
@@ -795,6 +958,12 @@ def main() -> None:
         help="Optional CSV for ConflictQA strategyQA (same columns). Default: full JSONL.",
     )
     parser.add_argument(
+        "--debateqa-input",
+        type=Path,
+        default=DEBATEQA_DEFAULT,
+        help="DebateQA subset CSV (question, ground_truth, original_index).",
+    )
+    parser.add_argument(
         "--use-conflictqa-subset-csv",
         action="store_true",
         help=(
@@ -808,8 +977,9 @@ def main() -> None:
         metavar="STEM",
         default=None,
         help=(
-            "Mirror each appended ConflictQA row to STEM_popqa.csv and STEM_strategyqa.csv "
-            "(no extension; parent directory must exist). Combined rows still go to --out."
+            "Mirror each appended row to STEM_<tag>.csv for known dataset tags "
+            "(popqa, strategyqa, fever, debateqa; no extension; parent must exist). "
+            "Combined rows still go to --out."
         ),
     )
     parser.add_argument(
@@ -1000,7 +1170,53 @@ def main() -> None:
             "(aligned with ACL'25 marker setup)."
         ),
     )
+    parser.add_argument(
+        "--extra-openrouter-tokenprob-model",
+        action="append",
+        default=[],
+        metavar="MODEL_ID",
+        help=(
+            "Additional OpenRouter model id to run in token-prob mode "
+            "(repeatable), e.g. google/gemma-4-26b-it."
+        ),
+    )
+    parser.add_argument(
+        "--extra-openrouter-selfreported-model",
+        action="append",
+        default=[],
+        metavar="MODEL_ID",
+        help=(
+            "Additional OpenRouter model id to run in self-reported mode "
+            "(repeatable), e.g. qwen/qwen3-14b."
+        ),
+    )
+    parser.add_argument(
+        "--extra-openrouter-temperature",
+        type=float,
+        default=0.0,
+        help="Temperature for --extra-openrouter-tokenprob-model calls (default: 0.0).",
+    )
+    parser.add_argument(
+        "--extra-openrouter-confidence-scale",
+        choices=("0-1", "1-10"),
+        default="0-1",
+        help="Confidence scale for --extra-openrouter-selfreported-model prompts.",
+    )
     args = parser.parse_args()
+
+    if not args.allow_any_out_path:
+        out_raw = args.out.expanduser()
+        out_res = out_raw.resolve() if out_raw.is_absolute() else (PROJECT_ROOT / out_raw).resolve()
+        base_res = (PROJECT_ROOT / "output_wood" / "self_reported_confidence").resolve()
+        try:
+            out_res.relative_to(base_res)
+        except ValueError:
+            print(
+                f"--out must be inside {base_res} (resolved: {out_res}). "
+                "Put rollout CSVs under output_wood/self_reported_confidence/, or pass --allow-any-out-path.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
 
     load_dotenv(PROJECT_ROOT / ".env")
 
@@ -1018,6 +1234,8 @@ def main() -> None:
         or (not args.skip_deepseek and args.deepseek_confidence_source == "token-prob")
         or (not args.skip_gemini and args.gemini_confidence_source == "token-prob")
     ):
+        required_keys.append("OPENROUTER_API_KEY")
+    if args.extra_openrouter_tokenprob_model or args.extra_openrouter_selfreported_model:
         required_keys.append("OPENROUTER_API_KEY")
     for key in required_keys:
         if not os.getenv(key):
@@ -1038,6 +1256,12 @@ def main() -> None:
         models_to_run = [m for m in models_to_run if m[1] != "openai"]
     if args.skip_deepseek:
         models_to_run = [m for m in models_to_run if m[1] != "deepseek"]
+    for raw_model_name in args.extra_openrouter_tokenprob_model:
+        model_name = normalize_openrouter_model_id(raw_model_name)
+        models_to_run.append((model_name, f"openrouter_extra::{model_name}"))
+    for raw_model_name in args.extra_openrouter_selfreported_model:
+        model_name = normalize_openrouter_model_id(raw_model_name)
+        models_to_run.append((model_name, f"openrouter_selfreported::{model_name}"))
     if not models_to_run:
         print(
             "No models left to run (adjust --skip-openai / --skip-gemini / --skip-anthropic / --skip-deepseek).",
@@ -1073,6 +1297,10 @@ def main() -> None:
         args.gemini_confidence_source,
         args.use_openrouter_for_nonopenai,
         args.elicitation_mode,
+        args.extra_openrouter_tokenprob_model,
+        args.extra_openrouter_selfreported_model,
+        args.extra_openrouter_temperature,
+        args.extra_openrouter_confidence_scale,
     )
     if args.openai_confidence_source == "token-prob" and args.openai_confidence_scale != "0-1":
         raise ValueError("--openai-confidence-source token-prob requires --openai-confidence-scale 0-1")
@@ -1084,12 +1312,12 @@ def main() -> None:
         raise ValueError("--gemini-confidence-source token-prob requires --gemini-confidence-scale 0-1")
     if (
         (not args.skip_anthropic and args.anthropic_confidence_source == "token-prob")
-        or (not args.skip_deepseek and args.deepseek_confidence_source == "token-prob")
         or (not args.skip_gemini and args.gemini_confidence_source == "token-prob")
     ) and not args.use_openrouter_for_nonopenai:
         raise ValueError(
-            "token-prob for non-OpenAI models requires --use-openrouter-for-nonopenai "
-            "(OpenRouter key must be available as OPENROUTER_API_KEY)."
+            "token-prob for Anthropic/Gemini requires --use-openrouter-for-nonopenai "
+            "(OpenRouter key must be available as OPENROUTER_API_KEY). "
+            "DeepSeek token-prob uses the native DeepSeek API when this flag is off."
         )
 
     popqa_path = args.popqa_input
@@ -1099,24 +1327,43 @@ def main() -> None:
         strategy_path = args.strategyqa_input or STRATEGY_SUBSET_DEFAULT
 
     frames = []
-    if args.datasets in ("both", "all", "popqa"):
-        if popqa_path is not None:
-            if not popqa_path.exists():
-                raise FileNotFoundError(popqa_path)
-            frames.append((read_conflictqa_csv(popqa_path), "conflictqa_popqa"))
-        else:
-            frames.append((read_jsonl(POPQA), "conflictqa_popqa"))
-    if args.datasets in ("both", "all", "strategyqa"):
-        if strategy_path is not None:
-            if not strategy_path.exists():
-                raise FileNotFoundError(strategy_path)
-            frames.append((read_conflictqa_csv(strategy_path), "conflictqa_strategyqa"))
-        else:
-            frames.append((read_jsonl(STRATEGY), "conflictqa_strategyqa"))
-    if args.datasets in ("all", "fever"):
+    if args.datasets == "fever_popqa_debateqa":
         if not args.fever_input.exists():
             raise FileNotFoundError(args.fever_input)
         frames.append((read_fever_csv(args.fever_input), "fever"))
+        popqa_f = args.popqa_input or (POPQA_SUBSET_DEFAULT if args.use_conflictqa_subset_csv else None)
+        if popqa_f is not None:
+            if not popqa_f.exists():
+                raise FileNotFoundError(popqa_f)
+            frames.append((read_conflictqa_csv(popqa_f), "conflictqa_popqa"))
+        else:
+            frames.append((read_jsonl(POPQA), "conflictqa_popqa"))
+        if not args.debateqa_input.exists():
+            raise FileNotFoundError(args.debateqa_input)
+        frames.append((read_conflictqa_csv(args.debateqa_input), "debateqa"))
+    elif args.datasets == "debateqa":
+        if not args.debateqa_input.exists():
+            raise FileNotFoundError(args.debateqa_input)
+        frames.append((read_conflictqa_csv(args.debateqa_input), "debateqa"))
+    else:
+        if args.datasets in ("both", "all", "popqa"):
+            if popqa_path is not None:
+                if not popqa_path.exists():
+                    raise FileNotFoundError(popqa_path)
+                frames.append((read_conflictqa_csv(popqa_path), "conflictqa_popqa"))
+            else:
+                frames.append((read_jsonl(POPQA), "conflictqa_popqa"))
+        if args.datasets in ("both", "all", "strategyqa"):
+            if strategy_path is not None:
+                if not strategy_path.exists():
+                    raise FileNotFoundError(strategy_path)
+                frames.append((read_conflictqa_csv(strategy_path), "conflictqa_strategyqa"))
+            else:
+                frames.append((read_jsonl(STRATEGY), "conflictqa_strategyqa"))
+        if args.datasets in ("all", "fever"):
+            if not args.fever_input.exists():
+                raise FileNotFoundError(args.fever_input)
+            frames.append((read_fever_csv(args.fever_input), "fever"))
 
     done: set[tuple[str, str, int]] = set()
     initial_row_count = 0
@@ -1178,6 +1425,10 @@ def main() -> None:
                         answer, conf = fn(q, refs, dataset_tag)
                         conf = float(max(0.0, min(1.0, conf)))
                         cor = is_correct(answer, gt)
+                    except MissingLogprobsError as e:
+                        # Skip writing a failed row with zero confidence; keep it rerunnable.
+                        print(f"[WARN] {model_id} row {oid}: {e}")
+                        continue
                     except Exception as e:
                         answer = ""
                         conf = 0.0

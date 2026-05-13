@@ -13,6 +13,8 @@ Examples:
              output_wood/temperature_experiments/fever/csv/conflictqa_ece_*_fever_temp06_scale10.csv \
     --out-dir output_wood/self_reported_confidence \
     --prefix temp06_scale10
+
+Summaries are written to out-dir/csv/, plots to out-dir/png/.
 """
 from __future__ import annotations
 
@@ -29,6 +31,8 @@ MODEL_LABELS: dict[str, str] = {
     "anthropic/claude-sonnet-4-6": "Claude Sonnet 4.6",
     "deepseek/deepseek-chat-v2.5": "DeepSeek Chat v2.5",
     "google/gemini-2.5-flash": "Gemini 2.5 Flash",
+    "qwen/qwen3-14b": "Qwen3-14B",
+    "google/gemma-4-26b-a4b-it": "Gemma 4 26B (A4B IT)",
     # Legacy IDs for older files.
     "anthropic/claude-3.5-sonnet": "Claude 3.5 Sonnet (legacy)",
     "google/gemini-flash-1.5-8b": "Gemini Flash 1.5-8B (legacy)",
@@ -91,7 +95,7 @@ def build_summary(df: pd.DataFrame) -> pd.DataFrame:
     return summary.sort_values(["dataset", "mean_confidence"], ascending=[True, False]).reset_index(drop=True)
 
 
-def save_plot_overall(df: pd.DataFrame, out_path: Path) -> None:
+def save_plot_overall(df: pd.DataFrame, out_path: Path, dataset_label: str = "") -> None:
     import matplotlib.pyplot as plt
     import seaborn as sns
 
@@ -117,7 +121,15 @@ def save_plot_overall(df: pd.DataFrame, out_path: Path) -> None:
     ax.set_ylim(0.0, 1.0)
     ax.set_xlabel("Model")
     ax.set_ylabel("Mean self-reported confidence")
-    ax.set_title("Self-reported confidence by model (overall)")
+    ds_label = dataset_label.strip()
+    if not ds_label:
+        ds_values = sorted(df["dataset"].dropna().astype(str).unique().tolist())
+        if len(ds_values) == 1:
+            ds_label = ds_values[0]
+    if ds_label:
+        ax.set_title(f"Self-reported confidence by model ({ds_label})")
+    else:
+        ax.set_title("Self-reported confidence by model (overall)")
     ax.tick_params(axis="x", rotation=15)
     plt.tight_layout()
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -185,7 +197,7 @@ def main() -> None:
         "--out-dir",
         type=Path,
         default=DEFAULT_OUT_DIR,
-        help="Directory for output files",
+        help="Root directory; writes summaries under out-dir/csv/ and plots under out-dir/png/",
     )
     parser.add_argument(
         "--prefix",
@@ -197,6 +209,11 @@ def main() -> None:
         action="store_true",
         help="Only write summary CSV (useful on environments without matplotlib backend)",
     )
+    parser.add_argument(
+        "--dataset-label",
+        default="",
+        help="Optional dataset label shown in the overall plot title (e.g. DebateQA).",
+    )
     args = parser.parse_args()
 
     tag = args.prefix.strip()
@@ -206,16 +223,21 @@ def main() -> None:
     summary = build_summary(df)
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    summary_path = args.out_dir / f"self_reported_confidence_summary{tag}.csv"
+    csv_dir = args.out_dir / "csv"
+    png_dir = args.out_dir / "png"
+    csv_dir.mkdir(parents=True, exist_ok=True)
+    png_dir.mkdir(parents=True, exist_ok=True)
+
+    summary_path = csv_dir / f"self_reported_confidence_summary{tag}.csv"
     summary.to_csv(summary_path, index=False)
     print(f"Saved: {summary_path}")
 
     if not args.skip_plots:
-        overall_plot_path = args.out_dir / f"self_reported_confidence_by_model{tag}.png"
-        save_plot_overall(df, overall_plot_path)
+        overall_plot_path = png_dir / f"self_reported_confidence_by_model{tag}.png"
+        save_plot_overall(df, overall_plot_path, dataset_label=args.dataset_label)
         print(f"Saved: {overall_plot_path}")
 
-        by_ds_plot_path = args.out_dir / f"self_reported_confidence_by_model_dataset{tag}.png"
+        by_ds_plot_path = png_dir / f"self_reported_confidence_by_model_dataset{tag}.png"
         save_plot_by_dataset(df, by_ds_plot_path)
         if by_ds_plot_path.exists():
             print(f"Saved: {by_ds_plot_path}")

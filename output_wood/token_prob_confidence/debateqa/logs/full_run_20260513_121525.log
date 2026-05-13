@@ -1,0 +1,4 @@
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 1894 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[progress] 1/1894  google/gemma-4-26b-a4b-it  debateqa  row=1503  21s elapsed ETA ~677.8m

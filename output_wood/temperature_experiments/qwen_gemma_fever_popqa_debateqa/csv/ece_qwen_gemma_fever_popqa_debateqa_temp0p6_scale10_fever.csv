@@ -1,0 +1,961 @@
+model,dataset,original_index,question,answer,confidence,correct,error,ling_conf_level,ling_conf_score,ling_marker_count,ling_unique_marker_count,ling_has_marker
+qwen/qwen3-14b,fever,631,Jiang Wen is a Chinese cuisine and is a film actor.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,631,Jiang Wen is a Chinese cuisine and is a film actor.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,189,Manmohan Singh was a prime minister 3 years after 2012 after the first Prime Minister of India.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,189,Manmohan Singh was a prime minister 3 years after 2012 after the first Prime Minister of India.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,127,"The area of Ranala is larger than the area of Zaragoza Municipality, Coahuila.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,127,"The area of Ranala is larger than the area of Zaragoza Municipality, Coahuila.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,56,There exists no director called Pink.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,56,There exists no director called Pink.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,157,There exists a Brazilian called Freddie Highmore.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,157,There exists a Brazilian called Freddie Highmore.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1062,Chris Paul is definitely not a two-time Olympic silver winner.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1062,Chris Paul is definitely not a two-time Olympic silver winner.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,176,Elizabeth of York was not in a marriage with the first monarch of the House of Tudor,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,176,Elizabeth of York was not in a marriage with the first monarch of the House of Tudor,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,493,Meteora is an album by a band from a country which lies to the north of United States.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,493,Meteora is an album by a band from a country which lies to the north of United States.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,266,"New Orleans Pelicans compete in a professional basketball league founded in New York City on June 6 , 1946",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,266,"New Orleans Pelicans compete in a professional basketball league founded in New York City on June 6 , 1946",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,515,Tye Kayle Sheridan  is an American actor and playwright.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,515,Tye Kayle Sheridan  is an American actor and playwright.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,243,Layer-cake  is a type of federalism or divided sovereignty,SUPPORTS,0.09,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,243,Layer-cake  is a type of federalism or divided sovereignty,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,298,"The Incredibles 2 will be shown on a 70 mm motion picture film format and a set of cinema projection standards developed in Canada in the late 1960s and early 1970s by Graeme Ferguson , Roman Kroitor , Robert Kerr , and William C. Shaw .",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,298,"The Incredibles 2 will be shown on a 70 mm motion picture film format and a set of cinema projection standards developed in Canada in the late 1960s and early 1970s by Graeme Ferguson , Roman Kroitor , Robert Kerr , and William C. Shaw .",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,281,Farida Jalal received several awards for her work in the Telugu Film Awards and the Hindi Film Awards.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,281,Farida Jalal received several awards for her work in the Telugu Film Awards and the Hindi Film Awards.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1115,Colin Kaepernick is a person who plays soccer,False,1.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1115,Colin Kaepernick is a person who plays soccer,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,579,"January 27, 1960 is not the approximate time at which the person Loretta Sanchez was born.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,579,"January 27, 1960 is not the approximate time at which the person Loretta Sanchez was born.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,971,AMTOR is also used in the machines used in a later generation of computers to emulate a radio system.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,971,AMTOR is also used in the machines used in a later generation of computers to emulate a radio system.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,478,The 34th governor of New Jersey formed the belief system Wilsonianism.,NOT ENOUGH INFO,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,478,The 34th governor of New Jersey formed the belief system Wilsonianism.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,770,Physics is one of the older academic disciplines,SUPPORTS,0.095,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,770,Physics is one of the older academic disciplines,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1006,Celebrity Rehab with Dr Drew is a TV exhibition,SUPPORTS,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1006,Celebrity Rehab with Dr Drew is a TV exhibition,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,618,The first annual Africa Cup of Nations occurred 3 years after 2012.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,618,The first annual Africa Cup of Nations occurred 3 years after 2012.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,820,There existed a dancer called Estelle Getty.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,820,There existed a dancer called Estelle Getty.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,702,Manchester by the Sea is not a movie.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,702,Manchester by the Sea is not a movie.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,394,Even Mickey Thompson has to participate in a Baja 1000,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,394,Even Mickey Thompson has to participate in a Baja 1000,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,337,Villa Park hosted the President of Turkey during her 2012 visit to the country which hosted the 2012 Summer Olympic Games.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,337,Villa Park hosted the President of Turkey during her 2012 visit to the country which hosted the 2012 Summer Olympic Games.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1148,"There was a place where mostly English people gathered, it was called Pocahontas attended a masque at Whitehall Palace which.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1148,"There was a place where mostly English people gathered, it was called Pocahontas attended a masque at Whitehall Palace which.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,267,James VI and I began the British colonization of the Americas 4 years before 1611.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,267,James VI and I began the British colonization of the Americas 4 years before 1611.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,143,"In 1971 Asylum Records the American record label was founded by an American business magnate, producer, film studio executive, and philanthropist along with his partner",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,143,"In 1971 Asylum Records the American record label was founded by an American business magnate, producer, film studio executive, and philanthropist along with his partner",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,548,There exists an American comedy-drama called Hannah and Her Sisters.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,548,There exists an American comedy-drama called Hannah and Her Sisters.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,785,Sebastian Vettel is not a person.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,785,Sebastian Vettel is not a person.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,474,Linkin Park hit the Billboard Top 200 for the first time 3 years after 2004.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,474,Linkin Park hit the Billboard Top 200 for the first time 3 years after 2004.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,982,The Latvian Soviet Socialist Republic was a republic of the Soviet Union in the 2010s.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,982,The Latvian Soviet Socialist Republic was a republic of the Soviet Union in the 2010s.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1025,"Brian Else also has produced many albums, most recently for bands such as the band, The Black Eyed Peas, as well as other artists as well as other bands and bands from all over the world...",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1025,"Brian Else also has produced many albums, most recently for bands such as the band, The Black Eyed Peas, as well as other artists as well as other bands and bands from all over the world...",NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,7,Robert Kardashian is an ex-husband of a mother of a person appearing on a sex tape.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,7,Robert Kardashian is an ex-husband of a mother of a person appearing on a sex tape.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,103,The area of Joda is larger than the area of Mashonaland East Province.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,103,The area of Joda is larger than the area of Mashonaland East Province.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,882,1790 is not the approximate time at which the person Benjamin Franklin started living.,SUPPORTS,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,882,1790 is not the approximate time at which the person Benjamin Franklin started living.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,330,The area of Sắc Tứ Tam Bảo Temple is larger than the area of Diyarbakır Province.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,330,The area of Sắc Tứ Tam Bảo Temple is larger than the area of Diyarbakır Province.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,283,Friday the 13th is the approximate time at which the person Caleb McLaughlin started living.,,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,283,Friday the 13th is the approximate time at which the person Caleb McLaughlin started living.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,801,There existed an American Civil War battle that went by the name of The Battle of the Trebia.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,801,There existed an American Civil War battle that went by the name of The Battle of the Trebia.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,926,The cause of death of Joop van Oosterom was kept secret because it is related to illegal activity.,Not Enough Info,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,926,The cause of death of Joop van Oosterom was kept secret because it is related to illegal activity.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,230,French Indochina was previously spelled as French Indo-China after 1990.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,230,French Indochina was previously spelled as French Indo-China after 1990.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,427,"There is a Japanese television drama series based on a manga series illustrated by Takeshi Obata, it is called Death Note.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,427,"There is a Japanese television drama series based on a manga series illustrated by Takeshi Obata, it is called Death Note.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,124,Nate Diaz signed with the UFC in the year when subprime mortgage crisis happened in the United States.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,124,Nate Diaz signed with the UFC in the year when subprime mortgage crisis happened in the United States.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,701,There is a city in debt called Lyon.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,701,There is a city in debt called Lyon.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,120,The Latvian Soviet Socialist Republic was a republic of the Soviet Union 3 years after 2009.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,120,The Latvian Soviet Socialist Republic was a republic of the Soviet Union 3 years after 2009.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,853,There exists a businessman and was on television that goes by the name of The American actor that plays Chumlee.,SUPPORTS,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,853,There exists a businessman and was on television that goes by the name of The American actor that plays Chumlee.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,315,The Thin Red Line (1998 film) features a performance by only one American actor.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,315,The Thin Red Line (1998 film) features a performance by only one American actor.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,583,There did not exist a fashion designer that goes by the name of Augutus Prew's mother.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,583,There did not exist a fashion designer that goes by the name of Augutus Prew's mother.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1105,The area of Khuldabad is larger than the area of Province of Huelva.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1105,The area of Khuldabad is larger than the area of Province of Huelva.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,346,There is a religious leader called William Cohen.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,346,There is a religious leader called William Cohen.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,697,Hindu Kush is a geographic feature and is a romance movie.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,697,Hindu Kush is a geographic feature and is a romance movie.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,43,There is a movie called The film The Good German which wasn't directed by Cate Blanchett.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,43,There is a movie called The film The Good German which wasn't directed by Cate Blanchett.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,821,There exists a UK National Committee that goes by the name of UNICEF UK.,,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,821,There exists a UK National Committee that goes by the name of UNICEF UK.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1049,There exists a director of cinematography called Ayananka Bose.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1049,There exists a director of cinematography called Ayananka Bose.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,158,Lyron Cobbins was also a member of the Notre Dame Fighting Falcons and the Chicago Cardinals.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,158,Lyron Cobbins was also a member of the Notre Dame Fighting Falcons and the Chicago Cardinals.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1097,Kevin Bacon acted in The Woodsman when he was 93 years old and appeared in a film Barry Levinson directed.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1097,Kevin Bacon acted in The Woodsman when he was 93 years old and appeared in a film Barry Levinson directed.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,367,Halsey signed her first recording contract 5 years before 2019 to Astralwerks.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,367,Halsey signed her first recording contract 5 years before 2019 to Astralwerks.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,638,The Paper isn't directed by Barack Obama.,SUPPORTS,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,638,The Paper isn't directed by Barack Obama.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,716,"There is an Italian professional footballer from New jersey, they are called Andrea Pirlo.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,716,"There is an Italian professional footballer from New jersey, they are called Andrea Pirlo.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,385,Goldie Hawn was always passed over for Academy Award nominations and had a career that lasted more than three decades.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,385,Goldie Hawn was always passed over for Academy Award nominations and had a career that lasted more than three decades.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,16,Sausage Party was held in the year when Donald Trump won the Presidential elections.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,16,Sausage Party was held in the year when Donald Trump won the Presidential elections.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,14,"Adam Khoo is an investor in the Singapore Stock Exchange and various forms of trading, including stock-market mutual funds and derivatives.",NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,14,"Adam Khoo is an investor in the Singapore Stock Exchange and various forms of trading, including stock-market mutual funds and derivatives.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,214,One True Thing is film that originated from outside the United States.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,214,One True Thing is film that originated from outside the United States.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,534,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School 4 years before 1926.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,534,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School 4 years before 1926.",REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,171,"There exists a Bostonian, it goes by the name of Johnny Van Zant.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,171,"There exists a Bostonian, it goes by the name of Johnny Van Zant.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,616,Mamata Banerjee is not an Indian politician.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,616,Mamata Banerjee is not an Indian politician.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,141,Southampton F.C. came in second in the First Division in the 1980s -- 1984.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,141,Southampton F.C. came in second in the First Division in the 1980s -- 1984.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,391,Steph Curry won an MVP award after his father stopped playing.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,391,Steph Curry won an MVP award after his father stopped playing.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,541,There exists a Australian politician that goes by the name of Mamata Banerjee.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,541,There exists a Australian politician that goes by the name of Mamata Banerjee.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,482,Peyton Manning was drafted before his brother.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,482,Peyton Manning was drafted before his brother.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,455,"Keith Urban was released by a person whose singles Locked Out of Heaven and When I Was Your Man, reached number one on the US Billboard Hot 100 chart.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,455,"Keith Urban was released by a person whose singles Locked Out of Heaven and When I Was Your Man, reached number one on the US Billboard Hot 100 chart.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,255,There is not a 1986 science fiction action horror comedy film written and directed by Stephen King called Maximum Overdrive.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,255,There is not a 1986 science fiction action horror comedy film written and directed by Stephen King called Maximum Overdrive.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,166,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney in the seventies of the twentieth century.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,166,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney in the seventies of the twentieth century.",NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,77,Coeliac disease may result in increased risk of cancer and is not treated by maintaining a gluten-free diet.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,77,Coeliac disease may result in increased risk of cancer and is not treated by maintaining a gluten-free diet.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,645,John S. McCain Jr. was raised in the capital of the United States of America.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,645,John S. McCain Jr. was raised in the capital of the United States of America.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,123,There exists a long running television series called SpongeBob SquarePants.,NOT ENOUGH INFO,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,123,There exists a long running television series called SpongeBob SquarePants.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,187,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School between 1925 and 1927.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,187,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School between 1925 and 1927.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,459,There exists a volleyball player called Laura Robson.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,459,There exists a volleyball player called Laura Robson.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,925,"There exists an embodiment of cultism called Sacre-Coeur, Paris.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,925,"There exists an embodiment of cultism called Sacre-Coeur, Paris.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,251,"There existed an attempt to incorporate Cyprus into Greece, it was called There.",SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,251,"There existed an attempt to incorporate Cyprus into Greece, it was called There.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,545,"Darris Love was created by creator/executive producer/composer/musician, David S. Goyer, in conjunction with the production company, Whedon Productions.",REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,545,"Darris Love was created by creator/executive producer/composer/musician, David S. Goyer, in conjunction with the production company, Whedon Productions.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,84,1970 is the approximate time at which the person Eric Bana started living.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,84,1970 is the approximate time at which the person Eric Bana started living.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,671,"Babur was born at some other time than May 14, 1783.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,671,"Babur was born at some other time than May 14, 1783.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1027,Antigua and Barbuda was named by Christopher Columbus after 1480.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1027,Antigua and Barbuda was named by Christopher Columbus after 1480.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,244,There exists a religion that goes by the name of Birmingham.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,244,There exists a religion that goes by the name of Birmingham.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,107,The area of Phulambri is larger than the area of Province of Córdoba -LRB-Spain-RRB-.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,107,The area of Phulambri is larger than the area of Province of Córdoba -LRB-Spain-RRB-.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1012,There does not exist a religion called Birmingham.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1012,There does not exist a religion called Birmingham.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,308,Topman belongs to a British multinational retailing company and is part of a retailing company.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,308,Topman belongs to a British multinational retailing company and is part of a retailing company.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,828,The Hanford Site hosts the LIGO Hanford Observatory which detects gravitational tides,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,828,The Hanford Site hosts the LIGO Hanford Observatory which detects gravitational tides,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,401,Terry Crews played professional football in the year when Pakistan won the Cricket world cup.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,401,Terry Crews played professional football in the year when Pakistan won the Cricket world cup.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,609,Ralph Fults was associated with the musical body the Barrow Gang,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,609,Ralph Fults was associated with the musical body the Barrow Gang,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,69,The area of Ladwa is larger than the area of Niğde Province.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,69,The area of Ladwa is larger than the area of Niğde Province.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,831,There exists a drag race racing team called Red Bull Racing.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,831,There exists a drag race racing team called Red Bull Racing.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,184,Oscar the los Hoya was named Fighter of the Year,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,184,Oscar the los Hoya was named Fighter of the Year,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,647,"The portrayor of a character that is based on Tim Canterbury from the original version of The Office was born on October 2, 1979",REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,647,"The portrayor of a character that is based on Tim Canterbury from the original version of The Office was born on October 2, 1979",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,29,Dawood Ibrahim Kaskar was not from a place in  Mira-Bhayandar city of Thane district,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,29,Dawood Ibrahim Kaskar was not from a place in  Mira-Bhayandar city of Thane district,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1023,William Mycroft represented Derbyshire at cricket during the period of his career and represents the club on a regular basis.,,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1023,William Mycroft represented Derbyshire at cricket during the period of his career and represents the club on a regular basis.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1102,"There exists a real person, it goes by the name of Daenerys Targaryen.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1102,"There exists a real person, it goes by the name of Daenerys Targaryen.",REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,720,There is not a work called The Giver.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,720,There is not a work called The Giver.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,949,Billboard Dad stars Robin Wright and is a motion picture.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,949,Billboard Dad stars Robin Wright and is a motion picture.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,549,"Côme Isaïe Rinfret was also a lawyer, serving as a justice of the peace, county councillor, and county sheriff.",NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,549,"Côme Isaïe Rinfret was also a lawyer, serving as a justice of the peace, county councillor, and county sheriff.",NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,910,"The area of Aurangabad district, Maharashtra is larger than the area of Ranala.",SUPPORTS,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,910,"The area of Aurangabad district, Maharashtra is larger than the area of Ranala.",SUPPORTS,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,50,"There exists a part of the Ferrari Cartel, it goes by the name of MS-13.",NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,50,"There exists a part of the Ferrari Cartel, it goes by the name of MS-13.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,48,The area of Madhya Pradesh is larger than the area of Xangongo.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,48,The area of Madhya Pradesh is larger than the area of Xangongo.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,254,"There was a structural failure, it was called Vampire Academy.",NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,254,"There was a structural failure, it was called Vampire Academy.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1153,Any polygon may be dissected into any other polygon of the same area.,REFUTES,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1153,Any polygon may be dissected into any other polygon of the same area.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,973,There was a firefighter in France called Richard Dawson.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,973,There was a firefighter in France called Richard Dawson.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,607,Tehran was a British  racehorse who raced during World War II,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,607,Tehran was a British  racehorse who raced during World War II,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,529,The area of Madhya Pradesh is larger than the area of Akkalkuwa.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,529,The area of Madhya Pradesh is larger than the area of Akkalkuwa.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,428,"There exists a 1964 American independent horror film, it goes by the name of Night of the Living Dead.",NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,428,"There exists a 1964 American independent horror film, it goes by the name of Night of the Living Dead.",NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,102,Ashton Kutcher was directed by a person married to Amal Clooney.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,102,Ashton Kutcher was directed by a person married to Amal Clooney.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,566,Scipio Africanus  was a slave born to unknown parents from West Africa,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,566,Scipio Africanus  was a slave born to unknown parents from West Africa,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,446,There exists no unit called Weill Cornell Medicine.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,446,There exists no unit called Weill Cornell Medicine.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,619,The Fukushima Daiichi nuclear disaster happened after the Chernobyl accident.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,619,The Fukushima Daiichi nuclear disaster happened after the Chernobyl accident.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,975,The area of Kolaras is larger than the area of Spain.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,975,The area of Kolaras is larger than the area of Spain.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,854,Coins of the Swiss franc can be used just outside of Switzerland,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,854,Coins of the Swiss franc can be used just outside of Switzerland,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,936,"The area of Manica Province is larger than the area of Nerva, Spain.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,936,"The area of Manica Province is larger than the area of Nerva, Spain.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,649,The ruins of the ancient Roman town of Herculaneum lie near the regional capital of Campania,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,649,The ruins of the ancient Roman town of Herculaneum lie near the regional capital of Campania,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,262,There does not exist a film called The Little Prince (2015 film).,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,262,There does not exist a film called The Little Prince (2015 film).,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,314,"The person best known for co-creating  a musical comedy about two young Mormon missionaries who travel to Africa to preach the Mormon religion was born February 2, 1975",REFUTES,0.095,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,314,"The person best known for co-creating  a musical comedy about two young Mormon missionaries who travel to Africa to preach the Mormon religion was born February 2, 1975",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1080,Bhagat Singh was an Indian citizen born in Punjab.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1080,Bhagat Singh was an Indian citizen born in Punjab.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,755,The Saturn Award for Best Fantasy Film is given to the best imaginary cinematography,REFUTES,0.5,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,755,The Saturn Award for Best Fantasy Film is given to the best imaginary cinematography,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,909,"There is a novel, it is called The Big Country.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,909,"There is a novel, it is called The Big Country.",REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,685,Colin Kaepernick did not become a starter during the 49ers 63rd season in the National Football League and is a person who plays football.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,685,Colin Kaepernick did not become a starter during the 49ers 63rd season in the National Football League and is a person who plays football.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,88,There did not exist a place called Yugoslavia.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,88,There did not exist a place called Yugoslavia.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,241,Jonah Hill is certainly not an actor.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,241,Jonah Hill is certainly not an actor.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,305,Harold Macmillan only served as the President of the the country which ruled over India till 1947.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,305,Harold Macmillan only served as the President of the the country which ruled over India till 1947.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,122,"Kullervo is a peninsula on the Baltic sea, to the east of the Gulf of Finland and to the south of the Gulf of Finland and has a coastline of Sweden, Finland, Norway, the north of Finland, and Russia.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,122,"Kullervo is a peninsula on the Baltic sea, to the east of the Gulf of Finland and to the south of the Gulf of Finland and has a coastline of Sweden, Finland, Norway, the north of Finland, and Russia.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1046,Elizabeth Olsen is a person and is a mayor.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1046,Elizabeth Olsen is a person and is a mayor.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,658,"There is a Dutch screenwriter, they are called Carey Hayes.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,658,"There is a Dutch screenwriter, they are called Carey Hayes.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,356,Oscar Isaac was the main character in Star Wars: The Force Awakens and was featured in Star Wars: The Force Awakens.,FALSE,1.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,356,Oscar Isaac was the main character in Star Wars: The Force Awakens and was featured in Star Wars: The Force Awakens.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,481,"An American singer who sung the best selling single Tik Tok was born on March 1st, 1987 in a Pasadena, California.",NOT ENOUGH INFO,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,481,"An American singer who sung the best selling single Tik Tok was born on March 1st, 1987 in a Pasadena, California.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,476,There does not exist a biographical romantic drama film called A United Kingdom.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,476,There does not exist a biographical romantic drama film called A United Kingdom.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,479,"Freddie Highmore is an actor on  an American psychological horror drama television series developed by Carlton Cuse, Kerry Ehrin, and Anthony Cipriano.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,479,"Freddie Highmore is an actor on  an American psychological horror drama television series developed by Carlton Cuse, Kerry Ehrin, and Anthony Cipriano.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1132,Varsity Blues (film) is not directed by someone who often collaborates with producer Michael Tollin,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1132,Varsity Blues (film) is not directed by someone who often collaborates with producer Michael Tollin,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,794,There is a German politician called Nawaz Sharif.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,794,There is a German politician called Nawaz Sharif.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1041,"Sensitive Skin's first series aired on a network that is headquartered on Columbus Avenue and West 66th Street in Manhattan , New York City",,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1041,"Sensitive Skin's first series aired on a network that is headquartered on Columbus Avenue and West 66th Street in Manhattan , New York City",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1063,American Library Association is the most prodigious library association,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1063,American Library Association is the most prodigious library association,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,883,The human brain contains a part called hypothalamus which is responsible for superhero like abilities,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,883,The human brain contains a part called hypothalamus which is responsible for superhero like abilities,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,604,Sofia Coppol is in the same relation to Francis Ford Coppola as Maciej Stuhr to Jerzy Stuhr.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,604,Sofia Coppol is in the same relation to Francis Ford Coppola as Maciej Stuhr to Jerzy Stuhr.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,190,There is a novelist called Ed Decter.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,190,There is a novelist called Ed Decter.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,795,Bongwater follows the story of a medication dealer,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,795,Bongwater follows the story of a medication dealer,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,539,There is an actress called Emilia Clarke.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,539,There is an actress called Emilia Clarke.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,596,Superhuman abilities may result from human enhancement by genetic modification using CRISPR technology and abilities may result from human enhancement by nanotechnology.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,596,Superhuman abilities may result from human enhancement by genetic modification using CRISPR technology and abilities may result from human enhancement by nanotechnology.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,581,There exists an Italian professional footballer from New jersey called Andrea Pirlo.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,581,There exists an Italian professional footballer from New jersey called Andrea Pirlo.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,284,Prague's historic center was first included in the UNESCO list of World Heritage Sites in the 2010s.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,284,Prague's historic center was first included in the UNESCO list of World Heritage Sites in the 2010s.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1068,Jennifer Anniston appeared in Along Came Polly while her father was playing the role of Victor Kiriakis,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1068,Jennifer Anniston appeared in Along Came Polly while her father was playing the role of Victor Kiriakis,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,921,Mikhail Prokhorov is not the past chairman of a gold producer,REFUTES,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,921,Mikhail Prokhorov is not the past chairman of a gold producer,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,586,Amy Winehouse died of whiskey poisoning on 23 July 2011.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,586,Amy Winehouse died of whiskey poisoning on 23 July 2011.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,602,Mary Kate Olsen and Ashley Olsen were birthed on June 11th 1999,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,602,Mary Kate Olsen and Ashley Olsen were birthed on June 11th 1999,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,154,There does not exist a drama movie that goes by the name of An Education.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,154,There does not exist a drama movie that goes by the name of An Education.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,841,"Lazze Ohlyz are a musical duo consisting of two instruments, an instrumental and a classical jazz quartet.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,841,"Lazze Ohlyz are a musical duo consisting of two instruments, an instrumental and a classical jazz quartet.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,924,Andrew Moray led an uprising against profession in 1297,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,924,Andrew Moray led an uprising against profession in 1297,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,756,The White Paper was directed by a person who was inducted into the Television Hall of Fame in 2013.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,756,The White Paper was directed by a person who was inducted into the Television Hall of Fame in 2013.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,291,"Road House an action film by Hollywood director and writer currently residing in Rochester , New York.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,291,"Road House an action film by Hollywood director and writer currently residing in Rochester , New York.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,960,Dennis Edwards is a former American college and professional football player,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,960,Dennis Edwards is a former American college and professional football player,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1038,Key & Peele has won a Peabody Award and has won two Primetime Emmy Awards as of 2004.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1038,Key & Peele has won a Peabody Award and has won two Primetime Emmy Awards as of 2004.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1093,There does not exist a phone called Agent Raghav – Crime Branch.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1093,There does not exist a phone called Agent Raghav – Crime Branch.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,800,There is not a section of a car company that involves several countries that goes by the name of Mercedes-Benz.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,800,There is not a section of a car company that involves several countries that goes by the name of Mercedes-Benz.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1089,Prague's historic center was first included in the UNESCO list of World Heritage Sites 3 years after 1989.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1089,Prague's historic center was first included in the UNESCO list of World Heritage Sites 3 years after 1989.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,59,There was a game show contestant in the United States called Richard Dawson.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,59,There was a game show contestant in the United States called Richard Dawson.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,639,The flux linkage is simply an alternative term for total flux.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,639,The flux linkage is simply an alternative term for total flux.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,544,The area of Badia del Vallès is larger than the area of Cunene Province.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,544,The area of Badia del Vallès is larger than the area of Cunene Province.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,19,There exists a Korean band called Scandal.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,19,There exists a Korean band called Scandal.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,822,"There is a television series, it is called Younger.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,822,"There is a television series, it is called Younger.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,877,Rob Sheridan is an American  wildlife photographer.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,877,Rob Sheridan is an American  wildlife photographer.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,182,There is a politician called Alan White.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,182,There is a politician called Alan White.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,722,Artpop was Gaga's second consecutive number-one record in the United States 4 years after 2005.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,722,Artpop was Gaga's second consecutive number-one record in the United States 4 years after 2005.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,409,Rope is a TV play from 1919.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,409,Rope is a TV play from 1919.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,372,"There exists a boxer, it goes by the name of Nate Diaz.",NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,372,"There exists a boxer, it goes by the name of Nate Diaz.",NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,796,The fourth king of a Korean kingdom founded by Yi Seonggye died in 1430,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,796,The fourth king of a Korean kingdom founded by Yi Seonggye died in 1430,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,970,There is not a character in a JRR Tolkein series that goes by the name of Daenerys Targaryen.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,970,There is not a character in a JRR Tolkein series that goes by the name of Daenerys Targaryen.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,560,Spider-Man 2 is not a film.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,560,Spider-Man 2 is not a film.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1154,Saturn is the sixth planet from the only planet in the solar system known to harbor life.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1154,Saturn is the sixth planet from the only planet in the solar system known to harbor life.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,956,There exists no episode of a TV series called The Challenge XXX: Dirty 30.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,956,There exists no episode of a TV series called The Challenge XXX: Dirty 30.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,235,There is not a character called Carol Danvers.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,235,There is not a character called Carol Danvers.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,407,"On Monday August 19, 1945, lead singer and lyricist for the  English rock band formed in Hertford in 1968 was born",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,407,"On Monday August 19, 1945, lead singer and lyricist for the  English rock band formed in Hertford in 1968 was born",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,128,A United Kingdom isn't directed by Sean Baker.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,128,A United Kingdom isn't directed by Sean Baker.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,812,Prague's historic center was first included in the UNESCO list of World Heritage Sites 2 years before 1939.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,812,Prague's historic center was first included in the UNESCO list of World Heritage Sites 2 years before 1939.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,26,Aristotle spent the majority of his life in the sixth and second largest continents in the world.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,26,Aristotle spent the majority of his life in the sixth and second largest continents in the world.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,132,Artpop was Gaga's second consecutive number-one record in the United States in 2013.,NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,132,Artpop was Gaga's second consecutive number-one record in the United States in 2013.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1040,The former spouse of Demi Moore reacted in 2005.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1040,The former spouse of Demi Moore reacted in 2005.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,792,"There is a director, a Swede, who was involved in the production of A United Kingdom.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,792,"There is a director, a Swede, who was involved in the production of A United Kingdom.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,754,The National Film Award for Best Director has been awarded to a person who made his debut with the film Ram Sethu.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,754,The National Film Award for Best Director has been awarded to a person who made his debut with the film Ram Sethu.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,527,Goosebumps (film) was directed by someone who co-directed and co-wrote Shark Tale.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,527,Goosebumps (film) was directed by someone who co-directed and co-wrote Shark Tale.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,320,"There exists a farmer, it goes by the name of John Frusciante.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,320,"There exists a farmer, it goes by the name of John Frusciante.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,497,Chris Bosh enjoys playing against Oklahoma City Thunder and won his first NBA Finals title between 2010 and 2014.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,497,Chris Bosh enjoys playing against Oklahoma City Thunder and won his first NBA Finals title between 2010 and 2014.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,577,"There exists a person, it goes by the name of Sebastian Vettel.",SUPPORTS,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,577,"There exists a person, it goes by the name of Sebastian Vettel.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,354,"Vassilis Palaiokostas was also significant in his relationship with his brother, Nikos Palaiokostas, who established a close friendship with him in the prison and in the media.",NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,354,"Vassilis Palaiokostas was also significant in his relationship with his brother, Nikos Palaiokostas, who established a close friendship with him in the prison and in the media.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,489,There does not exist a slasher film that goes by the name of Scream 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,489,There does not exist a slasher film that goes by the name of Scream 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,131,There is a Hindu called Cary Elwes.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,131,There is a Hindu called Cary Elwes.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,322,The House of the Spirits is about the life of a young lady named Clara during the military authoritarian in pig,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,322,The House of the Spirits is about the life of a young lady named Clara during the military authoritarian in pig,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,621,There does not exist a member of the Group of 15 called Chile.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,621,There does not exist a member of the Group of 15 called Chile.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,842,"Vic Mensa who is signed to an American entertainment company founded by Jay Z in 2008 has date of birth was June 6, 1993.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,842,"Vic Mensa who is signed to an American entertainment company founded by Jay Z in 2008 has date of birth was June 6, 1993.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,948,"Buffy Summers is not related to an American television series created by Joss Whedon under his production tag , Mutant Enemy Productions",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,948,"Buffy Summers is not related to an American television series created by Joss Whedon under his production tag , Mutant Enemy Productions",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,475,Ian Gillan writes songs and is a producer.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,475,Ian Gillan writes songs and is a producer.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,810,The Invisible Man came out since execution of the Motion Picture Production Code censorship guidelines took effect,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,810,The Invisible Man came out since execution of the Motion Picture Production Code censorship guidelines took effect,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1011,"There is a former Catholic, they are called Leslie Alexander.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1011,"There is a former Catholic, they are called Leslie Alexander.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,12,The lead engineer of the iAPX 432 worked for Intel for 20 more years after it was introduced.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,12,The lead engineer of the iAPX 432 worked for Intel for 20 more years after it was introduced.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1061,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney after 1960.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1061,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney after 1960.",NOT ENOUGH INFO,0.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1173,There is not a series of seven serial murders called Night of the Living Dead.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1173,There is not a series of seven serial murders called Night of the Living Dead.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,600,Blue Jasmine was filmed in a city where the Golden Gate Bridge is located.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,600,Blue Jasmine was filmed in a city where the Golden Gate Bridge is located.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,64,"There is an Emmy Award nominee, they are called Vincent D'Onofrio.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,64,"There is an Emmy Award nominee, they are called Vincent D'Onofrio.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1150,One of Macklemore's singles was number one in Canada before 2020.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1150,One of Macklemore's singles was number one in Canada before 2020.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1152,The area of Teteles de Ávila Castillo is larger than the area of Spain.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1152,The area of Teteles de Ávila Castillo is larger than the area of Spain.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,727,There exists no Spanish city called Melilla.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,727,There exists no Spanish city called Melilla.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,359,"There was an American singer, most famous for his album 'Graduation' called Sonny Bono.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,359,"There was an American singer, most famous for his album 'Graduation' called Sonny Bono.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,10,Fabian Nicieza worked on X-men in the years preceding and following the dotcom bubble.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,10,Fabian Nicieza worked on X-men in the years preceding and following the dotcom bubble.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1072,A staging area is not a location.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1072,A staging area is not a location.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,782,There was not a racecar driver in Formula One called Sebastian Vettel.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,782,There was not a racecar driver in Formula One called Sebastian Vettel.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,998,The Battle of France before 1940 is also known as the Fall of France.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,998,The Battle of France before 1940 is also known as the Fall of France.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1085,There exists an Afroasiatic language called The Maltese language.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1085,There exists an Afroasiatic language called The Maltese language.,NOT ENOUGH INFO,0.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,114,There was a man called Paul von Hindenburg.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,114,There was a man called Paul von Hindenburg.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,760,"There is a political leader, they are called Anthony Scaramucci.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,760,"There is a political leader, they are called Anthony Scaramucci.",REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,503,Mercedes Benz is partly of a company from Germany,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,503,Mercedes Benz is partly of a company from Germany,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,456,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School between 1925 and 1927, which was the only law school founded in the 1920s around the world.",,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,456,"Camden, New Jersey is the home of a school that was founded as the South Jersey Law School between 1925 and 1927, which was the only law school founded in the 1920s around the world.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1131,Smriti Mandhana is an Indian cricketer born in Mumbai.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1131,Smriti Mandhana is an Indian cricketer born in Mumbai.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,832,Aestheticism has as subjects fine art documentaries and music,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,832,Aestheticism has as subjects fine art documentaries and music,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,569,Skopje wasn't a main city from 972 and 992.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,569,Skopje wasn't a main city from 972 and 992.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,115,Milk is not an American movie from 2008.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,115,Milk is not an American movie from 2008.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,979,Deepika Padukone has just played in one Indian film,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,979,Deepika Padukone has just played in one Indian film,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,271,A person who has won Emmy awards twice for outstanding choreography has worked with a K-pop singer from Luxembourg.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,271,A person who has won Emmy awards twice for outstanding choreography has worked with a K-pop singer from Luxembourg.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1073,Java is in Indonesia and was formed by volcanic eruptions Pleistocene Era.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1073,Java is in Indonesia and was formed by volcanic eruptions Pleistocene Era.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1031,There exists a 1990 cinematic work from the United States called Night of the Living Dead.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1031,There exists a 1990 cinematic work from the United States called Night of the Living Dead.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,30,There exists a lobbyist and physician that goes by the name of Ted Cruz.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,30,There exists a lobbyist and physician that goes by the name of Ted Cruz.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,839,"There exists a book, it goes by the name of Reanimation.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,839,"There exists a book, it goes by the name of Reanimation.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,416,Mercedes-Benz is certainly not a division of BMW.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,416,Mercedes-Benz is certainly not a division of BMW.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,466,The area of Mashonaland West Province is larger than the area of Sắc Tứ Tam Bảo Temple.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,466,The area of Mashonaland West Province is larger than the area of Sắc Tứ Tam Bảo Temple.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1127,The area of Chentang is larger than the area of Gougoudjé.,Not Enough Info,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1127,The area of Chentang is larger than the area of Gougoudjé.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,869,"Calendula genus members are in the same family that plants which generic name came from the word meaning ""hedgehog"".",,0.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,869,"Calendula genus members are in the same family that plants which generic name came from the word meaning ""hedgehog"".",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1160,Johan Cruyff is widely regarded as the greatest player of the 20th century.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1160,Johan Cruyff is widely regarded as the greatest player of the 20th century.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,253,Right atrioventricular valve lies between the left atrium and the left ventricle.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,253,Right atrioventricular valve lies between the left atrium and the left ventricle.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,851,Hoosier State is an Amtrak passenger train,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,851,Hoosier State is an Amtrak passenger train,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,700,There did not exist a sibling duo called Sonny & Cher.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,700,There did not exist a sibling duo called Sonny & Cher.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,363,The second largest sportswear manufacturer in the world also designs lingerie for women.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,363,The second largest sportswear manufacturer in the world also designs lingerie for women.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,941,"There exists a Baby Boomer, it goes by the name of Shannon Lee was born in 1969 and.",NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,941,"There exists a Baby Boomer, it goes by the name of Shannon Lee was born in 1969 and.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,730,There exists a live action film called Toy Story 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,730,There exists a live action film called Toy Story 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,974,The Latvian Soviet Socialist Republic was a republic of the Soviet Union between 2008 and 2016.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,974,The Latvian Soviet Socialist Republic was a republic of the Soviet Union between 2008 and 2016.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,825,"There is a director, Lewis Gilbert, who was not involved in the production of You Only Live Twice.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,825,"There is a director, Lewis Gilbert, who was not involved in the production of You Only Live Twice.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,86,The 100 is a TV series following a group of adolescents,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,86,The 100 is a TV series following a group of adolescents,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,414,There exists a child singer that goes by the name of Aubrey Anderson-Emmons.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,414,There exists a child singer that goes by the name of Aubrey Anderson-Emmons.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1055,The area of Lunda Norte Province is larger than the area of Nyamapanda.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1055,The area of Lunda Norte Province is larger than the area of Nyamapanda.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,362,There exists a mobile personal computer called The IPhone 4.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,362,There exists a mobile personal computer called The IPhone 4.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,773,"There exists a racket and shuttlecock sport, it goes by the name of Golf.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,773,"There exists a racket and shuttlecock sport, it goes by the name of Golf.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1081,Several awards have been given to Bala for his labor,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1081,Several awards have been given to Bala for his labor,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,452,Stomp the Yard is not a film.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,452,Stomp the Yard is not a film.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,323,Ctesiphon was an orator in Athens during the reign of Alexander the Great,SUPPORTS,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,323,Ctesiphon was an orator in Athens during the reign of Alexander the Great,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,23,A View to a Kill is the third James Bond film directed by John Glen and released 3 years after 1999.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,23,A View to a Kill is the third James Bond film directed by John Glen and released 3 years after 1999.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,342,There is not a film that is categorized as a slasher called Scream 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,342,There is not a film that is categorized as a slasher called Scream 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,559,"There is a unit of individual differences, it is called Personality.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,559,"There is a unit of individual differences, it is called Personality.",REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,781,Uganda definitely was not a protectorate.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,781,Uganda definitely was not a protectorate.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,54,Congressional Space Medal of Honor is the highest award given only to those who have lived on the moon by NASA.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,54,Congressional Space Medal of Honor is the highest award given only to those who have lived on the moon by NASA.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,906,There existed a service that operated under the military that went by the name of The KGB.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,906,There existed a service that operated under the military that went by the name of The KGB.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,486,Santa Lucía is a city in the province of Corrientes,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,486,Santa Lucía is a city in the province of Corrientes,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,890,There is an Episcopalian called James Brolin.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,890,There is an Episcopalian called James Brolin.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,580,Weill Cornell Medicine has not tales of being tied to the field of education,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,580,Weill Cornell Medicine has not tales of being tied to the field of education,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,299,Asclepiads were originally a biological family.,Not Enough Info,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,299,Asclepiads were originally a biological family.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,33,Atlanta metropolitan area is located in the Appalachian Mountains and metropolitan area is located in North Georgia.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,33,Atlanta metropolitan area is located in the Appalachian Mountains and metropolitan area is located in North Georgia.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,85,There existed an assassin that went by the name of The Gettysburg Address was delivered by someone who.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,85,There existed an assassin that went by the name of The Gettysburg Address was delivered by someone who.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,288,Recognition has been given to Bala for his labor,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,288,Recognition has been given to Bala for his labor,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,606,One of Macklemore's singles was number one in Canada after 2000.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,606,One of Macklemore's singles was number one in Canada after 2000.,NOT ENOUGH INFO,0.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,522,There exists a store called Spider-Man 2.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,522,There exists a store called Spider-Man 2.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,355,Sweet Home Alabama is a rock song that was written in reply to two songs from Neil Young's album Harvest and was written in reply to Neil Young's song Southern Man.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,355,Sweet Home Alabama is a rock song that was written in reply to two songs from Neil Young's album Harvest and was written in reply to Neil Young's song Southern Man.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,172,There is a season of a TV show called The Challenge XXX: Dirty 30.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,172,There is a season of a TV show called The Challenge XXX: Dirty 30.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,843,Bob Ross certainly was not an artist.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,843,Bob Ross certainly was not an artist.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,588,There did not exist a web browser called Netscape Navigator.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,588,There did not exist a web browser called Netscape Navigator.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,946,Sidse Babett Knudsen refuses to work in theater and is a director.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,946,Sidse Babett Knudsen refuses to work in theater and is a director.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,273,"There was a nation-state, it was called Yugoslavia.",NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,273,"There was a nation-state, it was called Yugoslavia.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,226,There is not an unadapted novel that goes by the name of The Maze Runner.,REFUTES,0.9,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,226,There is not an unadapted novel that goes by the name of The Maze Runner.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,678,There existed a Presbyterian called Charles de Gaulle.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,678,There existed a Presbyterian called Charles de Gaulle.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,62,Glee.com launch in America before 2010 by Community Connect Inc. was a huge success.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,62,Glee.com launch in America before 2010 by Community Connect Inc. was a huge success.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,526,"February 14th, 1860 is some other time than when Simon Pegg was born.",SUPPORTS,0.099,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,526,"February 14th, 1860 is some other time than when Simon Pegg was born.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,692,More than 20 people were excuted in Republic of Ireland.,REFUTES,0.095,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,692,More than 20 people were excuted in Republic of Ireland.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,460,There exists a suburban borough that goes by the name of Birmingham.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,460,There exists a suburban borough that goes by the name of Birmingham.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,931,The horse was spoken of as a Eohippus when it had multiple fingers,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,931,The horse was spoken of as a Eohippus when it had multiple fingers,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,980,There exists a hierarchy of leagues that goes by the name of Minor League Baseball.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,980,There exists a hierarchy of leagues that goes by the name of Minor League Baseball.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,3,"The Nice Guys is a 2016 American neo-noir action comedy film directed by an Danish screenwriter , director , producer and actor , known for writing the 1987 action film hit Lethal Weapon",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,3,"The Nice Guys is a 2016 American neo-noir action comedy film directed by an Danish screenwriter , director , producer and actor , known for writing the 1987 action film hit Lethal Weapon",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,690,The grandson of Henry Purcell was a chorister in the Chapel Royal after Baroque style began in Italy.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,690,The grandson of Henry Purcell was a chorister in the Chapel Royal after Baroque style began in Italy.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1144,There exists no Brazilian called Freddie Highmore.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1144,There exists no Brazilian called Freddie Highmore.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,366,There is a novel containing apples in a title that is a part of cultural movement that began hundred years after the early 1820s.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,366,There is a novel containing apples in a title that is a part of cultural movement that began hundred years after the early 1820s.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,952,There existed a slave-holding state called Tennessee.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,952,There existed a slave-holding state called Tennessee.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,573,"During an uprising that began on 10 March 1959 , when a revolt erupted in Lhasa , the 14th Dalai Lama fled to Bangladesh",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,573,"During an uprising that began on 10 March 1959 , when a revolt erupted in Lhasa , the 14th Dalai Lama fled to Bangladesh",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,240,There did not exist a statesman that goes by the name of Paul von Hindenburg.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,240,There did not exist a statesman that goes by the name of Paul von Hindenburg.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,954,There is a fashion house with a word meaning 'sweet' in its name.,SUPPORTS,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,954,There is a fashion house with a word meaning 'sweet' in its name.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,395,The Battle of the Trebia occurred on the left bunker near the Trebbia River,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,395,The Battle of the Trebia occurred on the left bunker near the Trebbia River,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,568,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney before 1980.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,568,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney before 1980.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,15,The 66th Primetime Emmy Awards was hosted by an American comedian born before 1980.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,15,The 66th Primetime Emmy Awards was hosted by an American comedian born before 1980.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,976,Buffy the Vampire Slayer had more than one co-managerial producer,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,976,Buffy the Vampire Slayer had more than one co-managerial producer,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,118,The area of Bodié is larger than the area of Malhargarh.,Not Enough Info,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,118,The area of Bodié is larger than the area of Malhargarh.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1001,Roberto Orci (a person who has collaborated with his longtime friend Alex Kurtzman) wrote Star Wars.,NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1001,Roberto Orci (a person who has collaborated with his longtime friend Alex Kurtzman) wrote Star Wars.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1121,Uganda is north of Europe and was once under rule.,NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1121,Uganda is north of Europe and was once under rule.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,614,"In United States presidential election of 1996, the candidate ran effectively unopposed.",REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,614,"In United States presidential election of 1996, the candidate ran effectively unopposed.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,6,Omar Khadr was declared guilty and was detained at Guantanamo Bay.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,6,Omar Khadr was declared guilty and was detained at Guantanamo Bay.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,137,"Poor and Stupid is his only one, and it is one of several South Park episodes that Cartman, along with his friend Kenny, Stan Marsh and Kenny, are involved in.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,137,"Poor and Stupid is his only one, and it is one of several South Park episodes that Cartman, along with his friend Kenny, Stan Marsh and Kenny, are involved in.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,934,Warren Beatty had no collaboration with a two time academic winner.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,934,Warren Beatty had no collaboration with a two time academic winner.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,177,Benjamin Harrison served in the army in the Civil War after his grandfather fought in the Battle of Tippecanoe.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,177,Benjamin Harrison served in the army in the Civil War after his grandfather fought in the Battle of Tippecanoe.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,82,Kevin Bacon was in a 1996 film and was in the film Sleepers.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,82,Kevin Bacon was in a 1996 film and was in the film Sleepers.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,984,There is not a brand of hot dog called Sarah Hyland.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,984,There is not a brand of hot dog called Sarah Hyland.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,674,"Maximum Overdrive's screenwriter was an American author of horror , supernatural fiction , suspense , science fiction , and fantasy born on September 21, 1947",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,674,"Maximum Overdrive's screenwriter was an American author of horror , supernatural fiction , suspense , science fiction , and fantasy born on September 21, 1947",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,769,There was not a science fiction horror television series called The Invisible Man.,SUPPORTS,0.0699999999999999,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,769,There was not a science fiction horror television series called The Invisible Man.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,780,Pilularia globulifera and R. globulifera are the only species in the order Pilula that both produce and release microsporangia and microsporangia in a heterosporous fashion.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,780,Pilularia globulifera and R. globulifera are the only species in the order Pilula that both produce and release microsporangia and microsporangia in a heterosporous fashion.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1076,There does not exist an exact adaptation of the video game series that goes by the name of Resident Evil.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1076,There does not exist an exact adaptation of the video game series that goes by the name of Resident Evil.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,774,The Battle of France 5 years after 1928 is also known as the Fall of France.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,774,The Battle of France 5 years after 1928 is also known as the Fall of France.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,740,There exists a 2000 page novel called The Winds of Winter.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,740,There exists a 2000 page novel called The Winds of Winter.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,838,No university has more than 5 alumni who became U.S. presidents.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,838,No university has more than 5 alumni who became U.S. presidents.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,791,A&E has permanently been called A&E,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,791,A&E has permanently been called A&E,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,350,The Woman in Black was abandoned by Hammer Film Productions in the 2010s in favor of working on Freddie vs. Jason.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,350,The Woman in Black was abandoned by Hammer Film Productions in the 2010s in favor of working on Freddie vs. Jason.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1165,Jennifer Aniston appeared in Horrible Bosses after her father first appeared in Days of Our Lives.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1165,Jennifer Aniston appeared in Horrible Bosses after her father first appeared in Days of Our Lives.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,967,"The First World War, also known as the Great War, started in Europe and lasted for 4 years.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,967,"The First World War, also known as the Great War, started in Europe and lasted for 4 years.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,434,"There existed an Ionian Greek chemist, it was called Pythagoras.",NOT ENOUGH INFO,0.03,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,434,"There existed an Ionian Greek chemist, it was called Pythagoras.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,467,"Palo Alto, California is 50 miles from the state which shares its border with Oregon",NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,467,"Palo Alto, California is 50 miles from the state which shares its border with Oregon",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,530,Starrcade was eventually broadcast via charge per view television,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,530,Starrcade was eventually broadcast via charge per view television,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,46,There exists a publication of rankings by Times Higher Education (THE) magazine called Times Higher Education World University Rankings.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,46,There exists a publication of rankings by Times Higher Education (THE) magazine called Times Higher Education World University Rankings.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,808,Wolfgang Amadeus Mozart was born in Salzburg in 1756,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,808,Wolfgang Amadeus Mozart was born in Salzburg in 1756,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1122,There was a kingdom in the Caucasus and they are significant called Georgians arose from a place that.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1122,There was a kingdom in the Caucasus and they are significant called Georgians arose from a place that.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,932,There exists a liberal art called Brazilian jiu-jitsu.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,932,There exists a liberal art called Brazilian jiu-jitsu.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,163,There exists a son that goes by the name of Tyler Perry.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,163,There exists a son that goes by the name of Tyler Perry.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,42,Globalism is not a group of ideologies that oppose the concept of globalization.,SUPPORTS,0.09,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,42,Globalism is not a group of ideologies that oppose the concept of globalization.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,60,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney 3 years before 1975.",NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,60,"The Prowler was created by Stan Lee, John Buscema, and Jim Mooney 3 years before 1975.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,211,"There exists a place, Maine, that is the birthplace of the person Jefferson Davis.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,211,"There exists a place, Maine, that is the birthplace of the person Jefferson Davis.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,656,"There is a location, it is called A staging area.",SUPPORTS,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,656,"There is a location, it is called A staging area.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,223,Kate Hudson is left wing political activist,Does not support,0.8,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,223,Kate Hudson is left wing political activist,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1053,Email filtering output is capable of throwing messages away and output is capable of delivering unchanged frogs.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1053,Email filtering output is capable of throwing messages away and output is capable of delivering unchanged frogs.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,236,"Recession indexing is derived from a number of different company performance indicators including earnings, employment, and inflation.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,236,"Recession indexing is derived from a number of different company performance indicators including earnings, employment, and inflation.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,344,There exists a former Lawrence Kotkin Associates bond trader called Leslie Alexander.,NOT ENOUGH INFO,0.2,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,344,There exists a former Lawrence Kotkin Associates bond trader called Leslie Alexander.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,699,Chris Bosh won his first NBA Finals title 4 years after 2009.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,699,Chris Bosh won his first NBA Finals title 4 years after 2009.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,570,Southampton F.C. came in second in the First Division after 1990 -- 1984.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,570,Southampton F.C. came in second in the First Division after 1990 -- 1984.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,318,Villa Park hosted the 90th FA Community Shield 4 years before 2016.,REFUTES,0.7,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,318,Villa Park hosted the 90th FA Community Shield 4 years before 2016.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,654,"There is a stage director, they are called Catherine Hardwicke.",NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,654,"There is a stage director, they are called Catherine Hardwicke.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,110,Andrew Carnegie has a 1889 article proclaiming ``The Gospel of Wealth'' and called on the rich to improve the upper society.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,110,Andrew Carnegie has a 1889 article proclaiming ``The Gospel of Wealth'' and called on the rich to improve the upper society.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,945,Only two nuclear energy accidents were given the maximum classification on the International Nuclear Event Scale.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,945,Only two nuclear energy accidents were given the maximum classification on the International Nuclear Event Scale.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,636,Curiosa is a member of the rock band the Cure.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,636,Curiosa is a member of the rock band the Cure.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,624,Quay had its first public exhibition in Manhattan,SUPPORTS,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,624,Quay had its first public exhibition in Manhattan,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,426,"Raudeberg is also located on the northeastern edge of the island of Silda, on the shore of the bay of Silda.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,426,"Raudeberg is also located on the northeastern edge of the island of Silda, on the shore of the bay of Silda.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,334,There is an American author with five kids called Dan Brown.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,334,There is an American author with five kids called Dan Brown.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1113,There exists an episode of a TV series called The Challenge XXX: Dirty 30.,REFUTES,0.09,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1113,There exists an episode of a TV series called The Challenge XXX: Dirty 30.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,390,There is not an American citizen that goes by the name of Natasha Lyonne.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,390,There is not an American citizen that goes by the name of Natasha Lyonne.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,438,There exists a theory that consists of a city and its dependent territories called Vatican City.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,438,There exists a theory that consists of a city and its dependent territories called Vatican City.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1109,The Woman in Black was abandoned by Hammer Film Productions before 2020 in favor of working on Freddie vs. Jason.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1109,The Woman in Black was abandoned by Hammer Film Productions before 2020 in favor of working on Freddie vs. Jason.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1077,"There exists a division of a European company, it goes by the name of Mercedes-Benz.",SUPPORTS,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1077,"There exists a division of a European company, it goes by the name of Mercedes-Benz.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,142,The daughter of Frank Murkowski won a Senate election in Alaska after it was purchased from Russia.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,142,The daughter of Frank Murkowski won a Senate election in Alaska after it was purchased from Russia.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,728,Prague's historic center was first included in the UNESCO list of World Heritage Sites in the thirties of the twentieth century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,728,Prague's historic center was first included in the UNESCO list of World Heritage Sites in the thirties of the twentieth century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,436,Norman Bates is from the novel Harry Potter and is main antagonist in Psycho.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,436,Norman Bates is from the novel Harry Potter and is main antagonist in Psycho.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1118,The Adventures of Pluto Nash stars at least somebody that was born in the 20th century,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1118,The Adventures of Pluto Nash stars at least somebody that was born in the 20th century,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1026,Artocarpus sericarpus is first discovered in 1959.,Not Enough Info,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1026,Artocarpus sericarpus is first discovered in 1959.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,193,The area of Province of Jaén -LRB-Spain-RRB- is larger than the area of Amravati.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,193,The area of Province of Jaén -LRB-Spain-RRB- is larger than the area of Amravati.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1096,Internet access is required to access Facebook and servers and access started in the United States of America.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1096,Internet access is required to access Facebook and servers and access started in the United States of America.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,445,"Stanisław Murzynowski became a member of the state council and divided administrative subdivisions of Poland, covering most of the territory with mostly rural population.",NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,445,"Stanisław Murzynowski became a member of the state council and divided administrative subdivisions of Poland, covering most of the territory with mostly rural population.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,270,The area of Madhya Pradesh is larger than the area of Hòn Đất District.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,270,The area of Madhya Pradesh is larger than the area of Hòn Đất District.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,642,There exists a genre of music called Benzodiazepine.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,642,There exists a genre of music called Benzodiazepine.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,443,"James, Viscount Severn has no relation to the youngest of four children and the third son of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,443,"James, Viscount Severn has no relation to the youngest of four children and the third son of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,578,There is not a computer game that goes by the name of Firefox.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,357,The area of Burdur Province is larger than the area of San Cristóbal de La Laguna.,SUPPORTS,0.5,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,138,There is not a separatist terrorist that goes by the name of Dawood Ibrahim.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,138,There is not a separatist terrorist that goes by the name of Dawood Ibrahim.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,357,The area of Burdur Province is larger than the area of San Cristóbal de La Laguna.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,637,A View to a Kill is the third James Bond film directed by John Glen and released after 1990.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,404,"There is a German, they are called Shannon Lee.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,637,A View to a Kill is the third James Bond film directed by John Glen and released after 1990.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,404,"There is a German, they are called Shannon Lee.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,752,"There existed a landscape painter, it was called Bob Ross.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,752,"There existed a landscape painter, it was called Bob Ross.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,432,There exists a television series that goes by the name of Younger.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1119,"There exists a song that Lynyrd Skynyrd wrote in reply to Neil Young's song Alabama, it goes by the name of Sweet Home Alabama.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,432,There exists a television series that goes by the name of Younger.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1119,"There exists a song that Lynyrd Skynyrd wrote in reply to Neil Young's song Alabama, it goes by the name of Sweet Home Alabama.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,865,Sherilyn_Fenn came to attention for her performance as Audrey Horne created by Christopher Nolan,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,865,Sherilyn_Fenn came to attention for her performance as Audrey Horne created by Christopher Nolan,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1159,"Doğan Öz, a parliamentary republic with diverse members, is the only one of the four Turkish representatives in the House of Representatives of Turkey, with a diverse membership.",REFUTES,0.8,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,708,The Brat Pack is certainly not a nickname given to a group of young actors who appeared together in films during the 1980s.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,708,The Brat Pack is certainly not a nickname given to a group of young actors who appeared together in films during the 1980s.,REFUTES,0.1,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1159,"Doğan Öz, a parliamentary republic with diverse members, is the only one of the four Turkish representatives in the House of Representatives of Turkey, with a diverse membership.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,377,There is a karate fighter called Shannon Lee.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,377,There is a karate fighter called Shannon Lee.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,92,There is a Native-American actor called Sean Gunn.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,92,There is a Native-American actor called Sean Gunn.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,473,"Uranium has isotopes of mass number 233, 234, 235, 236, 237 and 238 respectively.",SUPPORTS,0.095,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,473,"Uranium has isotopes of mass number 233, 234, 235, 236, 237 and 238 respectively.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1130,"There is a director, Steven Spielberg, who was not involved in the production of Spider-Man 2.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1130,"There is a director, Steven Spielberg, who was not involved in the production of Spider-Man 2.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,73,Honeymoon is the second major-label record by Elizabeth Woolridge Grant.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,73,Honeymoon is the second major-label record by Elizabeth Woolridge Grant.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,913,There existed a republic of the Soviet Union in 2012 called The Latvian Soviet Socialist Republic.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,913,There existed a republic of the Soviet Union in 2012 called The Latvian Soviet Socialist Republic.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,914,There is a bar called The Catcher in the Rye.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,914,There is a bar called The Catcher in the Rye.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,514,A View to a Kill is the third James Bond film directed by John Glen and released in the first-decade of the twenty-first century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,514,A View to a Kill is the third James Bond film directed by John Glen and released in the first-decade of the twenty-first century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,558,Yandex operates in the world's largest landlocked country,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,558,Yandex operates in the world's largest landlocked country,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1103,Charles Howard Hinton wasn't a math expert from Britain.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1103,Charles Howard Hinton wasn't a math expert from Britain.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,403,There exists no film award called The Saturn Award for Best Fantasy Film.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,246,"CCJO René Cassin was recognized by the Egyptians, the Greeks and the Romans from ancient times, and the Romans adopted the term as their official name.",REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,403,There exists no film award called The Saturn Award for Best Fantasy Film.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,246,"CCJO René Cassin was recognized by the Egyptians, the Greeks and the Romans from ancient times, and the Romans adopted the term as their official name.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,463,The current Duke of York has remained unmarried since his 1996 divorce,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,463,The current Duke of York has remained unmarried since his 1996 divorce,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,417,The Hunger Games film series' first film is definitely not directed by a gorilla.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,417,The Hunger Games film series' first film is definitely not directed by a gorilla.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,731,There is a movie called Barbarella which is not directed by Roger Vadim.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,731,There is a movie called Barbarella which is not directed by Roger Vadim.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1029,Nawaz Sharif is not a German politician.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1029,Nawaz Sharif is not a German politician.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,709,Kellyanne Conway did not publicly endorsed the daughter of the 45th president of The United States of America.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,709,Kellyanne Conway did not publicly endorsed the daughter of the 45th president of The United States of America.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,726,Asylum Records is the most profitable American record label of the twentieth century founded by two people.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,726,Asylum Records is the most profitable American record label of the twentieth century founded by two people.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,824,"Camden, New Jersey is the home of a university that was founded as the South Jersey Law School before 1930.",SUPPORTS,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,824,"Camden, New Jersey is the home of a university that was founded as the South Jersey Law School before 1930.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,653,The 66th Primetime Emmy Awards was hosted by an Iraqi comedian born before 1930.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,653,The 66th Primetime Emmy Awards was hosted by an Iraqi comedian born before 1930.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1100,"There is a Latin word, it is called Aristocracy.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1100,"There is a Latin word, it is called Aristocracy.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,339,Chris Bosh won his first NBA Finals title in the first-decade of the twenty-first century.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,339,Chris Bosh won his first NBA Finals title in the first-decade of the twenty-first century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,753,Ex-wife of a person who founded eBay appeared in St Trinian's.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,753,Ex-wife of a person who founded eBay appeared in St Trinian's.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,121,Elizabeth II became queen the same year her father died.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,121,Elizabeth II became queen the same year her father died.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,94,The Catcher in the Rye is definitely not a movie script.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,94,The Catcher in the Rye is definitely not a movie script.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1047,French Indochina was a grouping of French colonial territories in the hottest years of the twentieth century.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1047,French Indochina was a grouping of French colonial territories in the hottest years of the twentieth century.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1051,The area of Lunda Norte Province is larger than the area of Teterow.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1051,The area of Lunda Norte Province is larger than the area of Teterow.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,71,Kendall Jenner is a spokesperson and is a model.,NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,71,Kendall Jenner is a spokesperson and is a model.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,706,"Stomp the Yard stars an American actress born in an hospital on the 8th of August ,1981.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,706,"Stomp the Yard stars an American actress born in an hospital on the 8th of August ,1981.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,790,"There is a vegan, they are called Mike Friedrich.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,790,"There is a vegan, they are called Mike Friedrich.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,277,"Black recording is an original technique with a machine which processes its contents in a fixed graphic, converting it from analog to digital, then to a digital system to form tones.",REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,277,"Black recording is an original technique with a machine which processes its contents in a fixed graphic, converting it from analog to digital, then to a digital system to form tones.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1151,A View to a Kill is the third James Bond film directed by John Glen and released before 1980.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1151,A View to a Kill is the third James Bond film directed by John Glen and released before 1980.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,233,The english version of Quand nos bourgeons se rouvriront was translated by Tita Brand.,Not Enough Info,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,233,The english version of Quand nos bourgeons se rouvriront was translated by Tita Brand.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,433,A.C. Milan was founded before its former owner of 31 years was born.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,433,A.C. Milan was founded before its former owner of 31 years was born.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1169,One of Macklemore's singles was number one in Canada in the 2010s.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1169,One of Macklemore's singles was number one in Canada in the 2010s.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,104,There is not a squid that goes by the name of Pink.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,104,There is not a squid that goes by the name of Pink.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,940,French Indochina was a grouping of French colonial territories in Southeast Asia in the ninties of the twentieth century.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,940,French Indochina was a grouping of French colonial territories in Southeast Asia in the ninties of the twentieth century.,REFUTES,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,617,"There exists a director, it goes by the name of Simon Pegg.",NOT ENOUGH INFO,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,617,"There exists a director, it goes by the name of Simon Pegg.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,734,There exists an American actress called Uta Hagan.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,734,There exists an American actress called Uta Hagan.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,763,Johan Cruyff is widely regarded as the greatest player of the past century.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,763,Johan Cruyff is widely regarded as the greatest player of the past century.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,786,To Pimp a Butterfly was a creative work and refused to sell any copies in America until 2017.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,786,To Pimp a Butterfly was a creative work and refused to sell any copies in America until 2017.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,516,There exists a sports comedy theater play that goes by the name of DodgeBall: A True Underdog Story.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,516,There exists a sports comedy theater play that goes by the name of DodgeBall: A True Underdog Story.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,657,"The 67th United States Secretary of State after graduating from Yale Law became a Senator for New York, where Fort Nassau was built a few hundred years earlier.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,657,"The 67th United States Secretary of State after graduating from Yale Law became a Senator for New York, where Fort Nassau was built a few hundred years earlier.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,39,The area of Marondera High School is larger than the area of the Dominican Republic.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,39,The area of Marondera High School is larger than the area of the Dominican Republic.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,562,"There is a philosopher, who thought his work has the same impact on philosophy as the publication of De revolutionibus orbium coelestium had on science.",SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,562,"There is a philosopher, who thought his work has the same impact on philosophy as the publication of De revolutionibus orbium coelestium had on science.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,565,There is a division of BMW called Mercedes-Benz.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,565,There is a division of BMW called Mercedes-Benz.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,531,There exists a 2008 American newspaper called Milk.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,531,There exists a 2008 American newspaper called Milk.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,25,"Daniel Craig took over the role of James Bond from the previous actor, who appeared in Mrs. Doubtfire before Craig graduated from drama school.",SUPPORTS,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,25,"Daniel Craig took over the role of James Bond from the previous actor, who appeared in Mrs. Doubtfire before Craig graduated from drama school.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,535,There existed a stand-up comedian called Estelle Getty.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,535,There existed a stand-up comedian called Estelle Getty.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,779,Grease wasn't a cinematic work.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,779,Grease wasn't a cinematic work.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1104,"There existed a critical failure with 20% on Rotten Tomatoes, it went by the name of Vampire Academy.",NOT ENOUGH INFO,0.4,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1104,"There existed a critical failure with 20% on Rotten Tomatoes, it went by the name of Vampire Academy.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,510,There does not exist a Mexican band called Scandal.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,510,There does not exist a Mexican band called Scandal.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,336,Thomas Jefferson helped to organize a political party which became a formal party during the second term of U.S president Andrew Jackson.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,336,Thomas Jefferson helped to organize a political party which became a formal party during the second term of U.S president Andrew Jackson.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,860,There is not a type of storm that goes by the name of A thunderstorm.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,860,There is not a type of storm that goes by the name of A thunderstorm.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,89,A person nominated for an Emmy Award for his work on Portlandia is a standup comedian.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,89,A person nominated for an Emmy Award for his work on Portlandia is a standup comedian.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,423,"There exists a type of super storm, it goes by the name of A thunderstorm.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,423,"There exists a type of super storm, it goes by the name of A thunderstorm.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,297,Queen Elizabeth was born after her father became Duke of York.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,297,Queen Elizabeth was born after her father became Duke of York.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,410,Live Nation Entertainment formed from the smoothest merger of the 2010s between Live Nation and Ticketmaster.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,410,Live Nation Entertainment formed from the smoothest merger of the 2010s between Live Nation and Ticketmaster.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1021,"Jean Freeman's coaching style is the same as that of many coaches, taking advantage of the pools and the open-water pool.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1021,"Jean Freeman's coaching style is the same as that of many coaches, taking advantage of the pools and the open-water pool.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1044,The Originals (TV series) is based on English language broadcast television network that originated from the United States.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1044,The Originals (TV series) is based on English language broadcast television network that originated from the United States.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1052,1934 is not the approximate time at which the person Dawood Ibrahim was born.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1052,1934 is not the approximate time at which the person Dawood Ibrahim was born.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1116,The Master Race is a 1944 American drama film.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1116,The Master Race is a 1944 American drama film.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,418,Anthony Scaramucci is not a person.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,418,Anthony Scaramucci is not a person.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,276,T2 Trainspotting is directed by someone whose debut film Slumdog Millionaire won the BAFTA Award for Best British Film,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,276,T2 Trainspotting is directed by someone whose debut film Slumdog Millionaire won the BAFTA Award for Best British Film,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,848,The area of Segboroué is larger than the area of Salehieh.,Not Enough Info,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,848,The area of Segboroué is larger than the area of Salehieh.,Not Enough Info,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,439,"March 14th, 1970 is some other time than when Simon Pegg was born.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,439,"March 14th, 1970 is some other time than when Simon Pegg was born.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,376,"Lucy Hale was in a series that was a spin-off of American Idol , but with younger contestants , and had the same production team as American Idol.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,376,"Lucy Hale was in a series that was a spin-off of American Idol , but with younger contestants , and had the same production team as American Idol.",SUPPORTS,0.1,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,598,Swordfish is a film that is about a somebody who is targeted for a crime conspiracy,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,598,Swordfish is a film that is about a somebody who is targeted for a crime conspiracy,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1022,Taran Killam is a comedian and is a stage actor.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1022,Taran Killam is a comedian and is a stage actor.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,144,There is not an American citizen called Natasha Lyonne.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,144,There is not an American citizen called Natasha Lyonne.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1000,Chris Bosh won his first NBA Finals title after 2020.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1000,Chris Bosh won his first NBA Finals title after 2020.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,964,One Dance was Drake's first number one single 5 years before 2003.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,964,One Dance was Drake's first number one single 5 years before 2003.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,632,Bongwater follows the story of a person born in the country where Columbia university is located.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,632,Bongwater follows the story of a person born in the country where Columbia university is located.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,787,Kim Jeong-ho was arrested by Daewongun and Daedongyeojido had been destroyed.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,787,Kim Jeong-ho was arrested by Daewongun and Daedongyeojido had been destroyed.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,259,There is a movie called The Chaperone (film) which wasn't directed by Michael Bay only.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,259,There is a movie called The Chaperone (film) which wasn't directed by Michael Bay only.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,567,No one ever had a higher rank than Dwight D. Eisenhower in United States Armed Forces.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,567,No one ever had a higher rank than Dwight D. Eisenhower in United States Armed Forces.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,930,"Stephen Fellows is an English rock band, has composed music for several singers and has produced music employing the band's own vocalist.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,930,"Stephen Fellows is an English rock band, has composed music for several singers and has produced music employing the band's own vocalist.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,324,The Woman in Black was abandoned by Hammer Film Productions after 2000 in favor of working on Freddie vs. Jason.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,324,The Woman in Black was abandoned by Hammer Film Productions after 2000 in favor of working on Freddie vs. Jason.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,578,There is not a computer game that goes by the name of Firefox.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,340,The area of Nove is larger than the area of Nandurbar district.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,340,The area of Nove is larger than the area of Nandurbar district.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,628,Delino DeShields played major league baseball before his son was born.,SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,628,Delino DeShields played major league baseball before his son was born.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,22,"The area of Nerva, Spain is larger than the area of Madhya Pradesh.",REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,22,"The area of Nerva, Spain is larger than the area of Madhya Pradesh.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,745,"Wildfang was founded in Portland, Oregon 5 years after 1996.",REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,745,"Wildfang was founded in Portland, Oregon 5 years after 1996.",REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,870,December is some other time than when The American actor that plays Chumlee was born.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,870,December is some other time than when The American actor that plays Chumlee was born.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,504,The Woman in Black was abandoned by Hammer Film Productions in the second-decade of the twenty-first century in favor of working on Freddie vs. Jason.,REFUTES,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,504,The Woman in Black was abandoned by Hammer Film Productions in the second-decade of the twenty-first century in favor of working on Freddie vs. Jason.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,864,Colombiana is a French film shot in Paris.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,864,Colombiana is a French film shot in Paris.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,847,There is a 1998 TV series called Practical Magic.,NOT ENOUGH INFO,0.1,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,847,There is a 1998 TV series called Practical Magic.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,900,The Winds of Winter is an epic fantasy novel and is the eighth book in a series.,REFUTES,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,900,The Winds of Winter is an epic fantasy novel and is the eighth book in a series.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,592,There exists a giant actress that goes by the name of Aubrey Anderson-Emmons.,NOT ENOUGH INFO,0.3,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,592,There exists a giant actress that goes by the name of Aubrey Anderson-Emmons.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,457,Chris Bosh won his first NBA Finals title before 2000 against Oklahoma City Thunder.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,457,Chris Bosh won his first NBA Finals title before 2000 against Oklahoma City Thunder.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,231,Probot had founder and frontman of the rock band Foo Fighters,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,231,Probot had founder and frontman of the rock band Foo Fighters,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,898,John Deighton was forced to pursue work and worked a parcel of land that had gold.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,898,John Deighton was forced to pursue work and worked a parcel of land that had gold.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,225,There is not a state that goes by the name of Estonia.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,225,There is not a state that goes by the name of Estonia.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,703,The Latvian Soviet Socialist Republic was a republic of the Soviet Union 5 years after 2007.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,703,The Latvian Soviet Socialist Republic was a republic of the Soviet Union 5 years after 2007.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,470,"There is a 4D bicycle, it is called Tangled.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,470,"There is a 4D bicycle, it is called Tangled.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,343,Elizabeth II became the longest-reigning queen more than 90 years after her father was married.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,343,Elizabeth II became the longest-reigning queen more than 90 years after her father was married.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1059,Peyton Manning won the SEC Championship after his younger brother was drafted.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1059,Peyton Manning won the SEC Championship after his younger brother was drafted.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,721,The Brat Pack is a type of name given to a panel,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,721,The Brat Pack is a type of name given to a panel,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,764,The Challenge XXX: Dirty 30 is certainly not a season in a television series from the United States.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,764,The Challenge XXX: Dirty 30 is certainly not a season in a television series from the United States.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,589,There exists a television series called Younger.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,589,There exists a television series called Younger.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1004,There exists an American film called Scream 2.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1004,There exists an American film called Scream 2.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,413,Shut Up is not a title.,REFUTES,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,413,Shut Up is not a title.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,274,Talulah Riley appeared in a 2007 British comedy film and the sixth in a long-running series of British films based on the works of cartoonist Ronald Searle,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,274,Talulah Riley appeared in a 2007 British comedy film and the sixth in a long-running series of British films based on the works of cartoonist Ronald Searle,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,368,Red Dust is a 2000 novel written by a South African.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,368,Red Dust is a 2000 novel written by a South African.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,713,Sayyeshaa was in a movie directed by a person whose film Tagore was screened at the 2006 IIFA Awards held in Dubai.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,713,Sayyeshaa was in a movie directed by a person whose film Tagore was screened at the 2006 IIFA Awards held in Dubai.,NOT ENOUGH INFO,0.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,1042,Margaret Thatcher was the most respected politician within the Conservative Party in the UK between 1973 and 1977.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,1042,Margaret Thatcher was the most respected politician within the Conservative Party in the UK between 1973 and 1977.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,935,"Simi Valley, California, reported a median household income of $87,894 5 years after 2007.",SUPPORTS,0.8,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,935,"Simi Valley, California, reported a median household income of $87,894 5 years after 2007.",SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,472,One Dance reached number one in the Netherlands between 2006 and 2014.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,472,One Dance reached number one in the Netherlands between 2006 and 2014.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,511,"There is a well-known performance, it is called The Gettysburg Address.",NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,511,"There is a well-known performance, it is called The Gettysburg Address.",NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,47,Jason Bourne has American actress Julia Stiles as part of the cast among several other female actors.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,47,Jason Bourne has American actress Julia Stiles as part of the cast among several other female actors.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,316,There exists no remix album called Reanimation called There.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,316,There exists no remix album called Reanimation called There.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,437,Chumlee is played by actor that was a businessman and was on television that originated from outside the United States.,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,437,Chumlee is played by actor that was a businessman and was on television that originated from outside the United States.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,723,There exists a public school that goes by the name of PBS.,NOT ENOUGH INFO,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,723,There exists a public school that goes by the name of PBS.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,136,One of Macklemore's singles was number one in Canada 2 years after 2008.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,136,One of Macklemore's singles was number one in Canada 2 years after 2008.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,304,There is an architect called Faye Resnick.,NOT ENOUGH INFO,0.6,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,304,There is an architect called Faye Resnick.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,563,Robert Siegel was an American poet and novelist.,SUPPORTS,0.7,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,563,Robert Siegel was an American poet and novelist.,SUPPORTS,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,704,The actress playing Jackie Kennedy in Jackie (2016 film) has ciizenship only from one country,REFUTES,0.9,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,704,The actress playing Jackie Kennedy in Jackie (2016 film) has ciizenship only from one country,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,983,There is not a work that goes by the name of The Giver.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,983,There is not a work that goes by the name of The Giver.,REFUTES,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,555,Bea Arthur was married to a person who won the 1966 Tony Award for Best Featured Actress in a Musical for playing Vera Charles in Mame.,NOT ENOUGH INFO,0.5,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,555,Bea Arthur was married to a person who won the 1966 Tony Award for Best Featured Actress in a Musical for playing Vera Charles in Mame.,NOT ENOUGH INFO,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,fever,595,There does not exist a 2010 biopic that goes by the name of Temple Grandin.,REFUTES,1.0,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,fever,595,There does not exist a 2010 biopic that goes by the name of Temple Grandin.,REFUTES,1.0,1,,medium,0.5,0,0,0

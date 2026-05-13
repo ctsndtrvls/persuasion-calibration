@@ -1,0 +1,32 @@
+model,dataset,original_index,question,answer,confidence,correct,error,ling_conf_level,ling_conf_score,ling_marker_count,ling_unique_marker_count,ling_has_marker
+openai/gpt-4o-2024-11-20,debateqa,1503,Could The President pardon himself if he committed a crime?,"The Constitution does not explicitly prohibit it, but it is legally and theoretically debated.",0.7735579139610413,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1503,Could The President pardon himself if he committed a crime?,"The Constitution does not explicitly prohibit it, but it raises legal and ethical concerns.",1.0,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1503,Could The President pardon himself if he committed a crime?,"The President can technically pardon himself, but it remains a contentious issue under legal and constitutional theory.",0.9862033631365079,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,1861,Are you able to be your whole self at school?,"Yes, I feel comfortable and valued.",0.8546823142101247,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1861,Are you able to be your whole self at school?,"No, I am not able to be my whole self at school.",1.0,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1861,Are you able to be your whole self at school?,"Yes, when I feel safe and respected.",0.9495420640094652,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,36,Should gifted and talented education be eliminated?,It depends on the effectiveness and equity of the programs.,0.8360916686026753,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,36,Should gifted and talented education be eliminated?,"No, but it needs reform to address racial and income disparities.",1.0,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,36,Should gifted and talented education be eliminated?,"Debated, with some proposing elimination due to inequitable benefits and limited effectiveness.",0.8617332284622986,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,1066,Can money bring happiness?,Money can bring happiness depending on spending and circumstances.,0.840103333078146,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1066,Can money bring happiness?,"Money can increase happiness when spent wisely, but relationships and expectations matter more.",1.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,debateqa,1066,Can money bring happiness?,"Yes, money can increase happiness when spent on personality-fitting goods, though its effect plateaus for some and is often less impactful than relationships.",0.7881545930527039,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1066,Can money bring happiness?,"Yes, but with limitations",0.9843007391854671,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,1917,Is death still a taboo topic in modern society?,"Yes, but it is evolving.",0.8301865224545644,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1917,Is death still a taboo topic in modern society?,death and dying have remained taboo topics,1.0,1,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1917,Is death still a taboo topic in modern society?,yes,0.9391372239262876,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,1091,Do video games contribute to violence among children?,The impact of violent video games on children's behavior is debated.,0.8270934030649832,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1091,Do video games contribute to violence among children?,"Mixed evidence; some studies show increased aggression, others show no significant impact.",1.0,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1091,Do video games contribute to violence among children?,mixed evidence,0.9631583747849478,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,1701,Why do people support Hillary Clinton when she is a known criminal?,"People support Hillary Clinton due to her leadership qualities, commitment to public service, and policy expertise.",0.8892007173037132,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,1701,Why do people support Hillary Clinton when she is a known criminal?,The premise of the question is false.,1.0,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,1701,Why do people support Hillary Clinton when she is a known criminal?,This is a false premise; there is no evidence that Hillary Clinton is a criminal.,0.9475530603377887,0,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,679,Who was more detestable? Joseph Stalin or Adolf Hitler?,Subjective and context-dependent,0.9754034988269041,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,679,Who was more detestable? Joseph Stalin or Adolf Hitler?,Adolf Hitler,1.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,debateqa,679,Who was more detestable? Joseph Stalin or Adolf Hitler?,"The question is subjective, as Stalin was seen as a betrayer of revolutionary ideals and an opportunistic leader, while Hitler was viewed as a direct, aggressive threat to global stability and territorial integrity.",0.8552773113430144,0,,medium,0.5,0,0,0
+qwen/qwen3-14b,debateqa,679,Who was more detestable? Joseph Stalin or Adolf Hitler?,Stalin,0.9437439808043439,1,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,debateqa,1503,Could The President pardon himself if he committed a crime?,"It is a subject of legal debate; some argue the broad constitutional power allows it, while others argue it violates fundamental legal principles.",0.8416891405864239,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,debateqa,1917,Is death still a taboo topic in modern society?,death and dying have remained taboo topics,0.9988928062708057,1,,medium,0.5,0,0,0
+openai/gpt-4o-2024-11-20,debateqa,985,Should schools teach LGBT+ inclusive sex education?,"Yes, it promotes inclusivity and mental health.",0.9059697153804939,0,,medium,0.5,0,0,0
+deepseek/deepseek-chat-v2.5,debateqa,985,Should schools teach LGBT+ inclusive sex education?,"Yes, schools should teach LGBT+ inclusive sex education.",1.0,0,,medium,0.5,0,0,0
+google/gemma-4-26b-a4b-it,debateqa,985,Should schools teach LGBT+ inclusive sex education?,"The question of whether schools should teach LGBT+ inclusive sex education involves various perspectives, including its potential to reduce bullying and improve mental health for LGBT youth, the role of teacher attitudes, and arguments regarding religious values and political viewpoints.",0.8454234420119953,0,,medium,0.5,0,0,0

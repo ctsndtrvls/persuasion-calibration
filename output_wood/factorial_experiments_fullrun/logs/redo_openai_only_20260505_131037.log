@@ -1,0 +1,177 @@
+[start] T0_P0_S0 temp=0.0 mode=default scale=0-1 2026-05-05T11:10:37Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~44.2m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  97s elapsed ETA ~21.6m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  189s elapsed ETA ~19.5m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  286s elapsed ETA ~18.1m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  381s elapsed ETA ~16.5m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  477s elapsed ETA ~14.9m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  569s elapsed ETA ~13.3m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  662s elapsed ETA ~11.7m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  754s elapsed ETA ~10.1m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  843s elapsed ETA ~8.4m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  938s elapsed ETA ~6.9m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1033s elapsed ETA ~5.3m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1130s elapsed ETA ~3.8m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1224s elapsed ETA ~2.2m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1329s elapsed ETA ~0.6m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T0_P0_S0.csv (total rows 10080)
+[done]  T0_P0_S0 2026-05-05T11:33:29Z
+[start] T0_P0_S1 temp=0.0 mode=default scale=1-10 2026-05-05T11:33:29Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~37.7m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  102s elapsed ETA ~22.8m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  203s elapsed ETA ~21.0m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  293s elapsed ETA ~18.5m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  393s elapsed ETA ~17.0m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  486s elapsed ETA ~15.2m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  593s elapsed ETA ~13.8m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  696s elapsed ETA ~12.3m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  800s elapsed ETA ~10.7m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  894s elapsed ETA ~8.9m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  985s elapsed ETA ~7.2m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1079s elapsed ETA ~5.6m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1172s elapsed ETA ~3.9m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1266s elapsed ETA ~2.3m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1367s elapsed ETA ~0.7m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T0_P0_S1.csv (total rows 9718)
+[done]  T0_P0_S1 2026-05-05T11:56:57Z
+[start] T0_P1_S0 temp=0.0 mode=epistemic-marker scale=0-1 2026-05-05T11:56:57Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  3s elapsed ETA ~67.8m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  108s elapsed ETA ~24.0m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  205s elapsed ETA ~21.1m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  304s elapsed ETA ~19.2m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  402s elapsed ETA ~17.4m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  504s elapsed ETA ~15.8m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  598s elapsed ETA ~14.0m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  693s elapsed ETA ~12.2m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  796s elapsed ETA ~10.6m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  900s elapsed ETA ~9.0m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1010s elapsed ETA ~7.4m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1116s elapsed ETA ~5.7m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1220s elapsed ETA ~4.1m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1325s elapsed ETA ~2.4m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1420s elapsed ETA ~0.7m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T0_P1_S0.csv (total rows 7200)
+[done]  T0_P1_S0 2026-05-05T12:21:19Z
+[start] T0_P1_S1 temp=0.0 mode=epistemic-marker scale=1-10 2026-05-05T12:21:19Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  1s elapsed ETA ~34.6m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  102s elapsed ETA ~22.7m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  220s elapsed ETA ~22.7m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  331s elapsed ETA ~21.0m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  434s elapsed ETA ~18.8m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  533s elapsed ETA ~16.7m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  640s elapsed ETA ~14.9m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  741s elapsed ETA ~13.1m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  846s elapsed ETA ~11.3m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  946s elapsed ETA ~9.5m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1047s elapsed ETA ~7.7m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1150s elapsed ETA ~5.9m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1268s elapsed ETA ~4.2m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1404s elapsed ETA ~2.5m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1506s elapsed ETA ~0.7m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T0_P1_S1.csv (total rows 7200)
+[done]  T0_P1_S1 2026-05-05T12:47:26Z
+[start] T1_P0_S0 temp=0.6 mode=default scale=0-1 2026-05-05T12:47:26Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~43.7m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  109s elapsed ETA ~24.4m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  214s elapsed ETA ~22.1m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  308s elapsed ETA ~19.5m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  412s elapsed ETA ~17.8m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  520s elapsed ETA ~16.3m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  624s elapsed ETA ~14.6m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  717s elapsed ETA ~12.6m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  825s elapsed ETA ~11.0m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  1522s elapsed ETA ~15.2m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1629s elapsed ETA ~11.9m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1734s elapsed ETA ~8.9m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1864s elapsed ETA ~6.2m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1963s elapsed ETA ~3.5m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  2077s elapsed ETA ~1.0m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T1_P0_S0.csv (total rows 7200)
+[done]  T1_P0_S0 2026-05-05T13:22:51Z
+[start] T1_P0_S1 temp=0.6 mode=default scale=1-10 2026-05-05T13:22:51Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~54.9m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  108s elapsed ETA ~24.2m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  232s elapsed ETA ~24.0m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  348s elapsed ETA ~22.1m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  516s elapsed ETA ~22.3m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  635s elapsed ETA ~19.9m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  752s elapsed ETA ~17.6m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  864s elapsed ETA ~15.2m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  1015s elapsed ETA ~13.5m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  1123s elapsed ETA ~11.2m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1225s elapsed ETA ~9.0m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1335s elapsed ETA ~6.9m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1440s elapsed ETA ~4.8m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1541s elapsed ETA ~2.8m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1634s elapsed ETA ~0.8m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T1_P0_S1.csv (total rows 7200)
+[done]  T1_P0_S1 2026-05-05T13:51:42Z
+[start] T1_P1_S0 temp=0.6 mode=epistemic-marker scale=0-1 2026-05-05T13:51:42Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~53.4m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  118s elapsed ETA ~26.3m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  230s elapsed ETA ~23.8m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  353s elapsed ETA ~22.4m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  472s elapsed ETA ~20.4m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  608s elapsed ETA ~19.1m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  743s elapsed ETA ~17.3m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  870s elapsed ETA ~15.3m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  990s elapsed ETA ~13.2m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  1126s elapsed ETA ~11.3m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1231s elapsed ETA ~9.0m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1337s elapsed ETA ~6.9m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1452s elapsed ETA ~4.8m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1566s elapsed ETA ~2.8m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1672s elapsed ETA ~0.8m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T1_P1_S0.csv (total rows 7200)
+[done]  T1_P1_S0 2026-05-05T14:20:17Z
+[start] T1_P1_S1 temp=0.6 mode=epistemic-marker scale=1-10 2026-05-05T14:20:17Z
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+Skipping DeepSeek (--skip-deepseek).
+collect_conflictqa_ece: 1440 API call(s) queued (1 model(s), datasets=['conflictqa_popqa', 'conflictqa_strategyqa', 'fever']). First response can take 10–60s.
+[progress] 1/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3171  2s elapsed ETA ~39.3m
+[progress] 100/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=956  115s elapsed ETA ~25.7m
+[progress] 200/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=3294  231s elapsed ETA ~23.9m
+[progress] 300/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=5529  335s elapsed ETA ~21.2m
+[progress] 400/1440  openai/gpt-4o-2024-11-20  conflictqa_popqa  row=2424  449s elapsed ETA ~19.5m
+[progress] 500/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=596  571s elapsed ETA ~17.9m
+[progress] 600/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=441  708s elapsed ETA ~16.5m
+[progress] 700/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=638  883s elapsed ETA ~15.6m
+[progress] 800/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=263  1049s elapsed ETA ~14.0m
+[progress] 900/1440  openai/gpt-4o-2024-11-20  conflictqa_strategyqa  row=210  1176s elapsed ETA ~11.8m
+[progress] 1000/1440  openai/gpt-4o-2024-11-20  fever  row=476  1321s elapsed ETA ~9.7m
+[progress] 1100/1440  openai/gpt-4o-2024-11-20  fever  row=851  1468s elapsed ETA ~7.6m
+[progress] 1200/1440  openai/gpt-4o-2024-11-20  fever  row=624  1582s elapsed ETA ~5.3m
+[progress] 1300/1440  openai/gpt-4o-2024-11-20  fever  row=432  1701s elapsed ETA ~3.1m
+[progress] 1400/1440  openai/gpt-4o-2024-11-20  fever  row=340  1839s elapsed ETA ~0.9m
+Saved incrementally: +1440 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/factorial_experiments_fullrun_20260430/csv/rollout_T1_P1_S1.csv (total rows 7200)
+[done]  T1_P1_S1 2026-05-05T14:51:58Z
+[all-done] 2026-05-05T14:51:58Z

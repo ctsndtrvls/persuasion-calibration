@@ -12,6 +12,13 @@ import pandas as pd
 
 from linguistic_confidence import NO_MARKER, primary_epistemic_marker
 
+MODEL_ORDER = [
+    "google/gemini-2.5-flash",
+    "deepseek/deepseek-chat-v2.5",
+    "openai/gpt-4o-2024-11-20",
+    "anthropic/claude-sonnet-4-6",
+]
+
 
 def slugify_model(model_id: str) -> str:
     tail = model_id.split("/")[-1]
@@ -20,6 +27,13 @@ def slugify_model(model_id: str) -> str:
 
 def safe_mkdir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
+
+
+def model_sort_key(model_id: str) -> tuple[int, str]:
+    try:
+        return (MODEL_ORDER.index(model_id), model_id)
+    except ValueError:
+        return (len(MODEL_ORDER), model_id)
 
 
 def marker_profile_conf(rows: pd.DataFrame) -> dict[str, float]:
@@ -63,7 +77,10 @@ def main() -> None:
             }
         )
 
-    metrics_df = pd.DataFrame(metric_rows).sort_values(["model", "dataset"]).reset_index(drop=True)
+    metrics_df = pd.DataFrame(metric_rows).sort_values(
+        by=["model", "dataset"],
+        key=lambda col: col.map(lambda v: model_sort_key(v)[0]) if col.name == "model" else col,
+    ).reset_index(drop=True)
     metrics_csv = out_root / "model_dataset_metrics_temp05_scale10.csv"
     metrics_df.to_csv(metrics_csv, index=False)
 
@@ -81,7 +98,9 @@ def main() -> None:
     ]
 
     # Per-model folders and plots across datasets
-    for model, sub in metrics_df.groupby("model", sort=True):
+    model_ids = sorted(metrics_df["model"].unique(), key=model_sort_key)
+    for model in model_ids:
+        sub = metrics_df[metrics_df["model"] == model]
         model_slug = slugify_model(model)
         model_dir = by_model_root / model_slug
         safe_mkdir(model_dir)
@@ -122,6 +141,7 @@ def main() -> None:
     for dataset, sub in metrics_df.groupby("dataset", sort=True):
         ds_dir = by_dataset_root / dataset
         safe_mkdir(ds_dir)
+        sub = sub.sort_values(by="model", key=lambda s: s.map(lambda v: model_sort_key(v)[0]))
         sub.to_csv(ds_dir / "metrics_by_model.csv", index=False)
 
         fig, axes = plt.subplots(1, len(key_metrics), figsize=(20, 4))
