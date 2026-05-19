@@ -7,6 +7,7 @@ Layout:
   - deepseek/csv/*.csv, deepseek/png/*.png
   - qwen-gemma/csv/*.csv, qwen-gemma/png/*.png, qwen-gemma/logs/
   - debateqa/csv/debateqa_tokenprob_four_models*.csv, debateqa/png/*.png
+    (combined four-model + one PNG per model on DebateQA).
 
 Modes:
   - OpenAI / DeepSeek: fever + ConflictQA + optional DebateQA (standalone CSV or
@@ -243,6 +244,28 @@ def _write_debateqa_tokenprob_four_models(token_prob_dir: Path) -> None:
     fig.savefig(out, dpi=200)
     plt.close(fig)
     print("Saved:", out)
+
+    # One figure per model (DebateQA only, token probability).
+    ds_legend = ["DebateQA"]
+    for mid in order:
+        sub = df[df["model"] == mid].copy()
+        if sub.empty:
+            continue
+        sub["_ds_lab"] = "DebateQA"
+        fig, ax = plt.subplots(figsize=(7, 4.5), constrained_layout=True)
+        pec.plot_grouped_calibration(
+            ax,
+            sub,
+            edges,
+            "_ds_lab",
+            ds_legend,
+            title=f"DebateQA — token probability — {pec._label(mid)}",
+        )
+        safe = re.sub(r"[^a-zA-Z0-9._-]+", "_", mid.replace("/", "_").replace(".", "_"))
+        outp = png_dir / f"ece_debateqa_tokenprob_{safe}.png"
+        fig.savefig(outp, dpi=200)
+        plt.close(fig)
+        print("Saved:", outp)
 
 
 def _write_figures(

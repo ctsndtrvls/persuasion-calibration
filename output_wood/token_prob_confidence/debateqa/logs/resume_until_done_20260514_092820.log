@@ -1,0 +1,1148 @@
+=== round 1 2026-05-14T07:28:20Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 171 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 36: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/171  google/gemma-4-26b-a4b-it  debateqa  row=1139  8s elapsed ETA ~23.6m
+[WARN] google/gemma-4-26b-a4b-it row 260: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 760: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1752: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 230: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1442: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 454: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1205: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1038: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 821: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 84: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1194: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 49: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 995: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1089: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1083: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 735: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 485: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 496: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1818: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 196: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 204: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 694: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 729: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1827: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 164: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1846: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 955: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 912: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1044: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 683: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1079: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1133: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 921: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 69: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1625: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1731: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1048: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 41: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 458: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1416: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 841: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 841: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 648: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1238: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 867: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 867: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 873: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 348: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1090: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1858: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 839: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1222: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1499: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1539: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1204: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1156: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1162: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1162: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1402: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1072: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 295: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 312: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 268: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1889: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1469: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 307: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1882: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 638: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 460: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 9: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 50/171  google/gemma-4-26b-a4b-it  debateqa  row=344  1220s elapsed ETA ~49.2m
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[ERROR] qwen/qwen3-14b row 229: 'NoneType' object is not subscriptable
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 989: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1387: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1364: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 892: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +56 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1805)
+pending_after_round=1: 115
+=== round 2 2026-05-14T07:52:30Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 115 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[progress] 1/115  google/gemma-4-26b-a4b-it  debateqa  row=36  6s elapsed ETA ~11.4m
+[WARN] google/gemma-4-26b-a4b-it row 260: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1038: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 821: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 49: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 995: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1089: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1083: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 735: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 496: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1818: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 204: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 694: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 729: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1827: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 164: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 912: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1044: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 683: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 921: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 69: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1625: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 41: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1416: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 841: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 841: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 648: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1238: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 867: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 867: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 873: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 348: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1090: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 839: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1222: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1499: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1539: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1156: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1162: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1402: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1072: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 312: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 268: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1469: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 307: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1882: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 638: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 460: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 9: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 989: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1387: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1364: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 892: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +23 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1828)
+pending_after_round=2: 92
+=== round 3 2026-05-14T08:03:52Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 92 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 260: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1038: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 821: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 49: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 995: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1089: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1083: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 735: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/92  google/gemma-4-26b-a4b-it  debateqa  row=1323  84s elapsed ETA ~126.8m
+[WARN] google/gemma-4-26b-a4b-it row 496: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1818: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 204: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 729: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 164: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1044: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 69: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1625: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1416: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 841: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 648: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1238: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 867: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 867: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 873: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 348: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1090: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1539: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1162: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1402: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1072: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1469: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 307: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 638: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 9: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1387: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1364: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 892: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +17 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1845)
+pending_after_round=3: 75
+=== round 4 2026-05-14T08:15:43Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 75 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 260: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1038: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 821: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 49: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 995: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/75  google/gemma-4-26b-a4b-it  debateqa  row=1089  40s elapsed ETA ~49.7m
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1083: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 735: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 204: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 729: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 164: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1044: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 323: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1625: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1416: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 841: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 648: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1238: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 867: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 867: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 873: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 348: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1090: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1072: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1469: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 307: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 638: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +13 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1858)
+pending_after_round=4: 62
+=== round 5 2026-05-14T08:24:15Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 62 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[progress] 1/62  google/gemma-4-26b-a4b-it  debateqa  row=260  2s elapsed ETA ~1.7m
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1038: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 821: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1625: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1072: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1469: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +21 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1879)
+pending_after_round=5: 41
+=== round 6 2026-05-14T08:44:17Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 41 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/41  google/gemma-4-26b-a4b-it  debateqa  row=1038  8s elapsed ETA ~5.2m
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 770: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 761: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 455: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +5 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1884)
+pending_after_round=6: 36
+=== round 7 2026-05-14T08:48:10Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 36 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/36  google/gemma-4-26b-a4b-it  debateqa  row=770  32s elapsed ETA ~18.9m
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1339: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1023: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +3 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1887)
+pending_after_round=7: 33
+=== round 8 2026-05-14T08:51:50Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 33 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/33  google/gemma-4-26b-a4b-it  debateqa  row=1339  65s elapsed ETA ~34.5m
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +2 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1889)
+pending_after_round=8: 31
+=== round 9 2026-05-14T08:55:05Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 31 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=9: 31
+=== round 10 2026-05-14T08:58:02Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 31 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1530: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=10: 31
+=== round 11 2026-05-14T09:00:39Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 31 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/31  google/gemma-4-26b-a4b-it  debateqa  row=1530  75s elapsed ETA ~37.5m
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +1 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1890)
+pending_after_round=11: 30
+=== round 12 2026-05-14T09:03:47Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 30 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=12: 30
+=== round 13 2026-05-14T09:06:38Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 30 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 140: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=13: 30
+=== round 14 2026-05-14T09:09:21Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 30 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1074: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 31: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 665: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 82: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 636: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 586: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1013: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 639: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[progress] 1/30  qwen/qwen3-14b  debateqa  row=140  165s elapsed ETA ~79.9m
+[WARN] qwen/qwen3-14b row 1780: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 261: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +1 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1891)
+pending_after_round=14: 29
+=== round 15 2026-05-14T09:12:17Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 29 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 693: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/29  qwen/qwen3-14b  debateqa  row=1074  60s elapsed ETA ~27.8m
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[ERROR] qwen/qwen3-14b row 82: no JSON object in model text (preview 's.\n{\n\n":{"\n\n    :"", "answer": "Benedict Arnold" \n\n}'…)
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +10 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1901)
+pending_after_round=15: 19
+=== round 16 2026-05-14T09:18:36Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 19 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 925: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/19  qwen/qwen3-14b  debateqa  row=693  26s elapsed ETA ~7.7m
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +1 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1902)
+pending_after_round=16: 18
+=== round 17 2026-05-14T09:41:01Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 18 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[progress] 1/18  google/gemma-4-26b-a4b-it  debateqa  row=925  8s elapsed ETA ~2.4m
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +1 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1903)
+pending_after_round=17: 17
+=== round 18 2026-05-14T09:43:20Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 17 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 273: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=18: 17
+=== round 19 2026-05-14T09:45:22Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 17 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/17  qwen/qwen3-14b  debateqa  row=273  56s elapsed ETA ~15.0m
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+Saved incrementally: +1 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1904)
+pending_after_round=19: 16
+=== round 20 2026-05-14T09:47:42Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 16 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=20: 16
+=== round 21 2026-05-14T09:49:23Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 16 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=21: 16
+=== round 22 2026-05-14T09:51:17Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 16 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=22: 16
+=== round 23 2026-05-14T09:53:25Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 16 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1239: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1100: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 600: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1120: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 1753: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 50: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 253: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 183: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 263: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=23: 16
+=== round 24 2026-05-14T09:55:15Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 16 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] qwen/qwen3-14b row 1089: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/16  qwen/qwen3-14b  debateqa  row=1239  948s elapsed ETA ~237.0m
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] qwen/qwen3-14b row 939: OpenRouter/qwen/qwen3-14b response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 764: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+Saved incrementally: +9 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1913)
+pending_after_round=24: 7
+=== round 25 2026-05-14T10:13:03Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 7 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[progress] 1/7  qwen/qwen3-14b  debateqa  row=1089  40s elapsed ETA ~4.0m
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+Saved incrementally: +3 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1916)
+pending_after_round=25: 4
+=== round 26 2026-05-14T10:14:32Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=26: 4
+=== round 27 2026-05-14T10:15:02Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=27: 4
+=== round 28 2026-05-14T10:15:39Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=28: 4
+=== round 29 2026-05-14T10:16:19Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=29: 4
+=== round 30 2026-05-14T10:16:49Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=30: 4
+=== round 31 2026-05-14T10:17:23Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=31: 4
+=== round 32 2026-05-14T10:17:56Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=32: 4
+=== round 33 2026-05-14T10:18:34Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=33: 4
+=== round 34 2026-05-14T10:19:02Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=34: 4
+=== round 35 2026-05-14T10:19:38Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=35: 4
+=== round 36 2026-05-14T10:20:07Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=36: 4
+=== round 37 2026-05-14T10:20:35Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=37: 4
+=== round 38 2026-05-14T10:21:10Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=38: 4
+=== round 39 2026-05-14T10:21:42Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=39: 4
+=== round 40 2026-05-14T10:22:18Z ===
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 1524: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 50: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[WARN] google/gemma-4-26b-a4b-it row 914: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+No new rows; everything already in /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv
+pending_after_round=40: 4
+STOP: still pending=4 after 40 rounds

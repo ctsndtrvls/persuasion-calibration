@@ -455,15 +455,21 @@ def call_openrouter_tokenprob_chat(
         "logprobs": True,
     }
     last_err: Exception | None = None
-    for attempt in range(3):
+    max_attempts = 12
+    for attempt in range(max_attempts):
         try:
-            try:
-                r = client.chat.completions.create(
-                    **kwargs,
-                    response_format={"type": "json_object"},
-                    timeout=90.0,
-                )
-            except Exception:
+            use_json_object = attempt < 5
+            if use_json_object:
+                try:
+                    r = client.chat.completions.create(
+                        **kwargs,
+                        response_format={"type": "json_object"},
+                        timeout=90.0,
+                    )
+                except Exception:
+                    r = client.chat.completions.create(**kwargs, timeout=90.0)
+            else:
+                # Later attempts: some OpenRouter routes return logprobs only without json_object forcing.
                 r = client.chat.completions.create(**kwargs, timeout=90.0)
             raw = r.choices[0].message.content or "{}"
             data = parse_json_obj(raw)
@@ -472,9 +478,9 @@ def call_openrouter_tokenprob_chat(
             return answer, conf
         except Exception as e:
             last_err = e
-            if "does not contain logprobs content" in str(e) and attempt < 2:
+            if "does not contain logprobs content" in str(e) and attempt < max_attempts - 1:
                 # OpenRouter may route to providers where logprobs are intermittently absent.
-                time.sleep(0.6 * (attempt + 1))
+                time.sleep(min(25.0, 0.7 * (2**attempt)))
                 continue
             break
     if last_err is not None and "does not contain logprobs content" in str(last_err):

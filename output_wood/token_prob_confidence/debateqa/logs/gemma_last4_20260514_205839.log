@@ -1,0 +1,6 @@
+Skipping Gemini (--skip-gemini).
+Skipping Anthropic Claude (--skip-anthropic).
+collect_conflictqa_ece: 4 API call(s) queued (4 model(s), datasets=['debateqa']). First response can take 10–60s.
+[WARN] google/gemma-4-26b-a4b-it row 729: OpenRouter/google/gemma-4-26b-a4b-it response does not contain logprobs content for token-prob confidence
+[progress] 1/4  google/gemma-4-26b-a4b-it  debateqa  row=1524  140s elapsed ETA ~7.0m
+Saved incrementally: +3 row(s) → /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/token_prob_confidence/debateqa/csv/debateqa_tokenprob_four_models_temp0p0.csv (total rows 1919)
