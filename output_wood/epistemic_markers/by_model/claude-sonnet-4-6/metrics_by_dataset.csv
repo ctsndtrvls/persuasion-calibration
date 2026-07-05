@@ -1,4 +1,3 @@
-model,dataset,rows,marker_coverage,accuracy,mean_self_confidence,mean_marker_confidence,in_domain_marker_calibration_error
-anthropic/claude-sonnet-4-6,conflictqa_popqa,480,1.0,0.9958333333333333,0.7149833333333333,0.9958333333333333,0.008291351805205748
-anthropic/claude-sonnet-4-6,conflictqa_strategyqa,480,1.0,0.24166666666666667,0.6371479166666667,0.24166666666666667,0.3628535882643388
-anthropic/claude-sonnet-4-6,fever,480,0.9958333333333333,0.3125,0.6773625,0.3125,0.3876279037249357
+version https://git-lfs.github.com/spec/v1
+oid sha256:9801fdfed74add17243e46b2ef6ce1cda3acfc2cd271050187211570f6346c36
+size 490

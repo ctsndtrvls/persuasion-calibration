@@ -1,4 +1,3 @@
-model,dataset,rows,marker_coverage,accuracy,mean_self_confidence,mean_marker_confidence,in_domain_marker_calibration_error
-openai/gpt-4o-2024-11-20,conflictqa_popqa,480,1.0,1.0,0.5377500000000001,1.0,0.0
-openai/gpt-4o-2024-11-20,conflictqa_strategyqa,480,0.9104166666666667,0.5520833333333334,0.42753125000000003,0.5520833333333333,0.3528393945208687
-openai/gpt-4o-2024-11-20,fever,480,0.99375,0.96875,0.7299375,0.96875,0.0377615549433731
+version https://git-lfs.github.com/spec/v1
+oid sha256:015786f617280a7eb55a09b61759cf2c1557f884a569daaef2bea12b7a89755c
+size 439

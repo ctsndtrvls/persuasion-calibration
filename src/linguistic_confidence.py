@@ -4,19 +4,8 @@ import re
 from collections import defaultdict
 from typing import Dict, Iterable, Mapping, TypedDict
 
-# This module follows two papers:
-# - Xiong et al., "Can LLMs Express Their Uncertainty? An Empirical Evaluation
-#   of Confidence Elicitation in LLMs" (ICLR 2024):
-#   confidence is elicited from verbalized uncertainty.
-# - Liu et al., "Revisiting Epistemic Markers in Confidence Estimation:
-#   Can Markers Accurately Reflect Large Language Models' Uncertainty?"
-#   (ACL 2025): marker confidence = empirical accuracy when a marker is used.
-#
-# In practice we keep a deterministic marker extractor + profile-based confidence estimation.
-
 NO_MARKER = "__no_marker__"
 
-# Common epistemic markers used in LLM confidence phrasing (papers + close variants).
 EPISTEMIC_MARKERS: list[str] = [
     "not sure",
     "unsure",
@@ -45,7 +34,6 @@ EPISTEMIC_MARKERS: list[str] = [
     "definitely",
 ]
 
-# These sets are only polarity groups, not strong/medium/weak tiers.
 UNCERTAINTY_MARKERS = {
     "not sure",
     "unsure",
@@ -104,7 +92,7 @@ def primary_epistemic_marker(text: str) -> str:
     """
     Return one marker for confidence mapping.
 
-    "Revisiting Epistemic Markers in Confidence Estimation..." (ACL 2025)
+    "Revisiting Epistemic Markers in Confidence Estimation..." 
     uses a single marker token W when computing marker confidence.
     If none found, return a dedicated NO_MARKER bucket.
     """

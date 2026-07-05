@@ -3,6 +3,10 @@ pandas
 numpy
 matplotlib
 seaborn
+scikit-learn
+openpyxl
+krippendorff
+pypdfium2
 openai>=1.30.0
 anthropic>=0.34.0
 google-generativeai>=0.8.0

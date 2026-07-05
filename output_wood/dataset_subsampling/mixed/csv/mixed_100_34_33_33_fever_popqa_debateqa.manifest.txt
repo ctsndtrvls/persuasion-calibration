@@ -1,0 +1,10 @@
+total=100
+split_per_dataset=[34, 33, 33]
+sampling=random (no complexity stratification)
+seed=42
+counts={"conflictqa_popqa": 33, "debateqa": 33, "fever": 34}
+sources:
+  fever: /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/dataset_subsampling/fever/csv/fever480_160x3_complexity_wood_v1_lr_40_resplit.csv
+  popqa: /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/dataset_subsampling/conflictqa/csv/conflictqa_popqa480_160x3_wood_v2_resplit.csv
+  debateqa: /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/dataset_subsampling/debateqa/csv/debateqa_480_160x3.csv
+output: /Users/elena.pervova/Documents/Projects/Bachelor/persuasion-calibration/output_wood/dataset_subsampling/mixed/csv/mixed_100_34_33_33_fever_popqa_debateqa.csv

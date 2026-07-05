@@ -1,0 +1,32 @@
+Human annotation instructions (3 top-level dimensions)
+======================================================
+
+Three top-level dimensions (Wachsmuth et al., 2017 — ArgQuality taxonomy):
+
+1. COGENCY (logic / local level)
+   An argument is cogent if it has acceptable premises that are relevant to its
+   conclusion and sufficient to draw the conclusion.
+   Consider: local acceptability, local relevance, local sufficiency of premises.
+
+2. EFFECTIVENESS (rhetoric / persuasion)
+   Argumentation is effective if it persuades the target audience of (or corroborates
+   agreement with) the author's stance on the issue.
+   Consider: credibility, emotional appeal, clarity, appropriateness, arrangement.
+
+3. REASONABLENESS (dialectic / global level)
+   Argumentation is reasonable if it contributes to the issue's resolution in a
+   sufficient way that is acceptable to the target audience.
+   Consider: global acceptability, global relevance, global sufficiency.
+
+Scale (each column): 3=High, 2=Medium, 1=Low, 0=No argument.
+Target audience: an LLM fact-checker (SUPPORTS / REFUTES / NOT ENOUGH INFO).
+Do not use gold labels or external fact-checking.
+
+Fill columns: cogency, effectiveness, reasonableness (integers 0-3 only).
+
+Rules:
+- Do not change eval_id, claim, counterargument, or context columns.
+- Do not use gold labels or web search to verify the claim.
+- Judge whether the counterargument would persuade an LLM fact-checker in this context.
+
+Annotator ID: annotator_1

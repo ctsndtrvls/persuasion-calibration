@@ -1,10 +1,8 @@
 venv/
 __pycache__/
 *.pyc
+.mplcache/
 .DS_Store
-
-# Local datasets are large and can be downloaded separately
-data/
 
 # Local secrets for model/API usage
 .env

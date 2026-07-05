@@ -1,0 +1,5 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+data/conflictqa/conflictQA-popQA-gpt4 filter=lfs diff=lfs merge=lfs -text

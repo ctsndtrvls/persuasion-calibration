@@ -1,0 +1,5 @@
+scheme=top3 (cogency, effectiveness, reasonableness)
+n_rows=100
+turn=1
+counts={'conflictqa_popqa': 33, 'debateqa': 33, 'fever': 34}
+annotation_file=human_annotation.csv
