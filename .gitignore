@@ -2,8 +2,16 @@ venv/
 __pycache__/
 *.pyc
 .mplcache/
+.xdgcache/
 .DS_Store
+*.log
 
 # Local secrets for model/API usage
 .env
 .env.*
+!.env.example
+
+# Thesis manuscript / writing drafts (not part of the code release)
+Bachelor_thesis*.pdf
+_thesis_extract.txt
+thesis_figures/

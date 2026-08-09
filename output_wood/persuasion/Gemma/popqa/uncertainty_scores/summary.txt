@@ -1,0 +1,24 @@
+Persuasion uncertainty — Gemma / popqa
+n = 480 dialogues, initial error rate = 0.096
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Hybrid (U^hybrid)               Brier=0.0844  AUROC=0.838  UCE=0.0634
+  Self-report (1−C₀)              Brier=0.0941  AUROC=0.488  UCE=0.0873
+  Epistemic markers               Brier=0.1251  AUROC=0.335  UCE=0.1611
+  Persuasion (U^pers)             Brier=0.1508  AUROC=0.817  UCE=0.1639
+  Flip only                       Brier=0.2937  AUROC=0.799  UCE=0.2812
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.2937  AUROC=0.799
+  + Speed (F·S)                        Brier=0.1152  AUROC=0.873
+  + Arg. quality (F·S·A)               Brier=0.1468  AUROC=0.814
+  + Conf. at flip (full U^pers)        Brier=0.1508  AUROC=0.817
+
+Isotonic recalibration (OOF Brier):
+  Persuasion (U^pers)             raw=0.1508  cal=0.0724  Δ=-0.0784
+  Hybrid (U^hybrid)               raw=0.0844  cal=0.0735  Δ=-0.0110
+  Flip only                       raw=0.2937  cal=0.0750  Δ=-0.2187
+  Epistemic markers               raw=0.1251  cal=0.0867  Δ=-0.0384
+  Self-report (1−C₀)              raw=0.0941  cal=0.0868  Δ=-0.0074

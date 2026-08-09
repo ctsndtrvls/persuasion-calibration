@@ -25,13 +25,15 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT_DIR = PROJECT_ROOT / "output_wood"
 
+# Canonical display order for the four-model baseline line:
+# GPT → DeepSeek → Gemma → Qwen. Remaining IDs follow for older CSVs.
 MODEL_IDS = [
     "openai/gpt-4o-2024-11-20",
-    "anthropic/claude-sonnet-4-6",
     "deepseek/deepseek-chat-v2.5",
-    "google/gemini-2.5-flash",
-    "qwen/qwen3-14b",
     "google/gemma-4-26b-a4b-it",
+    "qwen/qwen3-14b",
+    "anthropic/claude-sonnet-4-6",
+    "google/gemini-2.5-flash",
     # Legacy IDs retained for older CSV files.
     "anthropic/claude-3.5-sonnet",
     "google/gemini-flash-1.5-8b",

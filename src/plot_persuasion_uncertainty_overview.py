@@ -192,8 +192,15 @@ def plot_overview(df: pd.DataFrame, out_png: Path) -> None:
 
 
 def main() -> None:
-    df = pd.read_csv(DEFAULT_INPUT)
-    png_dir = FEVER_DEEPSEEK_DIR / "png"
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Plot persuasion uncertainty overview.")
+    ap.add_argument("--input", type=Path, default=DEFAULT_INPUT)
+    ap.add_argument("--out-dir", type=Path, default=FEVER_DEEPSEEK_DIR)
+    args = ap.parse_args()
+
+    df = pd.read_csv(args.input)
+    png_dir = args.out_dir / "png"
     png_dir.mkdir(parents=True, exist_ok=True)
     out_png = png_dir / "uncertainty_overview.png"
     plot_overview(df, out_png)

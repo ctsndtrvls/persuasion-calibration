@@ -1,38 +1,53 @@
-## Persuasion-based approach for evaluating LLM calibration
+# Persuasion-based approach for evaluating LLM calibration
 
-This repository contains code and experiments for a bachelor thesis on a **persuasion-based approach to evaluating LLM calibration**.
+Code, experiment runners, and results for a **persuasion-based evaluation of LLM calibration**: multi-turn dialogues where a persuader challenges a target model’s answer, and we track confidence, flips, argument quality, and uncertainty.
 
-### Datasets
+## What is in this repository
 
-- **FEVER 2.0 Adversarial**: adversarial claims with labels (*Supported*, *Refuted*, *NotEnoughInfo*), created as part of the FEVER 2.0 shared task. See the official page for details and downloads: [FEVER 2.0 Adversarial Dataset](https://fever.ai/dataset/adversarial.html).
-- **ConflictQA**: a question answering dataset from the OSU NLP group, available on HuggingFace: [osunlp/ConflictQA](https://huggingface.co/datasets/osunlp/ConflictQA/tree/main).
-- **DebateQA**: a dataset for QA on debatable knowledge, available on GitHub: [pillowsofwind/DebateQA](https://github.com/pillowsofwind/DebateQA).
+| Path | Contents |
+|------|----------|
+| `src/` | Python entry points: data prep, baseline calibration, persuasion rollouts, judges, analysis, plots |
+| `scripts/` | Shell wrappers for full experiment batches |
+| `data/` | Local dataset files (FEVER 2.0 Adversarial, ConflictQA, DebateQA) |
+| `output_wood/` | Experiment outputs (CSV/JSON/plots) used in the evaluation |
+| `output/` | Older baseline calibration artefacts |
+| `requirements.txt` | Python dependencies |
 
-Local data layout:
+Models covered in the main persuasion runs: **GPT-4o**, **DeepSeek**, **Qwen**, **Gemma** (via OpenAI / DeepSeek / OpenRouter as configured in the scripts).
 
-- `data/fever2_adversarial/` – FEVER 2.0 adversarial JSONL files (downloaded manually from the FEVER site).
-- `data/conflictqa/` – ConflictQA splits saved as JSONL via `datasets`.
-- `data/debateqa/` – DebateQA files downloaded from GitHub archive.
+## Datasets
 
-### Project structure
+- **FEVER 2.0 Adversarial** — [fever.ai](https://fever.ai/dataset/adversarial.html) → `data/fever2_adversarial/`
+- **ConflictQA (PopQA / StrategyQA)** — [osunlp/ConflictQA](https://huggingface.co/datasets/osunlp/ConflictQA) → `data/conflictqa/`
+- **DebateQA** — [pillowsofwind/DebateQA](https://github.com/pillowsofwind/DebateQA) → `data/debateqa/`
 
-- `data/`
-  - `fever2_adversarial/`
-  - `conflictqa/`
-- `src/`
-  - `download_datasets.py` – script to download and save `osunlp/ConflictQA` locally.
-  - `build_debateqa_subsets.py` – creates stratified DebateQA subsets (480 and 600 rows total).
-  - `inspect_data.py` – quick preview of FEVER, ConflictQA and DebateQA examples.
-- `venv/` – Python virtual environment.
-- `requirements.txt` – Python dependencies.
+Helpers: `src/download_datasets.py`, `src/build_conflictqa_subsets*.py`, `src/build_debateqa_subsets.py`, `src/inspect_data.py`.
 
-### Setup
-
-From the repository root (the `persuasion-calibration` directory):
+## Setup
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # on macOS / Linux
+source venv/bin/activate   # macOS / Linux
 pip install -r requirements.txt
+cp .env.example .env       # then add API keys as needed
 ```
 
+API keys are read from `.env` (gitignored). Only providers used by a given script need to be filled in.
+
+## Main experiment areas
+
+1. **Baseline calibration** — token-probability / self-reported confidence / epistemic markers / temperature; see `src/collect_conflictqa_ece.py`, `src/run_epistemic_marker_experiment.py`, and `scripts/run_tokenprob_*.sh`, `scripts/run_temp*.sh`, `scripts/run_epistemic_*.sh`. Outputs under `output_wood/{token_prob_confidence,self_reported_confidence,epistemic_markers,temperature_experiments,...}/`.
+
+2. **Persuasion dialogues** — FEVER and QA multi-turn rollouts: `src/run_persuasion_fever_pilot.py`, `src/run_persuasion_qa_multi.py`, wrappers in `scripts/run_persuasion_*.sh`. Results: `output_wood/persuasion/{DeepSeek,GPT-4o,Qwen,Gemma}/`.
+
+3. **Argument quality** — LLM judge + human annotation analysis: `src/run_persuasion_arg_quality_judge.py`, `src/analyze_arg_quality_*.py`, `src/analyze_human_annotator_*.py`.
+
+4. **Persuasion uncertainty / composite scores** — `src/build_persuasion_uncertainty_scores.py`, `src/evaluate_persuasion_uncertainty.py`, `src/run_persuasion_uncertainty_figures.py`. See `output_wood/persuasion/README_uncertainty_scores.md`.
+
+Most plot scripts live in `src/plot_*.py` with matching launchers under `scripts/`.
+
+## Notes
+
+- Large CSV/JSON result files may use Git LFS (see `.gitattributes`).
+- Do not commit `.env` or API keys.
+- `venv/` is local-only and ignored by git.

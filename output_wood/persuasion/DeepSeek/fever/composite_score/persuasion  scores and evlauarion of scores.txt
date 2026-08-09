@@ -1,0 +1,4 @@
+Readable version: persuasion_scores_and_evaluation.md (same folder)
+
+This file kept as archive of the original supervisor notes.
+See persuasion_scores_and_evaluation.md for the formatted version.

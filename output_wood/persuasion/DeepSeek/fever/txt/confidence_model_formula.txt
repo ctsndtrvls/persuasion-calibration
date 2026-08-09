@@ -1,0 +1,6 @@
+Confidence model (standardized features):
+conf_final_hat = 8.692 - 0.855*z(quality_x_flip) - 0.407*z(final_turn) + 0.319*z(flip_final) + 0.317*z(mean_cogency) + 0.293*z(refutes_x_correct_t0) + 0.221*z(confidence_slope_per_turn) + 0.212*z(conf_before) - 0.178*z(is_nei) - 0.124*z(is_refutes) + 0.118*z(mean_effectiveness) + 0.077*z(total_marker_n) + 0.046*z(conf_delta_turn1) + 0.025*z(mean_reasonableness)
+R^2 = 0.494
+
+Composite score:
+S = 0.30*clip(conf_pred/10) + 0.20*acc_pred_proba + 0.15*quality_norm + 0.15*(1-flip_final) + 0.10*(1-marker_density) + 0.10*(1-turns_norm)

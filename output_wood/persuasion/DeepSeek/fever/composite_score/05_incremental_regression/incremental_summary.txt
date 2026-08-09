@@ -1,0 +1,15 @@
+Incremental logistic regression (5-fold grouped OOF)
+
+Token-prob coverage: 214 / 214 dialogues
+
+Self-report baseline (n=214):
+  self_baseline       Brier=0.2127  AUROC=0.623  logloss=0.619
+  self_extended       Brier=0.1991  AUROC=0.727  logloss=0.588
+
+Token-prob baseline (n=214):
+  token_baseline      Brier=0.2201  AUROC=0.723  logloss=0.715
+  token_extended      Brier=0.1985  AUROC=0.741  logloss=0.658
+
+Incremental gain (negative delta Brier = extended better):
+  self: extended vs baseline      ΔBrier=-0.0136  ΔAUROC=+0.105  n=214
+  token: extended vs baseline     ΔBrier=-0.0216  ΔAUROC=+0.018  n=214

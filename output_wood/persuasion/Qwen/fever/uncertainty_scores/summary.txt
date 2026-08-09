@@ -1,0 +1,24 @@
+Persuasion uncertainty — Qwen / fever
+n = 480 dialogues, initial error rate = 0.431
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Hybrid (U^hybrid)               Brier=0.2167  AUROC=0.674  UCE=0.0625
+  Persuasion (U^pers)             Brier=0.2508  AUROC=0.631  UCE=0.1399
+  Self-report (1−C₀)              Brier=0.3237  AUROC=0.609  UCE=0.2706
+  Flip only                       Brier=0.4042  AUROC=0.605  UCE=0.3500
+  Epistemic markers               Brier=0.4091  AUROC=0.456  UCE=0.3813
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.4042  AUROC=0.605
+  + Speed (F·S)                        Brier=0.2236  AUROC=0.688
+  + Arg. quality (F·S·A)               Brier=0.2360  AUROC=0.660
+  + Conf. at flip (full U^pers)        Brier=0.2508  AUROC=0.631
+
+Isotonic recalibration (OOF Brier):
+  Hybrid (U^hybrid)               raw=0.2167  cal=0.2176  Δ=+0.0009
+  Flip only                       raw=0.4042  cal=0.2206  Δ=-0.1836
+  Persuasion (U^pers)             raw=0.2508  cal=0.2210  Δ=-0.0298
+  Self-report (1−C₀)              raw=0.3237  cal=0.2358  Δ=-0.0879
+  Epistemic markers               raw=0.4091  cal=0.2517  Δ=-0.1574

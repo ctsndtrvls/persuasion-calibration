@@ -65,18 +65,19 @@ DEFAULT_OPENAI_DEEPSEEK_DEBATEQA_CSV = (
 )
 DEFAULT_OUT_DIR = PROJECT_ROOT / "output_wood" / "epistemic_markers" / "qwen_gemma_openai_deepseek_temp06_scale10"
 
+# Canonical order for the four-model baseline line.
 MODEL_ORDER: list[str] = [
-    "qwen/qwen3-14b",
-    "google/gemma-4-26b-a4b-it",
     "openai/gpt-4o-2024-11-20",
     "deepseek/deepseek-chat-v2.5",
+    "google/gemma-4-26b-a4b-it",
+    "qwen/qwen3-14b",
 ]
 
 SHORT_MODEL_LABELS: dict[str, str] = {
-    "qwen/qwen3-14b": "Qwen3-14B",
-    "google/gemma-4-26b-a4b-it": "Gemma 4 26B",
     "openai/gpt-4o-2024-11-20": "GPT-4o",
-    "deepseek/deepseek-chat-v2.5": "DeepSeek v2.5",
+    "deepseek/deepseek-chat-v2.5": "DeepSeek",
+    "google/gemma-4-26b-a4b-it": "Gemma",
+    "qwen/qwen3-14b": "Qwen",
 }
 
 DATASET_ORDER = ["fever", "debateqa", "conflictqa_popqa"]
@@ -202,7 +203,7 @@ def plot_overall_acl25_metrics(summary_df: pd.DataFrame, out_path: Path) -> None
     for j in range(n, len(axes)):
         axes[j].axis("off")
 
-    fig.suptitle("ACL'25 Epistemic Marker Metrics (temp 0.6, scale 1-10)", fontsize=13)
+    fig.suptitle("ACL25 Epistemic Marker Metrics: All Models", fontsize=13)
     fig.tight_layout()
     fig.savefig(out_path, dpi=170)
     plt.close(fig)

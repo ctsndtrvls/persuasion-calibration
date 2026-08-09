@@ -1,0 +1,24 @@
+Persuasion uncertainty — DeepSeek / popqa
+n = 480 dialogues, initial error rate = 0.050
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Self-report (1−C₀)              Brier=0.0553  AUROC=0.387  UCE=0.0471
+  Epistemic markers               Brier=0.1150  AUROC=0.336  UCE=0.1615
+  Hybrid (U^hybrid)               Brier=0.1249  AUROC=0.625  UCE=0.2164
+  Persuasion (U^pers)             Brier=0.2758  AUROC=0.634  UCE=0.3559
+  Flip only                       Brier=0.5521  AUROC=0.654  UCE=0.5354
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.5521  AUROC=0.654
+  + Speed (F·S)                        Brier=0.1945  AUROC=0.752
+  + Arg. quality (F·S·A)               Brier=0.2573  AUROC=0.630
+  + Conf. at flip (full U^pers)        Brier=0.2758  AUROC=0.634
+
+Isotonic recalibration (OOF Brier):
+  Flip only                       raw=0.5521  cal=0.0473  Δ=-0.5047
+  Hybrid (U^hybrid)               raw=0.1249  cal=0.0478  Δ=-0.0771
+  Self-report (1−C₀)              raw=0.0553  cal=0.0479  Δ=-0.0074
+  Epistemic markers               raw=0.1150  cal=0.0479  Δ=-0.0671
+  Persuasion (U^pers)             raw=0.2758  cal=0.0484  Δ=-0.2273

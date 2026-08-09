@@ -1,0 +1,15 @@
+Recalibration summary (5-fold grouped OOF, train-fold fit only)
+n = 214 dialogues, methods = 6
+
+Isotonic recalibration — Brier (lower is better):
+  Token log-prob (1−p)            raw=0.3479  cal=0.1886  Δ=-0.1594
+  Hybrid (U^hybrid)               raw=0.2052  cal=0.2025  Δ=-0.0027
+  Flip only                       raw=0.3692  cal=0.2064  Δ=-0.1628
+  Persuasion (U^pers)             raw=0.2343  cal=0.2107  Δ=-0.0236
+  Self-report (1−C₀)              raw=0.2821  cal=0.2136  Δ=-0.0685
+  Epistemic markers               raw=0.3185  cal=0.2306  Δ=-0.0879
+
+Key comparison (isotonic):
+  Hybrid (U^hybrid) vs Self-report (1−C₀): cal Brier 0.2025 vs 0.2136 → Hybrid (U^hybrid) better
+  Persuasion (U^pers) vs Self-report (1−C₀): cal Brier 0.2107 vs 0.2136 → Persuasion (U^pers) better
+  Hybrid (U^hybrid) vs Token log-prob (1−p): cal Brier 0.2025 vs 0.1886 → Token log-prob (1−p) better

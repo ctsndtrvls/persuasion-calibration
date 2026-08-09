@@ -1,0 +1,24 @@
+Persuasion uncertainty — DeepSeek / debateqa
+n = 480 dialogues, initial error rate = 0.883
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Flip only                       Brier=0.1167  AUROC=0.494  UCE=0.1125
+  Persuasion (U^pers)             Brier=0.1461  AUROC=0.486  UCE=0.1955
+  Hybrid (U^hybrid)               Brier=0.2581  AUROC=0.597  UCE=0.3939
+  Self-report (1−C₀)              Brier=0.5878  AUROC=0.632  UCE=0.6917
+  Epistemic markers               Brier=0.8103  AUROC=0.506  UCE=0.8339
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.1167  AUROC=0.494
+  + Speed (F·S)                        Brier=0.1847  AUROC=0.654
+  + Arg. quality (F·S·A)               Brier=0.1621  AUROC=0.456
+  + Conf. at flip (full U^pers)        Brier=0.1461  AUROC=0.486
+
+Isotonic recalibration (OOF Brier):
+  Hybrid (U^hybrid)               raw=0.2581  cal=0.1030  Δ=-0.1551
+  Self-report (1−C₀)              raw=0.5878  cal=0.1034  Δ=-0.4843
+  Epistemic markers               raw=0.8103  cal=0.1037  Δ=-0.7066
+  Persuasion (U^pers)             raw=0.1461  cal=0.1043  Δ=-0.0418
+  Flip only                       raw=0.1167  cal=0.1061  Δ=-0.0106

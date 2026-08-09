@@ -4,6 +4,8 @@ import argparse
 import os
 from pathlib import Path
 
+import numpy as np
+
 _PROJECT_ROOT_BOOTSTRAP = Path(__file__).resolve().parents[1]
 os.environ.setdefault("MPLBACKEND", "Agg")
 os.environ.setdefault("MPLCONFIGDIR", str(_PROJECT_ROOT_BOOTSTRAP / ".mplcache"))
@@ -16,68 +18,13 @@ import matplotlib.pyplot as plt  # noqa: E402
 import pandas as pd
 import seaborn as sns
 
+from persuasion_rollout_view import FEVER_LABEL_ORDER, prepare_dialogue_view, task_type_from_df
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 FEVER_DEEPSEEK_DIR = PROJECT_ROOT / "output_wood" / "persuasion" / "DeepSeek" / "fever"
 DEFAULT_INPUT = FEVER_DEEPSEEK_DIR / "csv" / "expl.csv"
 DEFAULT_OUT_DIR = FEVER_DEEPSEEK_DIR
-LABEL_ORDER = ["SUPPORTS", "REFUTES", "NOT ENOUGH INFO"]
-
-
-def normalize_label(x: object) -> str:
-    s = str(x or "").strip().upper()
-    if "NOT ENOUGH" in s or s == "NEI":
-        return "NOT ENOUGH INFO"
-    if "REFUTE" in s:
-        return "REFUTES"
-    if "SUPPORT" in s:
-        return "SUPPORTS"
-    return s
-
-
-def prepare_dialogue_view(df: pd.DataFrame) -> pd.DataFrame:
-    """Per dialogue: compare turn 0 (baseline) vs final turn after persuasion."""
-    # Continue runs may append new segments that restart at turn 0; keep the first baseline.
-    t0 = (
-        df[df["turn"] == 0][["dialogue_id", "gold_label", "answer", "confidence"]]
-        .drop_duplicates(subset="dialogue_id", keep="first")
-        .copy()
-    )
-    final = (
-        df.sort_values(["dialogue_id", "turn"])
-        .groupby("dialogue_id", as_index=False)
-        .tail(1)[
-            [
-                "dialogue_id",
-                "answer",
-                "confidence",
-                "turn",
-                "flipped_from_initial",
-                "flip_turn",
-                "stop_reason",
-            ]
-        ]
-    )
-    t0 = t0.rename(columns={"answer": "answer_t0", "confidence": "conf_t0"})
-    final = final.rename(
-        columns={
-            "answer": "answer_final",
-            "confidence": "conf_final",
-            "turn": "final_turn",
-        }
-    )
-    out = t0.merge(final, on="dialogue_id", how="inner")
-
-    for c in ("gold_label", "answer_t0", "answer_final"):
-        out[c] = out[c].map(normalize_label)
-
-    out["flip"] = out["answer_t0"] != out["answer_final"]
-    out["correct_t0"] = out["answer_t0"] == out["gold_label"]
-    out["correct_final"] = out["answer_final"] == out["gold_label"]
-    out["conf_delta"] = out["conf_final"] - out["conf_t0"]
-    out["persuasion_turns"] = out["final_turn"].astype(int)
-    flip_turn_num = pd.to_numeric(out["flip_turn"], errors="coerce")
-    out["flip_turn_num"] = flip_turn_num
-    return out
+LABEL_ORDER = FEVER_LABEL_ORDER
 
 
 def write_summary_csv(view: pd.DataFrame, out_csv: Path) -> None:
@@ -102,7 +49,7 @@ def write_summary_csv(view: pd.DataFrame, out_csv: Path) -> None:
     pd.DataFrame(rows, columns=["metric", "value"]).to_csv(out_csv, index=False)
 
 
-def plot_figure_pack(view: pd.DataFrame, out_png: Path, *, title: str) -> None:
+def plot_figure_pack(view: pd.DataFrame, out_png: Path, *, title: str, task_type: str) -> None:
     sns.set_theme(style="whitegrid")
     fig, axes = plt.subplots(2, 3, figsize=(15, 8))
 
@@ -120,36 +67,65 @@ def plot_figure_pack(view: pd.DataFrame, out_png: Path, *, title: str) -> None:
     axes[0, 0].set_ylabel("Accuracy")
     axes[0, 0].tick_params(axis="x", rotation=12)
 
-    # 2) Accuracy by gold label
-    cls_rows = []
-    for lbl in LABEL_ORDER:
-        sub = view[view["gold_label"] == lbl]
-        if sub.empty:
-            continue
-        cls_rows.append((lbl, "Before", sub["correct_t0"].mean()))
-        cls_rows.append((lbl, "After", sub["correct_final"].mean()))
-    cls_df = pd.DataFrame(cls_rows, columns=["gold_label", "stage", "accuracy"])
-    sns.barplot(data=cls_df, x="gold_label", y="accuracy", hue="stage", ax=axes[0, 1])
-    axes[0, 1].set_ylim(0, 1)
-    axes[0, 1].set_title("Accuracy by FEVER Label")
-    axes[0, 1].set_xlabel("")
-    axes[0, 1].set_ylabel("Accuracy")
-    axes[0, 1].tick_params(axis="x", rotation=20)
-    axes[0, 1].legend(title="")
+    if task_type == "fever":
+        cls_rows = []
+        for lbl in LABEL_ORDER:
+            sub = view[view["gold_label"] == lbl]
+            if sub.empty:
+                continue
+            cls_rows.append((lbl, "Before", sub["correct_t0"].mean()))
+            cls_rows.append((lbl, "After", sub["correct_final"].mean()))
+        cls_df = pd.DataFrame(cls_rows, columns=["gold_label", "stage", "accuracy"])
+        sns.barplot(data=cls_df, x="gold_label", y="accuracy", hue="stage", ax=axes[0, 1])
+        axes[0, 1].set_title("Accuracy by FEVER Label")
+        axes[0, 1].tick_params(axis="x", rotation=20)
 
-    # 3) Flip rate by gold label (initial -> final)
-    flip_cls = (
-        view.groupby("gold_label", as_index=False)["flip"]
-        .mean()
-        .assign(flip_rate=lambda d: d["flip"] * 100.0)
-    )
-    flip_cls["gold_label"] = pd.Categorical(flip_cls["gold_label"], categories=LABEL_ORDER, ordered=True)
-    flip_cls = flip_cls.sort_values("gold_label")
-    sns.barplot(data=flip_cls, x="gold_label", y="flip_rate", ax=axes[0, 2], color="#F58518")
-    axes[0, 2].set_title("Flip Rate by FEVER Label")
-    axes[0, 2].set_xlabel("")
-    axes[0, 2].set_ylabel("Flip rate (%)")
-    axes[0, 2].tick_params(axis="x", rotation=20)
+        flip_cls = (
+            view.groupby("gold_label", as_index=False)["flip"]
+            .mean()
+            .assign(flip_rate=lambda d: d["flip"] * 100.0)
+        )
+        flip_cls["gold_label"] = pd.Categorical(flip_cls["gold_label"], categories=LABEL_ORDER, ordered=True)
+        flip_cls = flip_cls.sort_values("gold_label")
+        sns.barplot(data=flip_cls, x="gold_label", y="flip_rate", ax=axes[0, 2], color="#F58518")
+        axes[0, 2].set_title("Flip Rate by FEVER Label")
+        axes[0, 2].tick_params(axis="x", rotation=20)
+    else:
+        acc_grp = pd.DataFrame(
+            {
+                "initial_accuracy": ["Correct at t0", "Incorrect at t0"],
+                "before": [
+                    view.loc[view["correct_t0"], "correct_t0"].mean() if view["correct_t0"].any() else 0.0,
+                    view.loc[~view["correct_t0"], "correct_t0"].mean() if (~view["correct_t0"]).any() else 0.0,
+                ],
+                "after": [
+                    view.loc[view["correct_t0"], "correct_final"].mean() if view["correct_t0"].any() else 0.0,
+                    view.loc[~view["correct_t0"], "correct_final"].mean() if (~view["correct_t0"]).any() else 0.0,
+                ],
+            }
+        )
+        long = acc_grp.melt(id_vars="initial_accuracy", value_vars=["before", "after"], var_name="stage", value_name="accuracy")
+        long["stage"] = long["stage"].map({"before": "Before", "after": "After"})
+        sns.barplot(data=long, x="initial_accuracy", y="accuracy", hue="stage", ax=axes[0, 1])
+        axes[0, 1].set_ylim(0, 1)
+        axes[0, 1].set_title("Accuracy by Initial Correctness")
+        axes[0, 1].tick_params(axis="x", rotation=12)
+
+        flip_grp = (
+            view.assign(initial_accuracy=np.where(view["correct_t0"], "Correct at t0", "Incorrect at t0"))
+            .groupby("initial_accuracy", as_index=False)["flip"]
+            .mean()
+            .assign(flip_rate=lambda d: d["flip"] * 100.0)
+        )
+        sns.barplot(data=flip_grp, x="initial_accuracy", y="flip_rate", ax=axes[0, 2], color="#F58518")
+        axes[0, 2].set_title("Flip Rate by Initial Correctness")
+        axes[0, 2].tick_params(axis="x", rotation=12)
+
+    for ax in (axes[0, 1], axes[0, 2]):
+        ax.set_xlabel("")
+        ax.set_ylabel(ax.get_ylabel() or "Rate")
+        if ax.legend_:
+            ax.legend(title="")
 
     # 4) Persuasion turns used (final turn index)
     sns.histplot(view["persuasion_turns"], bins=range(1, 17), ax=axes[1, 0], color="#54A24B")
@@ -205,6 +181,7 @@ def main() -> None:
 
     df = pd.read_csv(args.input)
     view = prepare_dialogue_view(df)
+    task_type = task_type_from_df(df)
 
     png_dir = args.out_dir / "png"
     csv_dir = args.out_dir / "csv"
@@ -214,7 +191,7 @@ def main() -> None:
     out_png = png_dir / "summary.png"
     out_csv = csv_dir / "summary_metrics.csv"
 
-    plot_figure_pack(view, out_png, title=args.title)
+    plot_figure_pack(view, out_png, title=args.title, task_type=task_type)
     write_summary_csv(view, out_csv)
 
     print(f"Saved figure: {out_png}")

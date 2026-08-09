@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 
 from plot_ece_calibration import bin_edges, compute_bin_stats, ece_from_bins
-from plot_persuasion_fever_summary import prepare_dialogue_view
+from persuasion_rollout_view import prepare_dialogue_view
 
 FEVER_DIR = _PROJECT_ROOT / "output_wood" / "persuasion" / "DeepSeek" / "fever"
 DEFAULT_INPUT = FEVER_DIR / "csv" / "expl.csv"

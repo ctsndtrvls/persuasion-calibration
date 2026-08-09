@@ -89,7 +89,7 @@ def call_openai_json(
 
 
 def call_openrouter_json(
-    model: str, user_prompt: str, *, system_prompt: str, max_tokens: int = 2048
+    model: str, user_prompt: str, *, system_prompt: str, max_tokens: int = 512
 ) -> dict[str, Any]:
     """OpenRouter chat (e.g. openai/gpt-5.4-mini) — same stack as persuader."""
     client = OpenAI(
@@ -176,6 +176,29 @@ def dialogue_flip_flag(full_df: pd.DataFrame) -> pd.Series:
     if "flipped_from_initial" not in full_df.columns:
         return pd.Series(0, index=full_df["dialogue_id"].unique())
     return full_df.groupby("dialogue_id")["flipped_from_initial"].max()
+
+
+def flip_turn_keys(full_df: pd.DataFrame) -> set[tuple[str, int]]:
+    """(dialogue_id, flip_turn) for dialogues that eventually flipped."""
+    from analyze_persuasion_confidence import build_dialogue_confidence
+
+    dlg = build_dialogue_confidence(full_df)
+    flipped = dlg[dlg["flip_final"] == 1].copy()
+    keys: set[tuple[str, int]] = set()
+    for _, r in flipped.iterrows():
+        t = r.get("flip_turn")
+        if pd.isna(t):
+            continue
+        keys.add((str(r["dialogue_id"]), int(t)))
+    return keys
+
+
+def filter_flip_turns(df: pd.DataFrame, full_df: pd.DataFrame) -> pd.DataFrame:
+    keys = flip_turn_keys(full_df)
+    if not keys:
+        return df.iloc[0:0].copy()
+    mask = df.apply(lambda r: (str(r["dialogue_id"]), int(r["turn"])) in keys, axis=1)
+    return df.loc[mask].copy()
 
 
 def stratified_sample(
@@ -351,6 +374,7 @@ def judge_all(
         work = stratified_sample(work, max_items, seed, flip_lookup=flip_lookup)
 
     rows: list[dict[str, Any]] = []
+    consecutive_credit_errors = 0
     for _, r in work.iterrows():
         eid = str(r["eval_id"])
         if eid in done_keys:
@@ -390,10 +414,25 @@ def judge_all(
                 header=not out_long_csv.exists(),
                 index=False,
             )
+            consecutive_credit_errors = 0
             time.sleep(sleep_s)
             print(f"[ok] {judge_name} {eid}")
         except Exception as e:
+            msg = str(e)
             print(f"[ERROR] {judge_name} {eid}: {e}")
+            # Stop early when OpenRouter balance is exhausted (avoid spam).
+            if "402" in msg or "more credits" in msg.lower() or "can only afford" in msg.lower():
+                consecutive_credit_errors += 1
+                if consecutive_credit_errors >= 3:
+                    print(
+                        "[STOP] OpenRouter credit/payment errors — "
+                        "top up at https://openrouter.ai/settings/credits then re-run "
+                        "(cache resumes from saved rows)."
+                    )
+                    break
+            else:
+                consecutive_credit_errors = 0
+                time.sleep(sleep_s)
 
     if rows:
         new = pd.DataFrame(rows)
@@ -404,7 +443,12 @@ def judge_all(
 def main() -> None:
     ap = argparse.ArgumentParser(description="LLM judge for persuasion argument quality.")
     ap.add_argument("--input", type=Path, default=DEFAULT_INPUT)
-    ap.add_argument("--fever-meta", type=Path, default=DEFAULT_FEVER_META)
+    ap.add_argument(
+        "--fever-meta",
+        type=Path,
+        default=None,
+        help=f"Optional FEVER subsample CSV for complexity_level (default: none). Typical: {DEFAULT_FEVER_META}",
+    )
     ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--run-name", default="judge_v1")
     ap.add_argument("--turn", type=int, default=1, help="Score only this turn (default: 1; ignored with --all-turns).")
@@ -413,6 +457,14 @@ def main() -> None:
         "--all-turns",
         action="store_true",
         help="Score every persuasion turn (turn >= --min-turn) in the rollout CSV.",
+    )
+    ap.add_argument(
+        "--flip-turns-only",
+        action="store_true",
+        help=(
+            "Score only the flip-turn counterargument for dialogues that eventually flipped. "
+            "Enough for U^pers A; much cheaper than --all-turns."
+        ),
     )
     ap.add_argument("--max-items", type=int, default=None)
     ap.add_argument(
@@ -463,9 +515,17 @@ def main() -> None:
         raise SystemExit("OPENROUTER_API_KEY missing in .env (required for --judge openrouter).")
 
     full_df = pd.read_csv(args.input)
-    turn_filter = None if args.all_turns else args.turn
+    if args.flip_turns_only:
+        turn_filter = None
+        args.all_turns = True
+    else:
+        turn_filter = None if args.all_turns else args.turn
     df = load_persuasion_rows(args.input, turn=turn_filter, min_turn=args.min_turn)
-    if args.all_turns:
+    if args.flip_turns_only:
+        before = len(df)
+        df = filter_flip_turns(df, full_df)
+        print(f"[flip-turns-only] {len(df)} / {before} counterargument rows (flip turns)")
+    elif args.all_turns:
         print(f"[all-turns] {len(df)} counterargument rows (turn >= {args.min_turn})")
     df = join_complexity(df, args.fever_meta)
     df = add_dialogue_context(df)

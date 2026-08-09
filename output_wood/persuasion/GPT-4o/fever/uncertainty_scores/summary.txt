@@ -1,0 +1,24 @@
+Persuasion uncertainty — GPT-4o / fever
+n = 480 dialogues, initial error rate = 0.412
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Hybrid (U^hybrid)               Brier=0.2159  AUROC=0.685  UCE=0.0523
+  Persuasion (U^pers)             Brier=0.2487  AUROC=0.656  UCE=0.1328
+  Self-report (1−C₀)              Brier=0.2917  AUROC=0.632  UCE=0.2292
+  Flip only                       Brier=0.3979  AUROC=0.648  UCE=0.3187
+  Epistemic markers               Brier=0.4101  AUROC=0.491  UCE=0.3863
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.3979  AUROC=0.648
+  + Speed (F·S)                        Brier=0.2240  AUROC=0.681
+  + Arg. quality (F·S·A)               Brier=0.2399  AUROC=0.658
+  + Conf. at flip (full U^pers)        Brier=0.2487  AUROC=0.656
+
+Isotonic recalibration (OOF Brier):
+  Flip only                       raw=0.3979  cal=0.2184  Δ=-0.1795
+  Persuasion (U^pers)             raw=0.2487  cal=0.2192  Δ=-0.0295
+  Hybrid (U^hybrid)               raw=0.2159  cal=0.2251  Δ=+0.0091
+  Self-report (1−C₀)              raw=0.2917  cal=0.2319  Δ=-0.0598
+  Epistemic markers               raw=0.4101  cal=0.2446  Δ=-0.1656

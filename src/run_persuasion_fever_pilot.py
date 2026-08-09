@@ -1,20 +1,25 @@
 """
-Multi-turn persuasion on FEVER (DeepSeek target, OpenRouter persuader).
+Multi-turn persuasion on FEVER with a configurable target model.
 
+Target providers (--target-provider):
+  - deepseek   : DeepSeek API (default; legacy DeepSeek/FEVER pilot line)
+  - openai     : OpenAI API (e.g. gpt-4o-2024-11-20)
+  - openrouter : OpenRouter routes (e.g. google/gemma-4-26b-a4b-it, qwen/qwen3-14b)
+
+Persuader is always via OpenRouter (default: openai/gpt-5.4-mini).
 Target confidence is elicited on a 1–10 scale (same convention as baseline temp06 runs).
-Default persuader: openai/gpt-5.4-mini (OpenRouter).
 
 Persuasion modes:
   - until_flip (default): add counterargument rounds until the target changes its label
     or --max-turns is reached (hard cap, default 15).
   - fixed: run exactly --max-turns persuasion rounds regardless of flip.
 
-Example:
+Example (canonical 480 subset, GPT-4o target):
   cd src && python3 run_persuasion_fever_pilot.py \\
-    --fever-input ../output_wood/dataset_subsampling/fever/csv/fever600_200x3_complexity_wood_v1_lr_40.csv \\
-    --max-items 600 --persuasion-mode until_flip --max-turns 15
+    --target-provider openai --target-model gpt-4o-2024-11-20 --target-label GPT-4o \\
+    --persuasion-mode until_flip --max-turns 15
 
-Requires .env: DEEPSEEK_API_KEY, OPENROUTER_API_KEY
+Requires .env: OPENROUTER_API_KEY; plus OPENAI_API_KEY or DEEPSEEK_API_KEY as needed.
 """
 from __future__ import annotations
 
@@ -41,7 +46,8 @@ from collect_conflictqa_ece import (
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = PROJECT_ROOT / "output_wood" / "persuasion" / "DeepSeek" / "fever"
+PERSUASION_ROOT = PROJECT_ROOT / "output_wood" / "persuasion"
+OUT_DIR = PERSUASION_ROOT / "DeepSeek" / "fever"
 
 FEVER_REFS = "SUPPORTS; REFUTES; NOT ENOUGH INFO"
 
@@ -225,19 +231,45 @@ def call_persuader(
     return str(data.get("counterargument", "")).strip(), user, raw_json
 
 
+def _target_client(provider: str):
+    from openai import OpenAI
+
+    if provider == "deepseek":
+        return OpenAI(
+            api_key=os.environ["DEEPSEEK_API_KEY"],
+            base_url="https://api.deepseek.com",
+            timeout=120.0,
+            max_retries=2,
+        )
+    if provider == "openai":
+        return OpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=120.0, max_retries=2)
+    if provider == "openrouter":
+        return OpenAI(
+            api_key=os.environ["OPENROUTER_API_KEY"],
+            base_url="https://openrouter.ai/api/v1",
+            timeout=120.0,
+            max_retries=2,
+        )
+    raise ValueError(f"Unsupported target provider: {provider}")
+
+
 def call_target_turn0(
     claim: str,
     *,
+    target_provider: str,
     model: str,
     temperature: float,
 ) -> tuple[str, int, str, str, str]:
-    return call_target_with_history(claim, [], model=model, temperature=temperature)
+    return call_target_with_history(
+        claim, [], target_provider=target_provider, model=model, temperature=temperature
+    )
 
 
 def call_target_with_history(
     claim: str,
     history: list[str],
     *,
+    target_provider: str,
     model: str,
     temperature: float,
 ) -> tuple[str, int, str, str, str]:
@@ -246,29 +278,22 @@ def call_target_with_history(
     else:
         numbered = "\n".join(f"{i}. {c}" for i, c in enumerate(history, start=1))
     user = TARGET_HISTORY_TEMPLATE.format(claim=claim, history=numbered)
-    from openai import OpenAI
-
-    client = OpenAI(
-        api_key=os.environ["DEEPSEEK_API_KEY"],
-        base_url="https://api.deepseek.com",
-    )
+    client = _target_client(target_provider)
+    messages = [
+        {"role": "system", "content": TARGET_SYSTEM_SCALE10},
+        {"role": "user", "content": user},
+    ]
     try:
         r = client.chat.completions.create(
             model=model,
-            messages=[
-                {"role": "system", "content": TARGET_SYSTEM_SCALE10},
-                {"role": "user", "content": user},
-            ],
+            messages=messages,
             temperature=temperature,
             response_format={"type": "json_object"},
         )
     except Exception:
         r = client.chat.completions.create(
             model=model,
-            messages=[
-                {"role": "system", "content": TARGET_SYSTEM_SCALE10},
-                {"role": "user", "content": user},
-            ],
+            messages=messages,
             temperature=temperature,
         )
     raw = r.choices[0].message.content or "{}"
@@ -409,6 +434,7 @@ def run_dialogue_continue(
     row: pd.Series,
     state: ContinueState,
     *,
+    target_provider: str,
     target_model: str,
     persuader_model: str,
     complexity_level: int,
@@ -483,6 +509,7 @@ def run_dialogue_continue(
                 new_answer, new_conf, new_expl, target_prompt, target_raw = call_target_with_history(
                     claim,
                     history,
+                    target_provider=target_provider,
                     model=target_model,
                     temperature=target_temperature,
                 )
@@ -568,6 +595,7 @@ def run_dialogue_continue(
 def run_dialogue(
     row: pd.Series,
     *,
+    target_provider: str,
     target_model: str,
     persuader_model: str,
     complexity_level: int,
@@ -592,7 +620,7 @@ def run_dialogue(
 
     try:
         answer0, conf0, expl0, target_prompt0, target_raw0 = call_target_turn0(
-            claim, model=target_model, temperature=target_temperature
+            claim, target_provider=target_provider, model=target_model, temperature=target_temperature
         )
     except Exception as e:
         answer0, conf0, expl0, target_prompt0, target_raw0 = "", 1, "", "", ""
@@ -680,6 +708,7 @@ def run_dialogue(
                 new_answer, new_conf, new_expl, target_prompt, target_raw = call_target_with_history(
                     claim,
                     history,
+                    target_provider=target_provider,
                     model=target_model,
                     temperature=target_temperature,
                 )
@@ -816,7 +845,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--fever-input", type=Path, default=FEVER_DEFAULT)
     parser.add_argument("--out", type=Path, default=None)
-    parser.add_argument("--max-items", type=int, default=5)
+    parser.add_argument("--max-items", type=int, default=None)
     parser.add_argument(
         "--persuasion-mode",
         choices=("until_flip", "fixed"),
@@ -839,6 +868,17 @@ def main() -> None:
         ),
     )
     parser.add_argument("--target-model", default=DEEPSEEK_API_MODEL)
+    parser.add_argument(
+        "--target-provider",
+        choices=("deepseek", "openai", "openrouter"),
+        default="deepseek",
+        help="API route for the target model (default: deepseek).",
+    )
+    parser.add_argument(
+        "--target-label",
+        default=None,
+        help="Short label for output directory (e.g. GPT-4o, Gemma, Qwen).",
+    )
     parser.add_argument("--target-temperature", type=float, default=0.6)
     parser.add_argument("--persuader-temperature", type=float, default=0.8)
     parser.add_argument(
@@ -876,7 +916,12 @@ def main() -> None:
     args = parser.parse_args()
 
     load_dotenv(PROJECT_ROOT / ".env")
-    for key in ("DEEPSEEK_API_KEY", "OPENROUTER_API_KEY"):
+    required = ["OPENROUTER_API_KEY"]
+    if args.target_provider == "deepseek":
+        required.append("DEEPSEEK_API_KEY")
+    elif args.target_provider == "openai":
+        required.append("OPENAI_API_KEY")
+    for key in required:
         if not os.getenv(key):
             raise SystemExit(f"Missing {key} in environment / .env")
 
@@ -890,7 +935,13 @@ def main() -> None:
         default_name = "expl.csv"
     else:
         default_name = f"fixed_t{args.max_turns}_expl.csv"
-    out = args.out or (OUT_DIR / "csv" / default_name)
+    if args.out is not None:
+        out = args.out
+    elif args.target_provider == "deepseek" and not args.target_label:
+        out = OUT_DIR / "csv" / default_name
+    else:
+        target_label = args.target_label or args.target_model.replace("/", "_")
+        out = PERSUASION_ROOT / target_label / "fever" / "rollout" / "csv" / default_name
     out.parent.mkdir(parents=True, exist_ok=True)
 
     done_ids: set[int] = set()
@@ -942,7 +993,7 @@ def main() -> None:
             row_cpl = args.complexity_level
             if "task_complexity_level" in row.index and pd.notna(row["task_complexity_level"]):
                 row_cpl = int(row["task_complexity_level"])
-            print(f"[run] fever idx={oid} argument_complexity={row_cpl}")
+            print(f"[run] target={args.target_label or args.target_model} fever idx={oid} argument_complexity={row_cpl}")
             if oid in retry_oids and out.exists():
                 removed = strip_dialogue_from_csv(out, oid)
                 if removed:
@@ -951,6 +1002,7 @@ def main() -> None:
                 recs = run_dialogue_continue(
                     row,
                     continue_states[oid],
+                    target_provider=args.target_provider,
                     target_model=args.target_model,
                     persuader_model=args.persuader_model,
                     complexity_level=row_cpl,
@@ -965,6 +1017,7 @@ def main() -> None:
             else:
                 recs = run_dialogue(
                     row,
+                    target_provider=args.target_provider,
                     target_model=args.target_model,
                     persuader_model=args.persuader_model,
                     complexity_level=row_cpl,

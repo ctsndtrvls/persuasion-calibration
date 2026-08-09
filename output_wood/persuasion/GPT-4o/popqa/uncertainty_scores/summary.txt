@@ -1,0 +1,24 @@
+Persuasion uncertainty — GPT-4o / popqa
+n = 480 dialogues, initial error rate = 0.042
+A source: arg-quality judge
+Methods: U_self, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Self-report (1−C₀)              Brier=0.0507  AUROC=0.526  UCE=0.0308
+  Epistemic markers               Brier=0.0746  AUROC=0.379  UCE=0.1088
+  Hybrid (U^hybrid)               Brier=0.1534  AUROC=0.551  UCE=0.2638
+  Persuasion (U^pers)             Brier=0.3230  AUROC=0.559  UCE=0.4191
+  Flip only                       Brier=0.6292  AUROC=0.541  UCE=0.6125
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.6292  AUROC=0.541
+  + Speed (F·S)                        Brier=0.2265  AUROC=0.612
+  + Arg. quality (F·S·A)               Brier=0.2950  AUROC=0.568
+  + Conf. at flip (full U^pers)        Brier=0.3230  AUROC=0.559
+
+Isotonic recalibration (OOF Brier):
+  Flip only                       raw=0.6292  cal=0.0403  Δ=-0.5888
+  Hybrid (U^hybrid)               raw=0.1534  cal=0.0403  Δ=-0.1130
+  Epistemic markers               raw=0.0746  cal=0.0404  Δ=-0.0342
+  Self-report (1−C₀)              raw=0.0507  cal=0.0407  Δ=-0.0100
+  Persuasion (U^pers)             raw=0.3230  cal=0.0413  Δ=-0.2818

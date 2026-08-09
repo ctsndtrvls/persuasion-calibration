@@ -208,9 +208,9 @@ def discover_default_inputs(input_dir: Path) -> list[Path]:
     ]
     missing = [p for p in candidates if not p.is_file()]
     if missing:
-        csvs = sorted(input_dir.glob("human_annotation_annotator_*.csv"))
-        if len(csvs) >= 3:
-            return csvs[:3]
+        csvs = [input_dir / f"human_annotation_annotator_{i}.csv" for i in range(1, 4)]
+        if all(p.is_file() for p in csvs):
+            return csvs
         raise FileNotFoundError("Missing inputs: " + ", ".join(p.name for p in missing))
     return candidates
 

@@ -36,11 +36,12 @@ DEFAULT_QWEN_GEMMA = (
     TE / "qwen_gemma_fever_popqa_debateqa" / "csv" / "ece_qwen_gemma_fever_popqa_debateqa_temp0p6_scale10.csv"
 )
 
+# Same x-axis order as temperature_experiments summary (OpenAI, DeepSeek, Gemma, Qwen).
 MODEL_ORDER: list[tuple[str, str]] = [
     ("openai/gpt-4o-2024-11-20", "GPT-4o"),
     ("deepseek/deepseek-chat-v2.5", "DeepSeek Chat v2.5"),
-    ("qwen/qwen3-14b", "Qwen3-14B"),
     ("google/gemma-4-26b-a4b-it", "Gemma 4 26B"),
+    ("qwen/qwen3-14b", "Qwen3-14B"),
 ]
 
 # Canonical dataset tags in rollout CSVs
@@ -108,7 +109,7 @@ def build_frame(
     qg = _load_cols(qwen_gemma)
     qg = qg[qg["dataset"].astype(str).isin({TAG_FEVER, TAG_DEBATEQA, TAG_POPQA})].copy()
     qg["dataset_hue"] = qg["dataset"].map(_tag_to_hue)
-    for mid, _ in MODEL_ORDER[2:]:
+    for mid in ("google/gemma-4-26b-a4b-it", "qwen/qwen3-14b"):
         parts.append(qg[qg["model"].astype(str) == mid].copy())
 
     out = pd.concat(parts, ignore_index=True)
@@ -145,7 +146,8 @@ def save_plot(df: pd.DataFrame, out_path: Path) -> None:
     ax.set_ylim(0.0, 1.0)
     ax.set_xlabel("Model")
     ax.set_ylabel("Mean self-reported confidence")
-    ax.tick_params(axis="x", rotation=12)
+    ax.set_title("Self-reported confidence by model and dataset")
+    ax.tick_params(axis="x", rotation=15)
     ax.legend(title="Dataset", bbox_to_anchor=(1.02, 1), loc="upper left")
     plt.tight_layout()
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -178,17 +180,9 @@ def main() -> None:
             raise ValueError(f"No rows for {mid} ({lbl})")
 
     summary = (
-        df.groupby(["model", "model_label", "dataset_hue"], as_index=False, observed=True)["confidence"]
-        .agg(["count", "mean", "median", "std"])
+        df.groupby(["model", "model_label", "dataset_hue"], observed=True)["confidence"]
+        .agg(n="count", mean_confidence="mean", median_confidence="median", std_confidence="std")
         .reset_index()
-    )
-    summary = summary.rename(
-        columns={
-            "count": "n",
-            "mean": "mean_confidence",
-            "median": "median_confidence",
-            "std": "std_confidence",
-        }
     )
 
     png_dir = args.out_dir / "png"

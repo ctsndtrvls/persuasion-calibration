@@ -1,0 +1,26 @@
+Persuasion uncertainty — DeepSeek / fever
+n = 214 dialogues, initial error rate = 0.355
+A source: arg-quality judge
+Methods: U_self, U_token, U_marker, U_flip, U_pers, U_hybrid
+
+Primary metric (Brier, lower is better):
+  Hybrid (U^hybrid)               Brier=0.2052  AUROC=0.733  UCE=0.0897
+  Persuasion (U^pers)             Brier=0.2343  AUROC=0.677  UCE=0.1547
+  Self-report (1−C₀)              Brier=0.2821  AUROC=0.665  UCE=0.2654
+  Epistemic markers               Brier=0.3185  AUROC=0.605  UCE=0.2850
+  Token log-prob (1−p)            Brier=0.3479  AUROC=0.774  UCE=0.3485
+  Flip only                       Brier=0.3692  AUROC=0.712  UCE=0.2383
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.3692  AUROC=0.712
+  + Speed (F·S)                        Brier=0.2123  AUROC=0.700
+  + Arg. quality (F·S·A)               Brier=0.2291  AUROC=0.677
+  + Conf. at flip (full U^pers)        Brier=0.2343  AUROC=0.677
+
+Isotonic recalibration (OOF Brier):
+  Token log-prob (1−p)            raw=0.3479  cal=0.1886  Δ=-0.1594
+  Hybrid (U^hybrid)               raw=0.2052  cal=0.2025  Δ=-0.0027
+  Flip only                       raw=0.3692  cal=0.2064  Δ=-0.1628
+  Persuasion (U^pers)             raw=0.2343  cal=0.2107  Δ=-0.0236
+  Self-report (1−C₀)              raw=0.2821  cal=0.2136  Δ=-0.0685
+  Epistemic markers               raw=0.3185  cal=0.2306  Δ=-0.0879

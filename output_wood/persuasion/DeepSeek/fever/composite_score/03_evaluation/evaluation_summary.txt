@@ -1,0 +1,22 @@
+Persuasion uncertainty evaluation summary
+n = 214 dialogues, initial error rate = 0.355
+
+Primary metric (Brier, lower is better):
+  Hybrid (U^hybrid)               Brier=0.2052  AUROC=0.733  UCE=0.0897
+  Persuasion (U^pers)             Brier=0.2343  AUROC=0.677  UCE=0.1547
+  Self-report (1−C₀)              Brier=0.2821  AUROC=0.665  UCE=0.2654
+  Epistemic markers               Brier=0.3185  AUROC=0.605  UCE=0.2850
+  Token log-prob (1−p)            Brier=0.3479  AUROC=0.774  UCE=0.3485
+  Flip only                       Brier=0.3692  AUROC=0.712  UCE=0.2383
+
+Ablation (Brier):
+  Flip only (F)                        Brier=0.3692  AUROC=0.712
+  + Speed (F·S)                        Brier=0.2123  AUROC=0.700
+  + Arg. quality (F·S·A)               Brier=0.2291  AUROC=0.677
+  + Conf. at flip (full U^pers)        Brier=0.2343  AUROC=0.677
+
+Bootstrap Brier improvement (positive = composite better):
+  Persuasion (U^pers) vs Self-report (1−C₀)           Δ=+0.0478  95% CI [-0.0124, +0.1082]  P(Δ>0)=0.944
+  Persuasion (U^pers) vs Epistemic markers            Δ=+0.0838  95% CI [+0.0198, +0.1499]  P(Δ>0)=0.996
+  Persuasion (U^pers) vs Flip only                    Δ=+0.1346  95% CI [+0.0954, +0.1753]  P(Δ>0)=1.000
+  Hybrid (U^hybrid) vs Self-report (1−C₀)             Δ=+0.0770  95% CI [+0.0404, +0.1135]  P(Δ>0)=1.000

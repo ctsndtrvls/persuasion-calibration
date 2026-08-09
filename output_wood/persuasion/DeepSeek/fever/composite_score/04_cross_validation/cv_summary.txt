@@ -1,0 +1,10 @@
+5-fold grouped cross-validation (by original_index)
+n = 214 dialogues, folds = 5
+
+Brier (lower is better):
+  Hybrid (U^hybrid)               in-sample=0.2052  OOF=0.2052  Δ=+0.0000
+  Persuasion (U^pers)             in-sample=0.2343  OOF=0.2343  Δ=+0.0000
+  Self-report (1−C₀)              in-sample=0.2821  OOF=0.2821  Δ=+0.0000
+  Epistemic markers               in-sample=0.3185  OOF=0.3193  Δ=+0.0008
+  Token log-prob (1−p)            in-sample=0.3479  OOF=0.3479  Δ=+0.0000
+  Flip only                       in-sample=0.3692  OOF=0.3692  Δ=+0.0000

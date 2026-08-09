@@ -29,6 +29,9 @@ import seaborn as sns
 from matplotlib.colors import ListedColormap
 from matplotlib.patches import Patch
 
+from collect_conflictqa_ece import _parse_ground_truth_cell, is_correct, normalize_phrase
+from persuasion_rollout_view import answer_matches_gold, normalize_fever_label, task_type_from_df
+
 PROJECT_ROOT = _PROJECT_ROOT
 FEVER_DEEPSEEK_DIR = PROJECT_ROOT / "output_wood" / "persuasion" / "DeepSeek" / "fever"
 DEFAULT_INPUT = FEVER_DEEPSEEK_DIR / "csv" / "expl.csv"
@@ -86,19 +89,19 @@ def confidence_change_label(delta: float) -> str:
     return "Unchanged"
 
 
+def normalize_answer(x: object, *, task_type: str) -> str:
+    if task_type == "fever":
+        return normalize_fever_label(x)
+    return normalize_phrase(str(x or ""))
+
+
 def normalize_label(x: object) -> str:
-    s = str(x or "").strip().upper()
-    if "NOT ENOUGH" in s or s == "NEI":
-        return "NOT ENOUGH INFO"
-    if "REFUTE" in s:
-        return "REFUTES"
-    if "SUPPORT" in s:
-        return "SUPPORTS"
-    return s
+    return normalize_fever_label(x)
 
 
 def first_turn_snapshot(df: pd.DataFrame) -> pd.DataFrame:
     """First occurrence of each turn per dialogue (file order = timeline)."""
+    task_type = task_type_from_df(df)
     rows = []
     for did, g in df.groupby("dialogue_id", sort=False):
         seen: set[int] = set()
@@ -112,7 +115,7 @@ def first_turn_snapshot(df: pd.DataFrame) -> pd.DataFrame:
                     "dialogue_id": did,
                     "turn": t,
                     "confidence": pd.to_numeric(r["confidence"], errors="coerce"),
-                    "answer": normalize_label(r["answer"]),
+                    "answer": normalize_answer(r["answer"], task_type=task_type),
                 }
             )
     return pd.DataFrame(rows)
@@ -120,6 +123,7 @@ def first_turn_snapshot(df: pd.DataFrame) -> pd.DataFrame:
 
 def build_turn_trajectories(df: pd.DataFrame) -> pd.DataFrame:
     """First snapshot per turn per dialogue: confidence and answer."""
+    task_type = task_type_from_df(df)
     rows = []
     for did, g in df.groupby("dialogue_id", sort=False):
         seen: set[int] = set()
@@ -129,7 +133,7 @@ def build_turn_trajectories(df: pd.DataFrame) -> pd.DataFrame:
             if t in seen:
                 continue
             seen.add(t)
-            answer = normalize_label(r["answer"])
+            answer = normalize_answer(r["answer"], task_type=task_type)
             rows.append(
                 {
                     "dialogue_id": did,
@@ -154,10 +158,12 @@ def mean_confidence_by_turn(traj: pd.DataFrame) -> pd.DataFrame:
 
 def dialogue_gold_labels(df: pd.DataFrame) -> pd.DataFrame:
     """One gold label per dialogue from turn-0 rows."""
+    task_type = task_type_from_df(df)
     t0_rows = df[df["turn"] == 0][["dialogue_id", "gold_label"]].drop_duplicates(
         subset="dialogue_id", keep="first"
     )
-    t0_rows["gold_label"] = t0_rows["gold_label"].map(normalize_label)
+    if task_type == "fever":
+        t0_rows["gold_label"] = t0_rows["gold_label"].map(normalize_label)
     return t0_rows
 
 
@@ -188,14 +194,24 @@ def build_dialogue_confidence(df: pd.DataFrame) -> pd.DataFrame:
     last["flipped_from_initial"] = (
         pd.to_numeric(last["flipped_from_initial"], errors="coerce").fillna(0).astype(int)
     )
-    last["answer_final"] = last["answer_final"].map(normalize_label)
+    last["answer_final"] = last["answer_final"].map(
+        lambda x: normalize_answer(x, task_type=task_type_from_df(df))
+    )
 
     out = t0.merge(t1, on="dialogue_id", how="left")
     out = out.merge(last, on="dialogue_id", how="left")
     out = out.merge(dialogue_gold_labels(df), on="dialogue_id", how="left")
 
-    out["answer_before"] = out["answer_before"].map(normalize_label)
-    out["correct_t0"] = out["answer_before"] == out["gold_label"]
+    task_type = task_type_from_df(df)
+    out["answer_before"] = out["answer_before"].map(
+        lambda x: normalize_answer(x, task_type=task_type)
+    )
+    if task_type == "qa":
+        out["correct_t0"] = [
+            answer_matches_gold(a, g) for a, g in zip(out["answer_before"], out["gold_label"])
+        ]
+    else:
+        out["correct_t0"] = out["answer_before"] == out["gold_label"]
     out["accuracy_t0"] = np.where(out["correct_t0"], "Correct at t0", "Incorrect at t0")
 
     out["conf_delta_turn1"] = out["conf_after_turn1"] - out["conf_before"]
@@ -477,11 +493,41 @@ def plot_confidence_change_boxplot(dlg: pd.DataFrame, df: pd.DataFrame, out_png:
     plt.close(fig)
 
 
+def _annotate_accuracy_turn_boxplot(ax: plt.Axes, data: pd.DataFrame) -> None:
+    plot_df = data.dropna(subset=["final_turn"]).copy()
+    plot_df["final_turn"] = plot_df["final_turn"].astype(int)
+    sns.boxplot(
+        data=plot_df,
+        x="accuracy_t0",
+        y="final_turn",
+        order=ACCURACY_ORDER,
+        hue="accuracy_t0",
+        palette=ACCURACY_PALETTE,
+        ax=ax,
+        linewidth=1.0,
+        fliersize=2,
+        legend=False,
+    )
+    ymax = max(plot_df["final_turn"].max(), 1)
+    for i, label in enumerate(ACCURACY_ORDER):
+        sub = plot_df[plot_df["accuracy_t0"] == label]["final_turn"]
+        if sub.empty:
+            continue
+        ax.text(i, ymax + 0.35, f"n={len(sub)}", ha="center", va="bottom", fontsize=8, color="#444444")
+    ax.set_ylim(-0.5, ymax + 1.2)
+    ax.set_xlabel("")
+    ax.set_ylabel("Dialogue length (last turn reached)")
+
+
 def _annotate_verdict_turn_boxplot(ax: plt.Axes, data: pd.DataFrame, verdict_col: str) -> None:
     """Boxplot of dialogue length (turns) by verdict with mean/median labels."""
     plot_df = data.dropna(subset=[verdict_col, "final_turn"]).copy()
     plot_df["final_turn"] = plot_df["final_turn"].astype(int)
     plot_df[verdict_col] = plot_df[verdict_col].map(normalize_label)
+    plot_df = plot_df[plot_df[verdict_col].isin(VERDICT_ORDER)]
+    if plot_df.empty:
+        ax.set_visible(False)
+        return
     sns.boxplot(
         data=plot_df,
         x=verdict_col,
@@ -565,12 +611,20 @@ def plot_flip_turn_dynamics(dlg: pd.DataFrame, traj: pd.DataFrame, df: pd.DataFr
     view["final_turn"] = pd.to_numeric(view["final_turn"], errors="coerce")
 
     ax2 = fig.add_subplot(gs[1, 0])
-    _annotate_verdict_turn_boxplot(ax2, view, "answer_before")
-    ax2.set_title(
-        "By initial verdict (turn 0): how many persuasion turns were needed?",
-        fontsize=10,
-        pad=8,
-    )
+    if task_type_from_df(df) == "qa":
+        _annotate_accuracy_turn_boxplot(ax2, view)
+        ax2.set_title(
+            "By initial correctness (turn 0): how many persuasion turns were needed?",
+            fontsize=10,
+            pad=8,
+        )
+    else:
+        _annotate_verdict_turn_boxplot(ax2, view, "answer_before")
+        ax2.set_title(
+            "By initial verdict (turn 0): how many persuasion turns were needed?",
+            fontsize=10,
+            pad=8,
+        )
 
     _, dataset, target = persuasion_setup_labels(df)
     fig.suptitle(
@@ -600,11 +654,69 @@ def _verdict_accuracy_label(row: pd.Series) -> str:
     return f"{short[row['answer_before']]} {acc}"
 
 
+def plot_flip_by_accuracy(dlg: pd.DataFrame, df: pd.DataFrame, out_png: Path) -> None:
+    """QA datasets: flip rate and dialogue length by initial correctness."""
+    sns.set_theme(style="whitegrid")
+    view = dlg.dropna(subset=["final_turn"]).copy()
+    view["final_turn"] = pd.to_numeric(view["final_turn"], errors="coerce")
+
+    fig = plt.figure(figsize=(12, 7))
+    gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 1.1], hspace=0.35)
+
+    ax1 = fig.add_subplot(gs[0, :])
+    stats = summarize_verdict_accuracy(view)
+    stats = stats[stats["initial_verdict"] == "ALL"].copy()
+    sns.barplot(
+        data=stats,
+        x="accuracy_t0",
+        y="flip_rate_pct",
+        hue="accuracy_t0",
+        order=ACCURACY_ORDER,
+        hue_order=ACCURACY_ORDER,
+        palette=ACCURACY_PALETTE,
+        ax=ax1,
+        legend=False,
+    )
+    for i, row in stats.iterrows():
+        ax1.text(i, row["flip_rate_pct"] + 1.5, f"{row['flip_rate_pct']:.0f}%\nn={int(row['n'])}", ha="center", fontsize=9)
+    ax1.set_ylim(0, 110)
+    ax1.set_xlabel("")
+    ax1.set_ylabel("Flip rate (%)")
+    ax1.set_title("Flip rate by initial correctness (turn 0)")
+
+    ax2 = fig.add_subplot(gs[1, :])
+    sns.boxplot(
+        data=view,
+        x="accuracy_t0",
+        y="final_turn",
+        hue="accuracy_t0",
+        order=ACCURACY_ORDER,
+        hue_order=ACCURACY_ORDER,
+        palette=ACCURACY_PALETTE,
+        ax=ax2,
+    )
+    ax2.set_xlabel("")
+    ax2.set_ylabel("Dialogue length (last turn reached)")
+    ax2.set_title("Dialogue length by initial correctness")
+    if ax2.legend_:
+        ax2.legend_.remove()
+
+    _, dataset, target = persuasion_setup_labels(df)
+    fig.suptitle(f"Answer flip dynamics by accuracy — {dataset} · {target}", fontsize=13, y=0.98)
+    fig.tight_layout(rect=[0, 0, 1, 0.96])
+    fig.savefig(out_png, dpi=180, bbox_inches="tight")
+    plt.close(fig)
+
+
 def plot_flip_by_verdict_and_accuracy(dlg: pd.DataFrame, df: pd.DataFrame, out_png: Path) -> None:
     """Synthesis: initial verdict × gold accuracy → flip rate and dialogue length."""
+    if task_type_from_df(df) == "qa":
+        plot_flip_by_accuracy(dlg, df, out_png)
+        return
     sns.set_theme(style="whitegrid")
     view = dlg.dropna(subset=["answer_before", "final_turn", "gold_label"]).copy()
     view["final_turn"] = pd.to_numeric(view["final_turn"], errors="coerce")
+    view = view[view["answer_before"].isin(VERDICT_ORDER)]
     view["group_label"] = view.apply(_verdict_accuracy_label, axis=1)
 
     group_order = [
@@ -745,7 +857,9 @@ def plot_mean_confidence_by_turn(traj: pd.DataFrame, df: pd.DataFrame, out_png: 
         )
     ax.set_xlim(-0.3, MAX_TURN + 0.3)
     ax.set_xticks(range(0, MAX_TURN + 1))
-    ax.set_ylim(7.5, 9.6)
+    ylo = max(0.5, float(by_turn["mean_confidence"].min()) - 0.8)
+    yhi = min(10.5, float(by_turn["mean_confidence"].max()) + 0.8)
+    ax.set_ylim(ylo, yhi)
     ax.set_xlabel("Turn")
     ax.set_ylabel("Mean self-reported confidence")
     _, dataset, target = persuasion_setup_labels(df)
