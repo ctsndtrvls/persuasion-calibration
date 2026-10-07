@@ -1,0 +1,74 @@
+Learned persuasion logistic regression
+Target: E_i = 1 if the initial answer is wrong, else 0.
+Features: flip, flip x speed, flip x weak argument, flip x uncertainty at flip.
+Learned metrics are 5-fold out-of-fold. Manual is the fixed U^pers formula.
+delta Brier = learned - manual. Negative means the learned model is better.
+95% CIs are paired cluster bootstraps by item (dataset + original_index).
+
+Sample:
+  DeepSeek   fever      n= 214  error_rate=0.355  flip_rate=0.593
+  DeepSeek   popqa      n= 480  error_rate=0.050  flip_rate=0.585
+  DeepSeek   debateqa   n= 480  error_rate=0.883  flip_rate=0.996
+  GPT-4o     fever      n= 480  error_rate=0.412  flip_rate=0.731
+  GPT-4o     popqa      n= 480  error_rate=0.042  flip_rate=0.654
+  GPT-4o     debateqa   n= 480  error_rate=0.865  flip_rate=0.985
+  Gemma      fever      n= 480  error_rate=0.485  flip_rate=0.642
+  Gemma      popqa      n= 480  error_rate=0.096  flip_rate=0.377
+  Gemma      debateqa   n= 480  error_rate=0.929  flip_rate=0.975
+  Qwen       fever      n= 480  error_rate=0.431  flip_rate=0.781
+  Qwen       popqa      n= 480  error_rate=0.152  flip_rate=0.879
+  Qwen       debateqa   n= 480  error_rate=0.856  flip_rate=0.977
+
+Brier / AUROC:
+  global all        intercept_only   Brier=0.2491  AUROC=0.477  n=5494
+  global all        learned          Brier=0.1848  AUROC=0.788  n=5494
+  global all        manual           Brier=0.2267  AUROC=0.634  n=5494
+  global debateqa   intercept_only   Brier=0.2753  AUROC=0.501  n=1920
+  global debateqa   learned          Brier=0.1635  AUROC=0.642  n=1920
+  global debateqa   manual           Brier=0.1539  AUROC=0.540  n=1920
+  global fever      intercept_only   Brier=0.2469  AUROC=0.465  n=1654
+  global fever      learned          Brier=0.2210  AUROC=0.690  n=1654
+  global fever      manual           Brier=0.2437  AUROC=0.658  n=1654
+  global popqa      intercept_only   Brier=0.2248  AUROC=0.481  n=1920
+  global popqa      learned          Brier=0.1750  AUROC=0.744  n=1920
+  global popqa      manual           Brier=0.2849  AUROC=0.630  n=1920
+  local  debateqa   intercept_only   Brier=0.1033  AUROC=0.444  n=1920
+  local  debateqa   learned          Brier=0.0996  AUROC=0.620  n=1920
+  local  debateqa   manual           Brier=0.1539  AUROC=0.540  n=1920
+  local  fever      intercept_only   Brier=0.2462  AUROC=0.453  n=1654
+  local  fever      learned          Brier=0.2121  AUROC=0.705  n=1654
+  local  fever      manual           Brier=0.2437  AUROC=0.658  n=1654
+  local  popqa      intercept_only   Brier=0.0778  AUROC=0.449  n=1920
+  local  popqa      learned          Brier=0.0729  AUROC=0.738  n=1920
+  local  popqa      manual           Brier=0.2849  AUROC=0.630  n=1920
+
+Learned minus manual (Brier):
+  local  fever      ΔBrier=-0.0315  CI [-0.0416, -0.0216]
+  local  popqa      ΔBrier=-0.2120  CI [-0.2298, -0.1942]
+  local  debateqa   ΔBrier=-0.0544  CI [-0.0641, -0.0446]
+  global all        ΔBrier=-0.0419  CI [-0.0483, -0.0353]
+  global fever      ΔBrier=-0.0226  CI [-0.0338, -0.0108]
+  global popqa      ΔBrier=-0.1099  CI [-0.1209, -0.0993]
+  global debateqa   ΔBrier=+0.0096  CI [+0.0015, +0.0178]
+
+Full-sample log-odds coefficients (fold mean ± sd in parentheses):
+  local  fever      intercept                        -1.554  (-1.555 ± 0.075)
+  local  fever      flip                             +0.081  (+0.061 ± 0.403)
+  local  fever      flip_x_speed                     +2.187  (+2.209 ± 0.468)
+  local  fever      flip_x_weak_argument             -0.079  (-0.078 ± 0.188)
+  local  fever      flip_x_uncertainty_at_flip       -1.681  (-1.685 ± 0.253)
+  local  popqa      intercept                        -3.787  (-3.796 ± 0.152)
+  local  popqa      flip                             -7.428  (-7.675 ± 1.938)
+  local  popqa      flip_x_speed                     +9.903  (+10.156 ± 1.951)
+  local  popqa      flip_x_weak_argument             -0.859  (-0.851 ± 0.279)
+  local  popqa      flip_x_uncertainty_at_flip       +0.057  (+0.041 ± 0.554)
+  local  debateqa   intercept                        +0.251  (+0.280 ± 0.383)
+  local  debateqa   flip                             -2.474  (-2.538 ± 0.923)
+  local  debateqa   flip_x_speed                     +4.674  (+4.711 ± 0.599)
+  local  debateqa   flip_x_weak_argument             -0.675  (-0.667 ± 0.376)
+  local  debateqa   flip_x_uncertainty_at_flip       -0.378  (-0.373 ± 0.352)
+  global all        intercept                        -2.240  (-2.240 ± 0.057)
+  global all        flip                             -1.250  (-1.258 ± 0.242)
+  global all        flip_x_speed                     +4.502  (+4.511 ± 0.296)
+  global all        flip_x_weak_argument             -1.971  (-1.973 ± 0.131)
+  global all        flip_x_uncertainty_at_flip       +0.285  (+0.285 ± 0.081)
