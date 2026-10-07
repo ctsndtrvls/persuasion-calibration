@@ -1,127 +1,140 @@
 """
-Box plots of Wood complexity per dataset, for Low / Middle / High tertiles
-(complexity_level 1/2/3).
+Complexity of the 480-instance subsets used in the paper.
+
+FEVER and PopQA are stratified by tertiles of the mean Wood (1986) total
+(two LLM judges). DebateQA is stratified by terciles of perspective_count,
+so it is drawn on its own axis.
+
+Writes paper/figures/dataset_complexity.pdf and .png.
 """
 from __future__ import annotations
 
-import argparse
+import os
 from pathlib import Path
 
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+os.environ.setdefault("MPLBACKEND", "Agg")
+os.environ.setdefault("MPLCONFIGDIR", str(_PROJECT_ROOT / ".mplcache"))
+Path(os.environ["MPLCONFIGDIR"]).mkdir(parents=True, exist_ok=True)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUT_DIR = PROJECT_ROOT / "output_wood"
+import matplotlib
 
-DEFAULT_CSVS = [
-    ("fever480_160x3_complexity_wood_v1_lr_40_resplit.csv", "fever"),
-    ("conflictqa_popqa480_160x3_wood_v2_resplit.csv", "conflictqa_popqa"),
-    ("conflictqa_strategyqa480_160x3_wood_v2_resplit.csv", "conflictqa_strategyqa"),
-]
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+import pandas as pd  # noqa: E402
+import seaborn as sns  # noqa: E402
+
+ROOT = _PROJECT_ROOT
+SUB = ROOT / "output_wood" / "dataset_subsampling"
+OUT_DIR = ROOT / "paper" / "figures"
+
+FEVER_CSV = SUB / "fever" / "csv" / "fever480_160x3_complexity_wood_v1_lr_40_resplit.csv"
+POPQA_CSV = SUB / "conflictqa" / "csv" / "conflictqa_popqa480_160x3_wood_v2_resplit.csv"
+DEBATEQA_CSV = SUB / "debateqa" / "csv" / "debateqa_480_160x3.csv"
+
+LEVEL_MAP = {1: "Low", 2: "Middle", 3: "High"}
+LEVEL_ORDER = ["Low", "Middle", "High"]
+PALETTE = {"Low": "#4C78A8", "Middle": "#F58518", "High": "#54A24B"}
 
 
-def dataset_display_name(tag: str) -> str:
-    t = tag.lower()
-    if t == "fever":
-        return "FEVER"
-    if t == "conflictqa_popqa":
-        return "ConflictQA — popQA"
-    if t == "conflictqa_strategyqa":
-        return "ConflictQA — strategyQA"
-    return tag
+def _load_levels(path: Path, value_col: str, dataset_name: str) -> pd.DataFrame:
+    df = pd.read_csv(path)
+    if value_col not in df.columns or "complexity_level" not in df.columns:
+        raise KeyError(f"{path}: need {value_col!r} and complexity_level")
+    out = pd.DataFrame(
+        {
+            "dataset": dataset_name,
+            "complexity": pd.to_numeric(df["complexity_level"], errors="coerce").map(LEVEL_MAP),
+            "score": pd.to_numeric(df[value_col], errors="coerce"),
+        }
+    )
+    out = out.dropna(subset=["complexity", "score"])
+    return out
 
 
-def load_and_label(paths_tags: list[tuple[Path, str]], y_col: str) -> pd.DataFrame:
-    frames = []
-    for path, tag in paths_tags:
-        df = pd.read_csv(path)
-        df["_dataset"] = dataset_display_name(tag)
-        if y_col not in df.columns:
-            raise KeyError(f"{path}: missing column {y_col!r}")
-        df[y_col] = pd.to_numeric(df[y_col], errors="coerce")
-        if "complexity_level" not in df.columns:
-            raise KeyError(f"{path}: missing complexity_level")
-        df["complexity_level"] = pd.to_numeric(df["complexity_level"], errors="coerce").astype("Int64")
-        lvl_map = {1: "Low", 2: "Middle", 3: "High"}
-        df["complexity"] = df["complexity_level"].map(lvl_map)
-        df = df.dropna(subset=[y_col, "complexity"])
-        frames.append(df)
-    return pd.concat(frames, ignore_index=True)
+def _boxplot(ax, df: pd.DataFrame, order: list[str]) -> None:
+    sns.boxplot(
+        data=df,
+        x="dataset",
+        y="score",
+        hue="complexity",
+        order=order,
+        hue_order=LEVEL_ORDER,
+        palette=PALETTE,
+        width=0.7,
+        fliersize=2,
+        linewidth=0.8,
+        ax=ax,
+    )
+    ax.set_xlabel("")
+    ax.legend_.remove()
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--y-col",
-        default="wood_total_mean",
-        help="Numeric column for y-axis (default: wood_total_mean)",
+    wood = pd.concat(
+        [
+            _load_levels(FEVER_CSV, "wood_total_mean", "FEVER"),
+            _load_levels(POPQA_CSV, "wood_total_mean", "PopQA"),
+        ],
+        ignore_index=True,
     )
-    parser.add_argument(
-        "--out",
-        type=Path,
-        default=DEFAULT_OUT_DIR / "complexity_boxstrip_by_dataset.png",
-        help="Output PNG path",
+    debate = _load_levels(DEBATEQA_CSV, "perspective_count", "DebateQA")
+
+    sns.set_theme(style="whitegrid", context="paper")
+    plt.rcParams.update(
+        {
+            "font.size": 11,
+            "axes.labelsize": 11,
+            "axes.titlesize": 12,
+            "pdf.fonttype": 42,
+            "ps.fonttype": 42,
+        }
     )
-    parser.add_argument(
-        "csv_paths",
-        nargs="*",
-        help="Optional: pairs are not supported; pass 0 args to use defaults in output_wood/",
-    )
-    args = parser.parse_args()
+    fig, axes = plt.subplots(1, 2, figsize=(10.2, 4.2), gridspec_kw={"width_ratios": [1.35, 1]})
 
-    if args.csv_paths:
-        paths_tags = [(Path(p), Path(p).stem) for p in args.csv_paths]
-    else:
-        paths_tags = [
-            (DEFAULT_OUT_DIR / name, tag) for name, tag in DEFAULT_CSVS
-        ]
+    _boxplot(axes[0], wood, ["FEVER", "PopQA"])
+    axes[0].set_ylabel("Wood total (mean of two judges)")
+    axes[0].set_title("(a) FEVER and PopQA")
+    axes[0].set_ylim(6, 25)
 
-    missing = [p for p, _ in paths_tags if not p.exists()]
-    if missing:
-        raise FileNotFoundError("Missing CSV(s): " + ", ".join(str(p) for p in missing))
+    _boxplot(axes[1], debate, ["DebateQA"])
+    axes[1].set_ylabel("Annotated perspectives")
+    axes[1].set_title("(b) DebateQA")
+    axes[1].set_ylim(2, 12)
 
-    df = load_and_label(paths_tags, args.y_col)
-    order_ds: list[str] = []
-    for _, tag in paths_tags:
-        lab = dataset_display_name(tag)
-        if lab not in order_ds:
-            order_ds.append(lab)
-    order_ds = [d for d in order_ds if d in set(df["_dataset"])]
-    order_cx = ["Low", "Middle", "High"]
-
-    sns.set_theme(style="whitegrid", context="talk")
-    fig, ax = plt.subplots(figsize=(11, 6))
-
-    sns.boxplot(
-        data=df,
-        x="_dataset",
-        y=args.y_col,
-        hue="complexity",
-        order=order_ds,
-        hue_order=order_cx,
-        width=0.65,
-        fliersize=0,
-        ax=ax,
-    )
-
-    ax.set_xlabel("Dataset")
-    ax.set_ylabel("Wood total (mean across judges)" if args.y_col == "wood_total_mean" else args.y_col)
-    ax.set_title("Complexity by dataset (Low / Middle / High)")
-    handles, labels = ax.get_legend_handles_labels()
-    by_label = dict(zip(labels, handles))
-    ax.legend(
-        by_label.values(),
-        by_label.keys(),
+    handles = [
+        plt.Line2D([0], [0], color=PALETTE[name], lw=8, solid_capstyle="butt", label=name)
+        for name in LEVEL_ORDER
+    ]
+    fig.legend(
+        handles=handles,
+        labels=LEVEL_ORDER,
         title="Complexity",
-        bbox_to_anchor=(1.02, 1),
-        loc="upper left",
+        loc="upper center",
+        ncol=3,
+        frameon=False,
+        bbox_to_anchor=(0.5, 1.02),
     )
-    plt.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.92))
 
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(args.out, dpi=200, bbox_inches="tight")
-    print("Saved:", args.out.resolve())
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    pdf = OUT_DIR / "dataset_complexity.pdf"
+    png = OUT_DIR / "dataset_complexity.png"
+    fig.savefig(pdf, bbox_inches="tight")
+    fig.savefig(png, dpi=200, bbox_inches="tight")
+    print("Saved:", pdf)
+    print("Saved:", png)
+    for name, frame, col in (
+        ("FEVER/PopQA", wood, "score"),
+        ("DebateQA", debate, "score"),
+    ):
+        print(name)
+        print(
+            frame.groupby(["dataset", "complexity"], observed=True)[col]
+            .agg(["count", "min", "median", "max"])
+            .round(2)
+            .to_string()
+        )
 
 
 if __name__ == "__main__":

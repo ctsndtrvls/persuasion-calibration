@@ -247,13 +247,22 @@ def plot_accuracy_by_turn(by_turn: pd.DataFrame, out_png: Path) -> None:
 
 def plot_t0_vs_final(stats_df: pd.DataFrame, out_png: Path) -> None:
     sns.set_theme(style="whitegrid")
-    fig, axes = plt.subplots(1, 3, figsize=(14, 5.2), sharey=True)
-    fig.suptitle(
-        "Accuracy at turn 0 vs final turn across models and datasets",
-        fontsize=13,
-        weight="bold",
-        y=1.02,
+    plt.rcParams.update(
+        {
+            "font.family": "Times New Roman",
+            "font.size": 10,
+            "axes.labelsize": 10,
+            "axes.titlesize": 11,
+            "xtick.labelsize": 10,
+            "ytick.labelsize": 10,
+            "pdf.fonttype": 42,
+            "ps.fonttype": 42,
+        }
     )
+    # ~3.4 in is one ACL column. Type is 9–11 pt, so it matches the body
+    # when the image is placed at \columnwidth. Datasets are stacked because
+    # a 1×3 row cannot fit body-sized model names and Δ labels in one column.
+    fig, axes = plt.subplots(3, 1, figsize=(3.42, 6.35), sharex=True, sharey=True)
     display_order = [MODEL_DISPLAY[m] for m in MODEL_ORDER]
     x = np.arange(len(display_order))
     width = 0.36
@@ -267,6 +276,7 @@ def plot_t0_vs_final(stats_df: pd.DataFrame, out_png: Path) -> None:
             label="Turn 0",
             color=STAGE_PALETTE["Turn 0"],
             edgecolor="white",
+            linewidth=0.6,
         )
         bars1 = ax.bar(
             x + width / 2,
@@ -275,59 +285,86 @@ def plot_t0_vs_final(stats_df: pd.DataFrame, out_png: Path) -> None:
             label="Final",
             color=STAGE_PALETTE["Final"],
             edgecolor="white",
+            linewidth=0.6,
         )
-        ax.set_title(dataset_label, fontsize=12, pad=8)
+        ax.set_title(dataset_label, fontsize=11, pad=2)
         ax.set_xticks(x)
-        ax.set_xticklabels(display_order)
+        ax.set_xticklabels(display_order, fontsize=10)
         ax.set_xlabel("")
-        if ax is axes[0]:
-            ax.set_ylabel("Accuracy (%)")
-        ax.set_ylim(0, 110)
+        ax.set_ylabel("")
+        ax.set_ylim(0, 152)
+        ax.set_yticks([0, 20, 40, 60, 80, 100])
+        ax.tick_params(axis="x", length=0, pad=2)
+        ax.tick_params(axis="y", labelsize=10, pad=1)
 
-        for i, name in enumerate(display_order):
-            delta = float(sub.loc[name, "delta_pp"])
-            top = max(float(sub.loc[name, "acc_t0_pct"]), float(sub.loc[name, "acc_final_pct"]))
-            ax.text(
-                i,
-                min(top + 4.5, 108),
-                f"Δ={delta:+.1f} pp",
-                ha="center",
-                va="bottom",
-                fontsize=8,
-                color="#333333",
-            )
-
-        # value labels inside/above bars if readable
+        # Short bars cannot hold a 9 pt numeral, so the value sits above them.
+        # Deltas are two lines so neighbouring "Δ=… pp" labels do not collide.
+        pair_tops = [0.0] * len(display_order)
         for bars in (bars0, bars1):
             for bar in bars:
-                h = bar.get_height()
-                if h >= 8:
+                h = float(bar.get_height())
+                cx = bar.get_x() + bar.get_width() / 2
+                group = int(round(cx))
+                if h >= 22:
                     ax.text(
-                        bar.get_x() + bar.get_width() / 2,
+                        cx,
                         h / 2,
                         f"{h:.0f}",
                         ha="center",
                         va="center",
-                        fontsize=7.5,
+                        fontsize=9,
                         color="white",
                         fontweight="bold",
                     )
+                    pair_tops[group] = max(pair_tops[group], h + 14.0)
+                else:
+                    ax.text(
+                        cx,
+                        h + 1.2,
+                        f"{h:.0f}",
+                        ha="center",
+                        va="bottom",
+                        fontsize=9,
+                        color="#222222",
+                    )
+                    pair_tops[group] = max(pair_tops[group], h + 16.0)
 
-        if ax is axes[-1]:
-            ax.legend(loc="upper right", fontsize=8, frameon=True)
-        else:
-            pass
+        for i, name in enumerate(display_order):
+            delta = float(sub.loc[name, "delta_pp"])
+            ax.text(
+                i,
+                pair_tops[i] + 1.8,
+                f"Δ={delta:+.1f}\npp",
+                ha="center",
+                va="bottom",
+                fontsize=9,
+                color="#222222",
+                linespacing=0.9,
+            )
 
-    # single legend if not on last
-    handles, labels = axes[-1].get_legend_handles_labels()
-    if axes[-1].get_legend() is None:
-        fig.legend(handles, labels, loc="lower center", ncol=2, fontsize=9, bbox_to_anchor=(0.5, -0.02))
-
-    fig.tight_layout()
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(
+        handles,
+        labels,
+        loc="upper center",
+        ncol=2,
+        frameon=False,
+        fontsize=10,
+        bbox_to_anchor=(0.58, 0.975),
+    )
+    fig.suptitle(
+        "Accuracy at turn 0 vs final turn across models and datasets",
+        fontsize=10,
+    )
+    fig.supylabel("Accuracy (%)", fontsize=10)
+    fig.tight_layout(rect=(0.02, 0.0, 1.0, 0.93))
     out_png.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_png, dpi=180, bbox_inches="tight")
+    out_pdf = out_png.with_suffix(".pdf")
+    fig.savefig(out_png, dpi=300, bbox_inches="tight", pad_inches=0.03)
+    fig.savefig(out_pdf, bbox_inches="tight", pad_inches=0.03)
     plt.close(fig)
     print(f"Wrote {out_png}")
+    print(f"Wrote {out_pdf}")
 
 
 def main() -> None:

@@ -63,6 +63,36 @@ def _tag_to_hue(ds: str) -> str:
     return s
 
 
+GPT4O_MODEL_ID = "openai/gpt-4o-2024-11-20"
+
+
+def restore_gpt4o_probability_scale(df: pd.DataFrame) -> pd.DataFrame:
+    """Undo an extra /10 applied when GPT-4o answered on [0, 1].
+
+    The scale-10 prompt asked for an integer 1–10, but the system message still
+    required confidence in [0, 1]. GPT-4o followed the system schema and returned
+    probabilities; the collector then divided by 10. Integer scores 2–10 survive
+    as stored values 0.2–1.0. Anything below 0.1 cannot be such a score, so it is
+    multiplied back by 10. A stored 0.1 is raw 1.0 on slices where GPT-4o never
+    used the integer scale (FEVER, PopQA) and is left as integer 1 on mixed slices
+    (DebateQA).
+    """
+    out = df.copy()
+    is_gpt = out["model"].astype(str) == GPT4O_MODEL_ID
+    if not is_gpt.any():
+        return out
+    for hue in out.loc[is_gpt, "dataset_hue"].dropna().unique():
+        mask = is_gpt & (out["dataset_hue"] == hue)
+        conf = out.loc[mask, "confidence"]
+        uses_integer_scale = bool((conf > 0.15).any())
+        restored = conf.where(conf >= 0.1 - 1e-9, conf * 10.0)
+        if not uses_integer_scale:
+            on_boundary = (conf - 0.1).abs() <= 1e-9
+            restored = restored.where(~on_boundary, 1.0)
+        out.loc[mask, "confidence"] = restored.clip(0.0, 1.0)
+    return out
+
+
 def _load_cols(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
     need = {"model", "dataset", "confidence"}
@@ -119,7 +149,7 @@ def build_frame(
     out["model_label"] = pd.Categorical(
         out["model_label"], categories=[lbl for _, lbl in MODEL_ORDER], ordered=True
     )
-    return out
+    return restore_gpt4o_probability_scale(out)
 
 
 def save_plot(df: pd.DataFrame, out_path: Path) -> None:

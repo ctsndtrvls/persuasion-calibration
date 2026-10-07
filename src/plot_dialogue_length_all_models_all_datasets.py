@@ -1,12 +1,12 @@
 """
-Flip-turn boxplots across all target models and datasets (flipped dialogues only).
+Dialogue-length boxplots across all target models and datasets.
 
-Complements dialogue_length_all_models_all_datasets.png: that figure includes
-no-flip dialogues at the turn-15 cap; this one shows *when* flips occur among
-dialogues that do flip.
+Drawn at ACL single-column width with Times at 9–11 pt, so the type stays
+close to the paper body when the file is included at \\columnwidth.
+Datasets are stacked: a side-by-side row cannot fit those labels in one column.
 
 Example:
-  python3 plot_flip_turn_all_models_all_datasets.py
+  python3 plot_dialogue_length_all_models_all_datasets.py
 """
 from __future__ import annotations
 
@@ -27,10 +27,10 @@ import seaborn as sns  # noqa: E402
 
 from analyze_persuasion_confidence import build_dialogue_confidence  # noqa: E402
 
+
 ROOT = _PROJECT_ROOT
-OUT_PNG = ROOT / "output_wood" / "persuasion" / "png" / "flip_turn_all_models_all_datasets.png"
-OUT_PDF = ROOT / "output_wood" / "persuasion" / "png" / "flip_turn_all_models_all_datasets.pdf"
-OUT_CSV = ROOT / "output_wood" / "persuasion" / "csv" / "flip_turn_distribution_stats.csv"
+OUT_PNG = ROOT / "output_wood" / "persuasion" / "png" / "dialogue_length_all_models_all_datasets.png"
+OUT_PDF = ROOT / "output_wood" / "persuasion" / "png" / "dialogue_length_all_models_all_datasets.pdf"
 FEVER480 = (
     ROOT
     / "output_wood"
@@ -73,45 +73,36 @@ def load_dialogues(model: str, dataset_key: str, fever480_ids: set[int]) -> pd.D
     return build_dialogue_confidence(df)
 
 
-def collect_flip_rows(fever480_ids: set[int]) -> tuple[pd.DataFrame, pd.DataFrame]:
+def collect(fever480_ids: set[int]) -> tuple[pd.DataFrame, pd.DataFrame]:
     plot_rows: list[dict] = []
     stats_rows: list[dict] = []
     for dataset_key, dataset_label in DATASETS:
         for model in MODEL_ORDER:
             dlg = load_dialogues(model, dataset_key, fever480_ids)
-            flipped = dlg[dlg["flip_final"] == 1].copy()
-            ft = pd.to_numeric(flipped["flip_turn"], errors="coerce").dropna()
-            for turn in ft:
+            turns = pd.to_numeric(dlg["final_turn"], errors="coerce").dropna()
+            for turn in turns:
                 plot_rows.append(
                     {
                         "model": model,
                         "model_display": MODEL_DISPLAY[model],
                         "dataset": dataset_label,
-                        "flip_turn": int(turn),
+                        "final_turn": int(turn),
                     }
                 )
-            n = len(ft)
+            n = int(len(dlg))
+            flip_rate = float(dlg["flip_final"].mean() * 100) if n else float("nan")
             stats_rows.append(
                 {
                     "model": MODEL_DISPLAY[model],
                     "dataset": dataset_label,
-                    "n_total": len(dlg),
-                    "n_flip": int(n),
-                    "flip_rate": round(float(dlg["flip_final"].mean() * 100), 1),
-                    "median": float(ft.median()) if n else float("nan"),
-                    "q1": float(ft.quantile(0.25)) if n else float("nan"),
-                    "q3": float(ft.quantile(0.75)) if n else float("nan"),
-                    "mean": round(float(ft.mean()), 2) if n else float("nan"),
-                    "pct_leq1": round(float((ft <= 1).mean() * 100), 1) if n else float("nan"),
-                    "pct_leq2": round(float((ft <= 2).mean() * 100), 1) if n else float("nan"),
-                    "pct_leq3": round(float((ft <= 3).mean() * 100), 1) if n else float("nan"),
-                    "pct_ge10": round(float((ft >= 10).mean() * 100), 1) if n else float("nan"),
+                    "n": n,
+                    "flip_rate": flip_rate,
                 }
             )
     return pd.DataFrame(plot_rows), pd.DataFrame(stats_rows)
 
 
-def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path = OUT_PNG) -> None:
+def plot_dialogue_length(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path = OUT_PNG) -> None:
     sns.set_theme(style="whitegrid")
     plt.rcParams.update(
         {
@@ -125,9 +116,9 @@ def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path
             "ps.fonttype": 42,
         }
     )
+
     # ~3.4 in is one ACL column. Type is 9–11 pt, so it matches the body
-    # when the image is placed at \columnwidth. Datasets are stacked because
-    # a 1×3 row cannot fit body-sized model names in one column.
+    # when the image is placed at \columnwidth.
     fig, axes = plt.subplots(3, 1, figsize=(3.42, 6.15), sharex=True, sharey=True)
     display_order = [MODEL_DISPLAY[m] for m in MODEL_ORDER]
     palette = {MODEL_DISPLAY[m]: MODEL_COLORS[m] for m in MODEL_ORDER}
@@ -137,7 +128,7 @@ def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path
         sns.boxplot(
             data=sub,
             x="model_display",
-            y="flip_turn",
+            y="final_turn",
             order=display_order,
             hue="model_display",
             hue_order=display_order,
@@ -154,7 +145,7 @@ def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path
         sns.stripplot(
             data=sub,
             x="model_display",
-            y="flip_turn",
+            y="final_turn",
             order=display_order,
             color="#333333",
             alpha=0.28,
@@ -166,27 +157,29 @@ def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path
         ax.set_title(dataset_label, fontsize=11, pad=4)
         ax.set_xlabel("")
         ax.set_ylabel("")
-        ax.set_ylim(-0.4, 18.6)
+        ax.set_ylim(-0.6, 22.8)
         ax.set_yticks([0, 5, 10, 15])
         ax.tick_params(axis="x", length=0, pad=2)
         ax.tick_params(axis="y", labelsize=10, pad=1)
 
         stats_sub = stats_df[stats_df["dataset"] == dataset_label].set_index("model")
         for i, name in enumerate(display_order):
-            n_flip = int(stats_sub.loc[name, "n_flip"])
+            n = int(stats_sub.loc[name, "n"])
+            rate = float(stats_sub.loc[name, "flip_rate"])
             ax.text(
                 i,
-                15.8,
-                f"n={n_flip}",
+                16.6,
+                f"n={n}\nflip {rate:.0f}%",
                 ha="center",
                 va="bottom",
                 fontsize=9,
                 color="#222222",
+                linespacing=1.05,
             )
 
-    fig.suptitle("Turn of first verdict change across models and datasets", fontsize=10)
-    fig.supylabel("Flip turn (flipped dialogues only)", fontsize=10)
-    fig.tight_layout(rect=(0.03, 0.0, 1.0, 0.96))
+    fig.suptitle("Dialogue length across target models and datasets", fontsize=11)
+    fig.supylabel("Dialogue length (last turn reached)", fontsize=10)
+    fig.tight_layout(rect=(0.03, 0.0, 1.0, 0.97))
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_png, dpi=300, bbox_inches="tight", pad_inches=0.03)
     fig.savefig(OUT_PDF, bbox_inches="tight", pad_inches=0.03)
@@ -197,11 +190,9 @@ def plot_flip_turns(plot_df: pd.DataFrame, stats_df: pd.DataFrame, out_png: Path
 
 def main() -> None:
     fever480_ids = set(pd.read_csv(FEVER480)["original_index"].astype(int))
-    plot_df, stats_df = collect_flip_rows(fever480_ids)
-    OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
-    stats_df.to_csv(OUT_CSV, index=False)
-    print(f"Wrote {OUT_CSV}")
-    plot_flip_turns(plot_df, stats_df)
+    plot_df, stats_df = collect(fever480_ids)
+    print(stats_df.to_string(index=False))
+    plot_dialogue_length(plot_df, stats_df)
 
 
 if __name__ == "__main__":
